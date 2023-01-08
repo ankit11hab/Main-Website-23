@@ -5,6 +5,7 @@ import ImgAsset from './Images'
 import './Contests.css';
 import { NavLink, Link } from 'react-router-dom'
 import { useLocation } from "react-router-dom";
+import NavMobContest from '../NavContestMobile/NavContestMob';
 
 function Events() {
 
@@ -16,6 +17,7 @@ function Events() {
     <>
     <div className='controller'>
         <Nav />
+        <NavMobContest />
           <div className='Frame14859_Frame14859'>
              <div>
               <div className='Group244'>
