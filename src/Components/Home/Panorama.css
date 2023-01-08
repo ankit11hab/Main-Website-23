@@ -49,3 +49,17 @@
     position: relative !important;
     overflow-x:hidden !important ;
   }
+
+@media screen and ( max-width:768px) {
+  .geet{
+    display: none;
+  }
+  body {
+    height: auto !important;
+    overflow: scroll;
+  }
+  html.a-fullscreen {
+    position: relative !important;
+    overflow-x:scroll !important ;
+  }
+}
