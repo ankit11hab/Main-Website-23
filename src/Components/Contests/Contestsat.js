@@ -173,17 +173,17 @@ function Events() {
               <div className='sidebar1'>
                 <div className='head'>MODULES</div>
                 <ul className='mlist'>
-                  <li><NavLink to="/Contests/vn"><b>VOUGUE NATION</b></NavLink></li>
-                  <li><NavLink to="/Contests/vn/ca">CLASS APART</NavLink></li>
-                  <li><NavLink to="/Contests/vn/d">DANCE</NavLink></li>
-                  <li><NavLink to="/Contests/vn/m">MUSIC</NavLink></li>
-                  <li><NavLink to="/Contests/vn/l">LITERARY</NavLink></li>
-                  <li><NavLink to="/Contests/vn/at">ART TALKIES</NavLink></li>
-                  <li><NavLink to="/Contests/vn/dd">DIGITAL DEXTERITY</NavLink></li>
-                  <li><NavLink to="/Contests/vn/lca">LIGHTS CAMERA ACTION</NavLink></li>
-                  <li><NavLink to="/Contests/vn/s">SPORTS</NavLink></li>
-                  <li><NavLink to="/Contests/vn/q">QUIZ</NavLink></li>
-                  <li><NavLink to="/Contests/vn/dr">DRAMA</NavLink></li>
+                  <li><NavLink to="/Contests"><b>VOUGUE NATION</b></NavLink></li>
+                  <li><NavLink to="/Contests/ca">CLASS APART</NavLink></li>
+                  <li><NavLink to="/Contests/d">DANCE</NavLink></li>
+                  <li><NavLink to="/Contests/m">MUSIC</NavLink></li>
+                  <li><NavLink to="/Contests/l">LITERARY</NavLink></li>
+                  <li><NavLink to="/Contests/at">ART TALKIES</NavLink></li>
+                  <li><NavLink to="/Contests/dd">DIGITAL DEXTERITY</NavLink></li>
+                  <li><NavLink to="/Contests/lca">LIGHTS CAMERA ACTION</NavLink></li>
+                  <li><NavLink to="/Contests/s">SPORTS</NavLink></li>
+                  <li><NavLink to="/Contests/q">QUIZ</NavLink></li>
+                  <li><NavLink to="/Contests/dr">DRAMA</NavLink></li>
                 </ul>
 
                 <div className='hamburger'>
