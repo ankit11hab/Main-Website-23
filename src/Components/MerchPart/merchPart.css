@@ -18,7 +18,6 @@
 }
 
 .merchWide {
-  margin-top: 5%;
   width: 98%;
   height: 80vh;
   background-color: #161616;
@@ -136,9 +135,10 @@
 
 .yellowcurve {
   position: absolute;
-  height: 25vw;
+  height: 19vw;
   top: -24vw;
-  left: 17vw;
+  left: 20vw;
+  transform: scale(1.1);
 }
 
 .pinkcurve {
