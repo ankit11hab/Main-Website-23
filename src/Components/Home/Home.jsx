@@ -9,6 +9,7 @@ import NavMob from '../NavEventsMobile/NavMob';
 import MerchPart from '../MerchPart/merchpart';
 import VRScene from './Panorama';
 import Strips from './Strips';
+import Sponsers from './Sponsers';
   
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
        <Book />
        <MerchPart />
        <Strips /> 
+       <Sponsers />
        <div className='text'>
                 The width and height properties of the DOMRect object returned by the method include the padding and border-width, not only the content width/height. In the standard box model, this would be equal to the width or height property of the element + padding + border-width. But if box-sizing: border-box is set for the element this would be directly equal to its width or height.
                 The returned value can be thought of as the union of the rectangles returned by getClientRects() for the element, i.e., the CSS border-boxes associated with the element.
