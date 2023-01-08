@@ -129,7 +129,7 @@ function Events1() {
                   </div>
                 </div>
               </div>
-              <div className='upnav'>
+              <div className='upnav' >
                 <div className='sidebar11'>
                 <NavLink to="/Events"><div className={splitLocation[1] === "Events" ? "pt" : "pronites1"}>PRONITES</div></NavLink>
                 <NavLink to="/Events/cc"><div className='CreatorsCamp1'>CREATORS CAMP</div></NavLink>
