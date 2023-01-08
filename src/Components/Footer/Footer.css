@@ -5,10 +5,10 @@
         height: 40vw;
         left: 0px;
         background: #0B0B0B;
-
+  
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         
     }
     
@@ -33,16 +33,18 @@
         text-shadow: 0px 14px 40px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
-
+  
     .inqueries{
         font-family: 'Aileron';
         font-style: normal;
         font-weight: 300;
-        font-size: 1.29vw;
+        font-size: 2.6vh;
         line-height: 24px;
         color: #FFFFFF;
+        padding-top: 3.06vh;
+        text-align: right;
     }
-
+  
     .red img{
         width: 7vw;
         height: 12vw;
@@ -50,7 +52,7 @@
         top: 4vw;
         left: 14vw;
     }
-
+  
     .violet img{
         width: 10vw;
         height: 13vw;
@@ -58,7 +60,7 @@
         top: 14vw;
         left: -0.4vw;
     }
-
+  
     .green img{
         width: 10vw;
         height: 13vw;
@@ -66,7 +68,7 @@
         top: 20vw;
         left: -1.5vw;
     }
-
+  
     .yellow img{
         width: 10vw;
         height: 15vw;
@@ -74,7 +76,7 @@
         left: -28.5vw;
         top: 7vw;
     }
-
+  
     .stones{
         display: flex;
         flex-direction: row;
@@ -82,7 +84,7 @@
         bottom: calc(57% - 12vw/2 - 1vw);
         left: calc(40% - 17vw/2 - 1vw);
     }
-
+  
     .footer_desk ul{
         display: flex;
         flex-direction: column;
@@ -91,13 +93,14 @@
         height: 17vw;
         margin-left: 5vw;
     }
-
+  
     .footer_desk li{
         font-family: 'Aileron';
         font-style: normal;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 2.6vh;
         line-height: 3.2vh;
+        padding-top: 3.73vh;
         /* identical to box height */
         
         text-align: center;
@@ -105,7 +108,7 @@
         
         color: #FFFFFF;
     }
-
+  
     .footer_desk a{
         color:white;
         text-decoration: none;
@@ -162,31 +165,10 @@
         width: 30px;
         height: 30px;
     }
-
-
-@media only screen and (max-width: 900px) {
-    .hail{
-        position: relative;
-        width: 17vw;
-        height: 14vw;
-        left: calc(50% - 17vw/2 - 1vw);
-        top: calc(50% - 12vw/2 - 1vw);
-        font-family: 'Aka-AcidGR-Compacta';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 6vw;
-        line-height: 7vw;
-        
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        
-        color: #FEFCF0;
-        
-        text-shadow: 0px 14px 40px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-
+  
+  
+  @media only screen and (max-width: 900px) {
+  
     .inqueries{
         font-family: 'Aileron';
         font-style: normal;
@@ -195,70 +177,36 @@
         line-height: 24px;
         color: #FFFFFF;
     }
-
-    .red img{
-        width: 7vw;
-        height: 12vw;
-        position: relative;
-        top: 4vw;
-        left: 14vw;
+    .contact{
+        margin: 6vw 4vw 1vw 1vw;
     }
-
-    .violet img{
-        width: 10vw;
-        height: 13vw;
-        position: relative;
-        top: 14vw;
-        left: -0.4vw;
+    .Logo{
+        display: none;
     }
-
-    .green img{
-        width: 10vw;
-        height: 13vw;
-        position: relative;
-        top: 20vw;
-        left: -1.5vw;
-    }
-
-    .yellow img{
-        width: 10vw;
-        height: 15vw;
-        position: relative;
-        left: -28.5vw;
-        top: 7vw;
-    }
-
-    .stones{
-        display: flex;
-        flex-direction: row;
-        position:relative;
-        bottom: calc(57% - 12vw/2 - 1vw);
-        left: calc(40% - 17vw/2 - 1vw);
-    }
+  
+    
     .logo{
         display: none;
     }
-
-    .mob{
-        display: block;
-    }
+  
+    
     .desk{
         display: none;
     }
     .footer_desk{
         /* position: absolute; */
         width: 100%;
-        height: 43vh;
+        height: 46vh;
         left: 0px;
         background: #0B0B0B;
-
+  
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        
         
     }
     
-
+  
     .footer_desk ul{
         display: flex;
         flex-direction: column;
@@ -270,7 +218,7 @@
     .footer_desk li{
         font-family: 'Aileron';
         font-style: normal;
-        font-weight: 900;
+        font-weight: 600;
         font-size: 1.6vh;
         line-height: 1.86vh;
         /* identical to box height */
@@ -279,7 +227,7 @@
         text-transform: uppercase;
         
         color: #FFFFFF;
-
+  
     }
     .socialIcon{
         display:flex;
@@ -316,7 +264,7 @@
         font-size: 1.6vh;
         line-height: 1.86vh;
         text-align: right;
-        margin: 2vw;
+        
         color: #fffffe;
     }
     .abhi{
@@ -328,14 +276,14 @@
         font-size: 1.6vh;
         line-height: 1.86vh;
         text-align: right;
-        margin: 2vw;
+        
         color: #fffffe;
     }
     .socials{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding-bottom: 1.5vh;
+        
         margin-top: 0vh;
         padding-top: 0;
         text-align: right;
@@ -356,4 +304,5 @@
     }
     
   
-}
+  }
+  

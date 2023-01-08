@@ -131,10 +131,10 @@ function Events1() {
               </div>
               <div className='upnav'>
                 <div className='sidebar11'>
-                <NavLink to="/Events/pt"><div className={splitLocation[2] === "pt" ? "pt" : "pronites1"}>PRONITES</div></NavLink>
-                <NavLink to="/Events/pt/cc"><div className='CreatorsCamp1'>CREATORS CAMP</div></NavLink>
-                <NavLink to="/Events/pt/hf"><div className='HumourFest1'>HUMOUR FEST</div></NavLink>
-                <NavLink to="/Events/pt/ps"><div className='PROSHOWS1'>PROSHOWS</div></NavLink>
+                <NavLink to="/Events"><div className={splitLocation[1] === "Events" ? "pt" : "pronites1"}>PRONITES</div></NavLink>
+                <NavLink to="/Events/cc"><div className='CreatorsCamp1'>CREATORS CAMP</div></NavLink>
+                <NavLink to="/Events/hf"><div className='HumourFest1'>HUMOUR FEST</div></NavLink>
+                <NavLink to="/Events/ps"><div className='PROSHOWS1'>PROSHOWS</div></NavLink>
                 </div>
               </div>
           </div>

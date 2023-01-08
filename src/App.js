@@ -29,25 +29,25 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/'           element = {<Home />}/>
-        <Route path='/Events/pt'      element = {<Eventspt />}/>
-        <Route path='/Events/pt/ps'      element = {<Eventsps />}/>
-        <Route path='/Events/pt/cc'      element = {<Eventscc />}/>
-        <Route path='/Events/pt/hf'      element = {<Eventshf />}/>
+        <Route path='/Events'      element = {<Eventspt />}/>
+        <Route path='/Events/ps'      element = {<Eventsps />}/>
+        <Route path='/Events/cc'      element = {<Eventscc />}/>
+        <Route path='/Events/hf'      element = {<Eventshf />}/>
         <Route path='Merch'       element = {<Merch />}/>
         <Route path='/strip'       element = {<Strips />}/>
         <Route path='Campaigns'   element = {<Campaigns />}/>
         <Route path='Teams'       element = {<Teams />}/>
-        <Route path='Contests/vn'    element = {<Contestsvn />}/>
-        <Route path='Contests/vn/ca'    element = {<Contestsca />}/>
-        <Route path='Contests/vn/d'    element = {<Contestsd />}/>
-        <Route path='Contests/vn/m'    element = {<Contestsm />}/>
-        <Route path='Contests/vn/l'    element = {<Contestsl />}/>
-        <Route path='Contests/vn/at'    element = {<Contestsat />}/>
-        <Route path='Contests/vn/dd'    element = {<Contestsdd />}/>
-        <Route path='Contests/vn/lca'    element = {<Contestslca />}/>
-        <Route path='Contests/vn/s'    element = {<Contestss />}/>
-        <Route path='Contests/vn/q'    element = {<Contestsq />}/>
-        <Route path='Contests/vn/dr'    element = {<Contestsdr />}/>
+        <Route path='Contests'    element = {<Contestsvn />}/>
+        <Route path='Contests/ca'    element = {<Contestsca />}/>
+        <Route path='Contests/d'    element = {<Contestsd />}/>
+        <Route path='Contests/m'    element = {<Contestsm />}/>
+        <Route path='Contests/l'    element = {<Contestsl />}/>
+        <Route path='Contests/at'    element = {<Contestsat />}/>
+        <Route path='Contests/dd'    element = {<Contestsdd />}/>
+        <Route path='Contests/lca'    element = {<Contestslca />}/>
+        <Route path='Contests/s'    element = {<Contestss />}/>
+        <Route path='Contests/q'    element = {<Contestsq />}/>
+        <Route path='Contests/dr'    element = {<Contestsdr />}/>
         <Route path='MUN'         element = {<MUN />}/>
         <Route path='Sponsors'    element = {<Sponsors />}/>
         <Route path='BookTickets' element = {<BookTickets />} />

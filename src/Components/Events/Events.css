@@ -58,19 +58,19 @@
 }
 
 @media(max-width:998px) {
-	html {
+	.Frame14859_Frame148591 {
 		font-size: 37.5%;
 	}
 }
 
 @media(max-width:1400px) {
-	html {
+	.Frame14859_Frame148591 {
 		font-size: 46%;
 	}
 }
 
 @media(max-width:768px) {
-	html {
+	.Frame14859_Frame148591 {
 		font-size: 31.5%;
 	}
 }
@@ -394,8 +394,8 @@
 	line-height: 10rem;
 }
 
-.sidebar11 .pt {
-	width: 10.5rem;
+.Frame14859_Frame148591 .sidebar11 .pt {
+	/* width: 10.5rem;
 	height: 5.7rem;
 	-webkit-text-stroke-width: 0.05rem;
 	-webkit-text-stroke-color: black;
@@ -405,6 +405,12 @@
 	font-size: 3.2rem;
 	letter-spacing: -0.1rem;
 	font-weight: 900;
+	line-height: 10rem; */
+	height: 1.8rem;
+	color: #F35C41;
+	font-family: 'Aileron',sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
 	line-height: 10rem;
 }
 
@@ -423,7 +429,7 @@
 .Frame14859_Frame148591 .active .CreatorsCamp1  {
 	/* left: 3%;
 	top: 28rem; */
-	width: 20rem;
+	/* width: 20rem;
 	height: 5.7rem;
 	-webkit-text-stroke-width: 0.05rem;
 	-webkit-text-stroke-color: black;
@@ -436,6 +442,12 @@
 	font-size: 3.2rem;
 	letter-spacing: -0.1rem;
 	font-weight: 900;
+	line-height: 10rem; */
+	height: 1.8rem;
+	color: #F35C41;
+	font-family: 'Aileron',sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
 	line-height: 10rem;
 }
 .Frame14859_Frame148591 .HumourFest1 {
@@ -454,7 +466,7 @@
 	/* position: absolute;
 	left: 2.5%;
 	top: 31.5rem; */
-	width: 20rem;
+	/* width: 20rem;
 	height: 5.7rem;
 	-webkit-text-stroke-width: 0.05rem;
 	-webkit-text-stroke-color: black;
@@ -467,6 +479,12 @@
 	font-size: 3.2rem;
 	letter-spacing: -0.1rem;
 	font-weight: 900;
+	line-height: 10rem; */
+	height: 1.8rem;
+	color: #F35C41;
+	font-family: 'Aileron',sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
 	line-height: 10rem;
 }
 
@@ -486,7 +504,7 @@
 	/* position: absolute;
 	left: 5.25%;
 	top: 35.4rem; */
-	width: 10.5rem;
+	/* width: 10.5rem;
 	height: 5.7rem;
 	-webkit-text-stroke-width: 0.05rem;
 	-webkit-text-stroke-color: black;
@@ -499,6 +517,12 @@
 	font-size: 3.2rem;
 	letter-spacing: -0.1rem;
 	font-weight: 900;
+	line-height: 10rem; */
+	height: 1.8rem;
+	color: #F35C41;
+	font-family: 'Aileron',sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
 	line-height: 10rem;
 }
 
