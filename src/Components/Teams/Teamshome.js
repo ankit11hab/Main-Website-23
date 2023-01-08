@@ -3,6 +3,7 @@ import { useState } from "react";
 import Teambox from "./teambox";
 
 import tpic1 from "./images/pic1.png";
+import bg from "./images/paperr.webp";
 import Footer from '../Footer/Footer'
 import Nav from '../NavBar/Nav'
 
@@ -39,15 +40,13 @@ const Home = () => {
   ]);
 
   return (
-    <div className="home">
+    <div className="home" >
       <Nav />
-      <div class="headingDiv">
-        <h1 class="teamHeading">We made it happen</h1>
+      <div class="teamheading">
+        We made it happen
       </div>
       {boxes.map((box) => (
-        <div className="teampage">
-          <div class="teamContainer">
-            <div class="teamInfo">
+
               <Teambox
                 leftInsta={box.leftInsta}
                 rightInsta={box.rightInsta}
@@ -59,10 +58,6 @@ const Home = () => {
                 midtwit={box.midtwit}
                 righttwit={box.righttwit}
               />
-            </div>
-          </div>
-          <p class="teamName">{box.title}</p>
-        </div>
       ))}
       <Footer />
     </div>

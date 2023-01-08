@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @font-face {
     font-family: "Star Guard";
     src: local("starguard"), url("./fonts/starguard.ttf") format("truetype");
@@ -309,3 +310,159 @@ img:hover .dialogue {
         transform: scale(0.2);
     }
 }
+=======
+@import url('https://fonts.cdnfonts.com/css/aileron');
+        @import url('https://fonts.cdnfonts.com/css/star-guard');
+        body {
+            margin: 0;
+        }
+
+        .temp {
+            width: 80vw;
+            height: 100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .pic {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .hover-grp {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: visible;
+        }
+
+        .hovershow {
+            height: 100%;
+            width: 25%;
+            overflow: visible;
+            position: relative;
+        }
+
+        .hovershow .bubble-container {
+            display: none;
+        }
+
+        .hovershow:hover .bubble-container {
+            display: block;
+        }
+
+        .bubble-container {
+            height: 40%;
+            width: 100%;
+            position: relative;
+            left: 80%;
+            margin-top: 30%;
+        }
+
+        .bubble {
+            width: 100%;
+            position: relative;
+        }
+
+        .bubble-blank {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .icons {
+            width: 27%;
+            cursor: pointer;
+        }
+
+        .icons-box {
+            width: 30%;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            top: 40%;
+            right: 5%;
+        }
+
+        .contact-title {
+            font-size: large;
+            position: absolute;
+            font-family: 'Aileron', sans-serif;
+            top: 10%;
+            left: 5%;
+        }
+
+        .contact-info {
+            font-size: large;
+            font-weight: 600;
+            position: absolute;
+            font-family: 'Aileron', sans-serif;
+            left: 5%;
+            bottom: 40%;
+        }
+
+        .linkedin-black-b {
+            width: 9%;
+            position: absolute;
+            right: 5%;
+            top: 10%;
+            cursor: pointer;
+        }
+
+        .teams-section {
+            margin: 10rem 0;
+            height: 45vw;
+            width: 100%;
+            background-color: #099FBC;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: black 4px solid;
+            border-bottom: black 8px solid;
+            position: relative;
+        }
+
+        .teams-title {
+            position: absolute;
+            bottom: 0px;
+            margin-bottom: -2.5rem;
+            font-family: 'Star Guard', sans-serif;
+            font-size: 5rem;
+            color: white;
+            text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+        }
+        .teamheading{
+          margin: auto;
+          font-family: 'Star Guard', sans-serif;
+          font-size: 5rem;
+          color: white;
+          text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+          width: fit-content;
+        }
+
+        @media screen and (max-device-width: 480px) and (orientation: portrait) {
+            .teams-title {
+                font-size: 5rem;
+                margin-bottom: -2.5rem;
+                text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
+            }
+            .teamheading{
+              font-size: 5rem;
+              margin-bottom: -2.5rem;
+              text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
+            }
+            .contact-title, .contact-info{
+              font-size: 1rem;
+            }
+        }
+>>>>>>> Stashed changes
