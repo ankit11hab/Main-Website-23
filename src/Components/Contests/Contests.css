@@ -84,8 +84,8 @@
 	margin: auto;
 	width: 100%;
 	/* overflow: auto; */
-	background-color: #FFFBF5;
-	background: rgba(255,251,245,1.00);
+	background-color:url(./Images/background.png);
+	/* background: rgba(255,251,245,1.00); */
 	padding-top: 5rem;
 	column-gap: 2rem;
 	padding-bottom: 10rem;
