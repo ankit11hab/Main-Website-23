@@ -170,11 +170,25 @@ function Events() {
                   </div>
                 </div>
               </div>
-              <div className='sidebar11'>
-              <NavLink to="/Contests/pt1"><div className='pronites'>PRONITES</div></NavLink>
+              <div className='sidebar1'>
+                <div className='head'>MODULES</div>
+                <ul className='mlist'>
+                  <li><NavLink to="/Contests"><b>VOUGUE NATION</b></NavLink></li>
+                  <li><NavLink to="/Contests/ca">CLASS APART</NavLink></li>
+                  <li><NavLink to="/Contests/d">DANCE</NavLink></li>
+                  <li><NavLink to="/Contests/m">MUSIC</NavLink></li>
+                  <li><NavLink to="/Contests/l">LITERARY</NavLink></li>
+                  <li><NavLink to="/Contests/at">ART TALKIES</NavLink></li>
+                  <li><NavLink to="/Contests/dd">DIGITAL DEXTERITY</NavLink></li>
+                  <li><NavLink to="/Contests/lca">LIGHTS CAMERA ACTION</NavLink></li>
+                  <li><NavLink to="/Contests/s">SPORTS</NavLink></li>
+                  <li><NavLink to="/Contests/q">QUIZ</NavLink></li>
+                  <li><NavLink to="/Contests/dr">DRAMA</NavLink></li>
+                </ul>
+              {/* <NavLink to="/Contests/pt1"><div className='pronites'>PRONITES</div></NavLink>
               <NavLink to="/Contests/cc1"><div className='CreatorsCamp'>CREATORS CAMP</div></NavLink>
               <NavLink to="/Contests/hf1"><div className='HumourFest'>HUMOUR FEST</div></NavLink>
-              <NavLink to="/Contests/ps1"><div className='PROSHOWS'>PROSHOWS</div></NavLink>
+              <NavLink to="/Contests/ps1"><div className='PROSHOWS'>PROSHOWS</div></NavLink> */}
               </div>
           </div>
         <Footer />
