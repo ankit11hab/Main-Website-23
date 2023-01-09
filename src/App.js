@@ -22,9 +22,7 @@ import Contestsq from './Components/Contests/Contestsq';
 import Contestsdr from './Components/Contests/Contestsdr';
 import ErrorPage from './Components/ErrorPage';
 import BookTickets from './Components/BookTickets';
-import MerchPart from './Components/MerchPart/merchpart';
-import Strips from './Components/Home/Strips';
-import AppSection from './Components/Home/AppSection';
+import HeroSection from './Components/Home/HeroSection';
 function App() {
   return (
     <BrowserRouter>
@@ -35,7 +33,7 @@ function App() {
         <Route path='/Events/cc'      element = {<Eventscc />}/>
         <Route path='/Events/hf'      element = {<Eventshf />}/>
         <Route path='Merch'       element = {<Merch />}/>
-        <Route path='/app'       element = {<AppSection />}/>
+        <Route path='/hero'       element = {<HeroSection />}/>
         <Route path='Campaigns'   element = {<Campaigns />}/>
         <Route path='Teams'       element = {<Teams />}/>
         <Route path='Contests'    element = {<Contestsvn />}/>

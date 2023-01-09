@@ -41,13 +41,14 @@
   }
   body {
     height: 46.4vw !important;
+    /* height: auto !important; */
     overflow-y: auto !important;
     width: 100%;
     overflow-x: hidden;
   }
   html.a-fullscreen {
     position: relative !important;
-    overflow-x:hidden !important ;
+    /* overflow-x:hidden !important ; */
   }
 
 @media screen and ( max-width:768px) {
