@@ -51,19 +51,21 @@
   -webkit-text-stroke-width: 1.87px;
 }
 
+
 .layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* padding: 0px; */
   /* gap: 120px; */
-  background-color: #FCFFF5;
+  background-color:url(./images/background.png);
   ;
 
   /* width: 75vw; */
   /* left: 213px;
   top: 336px; */
 }
+
 
 .box1 {
   display: flex;
