@@ -114,3 +114,9 @@ top: -0.2vw;
     left: 87vw;
     top: -0.2vw;
 }
+
+@media  screen and (max-width:768px) {
+    .stripContainer{
+        display: none;
+    }
+}

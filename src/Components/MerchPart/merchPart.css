@@ -192,7 +192,7 @@
     background-color: #161616;
     border: 2px solid black;
     width: 100vw;
-    height: 190vh;
+    height: 76vh;
     display: flex;
     flex-direction: column;
     margin-top: 5%;
@@ -292,6 +292,7 @@
     left: 40%;
     font-size: 2.2vw;
     z-index: 3;
+    bottom: -14vw;
   }
   .btnicon-mob {
     width: 2.5vw;

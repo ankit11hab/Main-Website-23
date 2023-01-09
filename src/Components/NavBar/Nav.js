@@ -39,13 +39,13 @@ function Nav() {
             </div>
                 {active ? <div>
                     <ul className='mobileList'>
-                        <li ><NavLink to="/Events/pt"><b>EVENTS</b></NavLink></li>
+                        <li ><NavLink to="/Events"><b>EVENTS</b></NavLink></li>
                         <li ><NavLink to="/Merch"><b>MERCH</b></NavLink></li>
                         <li ><NavLink to="/Campaigns"><b>CAMPAIGNS</b></NavLink></li>
                         <li ><NavLink to="/Teams"><b>TEAMS</b></NavLink></li>
                         <li ><NavLink to="/MUN"><b>MUN</b></NavLink></li>
                         <li ><NavLink to="/Sponsors"><b>SPONSORS</b></NavLink></li>
-                        <li className="Contests"><NavLink to="/Contests/vn"><b>CONTESTS</b></NavLink></li>
+                        <li className="Contests"><NavLink to="/Contests"><b>CONTESTS</b></NavLink></li>
                     </ul>
                 </div>:<></>}
         </div>
