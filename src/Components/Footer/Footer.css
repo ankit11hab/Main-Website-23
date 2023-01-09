@@ -1,167 +1,166 @@
+.footer_desk{
+    /* position: absolute; */
+    width: 100%;
+    height: 40vw;
+    left: 0px;
+    background: #0B0B0B;
 
-    .footer_desk{
-        /* position: absolute; */
-        width: 100%;
-        height: 40vw;
-        left: 0px;
-        background: #0B0B0B;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
-    .hail{
-        position: relative;
-        width: 17vw;
-        height: 14vw;
-        left: calc(50% - 17vw/2 - 1vw);
-        top: calc(50% - 12vw/2 - 1vw);
-        font-family: 'Aka-AcidGR-Compacta';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 6vw;
-        line-height: 7vw;
-        
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        
-        color: #FEFCF0;
-        
-        text-shadow: 0px 14px 40px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
+}
 
-    .inqueries{
-        font-family: 'Aileron';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.29vw;
-        line-height: 24px;
-        color: #FFFFFF;
-    }
-
-    .red img{
-        width: 7vw;
-        height: 12vw;
-        position: relative;
-        top: 4vw;
-        left: 14vw;
-    }
-
-    .violet img{
-        width: 10vw;
-        height: 13vw;
-        position: relative;
-        top: 14vw;
-        left: -0.4vw;
-    }
-
-    .green img{
-        width: 10vw;
-        height: 13vw;
-        position: relative;
-        top: 20vw;
-        left: -1.5vw;
-    }
-
-    .yellow img{
-        width: 10vw;
-        height: 15vw;
-        position: relative;
-        left: -28.5vw;
-        top: 7vw;
-    }
-
-    .stones{
-        display: flex;
-        flex-direction: row;
-        position:relative;
-        bottom: calc(57% - 12vw/2 - 1vw);
-        left: calc(40% - 17vw/2 - 1vw);
-    }
-
-    .footer_desk ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 6vw;
-        height: 17vw;
-        margin-left: 5vw;
-    }
-
-    .footer_desk li{
-        font-family: 'Aileron';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 2.6vh;
-        line-height: 3.2vh;
-        /* identical to box height */
-        
-        text-align: center;
-        text-transform: uppercase;
-        
-        color: #FFFFFF;
-    }
-
-    .footer_desk a{
-        color:white;
-        text-decoration: none;
-    }
-    .contact{
-        margin: 6vw 4vw 1vw 1vw;
-    }
-    .shareka{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-family: 'Aileron';
-        font-style: normal;
-        font-size: 2.6vh;
-        line-height: 3.2vh;
-        text-align: right;
-        margin: 2vw;
-        color: #fffffe;
-    }
-    .abhi{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-family: 'Aileron';
-        font-style: normal;
-        font-size: 2.6vh;
-        line-height: 3.2vh;
-        text-align: right;
-        margin: 2vw;
-        color: #fffffe;
-    }
-    .socialIcon{
-        display:flex;
-        flex-direction:column;
-        height:fit-content;
-        position:relative;
-        top:4vw;
-        right: 4vw;
-    }
-    .socials_desk{
-        display:flex;
-        
-        flex-direction: row;
-        justify-content: flex-end;
-        
-    }
-    .socials_mob{
-        display: none;
-    }
+.hail{
+    position: relative;
+    width: 17vw;
+    height: 14vw;
+    left: calc(50% - 17vw/2 - 1vw);
+    top: calc(50% - 12vw/2 - 1vw);
+    font-family: 'Aka-AcidGR-Compacta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    line-height: 7vw;
     
-    .socials_desk a{
-        margin-right: 2vw;
-        padding: 4px;
-        width: 30px;
-        height: 30px;
-    }
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FEFCF0;
+    
+    text-shadow: 0px 14px 40px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.inqueries{
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.29vw;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.red img{
+    width: 7vw;
+    height: 12vw;
+    position: relative;
+    top: 4vw;
+    left: 14vw;
+}
+
+.violet img{
+    width: 10vw;
+    height: 13vw;
+    position: relative;
+    top: 14vw;
+    left: -0.4vw;
+}
+
+.green img{
+    width: 10vw;
+    height: 13vw;
+    position: relative;
+    top: 20vw;
+    left: -1.5vw;
+}
+
+.yellow img{
+    width: 10vw;
+    height: 15vw;
+    position: relative;
+    left: -28.5vw;
+    top: 7vw;
+}
+
+.stones{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    bottom: calc(57% - 12vw/2 - 1vw);
+left: calc(40% - 17vw/2 - 2vw);
+}
+
+.footer_desk ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6vw;
+    height: 17vw;
+    margin-left: 5vw;
+}
+
+.footer_desk li{
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.6vh;
+    line-height: 3.2vh;
+    /* identical to box height */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.footer_desk a{
+    color:white;
+    text-decoration: none;
+}
+.contact{
+    margin: 6vw 4vw 1vw 1vw;
+}
+.shareka{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Aileron';
+    font-style: normal;
+    font-size: 2.6vh;
+    line-height: 3.2vh;
+    text-align: right;
+    margin: 2vw;
+    color: #fffffe;
+}
+.abhi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Aileron';
+    font-style: normal;
+    font-size: 2.6vh;
+    line-height: 3.2vh;
+    text-align: right;
+    margin: 2vw;
+    color: #fffffe;
+}
+.socialIcon{
+    display:flex;
+    flex-direction:column;
+    height:fit-content;
+    position:relative;
+    top:4vw;
+    right: 4vw;
+}
+.socials_desk{
+    display:flex;
+    
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.socials_mob{
+    display: none;
+}
+
+.socials_desk a{
+    margin-right: 2vw;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+}
 
 
 @media only screen and (max-width: 900px) {
