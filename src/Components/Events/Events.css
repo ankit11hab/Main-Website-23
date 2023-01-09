@@ -82,8 +82,9 @@
 	margin: auto;
 	width: 100%;
 	/* overflow: auto; */
-	background-color: #FFFBF5;
-	background: rgba(255,251,245,1.00);
+	/* background-color: #FFFBF5; */
+	/* background: rgba(255,251,245,1.00); */
+	background:url('../Contests/Images/background.png');
 	row-gap: 2rem;
 	padding-bottom: 10rem;
 }

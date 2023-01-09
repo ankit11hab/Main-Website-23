@@ -10,8 +10,10 @@
   padding: 0px;
 }
 
-/* .container {
-} */
+.container {
+  background:url('../Contests/Images/background.png');
+
+}
 
 .rect {
   width: 100vw;
@@ -57,8 +59,8 @@
   align-items: center;
   /* padding: 0px; */
   /* gap: 120px; */
-  background-color: #FCFFF5;
-  ;
+  /* background-color: #FCFFF5; */
+  background:url('../Contests/Images/background.png');
 
   /* width: 75vw; */
   /* left: 213px;
