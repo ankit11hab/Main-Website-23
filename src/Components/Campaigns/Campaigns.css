@@ -293,3 +293,16 @@ border-color: #000000;
 .btn-l {
   left: 0px;
 }
+
+.mobile{
+  display: none;
+}
+
+@media(max-width:768px){
+  .mobile{
+    display: block;
+  }
+  .no-mobile{
+    display: none;
+  }
+}

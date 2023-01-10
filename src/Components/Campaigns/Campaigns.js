@@ -30,7 +30,7 @@ class Cards extends React.Component {
   
       render() {
         return (
-          <section >
+          <section className="verical">
             {    <div className="card" id="card" style={this.props.cardStyle}>
                   <div className="cambox3i"></div>
                   <div className="cambox2i">
@@ -168,14 +168,27 @@ class Cards extends React.Component {
     
       render() {
         return (
-          <div className="cards-slider">
-            <div className="slider-btns">
-              <img src={left} className="slider-btn btn-l" onClick={() => this.handleClick('prev')} />
-              <img src={right} className="slider-btn btn-r" onClick={() => this.handleClick('next')}/>
-             </div>
-             <Cards cardStyle={this.state.cardStyle} />
-           </div>
-         )
+					<div>
+						<div className="cards-slider no-mobile">
+							<div className="slider-btns">
+								<img
+									src={left}
+									className="slider-btn btn-l"
+									onClick={() => this.handleClick("prev")}
+								/>
+								<img
+									src={right}
+									className="slider-btn btn-r"
+									onClick={() => this.handleClick("next")}
+								/>
+							</div>
+							<Cards cardStyle={this.state.cardStyle} />
+						</div>
+						<div className="mobile">
+							<Cards cardStyle={this.state.cardStyle} />
+						</div>
+					</div>
+				);
        }
      }
 export default Campaigns;                   
