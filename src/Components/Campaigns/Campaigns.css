@@ -305,8 +305,4 @@ border-color: #000000;
   .no-mobile{
     display: none;
   }
-  .vertical{
-    display: flex;
-    flex-direction: column;
-  }
 }
