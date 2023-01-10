@@ -6,6 +6,7 @@ import tpic1 from "./images/pic1.png";
 import bg from "./images/paperr.webp";
 import Footer from '../Footer/Footer'
 import Nav from '../NavBar/Nav'
+import wemade from "./images/we-made-it-happen.png";
 
 const Home = () => {
   const [boxes, setBoxes] = useState([
@@ -42,6 +43,7 @@ const Home = () => {
   return (
     <div className="home" >
       <Nav />
+      <img class="wemade-img" src={wemade}/>
       <div class="teamheading">
         We made it happen
       </div>

@@ -4,6 +4,9 @@
         body {
             margin: 0;
         }
+        .wemade-img{
+          display: none;
+        }
 
         .temp {
             width: 80vw;
@@ -39,11 +42,11 @@
         }
 
         .hovershow .bubble-container {
-            display: none;
+            visibility: hidden;
         }
 
         .hovershow:hover .bubble-container {
-            display: block;
+            visibility: visible;
         }
 
         .bubble-container {
@@ -67,17 +70,18 @@
         }
 
         .icons {
-            width: 27%;
             cursor: pointer;
+            height: 100%;
         }
 
         .icons-box {
             width: 30%;
+            height: 20%;
             position: absolute;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            top: 40%;
+            top: 50%;
             right: 5%;
         }
 
@@ -95,7 +99,8 @@
             position: absolute;
             font-family: 'Aileron', sans-serif;
             left: 5%;
-            bottom: 40%;
+            bottom: 30%;
+            line-height: 2rem;
         }
 
         .linkedin-black-b {
@@ -137,19 +142,85 @@
           text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
           width: fit-content;
         }
+          .temp-mob{
+            display: none;
+          }
 
         @media screen and (max-device-width: 480px) and (orientation: portrait) {
-            .teams-title {
-                font-size: 5rem;
-                margin-bottom: -2.5rem;
-                text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
-            }
+          .temp-mob{
+            display: block;
+          }
+
+
             .teamheading{
-              font-size: 5rem;
-              margin-bottom: -2.5rem;
-              text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
+              display: none;
             }
-            .contact-title, .contact-info{
-              font-size: 1rem;
+            .wemade-img{
+              width: 100%;
+              display: block;
+              margin: auto;
             }
+            .temp{
+              display: none;
+            }
+            .teams-section{
+              height: auto;
+            }
+            .temp-mob{
+              width: 90%;
+              margin: auto;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-bottom: 5rem;
+             }
+            .mobpic{
+              width: 100%;
+            }
+            .contact-info-container{
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              margin-bottom: 3rem;
+            }
+            .contact-info-mob{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 30%;
+            }
+            .teams-title{
+              display: none;
+            }
+            .teams-title-mob {
+                position: absolute;
+                bottom: 0px;
+                margin: auto;
+                width: fit-content;
+                font-family: 'Star Guard', sans-serif;
+                font-size: 4rem;
+                color: white;
+                text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+                margin-bottom: -4.2rem;
+            }
+            .contact-mob{
+              width: fit-content;
+              margin: auto;
+              line-height: 1.5rem;
+              font-family: 'Aileron', sans-serif;
+            }
+            .icon-box-mob{
+              width: 80%;
+              height: 1.5rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              margin: auto;
+              margin-top:0.5rem;
+            }
+
         }
