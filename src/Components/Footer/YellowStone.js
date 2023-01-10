@@ -1,9 +1,9 @@
 import React from 'react'
 import pic from './Images/yellow_stone.png';
 
-const YellowStone = () => {
+const YellowStone = ({value}) => {
     return (  
-        <img src={pic} alt = ""></img>
+        <img src={pic} alt = "" className={value}></img>
     );
 }
 
