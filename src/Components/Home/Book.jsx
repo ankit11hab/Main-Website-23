@@ -250,6 +250,7 @@ function Book() {
                 start:'100px 60%',
                 end:'60% 80%',
                 scrub: 1,
+                // markers:true,
             },
             onUpdate: render ,// use animation onUpdate instead of scrollTrigger's onUpdate
             // onComplete:(e)=>{
