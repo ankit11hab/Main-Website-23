@@ -343,9 +343,14 @@
   .bg{
     height: 16vh;
   }
+  .box2{
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 10vw;
+  }
 
 }
-@media  only screen and (max-width:800px) {
+@media  only screen and (max-width:830px) {
   .box2{
     flex-direction: column;
     height: fit-content;
