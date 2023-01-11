@@ -177,23 +177,38 @@ function HeroSection() {
             position:'fixed',
             top:0,
             left:0,
-            
         },
     });
-    
     tl.to('.hero_container',{
             scrollTrigger:{
             trigger:'.hero_container',
-            start:'110% center',
+            start:'100% 4%',
             end:'bottom bottom',
             toggleActions: 'play none none reverse',
-            scrub:true,
+            scrub:7,
             id:'lastFrame',
             markers:true,},
         css:{
             position:'static',
         }
     });
+    tl.to('.geet',{
+      // scrollTrigger:{
+      //   pin:'true',
+      //   pinType:'fixed',
+      //   start:"top top"
+      // },
+      css:{
+        opacity:'1',
+      }
+    });
+    tl.to('.hero_container',{
+      css:{
+          position:'fixed',
+          top:0,
+          left:0,
+      },
+  });
 //     tl.to('.blank_div',{
 //         scrollTrigger:{
 //         trigger:'.hero_container',

@@ -3,8 +3,10 @@
     // top: -10vw;
     left: 0%;
     z-index: 5;
+    height: 100vh;
+
     // transform: scale(0.9);
-    // background: url('../Contests/Images/background.png');
+    background: url('../Contests/Images/background.png');
   }
   .text {
     /* width: 100px; */
@@ -31,11 +33,11 @@
     height: 45vh;
   }
 
-  .blank_div{
-    height: 75vw;
-    width: 100vh;
-  }
-  .blank_div2{
-    height: 25vh;
-    width: 100vw;
-  }
+  // .blank_div{
+  //   height: 75vw;
+  //   width: 100vh;
+  // }
+  // .blank_div2{
+  //   height: 25vh;
+  //   width: 100vw;
+  // }
