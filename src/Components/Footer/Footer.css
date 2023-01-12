@@ -66,20 +66,20 @@
   top: -6vw;
   left: 12vw;
 }
-.red:hover{
-  -webkit-animation: mover 0.5s infinite  alternate;
+/* .red:hover{
+  -webkit-animation: mover 2s infinite  alternate;
   animation: mover 0.5s infinite  alternate;
   
 
 }
 @-webkit-keyframes mover {
   0% { transform: translateY(0px); }
-  100% { transform: translateY(-50px); }
+  100% { transform: translateY(-15px); }
 }
 @keyframes mover {
   0% { transform: translateY(0px); }
-  100% { transform: translateY(-50px); }
-}
+  100% { transform: translateY(-15px); }
+} */
 .violet {
   width: 10vw;
   height: 13vw;
@@ -87,7 +87,7 @@
   top: 6vw;
   left: -6vw;
 }
-.violet:hover{
+/* .violet:hover{
   -webkit-animation: moverv 0.5s infinite  alternate;
   animation: moverv 0.5s infinite  alternate;
   
@@ -100,7 +100,7 @@
 @keyframes moverv {
   0% { transform: translateY(0px); }
   100% { transform: translateY(-50px); }
-}
+} */
 
 .green {
   width: 10vw;
@@ -109,7 +109,7 @@
   top: 10vw;
   left: -8vw;
 }
-.green:hover{
+/* .green:hover{
   -webkit-animation: moverg 0.5s infinite  alternate;
   animation: moverg 0.5s infinite  alternate;
   
@@ -122,7 +122,7 @@
 @keyframes moverg {
   0% { transform: translateY(0px); }
   100% { transform: translateY(-50px); }
-}
+} */
 .yellow {
   width: 10vw;
   height: 15vw;
@@ -130,7 +130,7 @@
   left: 6vw;
   top: -6vw;
 }
-.yellow:hover{
+/* .yellow:hover{
   -webkit-animation: movery 0.5s infinite  alternate;
   animation: movery 0.5s infinite  alternate;
   
@@ -143,7 +143,7 @@
 @keyframes movery {
   0% { transform: translateY(0px); }
   100% { transform: translateY(-50px); }
-}
+} */
 
 .stones {
   display: flex;
@@ -435,4 +435,90 @@
     width: 2.18vh;
     height: 2.18vh;
   }
+}
+
+/* animations */
+/* :root{
+  --X:10px;
+  --Y:10px;
+  --deg:10deg;
+} */
+@-webkit-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}
+@keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+} 
+
+body:has(.hail:hover) .yellow{
+  -webkit-animation: movery 20s infinite alternate;
+  animation: movery 20s infinite alternate;
+}
+
+@-webkit-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+} 
+
+body:has(.hail:hover) .red{
+  -webkit-animation: moverr 20s infinite alternate;
+  animation: moverr 20s infinite alternate ;
+}
+
+@-webkit-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  35% { transform: translate(15px,15px) rotate(-15deg); }
+  50% { transform: translate(-15px,15px) rotate(15deg); }
+  78% { transform: translate(15px,25px) rotate(-15deg); }
+  100% { transform: translate(25px,25px) rotate(15deg); }
+} 
+
+body:has(.hail:hover) .violet{
+  -webkit-animation: moverv 20s infinite alternate;
+  animation: moverv 20s infinite alternate ;
+}
+
+@-webkit-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  22% { transform: translate(15px,-15px) rotate(-15deg); }
+  59% { transform: translate(15px,-15px) rotate(15deg); }
+  76% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+} 
+
+body:has(.hail:hover) .green{
+  -webkit-animation: moverg 20s infinite alternate;
+  animation: moverg 20s infinite alternate ;
 }
