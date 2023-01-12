@@ -15,7 +15,10 @@ import HeroSection from './HeroSection';
 function Home() {
   return (
     <div>
+      <div className="navbar" >
       <Nav/>
+      </div>
+      
         <NavMob />
        {/* <Panorama/> */}
        <HeroSection />

@@ -74,6 +74,11 @@
 		font-size: 31.5%;
 	}
 }
+.navbar{
+	background-color: #FFFBF5;
+	
+	mix-blend-mode: multiply;
+}
 .event_card{
 	border:2px solid black;
 	padding: 0vw 1vw 1vw 1vw ;
@@ -104,7 +109,9 @@
 	/* overflow: auto; */
 	/* background-color: #FFFBF5; */
 	/* background: rgba(255,251,245,1.00); */
-	background:url('../Contests/Images/background.png');
+	background-color: #FFFBF5;
+	
+	mix-blend-mode: multiply;
 	row-gap: 2rem;
 	padding-bottom: 10rem;
 }

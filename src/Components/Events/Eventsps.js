@@ -11,7 +11,12 @@ import { NavLink, Link } from "react-router-dom";
 function Events1() {
   return (
     <div>
-      <Nav/>
+
+            <div className="navbar">
+      <Nav  />
+      
+      </div>
+
       <NavMob />
       <div className="main_event">
         <div className="content_event">
