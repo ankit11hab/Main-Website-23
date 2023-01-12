@@ -119,8 +119,8 @@ function HeroSection() {
         trigger: ".book-container1",
         start: "top top",
         end: "bottom center",
-        scrub: 1,
-        // markers: true,
+        scrub: 0.5,
+        markers: true,
       },
       
 
@@ -177,52 +177,86 @@ function HeroSection() {
             position:'fixed',
             top:0,
             left:0,
+            
         },
     });
+    
     tl.to('.hero_container',{
             scrollTrigger:{
             trigger:'.hero_container',
-            start:'100% 4%',
+            start:'110% center',
             end:'bottom bottom',
             toggleActions: 'play none none reverse',
-            scrub:7,
+            scrub:true,
             id:'lastFrame',
-            markers:true,},
+            // markers:true,
+        },
         css:{
             position:'static',
         }
     });
-    tl.to('.geet',{
-      // scrollTrigger:{
-      //   pin:'true',
-      //   pinType:'fixed',
-      //   start:"top top"
-      // },
-      css:{
-        opacity:'1',
-      }
-    });
-    tl.to('.hero_container',{
-      css:{
-          position:'fixed',
-          top:0,
-          left:0,
-      },
-  });
-//     tl.to('.blank_div',{
-//         scrollTrigger:{
-//         trigger:'.hero_container',
-//         start:'110% center',
-//         end:'bottom bottom',
-//         toggleActions: 'play none none reverse',
-//         scrub:true,
-//         id:'lastframe',
-//         markers:true,},
-//     css:{
-//         opacity:0,
-//     }
-// });
-
+    tl.to('.blank_div',{
+        scrollTrigger:{
+        trigger:'.hero_container',
+        start:'110% center',
+        end:'bottom bottom',
+        toggleActions: 'play none none reverse',
+        scrub:true,
+        id:'lastframe',
+        // markers:true,
+    },
+    css:{
+        position:'absolute',
+        opacity:0,
+    }
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% center',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geet',
+    // markers:true,
+},
+css:{
+   position:'fixed',
+   top:0,
+   left:0,
+}
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'static',
+ 
+}
+});
+tl.to('.blank_div3',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom bottom',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'absolute',
+   opacity:0,
+ 
+}
+});
     // const lastframe=gsap.to('.hero_container',{
     //     scrollTrigger:{
     //         trigger:'.hero_container',
