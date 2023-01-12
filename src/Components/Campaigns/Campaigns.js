@@ -20,7 +20,7 @@ function Campaigns() {
     return (
       <div>
           <div className="mainbody">
-            <Nav pic={CampaignLogo}/>
+            <Nav />
             <Display/>
           </div>
           <Footer/>
@@ -31,7 +31,7 @@ class Cards extends React.Component {
   
       render() {
         return (
-          <section className="verical">
+          <section className="verical" >
             {    <div className="card" id="card" style={this.props.cardStyle}>
                   <div className="cambox3i"></div>
                   <div className="cambox2i">

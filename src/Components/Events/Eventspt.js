@@ -11,7 +11,14 @@ import { NavLink, Link } from "react-router-dom";
 function Events1() {
   return (
     <div>
-      <Nav pic={EventsLogo} />
+<<<<<<< HEAD
+            <div className="navbar">
+      <Nav  />
+      
+      </div>
+=======
+      <Nav />
+>>>>>>> 8cdd6e57fb433b15de7f92eacc858bef4926b4cb
       <NavMob />
       <div className="main_event">
         <div className="content_event">
@@ -33,7 +40,7 @@ function Events1() {
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events">
-              <div className="pronites1">PRONITES</div>
+              <div className="pronites1 pt">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1">CREATORS CAMP</div>

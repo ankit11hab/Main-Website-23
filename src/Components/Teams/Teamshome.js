@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <div className="home" >
-      <Nav pic={TeamsLogo } />
+      <Nav />
       <img class="wemade-img" src={wemade}/>
       <div class="teamheading">
         We made it happen

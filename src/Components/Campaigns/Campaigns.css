@@ -6,12 +6,13 @@
 .mainbody
 {
 width: 100vw;
-height: 1754px;
+height: 1200px;
 left: 1919px;
 top: 6771px;
-
 background:#FFFBF5;
 mix-blend-mode: multiply;
+
+
 transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .cambox1
@@ -47,7 +48,7 @@ border: 5px solid #000000;
 font-family: 'My Custom Font';
 font-style: normal;
 font-weight: 400;
-font-size: 9vw;
+font-size: 7vw;
 line-height: 22vh;
 text-align: center;
 letter-spacing: 0.02em;
@@ -83,12 +84,12 @@ display: flex;
 flex-direction: column;
 gap:6vh;
   width: 100%;
-  height: 53px;
+  height: 43px;
   left: -20px;
   top: 131px;
   
   background: #F35C41;
-  border: 5px solid #000000;
+  border: 3px solid #ffffff;
 }
 .cambox2i{
   box-sizing: border-box;
@@ -98,12 +99,12 @@ align-items: center;
 justify-content: center;
 /* position: absolute; */
 width: 100%;
-height: 60px;
+height: 47px;
 left: -20px;
 top: 192px;
 
 background: #FEA82F;
-border: 5px solid #000000;
+border: 3px solid #ffffff;
 }
 .cambox3i
 {
@@ -111,25 +112,25 @@ border: 5px solid #000000;
 
 /* position: absolute; */
 width: 100%;
-height: 59px;
+height: 46px;
 left: -20px;
 top: 260px;
 
 background: #099FBC;
-border: 5px solid #000000;
+border: 3px solid #ffffff;
 
 }
 .camtext2i
 {box-sizing: border-box;
-  padding: 3% 5% 3% 5%;
+  padding: 1% 20% 1% 20%;
   /* position: relative; */
   display: flex;
   justify-content: center;
 width: 100vw;
 font-family: 'Aileron';
 font-style: normal;
-font-weight: 200;
-font-size: 2vw;
+font-weight: 500;
+font-size: 1.5vw;
 line-height: 2vw;
 text-align: center;
 color: #000000;
@@ -161,7 +162,8 @@ border-style: solid;
 border-color: #000000;
  border-top: 3px solid;
   border-bottom: 3px solid;
-   height: 23vw;
+   height: 21vw;
+   transform: scaleY(.8)translateY(-50px);
 }
 .slide {
   height: 6vw;
@@ -234,9 +236,11 @@ border-color: #000000;
 	white-space: nowrap;
 	width: 100%;
 	height: 60%;
+  position: relative;
+  bottom: 30px;
 	/* position: relative; */
 	display: inline-block;
-  background: #FFFBF5;
+  
 }
 
 .card {
@@ -268,6 +272,7 @@ border-color: #000000;
   cursor: pointer;
   background: none;
   outline: none;
+  transform: scale(.85);
   /* position: absolute; */
   z-index: 9990;
   transition: all 0.6s ease 0s;
@@ -275,11 +280,12 @@ border-color: #000000;
 .slider-btns{
   box-sizing: border-box;
   position: relative;
-  top:112px;
+  top:92px;
   width: 100vw;
   display: flex;
   padding: 0% 3% 0% 3%;
   justify-content: space-between;
+  
 }
 
 .slider-btn:hover {
@@ -301,8 +307,46 @@ border-color: #000000;
 @media(max-width:768px){
   .mobile{
     display: block;
+    padding: 0;
   }
   .no-mobile{
     display: none;
   }
+}
+@media(max-width:480px){
+  body{
+    overflow-x: hidden;
+    
+  }
+  .mainbody{
+    height: 1200px;
+  }
+  .cambox2i{
+   height: 25px;
+   border: 2px solid white;
+
+   
+  }
+.cambox1i{
+  height: 25px;
+  border: 2px solid white;
+ 
+}
+.cambox3i{
+  height: 25px;
+  border: 2px solid white;
+
+}
+.slideri{
+  height: 105px;
+  transform: scale(1.5);
+  margin-bottom: 70px;
+  margin-top: 45px;
+  width: 80%;
+}
+.camtext2i{
+  font-size: 16px;
+  padding: 3% 5% 3% 5%;
+  font-weight: 500;
+}
 }

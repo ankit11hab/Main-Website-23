@@ -30,13 +30,15 @@
 .strip1{
     position: absolute;
     width: 100vw;
-    height: 5vw;
     left: -0.1vw;
     top: 15vw;
     background: #FF6290;
     transform: rotate(3.64deg);
-    z-index: 5;
-    display: flex;
+    /* z-index: 5; */
+    /* display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap ; */
   text-shadow: -0.2vw -0.2vw 0 #000,
 0.2vw -0.2vw 0 #000,
 -0.2vw 0.2vw 0 #000,
@@ -45,7 +47,6 @@
 .strip2{
 position: absolute;
 width: 100vw;
-height: 5vw;
 left: -2.22px;
 top: 24vw;
 background: #099FBC;
@@ -114,6 +115,10 @@ top: -0.2vw;
     left: 87vw;
     top: -0.2vw;
 }
+
+
+
+
 
 @media  screen and (max-width:768px) {
     .stripContainer{
