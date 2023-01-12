@@ -24,6 +24,7 @@
     display: flex;
     height: auto;
     width: 100vw;
+    
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -63,4 +64,9 @@
     position: relative !important;
     overflow-x:scroll !important ;
   }
+}
+
+.blank_div3{
+  width: 100vw;
+  height: 100vh;
 }

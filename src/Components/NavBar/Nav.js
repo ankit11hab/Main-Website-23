@@ -6,7 +6,7 @@ import Book from './Book'
 import Logo from "./Logo"
 import Hamburger from './Hamburger'
 
-function Nav() {
+function Nav({pic}) {
     const [active, setActive] = useState(false)
     const handleClick = (e) => {
         setActive(!active);
@@ -34,7 +34,7 @@ function Nav() {
         </div>
             <div className='mobile'>
             <div className='navmob'>
-                <div><Link to="/"><Logo /></Link></div> 
+                <div><Link to="/"><Logo/></Link></div> 
                 <div onClick={handleClick}><Hamburger /></div>
             </div>
                 {active ? <div>
@@ -45,7 +45,8 @@ function Nav() {
                         <li ><NavLink to="/Teams"><b>TEAMS</b></NavLink></li>
                         <li ><NavLink to="/MUN"><b>MUN</b></NavLink></li>
                         <li ><NavLink to="/Sponsors"><b>SPONSORS</b></NavLink></li>
-                        <li className="Contests"><NavLink to="/Contests"><b>CONTESTS</b></NavLink></li>
+                        <li className="Contests"><NavLink to="/Contests" style={{    paddingTop: "1.5vw",
+    marginTop: "2.5vw"}}><b>CONTESTS</b></NavLink></li>
                     </ul>
                 </div>:<></>}
         </div>

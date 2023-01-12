@@ -1,7 +1,7 @@
 import "./teams.css";
 import { useState } from "react";
 import Teambox from "./teambox";
-
+import TeamsLogo from './images/AalooLogo.svg'
 import tpic1 from "./images/pic1.png";
 import bg from "./images/paperr.webp";
 import Footer from '../Footer/Footer'

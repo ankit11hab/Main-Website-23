@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Star Guard Italic";
+  src: url("../../fonts/star-guard-italic.ttf") format("truetype");
+}
 .footer_desk {
   /* position: absolute; */
   width: 100vw;
@@ -9,13 +13,14 @@
   flex-direction: column;
   /* justify-content: space-between; */
   box-sizing: border-box;
-  padding: 2vh 5vw 2vh 5vw;
+  padding: 5vh 5vw 2vh 5vw;
 }
 .footer_main {
   display: flex;
   justify-content: space-between;
 }
 .logo {
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +103,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   /* margin-top: 6vw; */
   /* height: 17vw; */
   /* margin-left: 5vw; */
@@ -111,6 +117,7 @@
   line-height: 3.2vh;
   padding-top: 3.73vh;
   /* identical to box height */
+  margin-top:-1vh ;
 
   text-align: center;
   text-transform: uppercase;
@@ -183,8 +190,10 @@
   display: none;
 }
 .footer_bottom{
+  margin-top: 8vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .logo {
@@ -197,6 +206,7 @@
     align-items: center;
   }
   .hail {
+    font-family: "Star Guard Italic";
     font-weight: 400;
     font-size: 17vw;
     line-height: 18vw;
@@ -276,6 +286,7 @@
         flex-direction: row; */
   }
   .footer_bottom{
+
     margin: 4vh ;
     display: flex;
     justify-content: space-between;

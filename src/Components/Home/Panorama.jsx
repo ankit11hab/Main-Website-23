@@ -4,6 +4,7 @@ import "./Panorama.css";
 
 const VRScene = () => {
     return (
+        <div>
         <div className="geet">
             <section className="aframe_container">
                 <a-scene>
@@ -20,6 +21,10 @@ const VRScene = () => {
                     ></a-sky>
                 </a-scene>
             </section>
+        </div>
+        <div className="blank_div3">
+
+        </div>
         </div>
     );
 };
