@@ -20,7 +20,7 @@ function Campaigns() {
     return (
       <div>
           <div className="mainbody">
-            <Nav pic={CampaignLogo}/>
+            <Nav />
             <Display/>
           </div>
           <Footer/>

@@ -17,7 +17,7 @@ function Events() {
   return (
     <>
       <div className="controller">
-        <Nav pic={ContestLogo} />
+        <Nav/>
         <NavMobContest />
         <div className="contest_main">
         <div className="sidebar1">
