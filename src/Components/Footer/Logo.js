@@ -1,10 +1,8 @@
-import pic from "./Images/logo.png";
+import './logo.css'
+import pic from "./Images/LogoFooter.svg";
 
 const Logo = () => {
-    return ( <img styles={{
-        height: "3vw",
-        width: "9vw"
-    }} src={pic}></img> );
+    return (<img className="footer_logo"src={pic}></img> );
 }
 
 export default Logo;
