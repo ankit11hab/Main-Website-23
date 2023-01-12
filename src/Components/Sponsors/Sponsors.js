@@ -6,7 +6,7 @@ import SponserLogo from './images/AalooLogo.png'
 function Sponsors() {
       return (
             <div>
-                  <Nav pic={ SponserLogo} />
+                  <Nav />
                   <div className="container" >
                         <div className="rect" >
                               <div className="bg" >

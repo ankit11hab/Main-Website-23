@@ -1,7 +1,7 @@
-// import pic from "./Images/logo.png";
+import pic from "./Images/Logo.svg";
 import './logo.css'
 
-const Logo = ({pic}) => {
+const Logo = () => {
     return ( <img src={pic} className="Logo_img"></img> );
 }
 

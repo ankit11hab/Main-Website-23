@@ -11,7 +11,7 @@ import { NavLink, Link } from "react-router-dom";
 function Events1() {
   return (
     <div>
-      <Nav pic={EventsLogo} />
+      <Nav />
       <NavMob />
       <div className="main_event">
         <div className="content_event">

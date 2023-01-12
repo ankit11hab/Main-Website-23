@@ -15,7 +15,7 @@ function Nav({pic}) {
         <>
     <div className='main'>
         <header className='navHeader gradient'>
-            <div><Link to="/"><Logo pic={pic}/></Link></div>
+            <div><Link to="/"><Logo/></Link></div>
             <nav className='NavigationBar'>
                 <ul className='NavigationList'>
                     <li className="Events"><NavLink to="/Events"><b>EVENTS</b></NavLink></li>
@@ -34,7 +34,7 @@ function Nav({pic}) {
         </div>
             <div className='mobile'>
             <div className='navmob'>
-                <div><Link to="/"><Logo pic={pic}/></Link></div> 
+                <div><Link to="/"><Logo/></Link></div> 
                 <div onClick={handleClick}><Hamburger /></div>
             </div>
                 {active ? <div>
