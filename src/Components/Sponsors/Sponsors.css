@@ -10,8 +10,7 @@
   padding: 0px;
 }
 
-/* .container {
-} */
+
 
 .rect {
   width: 100vw;
@@ -51,7 +50,6 @@
   -webkit-text-stroke-width: 1.87px;
 }
 
-
 .layout {
   display: flex;
   flex-direction: column;
@@ -65,7 +63,6 @@
   /* left: 213px;
   top: 336px; */
 }
-
 
 .box1 {
   display: flex;
@@ -132,8 +129,8 @@
 }
 
 .ibox {
-  width: 27vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   /* top: 8px; */
 
   background: #D9D9D9;
@@ -230,7 +227,7 @@
 
 .cocard {
   width: 20vw;
-  height: 30vw;
+  height: 20vw;
 
   background: #D9D9D9;
   background-image: url(./images/sponsor.png);
