@@ -24,7 +24,8 @@
     display: flex;
     height: auto;
     width: 100vw;
-    
+    /* transform: translate3d(0px, 2768px, 0px); */
+height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
