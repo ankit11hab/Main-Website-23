@@ -36,6 +36,19 @@
     left: 55vw;
     top: 10vw;
 }
+.alcherlady:hover{
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
 .download{
     position: absolute;
     width: 40vw;

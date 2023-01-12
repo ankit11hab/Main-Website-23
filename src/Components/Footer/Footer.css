@@ -66,13 +66,40 @@
   top: -6vw;
   left: 12vw;
 }
+.red:hover{
+  -webkit-animation: mover 0.5s infinite  alternate;
+  animation: mover 0.5s infinite  alternate;
+  
 
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
 .violet {
   width: 10vw;
   height: 13vw;
   position: relative;
   top: 6vw;
   left: -6vw;
+}
+.violet:hover{
+  -webkit-animation: moverv 0.5s infinite  alternate;
+  animation: moverv 0.5s infinite  alternate;
+  
+
+}
+@-webkit-keyframes moverv {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes moverv {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
 }
 
 .green {
@@ -82,13 +109,40 @@
   top: 10vw;
   left: -8vw;
 }
+.green:hover{
+  -webkit-animation: moverg 0.5s infinite  alternate;
+  animation: moverg 0.5s infinite  alternate;
+  
 
+}
+@-webkit-keyframes moverg {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes moverg {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
 .yellow {
   width: 10vw;
   height: 15vw;
   position: relative;
   left: 6vw;
   top: -6vw;
+}
+.yellow:hover{
+  -webkit-animation: movery 0.5s infinite  alternate;
+  animation: movery 0.5s infinite  alternate;
+  
+
+}
+@-webkit-keyframes movery {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes movery {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
 }
 
 .stones {
