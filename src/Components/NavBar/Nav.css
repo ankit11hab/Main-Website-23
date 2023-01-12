@@ -135,7 +135,8 @@ img{
     transition: all 0.5s ease-in-out;
 }
 .gradient{
-    background-image: linear-gradient(180deg,#FFFBF5, transparent);
+    /* background-image: linear-gradient(180deg,#FFFBF5, transparent); */
+   background-image: url(./Images/background.png);
 }
 .mobile{
     display: none;
