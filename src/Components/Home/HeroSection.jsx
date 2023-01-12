@@ -64,7 +64,7 @@ const frameArr = [
   frame27,
   frame28,
   frame29,
-  
+
 ];
 
 gsap.registerPlugin(ScrollTrigger);
@@ -78,7 +78,7 @@ function HeroSection() {
     // Set display size (vw/vh).
   var sizeWidth = 100 * window.innerWidth / 100,
   sizeHeight = 100 * window.innerHeight / 100 ;
-   //Setting the canvas site and width to be responsive 
+   //Setting the canvas site and width to be responsive
    canvas.width = sizeWidth;
    canvas.height = sizeHeight;
    canvas.style.width = sizeWidth;
@@ -119,13 +119,13 @@ function HeroSection() {
         trigger: ".book-container1",
         start: "top top",
         end: "bottom center",
-        scrub: 1,
-        // markers: true,
+        scrub: 0.5,
+        markers: true,
       },
-      
+
 
       onUpdate: render,
-      
+
       // use animation onUpdate instead of scrollTrigger's onUpdate
       // onComplete:(e)=>{
       //     // document.getElementById('canvas_section').setAttribute('display','none');
@@ -177,52 +177,86 @@ function HeroSection() {
             position:'fixed',
             top:0,
             left:0,
+
         },
     });
+
     tl.to('.hero_container',{
             scrollTrigger:{
             trigger:'.hero_container',
-            start:'100% 4%',
+            start:'110% center',
             end:'bottom bottom',
             toggleActions: 'play none none reverse',
-            scrub:7,
+            scrub:true,
             id:'lastFrame',
-            markers:true,},
+            // markers:true,
+        },
         css:{
             position:'static',
         }
     });
-    tl.to('.geet',{
-      // scrollTrigger:{
-      //   pin:'true',
-      //   pinType:'fixed',
-      //   start:"top top"
-      // },
-      css:{
-        opacity:'1',
-      }
-    });
-    tl.to('.hero_container',{
-      css:{
-          position:'fixed',
-          top:0,
-          left:0,
-      },
-  });
-//     tl.to('.blank_div',{
-//         scrollTrigger:{
-//         trigger:'.hero_container',
-//         start:'110% center',
-//         end:'bottom bottom',
-//         toggleActions: 'play none none reverse',
-//         scrub:true,
-//         id:'lastframe',
-//         markers:true,},
-//     css:{
-//         opacity:0,
-//     }
-// });
+    tl.to('.blank_div',{
+        scrollTrigger:{
+        trigger:'.hero_container',
+        start:'110% center',
+        end:'bottom bottom',
+        toggleActions: 'play none none reverse',
+        scrub:true,
+        id:'lastframe',
+        // markers:true,
+    },
+    css:{
+        position:'absolute',
+        opacity:0,
+    }
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% center',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geet',
+    // markers:true,
+},
+css:{
+   position:'fixed',
+   top:0,
+   left:0,
+}
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'static',
 
+}
+});
+tl.to('.blank_div3',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom bottom',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'absolute',
+   opacity:0,
+
+}
+});
     // const lastframe=gsap.to('.hero_container',{
     //     scrollTrigger:{
     //         trigger:'.hero_container',
@@ -232,7 +266,7 @@ function HeroSection() {
     //         scrub:true,
     //         id:'lastframe',
     //         markers:true,
-            
+
     //     },
     //     css:{
     //         // opacity:0,
@@ -249,15 +283,15 @@ function HeroSection() {
     //         scrub:true,
     //         id:'panorama',
     //         markers:true,
-            
-            
+
+
     //     },
     //     css:{
     //         // opacity:0,
     //         position:'fixed',
     //         top:0,
     //         left:0,
-            
+
     //         // translateY:0,
     //     },
     // });
@@ -271,13 +305,13 @@ function HeroSection() {
     //         scrub:true,
     //         id:'panorama2',
     //         markers:true,
-            
-            
+
+
     //     },
     //     css:{
     //         // opacity:0,
     //         position:'static',
-            
+
     //     },
     // });
 
@@ -298,14 +332,23 @@ function HeroSection() {
     //   context.drawImage(images[book_cover.frame], 0, 0);
     context.drawImage(images[book_cover.frame], 0,0, 1920, 1080, 0,0,1920*factor1, 1080*factor2);
     }
-  
+
   });
   return (
     <div className="hero_animation_div">
-        <div className="AlcherLogo">
+        <div className="AlcherLogo" >
+            <span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
+        		<span class="t_over"></span>
             <img className="logo_img" src={AlcherLogo} alt="" />
         </div>
-        <div className="blank_div2"> 
+        <div className="blank_div2">
 
         </div>
       <div id="hero_container" className="hero_container">
@@ -313,9 +356,10 @@ function HeroSection() {
           <canvas id="canvas1" />
         </section>
       </div>
-      <div className="blank_div"> 
+      <div className="blank_div">
 
        </div>
+
     </div>
   );
 }

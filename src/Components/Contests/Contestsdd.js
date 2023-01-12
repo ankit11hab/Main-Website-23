@@ -17,10 +17,15 @@ function Events() {
   return (
     <>
       <div className="controller">
+
       <div className="navbar">
         <Nav  />
         
         </div><NavMobContest />
+
+      
+        <NavMobContest />
+
         <div className="contest_main">
         <div className="sidebar1">
             <div className="head">MODULES</div>
