@@ -2,10 +2,11 @@ import React from "react";
 import Footer from '../Footer/Footer'
 import Nav from '../NavBar/Nav'
 import "./Sponsors.css";
+import SponserLogo from './images/AalooLogo.png'
 function Sponsors() {
       return (
             <div>
-                  <Nav />
+                  <Nav pic={ SponserLogo} />
                   <div className="container" >
                         <div className="rect" >
                               <div className="bg" >

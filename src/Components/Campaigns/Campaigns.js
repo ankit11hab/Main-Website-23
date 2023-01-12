@@ -13,13 +13,14 @@ import img8 from './images/camp2.png'
 import img9 from './images/camp3.png'
 import left from './images/left.svg'
 import right from './images/right.svg'
+import CampaignLogo from './images/AalooLogo.svg'
 
 
 function Campaigns() {
     return (
       <div>
           <div className="mainbody">
-            <Nav/>
+            <Nav pic={CampaignLogo}/>
             <Display/>
           </div>
           <Footer/>

@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer'
 import Nav from '../NavBar/Nav'
 import ImgAsset from './Images'
 import './Contests.css'
+import ContestLogo from './Images/ContestLogo.svg'
 import { NavLink, Link } from 'react-router-dom'
 import NavMobContest from '../NavContestMobile/NavContestMob'
 
@@ -10,7 +11,7 @@ function Events() {
   return (
     
     <div className='controller'>
-        <Nav />
+      <Nav pic={ContestLogo} />
         <NavMobContest />
           <div className='Frame14859_Frame14859'>
               {/* <img className='paperboardyellowtexture2' src = {ImgAsset.Frame14859_paperboardyellowtexture3} /> */}
