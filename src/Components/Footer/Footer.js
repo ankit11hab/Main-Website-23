@@ -21,7 +21,7 @@ function Footer() {
       <div>
         <div className="footer_main">
           <div className="options">
-            <ul>
+            <ul type="none">
               <li>
                 <NavLink to="/Events">EVENTS</NavLink>
               </li>
@@ -52,12 +52,13 @@ function Footer() {
             <div className="details">
               <div className="contact">
                 <div className="shareka">
-                  <b>Siddant Singh</b> <br></br>
+                  <b>Siddant Singh</b> 
                   PR HEAD<br></br>
                   +91 9310859978
                 </div>
+                <br/>
                 <div className="abhi">
-                  <b>Danda Akshara</b> <br></br>
+                  <b>Danda Akshara</b> 
                   PR HEAD<br></br>
                   +91 9908991939
                 </div>

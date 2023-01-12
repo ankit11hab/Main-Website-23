@@ -1,299 +1,356 @@
-// import "./App.css";
-import { gsap } from "gsap";
-import { useEffect, useRef } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import './HeroSection.scss';
-import img0 from "./images/Timeline 1_0000.png";
-import img1 from "./images/Timeline 1_0001.png";
-import img2 from "./images/Timeline 1_0002.png";
-import img3 from "./images/Timeline 1_0003.png";
-import img4 from "./images/Timeline 1_0004.png";
-import img5 from "./images/Timeline 1_0005.png";
-import img6 from "./images/Timeline 1_0006.png";
-import img7 from "./images/Timeline 1_0007.png";
-import img8 from "./images/Timeline 1_0008.png";
-import img9 from "./images/Timeline 1_0009.png";
-import img10 from "./images/Timeline 1_0010.png";
-import img11 from "./images/Timeline 1_0011.png";
-import img12 from "./images/Timeline 1_0012.png";
-import img13 from "./images/Timeline 1_0013.png";
-import img14 from "./images/Timeline 1_0014.png";
-import img15 from "./images/Timeline 1_0015.png";
-import img16 from "./images/Timeline 1_0016.png";
-import img17 from "./images/Timeline 1_0017.png";
-import img18 from "./images/Timeline 1_0018.png";
-import img19 from "./images/Timeline 1_0019.png";
-import img20 from "./images/Timeline 1_0020.png";
-import img21 from "./images/Timeline 1_0021.png";
-import img22 from "./images/Timeline 1_0022.png";
-import img23 from "./images/Timeline 1_0023.png";
-import img24 from "./images/Timeline 1_0024.png";
-import img25 from "./images/Timeline 1_0025.png";
-import img26 from "./images/Timeline 1_0026.png";
-import img27 from "./images/Timeline 1_0027.png";
-import img28 from "./images/Timeline 1_0028.png";
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
-// import AlcherLogo from './images/alcher_2023_logo.png'
-// import footerStarsBg from './stars.webp';
-const EVENTS_HEAD = [img0,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19,img20,img21,img22,img23,img24,img25,img26,img27,img28];
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./HeroSection.scss";
 
+import frame1 from "./images/Timeline 1_0000 - Copy.png";
+import frame2 from "./images/Timeline 1_0001 - Copy.png";
+import frame3 from "./images/Timeline 1_0002 - Copy.png";
+import frame4 from "./images/Timeline 1_0003 - Copy.png";
+import frame5 from "./images/Timeline 1_0004 - Copy.png";
+import frame6 from "./images/Timeline 1_0005 - Copy.png";
+import frame7 from "./images/Timeline 1_0006 - Copy.png";
+import frame8 from "./images/Timeline 1_0007 - Copy.png";
+import frame9 from "./images/Timeline 1_0008 - Copy.png";
+import frame10 from "./images/Timeline 1_0009 - Copy.png";
+import frame11 from "./images/Timeline 1_0010 - Copy.png";
+import frame12 from "./images/Timeline 1_0011 - Copy.png";
+import frame13 from "./images/Timeline 1_0012 - Copy.png";
+import frame14 from "./images/Timeline 1_0013 - Copy.png";
+import frame15 from "./images/Timeline 1_0014 - Copy.png";
+import frame16 from "./images/Timeline 1_0015 - Copy.png";
+import frame17 from "./images/Timeline 1_0016 - Copy.png";
+import frame18 from "./images/Timeline 1_0017 - Copy.png";
+import frame19 from "./images/Timeline 1_0018 - Copy.png";
+import frame20 from "./images/Timeline 1_0019 - Copy.png";
+import frame21 from "./images/Timeline 1_0020 - Copy.png";
+import frame22 from "./images/Timeline 1_0021 - Copy.png";
+import frame23 from "./images/Timeline 1_0022 - Copy.png";
+import frame24 from "./images/Timeline 1_0023 - Copy.png";
+import frame25 from "./images/Timeline 1_0024 - Copy.png";
+import frame26 from "./images/Timeline 1_0025 - Copy.png";
+import frame27 from "./images/Timeline 1_0026 - Copy.png";
+import frame28 from "./images/Timeline 1_0027 - Copy.png";
+import frame29 from "./images/Timeline 1_0028 - Copy.png";
+// import frame30 from "./images/HD_transparent_picture.png"
+import AlcherLogo from "./images/alcher_2023_logo.png"
+const frameArr = [
+  frame1,
+  frame2,
+  frame3,
+  frame4,
+  frame5,
+  frame6,
+  frame7,
+  frame8,
+  frame9,
+  frame10,
+  frame11,
+  frame12,
+  frame13,
+  frame14,
+  frame15,
+  frame16,
+  frame17,
+  frame18,
+  frame19,
+  frame20,
+  frame21,
+  frame22,
+  frame23,
+  frame24,
+  frame25,
+  frame26,
+  frame27,
+  frame28,
+  frame29,
+  
+];
 
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
-  const imgsEventRef = useRef([]);
-  const eventsHeadRef = useRef([]);
+  console.clear();
   useEffect(() => {
-    if (!window.matchMedia('(max-width: 800px)').matches) {
-        gsap.delayedCall(0.1, () => {
-            // gsap.to('.events-container', {
-            //     scrollTrigger: {
-            //         trigger: '#event-trigger-3',
-            //         start: 'bottom top',
-            //         markers: true,
-            //         id: 'check',
-            //         end: '+=100%',
-            //     },
-            //     css: {
-            //         opacity: 0,
-            //     },
-            // });
-            
+    const canvas = document.getElementById("canvas1");
+    const context = canvas.getContext("2d");
 
 
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '.events-container',
-                    start: '2% top',
-                    end: 'bottom bottom',
-                    toggleActions: 'play none none reverse',
-                    // markers: true,
-                    id: 'events-container',
-                },
-            });
-            tl.to('.v2n-wrapper-main', {
-                css: {
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                },
-            });
+    // Set display size (vw/vh).
+  var sizeWidth = 100 * window.innerWidth / 100,
+  sizeHeight = 100 * window.innerHeight / 100 ;
+   //Setting the canvas site and width to be responsive 
+   canvas.width = sizeWidth;
+   canvas.height = sizeHeight;
+   canvas.style.width = sizeWidth;
+   canvas.style.height = sizeHeight;
+   const factor1=sizeWidth/1920;
+   const factor2=sizeHeight/1080;
+//    var ratio  = Math.min ( factor1, factor2 );
 
+//    context.scale(1/factor1,1/factor2);
+    // canvas.width = 1920;
+    // canvas.height = 1080;
 
-            
+    const frameCount = 29;
+    const currentFrame = (index) => frameArr[index];
 
-            // const ntl = gsap.timeline({
-            //     scrollTrigger: {
-            //         trigger: '#events-container',
-            //         start: 'bottom bottom',
-            //         end: 'bottom bottom',
-            //         toggleActions: 'play none none reverse',
-            //         // markers: true,
-            //         id: 'events-container',
-            //     },
-            // });
-            // ntl.to('.v2n-wrapper-main', {
-            //     autoAlpha: 0,
-            //     y: '-=20%',
-            //     duration: 0.2,
-            //     zIndex: '-1',
-            // });
-            // ntl.fromTo(
-            //     '.icons-container',
-            //     {
-            //         y: 200,
-            //         duration: 0.3,
-            //     },
-            //     {
-            //         y: 0,
-            //     },
-            //     '<',
-            // );
+    const images = [];
+    const book_cover = {
+      frame: 0,
+    };
 
-
-            const tl3 = gsap.timeline({
-                scrollTrigger: {
-                    trigger: '#events-container',
-                    toggleActions: 'play none none reverse',
-                    start: 'top bottom',
-                    // end: '+=100%',
-                    end:'top 25%',
-                    // markers:true,
-                    id:'hgbdfhbvhdf'
-                },
-            });
-          
-         
-            tl3.to(
-                imgsEventRef.current[0],
-                {
-                    opacity: 1,
-                    duration: 0.2,
-                    y:100, 
-                },
-              
-                '<',
-            );
-          
-
-            for (let i = 0; i < EVENTS_HEAD.length ; i++) {
-                const timeline = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: `#event-trigger-${i}`,
-                        start: '-50% 100%',
-                        // markers:true,
-                        toggleActions: 'play none none reverse',
-                        // end: '+=100%',
-                        end: 'top bottom',
-                        scrub:0.2,
-                        id:'event trigger'
-                        
-                    },
-                });
-             
-
-
-                // timeline.to(eventsHeadRef.current[i], {
-                //     onStart: () => {
-                //         disableScrolling();
-                //     },
-                //     onReverseComplete: () => enableScrolling(),
-                //     opacity: 0,
-                //     duration: 0.5,
-                // });
-               
-                timeline.to(imgsEventRef.current[i], {
-                    opacity: 0,
-                    duration: 0.1,
-                });
-                timeline.to(
-                    imgsEventRef.current[i+1],
-                    {
-                        opacity: 1,
-                        duration:0.1,
-                    },
-                    '<',
-                );
-            }
-        });
-    } else {
-        gsap.delayedCall(0, () => {
-            for (let i = 0; i < EVENTS_HEAD.length; i++) {
-                const tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: `#v2n-wrapper-main-${i}`,
-                        start: 'top 80%',
-                        end: 'bottom top',
-                        toggleActions: 'play none none reverse',
-                        id: `#v2n-wrapper-main-${i}`,
-                    },
-                });
-                // tl.to(`#v2n-wrapper-main-${i} .v2n-wrapper-left`, {
-                //     opacity: 1,
-                //     duration: 1.2,
-                // });
-                tl.to(
-                    `#v2n-wrapper-main-${i} .v2n-wrapper-right`,
-                    {
-                        opacity: 1,
-                        duration: 1.2,
-                    },
-                    '<',
-                );
-            }
-        });
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+      images.push(img);
     }
-}, []);
+    // const video = document.createElement('video');
+    // video.src=currentFrame(200);
+    // video.controls=true;
+    // images.push(video)
+    // console.log(images);
 
+    const animation = gsap.to(book_cover, {
+      frame: frameCount - 1,
 
-
-
-
-
-
-
-
-  return (
-    
-      <div id="events-container">
-        <div className='alcher_logo' >
-          {/* <img src={AlcherLogo} alt="" /> */}
-        </div>
-      <div
-            className="v2n-container-main"
-            // style={{  backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
-        >
-            {EVENTS_HEAD.map((e, i) => {
-                return (
-                    <div className="v2n-wrapper-main" key={i} id={`v2n-wrapper-main-${i}`}>
-                        {/* <div className="v2n-wrapper-left">
-                            <div ref={(el) => (imgsLeftRef.current[i] = el)} className="img-l-w">
-                                <LazyLoadImage src={IMGS_LEFT[i]} alt="img-left" className="img-l" />
-                            </div>
-                            <h1 ref={(el) => (eventsHeadRef.current[i] = el)}>{e}</h1>
-                            <p className="font-family-hk" ref={(el) => (eventsDescriptionRef.current[i] = el)}>
-                                {EVENTS_DESRIPTION[i]}
-                            </p>
-                        </div> */}
-                        <div className="v2n-wrapper-right">
-                            {/* <div> */}
-                                {/* <div ref={(el) => (imgsAstroRef.current[i] = el)} className="img-1-w">
-                                    <LazyLoadImage
-                                        src={IMGS_ASTRO[i]}
-                                        alt="img-1"
-                                        className="img-1"
-                                        id={`img-1-astro-${i}`}
-                                    />
-                                </div> */}
-                                <div
-                                    className="img-2-w"
-                                    ref={(el) => (imgsEventRef.current[i] = el)}
-                                    id={`img-2-w-${i}`}
-                                >
-                                    <LazyLoadImage src={EVENTS_HEAD[i]} alt="img-2" className="img-2" />
-                                </div>
-                            {/* </div> */}
-                            {/* <div ref={(el) => (imgsRightRef.current[i] = el)} className="img-3-w" id={`img-3-w-${i}`}>
-                                <LazyLoadImage src={IMGS_RIGHT[i]} alt="img-3" className="img-3" />
-                            </div> */}
-                        </div>
-                    </div>
-                );
-            })}
-        </div>
-        <div className="events-trigger" id="event-trigger-0"></div>
-        <div className="events-trigger" id="event-trigger-1"></div>
-        <div className="events-trigger" id="event-trigger-2"></div>
-        <div className="events-trigger" id="event-trigger-3"></div>
-        <div className="events-trigger" id="event-trigger-4"></div>
-        <div className="events-trigger" id="event-trigger-5"></div>
-        <div className="events-trigger" id="event-trigger-6"></div>
-        <div className="events-trigger" id="event-trigger-7"></div>
-        <div className="events-trigger" id="event-trigger-8"></div>
-        <div className="events-trigger" id="event-trigger-9"></div>
-        <div className="events-trigger" id="event-trigger-10"></div>
-        <div className="events-trigger" id="event-trigger-11"></div>
-        <div className="events-trigger" id="event-trigger-12"></div>
-        <div className="events-trigger" id="event-trigger-13"></div>
-        <div className="events-trigger" id="event-trigger-14"></div>
-        <div className="events-trigger" id="event-trigger-15"></div>
-        <div className="events-trigger" id="event-trigger-16"></div>
-        <div className="events-trigger" id="event-trigger-17"></div>
-        <div className="events-trigger" id="event-trigger-18"></div>
-        <div className="events-trigger" id="event-trigger-19"></div>
-        <div className="events-trigger" id="event-trigger-20"></div>
-        <div className="events-trigger" id="event-trigger-21"></div>
-        <div className="events-trigger" id="event-trigger-22"></div>
-        <div className="events-trigger" id="event-trigger-23"></div>
-        <div className="events-trigger" id="event-trigger-24"></div>
-        <div className="events-trigger" id="event-trigger-25"></div>
-        <div className="events-trigger" id="event-trigger-26"></div>
-        <div className="events-trigger" id="event-trigger-27"></div>
-        <div className="events-trigger" id="event-trigger-28"></div>
-
-
-      </div>
+      snap: "frame",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".book-container1",
+        start: "top top",
+        end: "bottom center",
+        scrub: 0.5,
+        markers: true,
+      },
       
 
+      onUpdate: render,
+      
+      // use animation onUpdate instead of scrollTrigger's onUpdate
+      // onComplete:(e)=>{
+      //     // document.getElementById('canvas_section').setAttribute('display','none');
+      //     // const video = document.createElement('video');
+      //     // video.src=bookcovervideo;
+      //     // video.controls=true;
+      //     // document.getElementById('animation__Container').appendChild(video);
+      //     // video.play();
+      //     // context.drawImage(video,0,0);
+      //     console.log('completed')
+      // },
+    });
+
+    // const logo=gsap.to(".logo_img",{
+    //     scrollTrigger:{
+    //         trigger:'.hero_container',
+    //         start:'top top',
+    //         end:'bottom top',
+
+
+    //         markers:true,
+    //         id:'alcher_logo',
+    //         toggleActions: 'play none none reverse',
+    //     },
+    //     css:{
+    //         opacity:0,
+    //     }
+    // });
+
+    const tl=gsap.timeline({
+        scrollTrigger:{
+            trigger:'.hero_container',
+            start:'top top',
+            end:'bottom center',
+            toggleActions: 'play none none reverse',
+            id:'hero container',
+            // markers:true,
+            scrub:true,
+            // pin:true
+        }
+    });
+    // tl.from('.hero_container',{
+    //     css:{
+    //         top:20,
+    //     },
+    // });
+    tl.to('.hero_container',{
+        css:{
+            position:'fixed',
+            top:0,
+            left:0,
+            
+        },
+    });
+    
+    tl.to('.hero_container',{
+            scrollTrigger:{
+            trigger:'.hero_container',
+            start:'110% center',
+            end:'bottom bottom',
+            toggleActions: 'play none none reverse',
+            scrub:true,
+            id:'lastFrame',
+            // markers:true,
+        },
+        css:{
+            position:'static',
+        }
+    });
+    tl.to('.blank_div',{
+        scrollTrigger:{
+        trigger:'.hero_container',
+        start:'110% center',
+        end:'bottom bottom',
+        toggleActions: 'play none none reverse',
+        scrub:true,
+        id:'lastframe',
+        // markers:true,
+    },
+    css:{
+        position:'absolute',
+        opacity:0,
+    }
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% center',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geet',
+    // markers:true,
+},
+css:{
+   position:'fixed',
+   top:0,
+   left:0,
+}
+});
+tl.to('.geet',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom top',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'static',
+ 
+}
+});
+tl.to('.blank_div3',{
+    scrollTrigger:{
+    trigger:'.hero_container',
+    start:'110% 15%',
+    end:'bottom bottom',
+    toggleActions: 'play none none reverse',
+    scrub:true,
+    id:'geetee2',
+    // markers:true,
+},
+css:{
+   position:'absolute',
+   opacity:0,
+ 
+}
+});
+    // const lastframe=gsap.to('.hero_container',{
+    //     scrollTrigger:{
+    //         trigger:'.hero_container',
+    //         start:'110% center',
+    //         end:'bottom bottom',
+    //         toggleActions: 'play none none reverse',
+    //         scrub:true,
+    //         id:'lastframe',
+    //         markers:true,
+            
+    //     },
+    //     css:{
+    //         // opacity:0,
+    //         position:'static',
+    //     }
+    // });
+
+    // const panorama=gsap.to('.geet',{
+    //     scrollTrigger:{
+    //         trigger:'.hero_container',
+    //         start:'110% center',
+    //         end:'120% center',
+    //         toggleActions: 'play none none reverse',
+    //         scrub:true,
+    //         id:'panorama',
+    //         markers:true,
+            
+            
+    //     },
+    //     css:{
+    //         // opacity:0,
+    //         position:'fixed',
+    //         top:0,
+    //         left:0,
+            
+    //         // translateY:0,
+    //     },
+    // });
+
+    // const panorama2=gsap.to('.geet',{
+    //     scrollTrigger:{
+    //         trigger:'.hero_container',
+    //         start:'120% center',
+    //         end:'bottom bottom',
+    //         toggleActions: 'play none none reverse',
+    //         scrub:true,
+    //         id:'panorama2',
+    //         markers:true,
+            
+            
+    //     },
+    //     css:{
+    //         // opacity:0,
+    //         position:'static',
+            
+    //     },
+    // });
+
+
+    // tl.to('.hero_container',{
+    //     css:{
+    //         position:'absolute',
+    //         // top:0,
+    //         // left:0,
+    //     },
+    // });
+
+    images[0].onload = render;
+
+    function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      console.log(book_cover.frame);
+    //   context.drawImage(images[book_cover.frame], 0, 0);
+    context.drawImage(images[book_cover.frame], 0,0, 1920, 1080, 0,0,1920*factor1, 1080*factor2);
+    }
+  
+  });
+  return (
+    <div className="hero_animation_div">
+        <div className="AlcherLogo">
+            <img className="logo_img" src={AlcherLogo} alt="" />
+        </div>
+        <div className="blank_div2"> 
+
+        </div>
+      <div id="hero_container" className="hero_container">
+        <section id="canvas_section1" className="book-container1">
+          <canvas id="canvas1" />
+        </section>
+      </div>
+      <div className="blank_div"> 
+
+       </div>
+    </div>
   );
 }
 
