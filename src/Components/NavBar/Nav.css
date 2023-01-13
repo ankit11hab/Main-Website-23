@@ -85,7 +85,7 @@ nav{
     grid-column: 3/4;
 }
 .NavigationBar{
-    margin-top: 0.25vw;
+    /* margin-top: 0.25vw; */
 }
 .NavigationBar ul{
     /* height: 7vw; */

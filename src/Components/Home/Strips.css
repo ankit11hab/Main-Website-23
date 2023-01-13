@@ -209,10 +209,10 @@ top: -0.2vw;
     left: 69vw;
     top: -0.2vw;
 }
-
-
-
-
+.marquee{
+    overflow: hidden;
+    height: 5vw!important;
+}
 @media  screen and (max-width:768px) {
     .stripContainer{
         display: none;

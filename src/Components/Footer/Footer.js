@@ -52,14 +52,14 @@ function Footer() {
             <div className="details">
               <div className="contact">
                 <div className="shareka">
-                  <b>Siddant Singh</b> 
-                  PR HEAD<br></br>
+                  <b>Siddant Singh</b>
+                  PR Head<br></br>
                   +91 9310859978
                 </div>
-                <br/>
+                <br />
                 <div className="abhi">
-                  <b>Danda Akshara</b> 
-                  PR HEAD<br></br>
+                  <b>Danda Akshara</b>
+                  PR Head<br></br>
                   +91 9908991939
                 </div>
               </div>
@@ -120,7 +120,8 @@ function Footer() {
               </a>
             </div>
             <div className="inqueries">
-              For Business Enqueries: <b>alcheringa@iitg.ac.in</b>
+              For Business Enqueries:{" "}
+              <span style={{ fontWeight: 900 }}>alcheringa@iitg.ac.in</span>
             </div>
           </div>
         </div>

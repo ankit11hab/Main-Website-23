@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
       <div className="navbar" >
-      <Nav/>
+      <Nav icon/>
       </div>
       
         <NavMob />

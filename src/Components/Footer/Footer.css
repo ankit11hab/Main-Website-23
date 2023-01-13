@@ -32,7 +32,7 @@
         height: 14vw; */
   /* left: calc(50% - 17vw/2 - 1vw);
         top: calc(50% - 12vw/2 - 1vw); */
-  font-family: "Aka-AcidGR-Compacta";
+  font-family: "Star Guard Italic";;
   font-style: normal;
   font-weight: 400;
   font-size: 6vw;
@@ -180,6 +180,7 @@
 }
 
 .footer_desk a {
+  font-weight:900;
   color: white;
   text-decoration: none;
 }
@@ -234,8 +235,7 @@
 }
 
 .socials_desk a {
-  margin-right: 2vw;
-  padding: 4px;
+  padding: 0px 0px 0px 10px;
   width: 30px;
   height: 30px;
 }
@@ -313,6 +313,7 @@
     line-height: 24px;
     color: #ffffff;
   }
+
   /* .contact{
         margin: 6vw 4vw 1vw 1vw;
     } */
