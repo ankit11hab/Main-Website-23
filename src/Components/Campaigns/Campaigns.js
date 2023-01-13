@@ -23,7 +23,10 @@ function Campaigns() {
             <Nav />
             <Display/>
           </div>
+          <div className="footer">
           <Footer/>
+          </div>
+          
       </div>
         );
     }
@@ -32,14 +35,125 @@ class Cards extends React.Component {
       render() {
         return (
           <section className="verical" >
+              {
+              <div className="card" id="card" style={this.props.cardStyle}>
+                  <div className="cambox3i1"></div>
+                  <div className="cambox2i1"><div className="text1">Aikyam</div></div>
+                  <div className="cambox1i1"></div>
+                  <div className='desc'>
+                  <div className="camtext2i">Campus residents get app-exclusive E-Pass access for offline events! Download the Alcheringa app today and explore our impressive event line-up and merchandise as we begin our Voyage to Neoterra.</div>
+                  </div>
+                  <div className='slideri'>
+                    <div className="slide-track">
+                        <hr  />
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                  </div>
+                }
+                  {
+              <div className="card" id="card" style={this.props.cardStyle}>
+                  <div className="cambox3i2"></div>
+                  <div className="cambox2i2"><div className="text2">safher</div></div>
+                  <div className="cambox1i2"></div>
+                  <div className='desc'>
+                  <div className="camtext2i">Campus residents get app-exclusive E-Pass access for offline events! Download the Alcheringa app today and explore our impressive event line-up and merchandise as we begin our Voyage to Neoterra.</div>
+                  </div>
+                  <div className='slideri'>
+                    <div className="slide-track">
+                        <hr  />
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                  </div>
+                }
+                   {
+              <div className="card" id="card" style={this.props.cardStyle}>
+                  <div className="cambox3i3"></div>
+                  <div className="cambox2i3"><div className="text3">Manshakti</div></div>
+                  <div className="cambox1i3"></div>
+                  <div className='desc'>
+                  <div className="camtext2i">Campus residents get app-exclusive E-Pass access for offline events! Download the Alcheringa app today and explore our impressive event line-up and merchandise as we begin our Voyage to Neoterra.</div>
+                  </div>
+                  <div className='slideri'>
+                    <div className="slide-track">
+                        <hr  />
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                  </div>
+                }
             {    <div className="card" id="card" style={this.props.cardStyle}>
-                  <div className="cambox3i"></div>
-                  <div className="cambox2i">
+                  <div className="cambox3i4"></div>
+                  <div className="cambox2i4">
                   
-                <div className="text1">north east unvield</div>
+                <div className="text4">north east unvield</div>
                   
                     </div>
-                  <div className="cambox1i"></div>
+                  <div className="cambox1i4"></div>
                   <div className='desc'>
                   <div className="camtext2i">North East India is a microcosm of India with its own diversity in terms of languages, culture, arts and religion. There is a need to promote and unveil the true potential of this part of country, which is still unexplored by many. In Alcheringa’16: Gamescape, The North East Social Entrepreneurship Summit and The North East Townhall Discussions were held under North East Unveiled.</div>
                   </div>
@@ -78,11 +192,51 @@ class Cards extends React.Component {
                 </div>
                 {/* </div> */}
                 </div>}
-           {
+         
+                 
+                
+                   {
               <div className="card" id="card" style={this.props.cardStyle}>
-                  <div className="cambox3i"></div>
-                  <div className="cambox2i"><div className="text1">safher</div></div>
-                  <div className="cambox1i"></div>
+                  <div className="cambox3i5"></div>
+                  <div className="cambox2i5"><div className="text5">prithvi</div></div>
+                  <div className="cambox1i5"></div>
+                  <div className='desc'>
+                  <div className="camtext2i">Campus residents get app-exclusive E-Pass access for offline events! Download the Alcheringa app today and explore our impressive event line-up and merchandise as we begin our Voyage to Neoterra.</div>
+                  </div>
+                  <div className='slideri'>
+                    <div className="slide-track">
+                        <hr  />
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img8} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img9} alt="" />
+                        </div>
+                        <div className="slide">
+                            <img className='imgcam' src={img7} alt="" />
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+                  </div>
+                }
+                   {
+              <div className="card" id="card" style={this.props.cardStyle}>
+                  <div className="cambox3i6"></div>
+                  <div className="cambox2i6"><div className="text6">udaan</div></div>
+                  <div className="cambox1i6"></div>
                   <div className='desc'>
                   <div className="camtext2i">Campus residents get app-exclusive E-Pass access for offline events! Download the Alcheringa app today and explore our impressive event line-up and merchandise as we begin our Voyage to Neoterra.</div>
                   </div>
@@ -144,7 +298,7 @@ class Cards extends React.Component {
     
         const cardWidth = this.state.width; // the card's width
         const cardMargin = margin; // the card's margin
-        const cardNumber = 2; // the number of cards
+        const cardNumber = 6; // the number of cards
         let currentCard = this.state.currentCard; // the index of the current card
         let position = this.state.position; // the position of the cards
         if(type === 'next' && currentCard < cardNumber-1) {
@@ -192,4 +346,4 @@ class Cards extends React.Component {
 				);
        }
      }
-export default Campaigns;                   
+export default Campaigns;                                

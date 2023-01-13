@@ -17,18 +17,13 @@ function Events() {
   return (
     <>
       <div className="controller">
-
-
-      <div className="navbar">
-
-        <Nav />
-        
-        </div><NavMobContest />
-
+        <div className="navbar">
+          <Nav />
+        </div>
         <NavMobContest />
 
         <div className="contest_main">
-        <div className="sidebar1">
+          <div className="sidebar1">
             <div className="head">MODULES</div>
             <ul className="mlist">
               <li className="hey">
@@ -72,39 +67,54 @@ function Events() {
             <div className="contest_content">
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className='contest_button' to="/BookTickets"><Book /></Link>
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
               </div>
             </div>
           </div>
-          
         </div>
         <Footer />
       </div>
