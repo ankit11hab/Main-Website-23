@@ -5,7 +5,10 @@
 .navHeader a {
   text-decoration: none;
 }
-
+.mobileList li{
+  list-style-type: none;
+  margin-bottom: 1vh;
+}
 .NavigationBar .active {
   font-family: "Star Guard Semi-Italic";
   font-style: italic;
