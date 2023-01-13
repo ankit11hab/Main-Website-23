@@ -19,6 +19,7 @@
     width: 100%;
     height: 100vh;
     z-index: 1;
+    opacity: 0;
   }
   .aframe_container{
     display: flex;
@@ -69,7 +70,7 @@ height: 100vh;
 
 .blank_div3{
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
 }
 .pnlm-about-msg{
   display: none !important;
