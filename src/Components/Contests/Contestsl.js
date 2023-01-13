@@ -23,11 +23,9 @@ function Events() {
 
         <Nav  />
         
-        </div><NavMobContest />
-=======
-        <Nav/>
+        </div>
         <NavMobContest />
->>>>>>> 8cdd6e57fb433b15de7f92eacc858bef4926b4cb
+
         <div className="contest_main">
         <div className="sidebar1">
             <div className="head">MODULES</div>
