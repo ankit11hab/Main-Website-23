@@ -348,3 +348,37 @@
     margin-right: 5%;
   }
 }
+
+/* Shop button */
+#btnn1{
+  width: 10.2vw;
+  height: 2.3vw;
+  border-radius: 2vw;
+  box-shadow: px 6px 4px white;
+  background-color: #DAEE75;
+  color: white;
+ 
+}
+
+.book-btnn1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopticket{
+  width: 1.3vw;
+  border: none;
+  box-shadow: none;
+}
+.shoptickets{
+  border: none;
+  box-shadow: none;
+  width: 4.8vw;
+  padding-bottom: 0.4rem;
+
+}
+#btnn1:hover{
+  box-shadow: none;
+  -webkit-transform: translateY(-1px);
+	transform: translateY(1px)
+}

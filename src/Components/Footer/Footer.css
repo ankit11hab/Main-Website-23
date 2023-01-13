@@ -443,6 +443,25 @@
   --Y:10px;
   --deg:10deg;
 } */
+@-o-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}@-ms-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}@-moz-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}
 @-webkit-keyframes movery {
   0% { transform: translate(0px,0px);}
   25% { transform: translate(15px,-15px) rotate(-15deg); }
@@ -458,11 +477,31 @@
   100% { transform: translate(-15px,-15px) rotate(15deg); }
 } 
 
-body:has(.hail:hover) .yellow{
+/* body:has(.hail:hover) */
+ .yellow{
   -webkit-animation: movery 20s infinite alternate;
   animation: movery 20s infinite alternate;
 }
 
+@-o-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}@-ms-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}@-moz-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
 @-webkit-keyframes moverr {
   0% { transform: translate(0px,0px);}
   19% { transform: translate(-15px,-15px) rotate(-15deg); }
@@ -478,11 +517,32 @@ body:has(.hail:hover) .yellow{
   100% { transform: translate(15px,-15px) rotate(15deg); }
 } 
 
-body:has(.hail:hover) .red{
+/* body:has(.hail:hover) */
+ .red{
   -webkit-animation: moverr 20s infinite alternate;
   animation: moverr 20s infinite alternate ;
 }
-
+@-ms-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-moz-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-o-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
 @-webkit-keyframes moverv {
   0% { transform: translate(0px,0px);}
   25% { transform: translate(-15px,15px) rotate(-15deg); }
@@ -498,9 +558,31 @@ body:has(.hail:hover) .red{
   100% { transform: translate(25px,25px) rotate(15deg); }
 } 
 
-body:has(.hail:hover) .violet{
+ /* body:has(.hail:hover) */
+ .violet{
   -webkit-animation: moverv 20s infinite alternate;
   animation: moverv 20s infinite alternate ;
+}
+@-ms-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-o-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-moz-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
 }
 
 @-webkit-keyframes moverg {
@@ -518,7 +600,8 @@ body:has(.hail:hover) .violet{
   100% { transform: translate(-15px,-15px) rotate(15deg); }
 } 
 
-body:has(.hail:hover) .green{
+/* body:has(.hail:hover) */
+ .green{
   -webkit-animation: moverg 20s infinite alternate;
   animation: moverg 20s infinite alternate ;
 }
