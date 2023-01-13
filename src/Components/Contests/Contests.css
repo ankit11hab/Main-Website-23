@@ -365,6 +365,9 @@
 	align-items: flex-start;
 }
 
+.sidebar1 ul  li{
+list-style-type: none;
+}
 .sidebar1 a{
 	text-decoration: none;
 	color: rgba(26,26,26,1.00);

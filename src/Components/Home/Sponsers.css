@@ -43,10 +43,12 @@ html body {
 .marquee1 {
     width: var(--marquee-width);
     height: var(--marquee-height);
-    background-color: rgb(255, 255, 255);
+    
     color: #2F4858;
     overflow: hidden;
     position: relative;
+ 
+    background-size: 100vh 500vw;
 }
 
 .marquee1:before,
