@@ -18,6 +18,8 @@ import PurpleCurve from "./Images/purpleCurve.svg";
 import RedCurve from "./Images/RedCurve.svg";
 import YellowCurve from "./Images/yellowCurve.svg";
 import PinkCurve from "./Images/pinkCurve.svg";
+import shop from './Images/shop.png'
+import shoplogo from './Images/shoplogo.png'
 
 const MerchPart = () => {
   const [bagboop, setbagBoop] = useState(false);
@@ -74,10 +76,16 @@ const MerchPart = () => {
         <div className="rightpart">
           <img src={YellowStrip} alt="" className="yellowstrip" />
           <img src={PinkStrip} alt="" className="pinkstrip" />
-          <button type="button" className="shopNowbtn">
+          {/* <button type="button" className="shopNowbtn">
             <img src={ShopNowIcon} alt="" className="btnicon" />
             SHOP&nbsp;NOW
-          </button>
+          </button> */}
+           <button id='btnn1' type="button" className="shopNowbtn" >
+            <div className="book-btnn1">
+                <img src={ shoplogo } className='shopticket' alt="" />
+                <img src={ shop } className='shoptickets' alt="" />
+            </div>
+        </button>
           <img src={PurpleCurve} alt="" className="purplecurve" />
           <img src={YellowCurve} alt="" className="yellowcurve" />
           <animated.img

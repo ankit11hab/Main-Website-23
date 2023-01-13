@@ -5,6 +5,7 @@ import './Nav.css'
 import Book from './Book'
 import Logo from "./Logo"
 import Hamburger from './Hamburger'
+import Button from './Button'
 
 function Nav({pic}) {
     const [active, setActive] = useState(false)
@@ -29,7 +30,7 @@ function Nav({pic}) {
                     <li className="Contests"><NavLink to="/Contests"><b>CONTESTS</b></NavLink></li>
                 </ul>
             </nav>
-            <Link className='image' to="/BookTickets"><Book /></Link>
+            <Link className='image' to="/BookTickets"><Button /></Link>
         </header>
         </div>
             <div className='mobile'>
