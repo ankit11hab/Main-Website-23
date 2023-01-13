@@ -37,7 +37,7 @@ html body {
     --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
 
-.marquee {
+.marquee1 {
     width: var(--marquee-width);
     height: var(--marquee-height);
     background-color: rgb(255, 255, 255);
@@ -46,8 +46,8 @@ html body {
     position: relative;
 }
 
-.marquee:before,
-.marquee:after {
+.marquee1:before,
+.marquee1:after {
     position: absolute;
     top: 0;
     width: 10rem;
@@ -56,11 +56,11 @@ html body {
     z-index: 1;
 }
 
-.marquee:before {
+.marquee1:before {
     left: 0;
 }
 
-.marquee:after {
+.marquee1:after {
     right: 0;
 }
 

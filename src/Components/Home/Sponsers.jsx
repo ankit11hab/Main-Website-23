@@ -24,7 +24,7 @@ function Sponsers() {
                 Our Sponsers
             </h1>
             <div className="marquee-body">
-                <div className="marquee">
+                <div className="marquee1">
                     <ul className="marquee-content">
                         <li><img src={img} alt="pr-sample23" style={{ 'width': '150px' }} /></li>
                         <li><img src={img} alt="pr-sample23" style={{ 'width': '150px' }} /></li>
@@ -37,7 +37,7 @@ function Sponsers() {
                 </div>
             </div>
             <div className="marquee-body">
-                <div className="marquee">
+                <div className="marquee1">
                     <ul className="marquee-content2">
                         <li><img src={img} alt="pr-sample23" style={{ 'width': '150px' }} /></li>
                         <li><img src={img} alt="pr-sample23" style={{ 'width': '150px' }} /></li>
