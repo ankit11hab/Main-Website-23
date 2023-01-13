@@ -1,209 +1,191 @@
-.navHeader{
-    margin-top: 0;
-
-   
+.navHeader {
+  margin-top: 0;
 }
 
+.navHeader a {
+  text-decoration: none;
+}
+.mobileList li{
+  list-style-type: none;
+  margin-bottom: 1vh;
+}
+.NavigationBar .active {
+  font-family: "Star Guard Semi-Italic";
+  font-style: italic;
+  font-weight: 400;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.3vw;
 
-.navHeader a{
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-image: url(./Images/Back.png);
+  background-position: center;
+  background-size: 10vh 10vh;
+  height: 14vh;
+
+  background-repeat: no-repeat;
+
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
-.NavigationBar .active{
-    font-family: 'Star Guard Semi-Italic';
-    font-style: italic;
-    font-weight: 400;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    font-size: 1.3vw;
+header {
+  width: 100%;
+  /* height: 7vw; */
+  background-color: #fffbf5;
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
 
-    display: flex;
-    align-items: center;
-    background-image: url(./Images/Back.png);
-background-position: center;
-background-size: 10vh 10vh;
-    height: 14vh;
+  color: #000000;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1vw;
+  /* identical to box height */
 
-    background-repeat: no-repeat;
-
-
-    text-align: center;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
 }
+.navHeader div {
+  display: grid;
+  /* height: 7vw; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+nav {
+  /* height: 7vw; */
+  grid-column: 3/4;
+}
+.NavigationBar {
+  /* margin-top: 0.25vw; */
+}
+.NavigationBar ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5vw;
+  height: 13vh;
 
-header{
-    width: 100%;
-    /* height: 7vw; */
-    background-color: #FFFBF5;
-    background-blend-mode: multiply;
-    display: grid;
-    grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
-
-    color: #000000;
-    font-family: 'Aileron';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1vw;
-    /* identical to box height */
-
-    text-align: center;
-    text-transform: uppercase;
-}
-.navHeader div{
-    display: grid;
-    /* height: 7vw; */
-    grid-column: 2/3;
-    justify-content: start;
-    align-items: center;
-}
-nav{
-    /* height: 7vw; */
-    grid-column: 3/4;
-}
-.NavigationBar{
-    /* margin-top: 0.25vw; */
-}
-.NavigationBar ul{
-    
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.5vw;
-    height: 13vh;
-    
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .NavigationBar ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.NavigationBar a{
-    text-decoration: none;
-    color: black;
-    padding-top: auto;
-    padding: 0vh 1.5vw ;
+.NavigationBar a {
+  text-decoration: none;
+  color: black;
+  padding-top: auto;
+  padding: 0vh 1.5vw;
 }
-.NavigationBar li{
-    height: 14vh;
-display: flex;
-align-items: center;
+.NavigationBar li {
+  height: 14vh;
+  display: flex;
+  align-items: center;
 }
-.image{
-    display: grid;
-    grid-column: 4/5;
-    align-items: center;
-    justify-content: center;
+.image {
+  display: grid;
+  grid-column: 4/5;
+  align-items: center;
+  justify-content: center;
 }
 /* img{
     height: 3vw;
     width: 9vw;
 } */
 
+.nonGradient {
+  transition: all 0.5s ease-in-out;
+}
+.gradient {
+  background-image: linear-gradient(180deg, #fffbf5, transparent);
+}
+.mobile {
+  display: none;
+}
+.navmob {
+  display: none;
+}
+.mobileList {
+  margin: 16px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobileList a {
+  font-size: 2vh;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  /* height: 12vh; */
+  /* background-color: aqua; */
+  padding-top: auto;
+}
 
-.nonGradient{
-    transition: all 0.5s ease-in-out;
-}
-.gradient{
-    background-image: linear-gradient(180deg,#FFFBF5, transparent);
-}
-.mobile{
+@media screen and (max-width: 768px) {
+  .main {
     display: none;
-}
-.navmob{
-    display: none;
-}
-.mobileList{
-    margin: 16px 0px 16px 0px;
+  }
+  .mobile {
     display: flex;
     flex-direction: column;
+    padding: 0% 2% 0% 2%;
+  }
+  .navmob {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.mobileList a{
-    font-size: 2vh;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    /* height: 12vh; */
-    /* background-color: aqua; */
-    padding-top: auto;
-}
-
-@media screen and (max-width:760px){
-
-    .main{
-        display: none;
-    }
-    .mobile{
-        display: flex;
-        flex-direction: column;
-        padding: 0% 2% 0% 2%;
-
-    }
-    .navmob{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    
+  }
 }
 
 /* Button */
-#btnn{
-    width: 12vw;
-    height: 3vw;
-    border-radius: 24px;
-    box-shadow: 2px 3px 3px black;
-    background-color: #F35C41;
-    color: white;
-    
-   
-  }
-  .tickett{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bookbtnn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logoticket{
-    width: 1.38vw;
-    padding-left: 1rem;
-    border: none;
-    box-shadow: none;
-    display: flex;
-  }
-  .booktickets{
-    border: none;
-    box-shadow: none;
-    width: 7.6vw;
-    display: flex;
-  
-  }
-  #btnn:hover{
-    box-shadow: none;
-    -webkit-transform: translateY(-1px);
-      transform: translateY(1px)
-  }
-  @media screen and (max-width:1025px) {
-    .NavigationBar .active{
-     
-    
-        
-       
+#btnn {
+  width: 12vw;
+  height: 3vw;
+  border-radius: 24px;
+  box-shadow: 2px 3px 3px black;
+  background-color: #f35c41;
+  color: white;
+}
+.tickett {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookbtnn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoticket {
+  width: 1.38vw;
+  padding-left: 1rem;
+  border: none;
+  box-shadow: none;
+  display: flex;
+}
+.booktickets {
+  border: none;
+  box-shadow: none;
+  width: 7.6vw;
+  display: flex;
+}
+#btnn:hover {
+  box-shadow: none;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(1px);
+}
+@media screen and (max-width: 1025px) {
+  .NavigationBar .active {
     background-size: 7vw 7vw;
-
-   
-    }
   }
+}

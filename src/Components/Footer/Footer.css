@@ -173,7 +173,7 @@
   /* identical to box height */
   margin-top:-1vh ;
 
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -366,7 +366,7 @@
     line-height: 1.86vh;
     /* identical to box height */
 
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
 
     color: #ffffff;

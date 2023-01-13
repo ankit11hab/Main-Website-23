@@ -45,12 +45,9 @@ function Nav({ icon }) {
                   <b>TEAMS</b>
                 </NavLink>
               </li>
-           
+
               <li className="Sponsors">
-                <NavLink
-                  to="/Sponsors"
-                 
-                >
+                <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
                 </NavLink>
               </li>
@@ -61,9 +58,11 @@ function Nav({ icon }) {
               </li>
             </ul>
           </nav>
-          <Link className="image" to="/BookTickets">
-            <Book />
-          </Link>
+          {!icon && (
+            <Link className="image" to="/BookTickets">
+              <Book />
+            </Link>
+          )}
         </header>
       </div>
       <div className="mobile">
@@ -100,11 +99,7 @@ function Nav({ icon }) {
                   <b>TEAMS</b>
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/MUN">
-                  <b>MUN</b>
-                </NavLink>
-              </li>
+           
               <li>
                 <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
