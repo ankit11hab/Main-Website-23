@@ -560,6 +560,281 @@ line-height: 2vw;
 text-align: center;
 color: #000000;
 }
+
+@media (max-width:1500px){
+  .text1
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+-webkit-text-stroke: 1.7px #E16C3F;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+}
+.text2
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+-webkit-text-stroke: 1.7px 
+#E49BDB;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+
+}
+.text3
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+-webkit-text-stroke: 1.7px 
+#E49BDB;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+
+}
+.text4
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+-webkit-text-stroke: 1.7px 
+#EAA1E2;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+
+}
+.text5
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+-webkit-text-stroke: 1.7px 
+#6F8214;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+}
+.text6
+{
+  /* position: relative; */
+font-family: 'My Custom Font';
+font-style: normal;
+font-weight: 400;
+font-size: 5.5vw;
+line-height: 22vh;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+-webkit-text-stroke: 1.7px #E16C3F;
+text-shadow: -.5rem -.4rem 0
+#000, .5rem -.4rem 0
+#000, -.5rem .4rem 0
+#000, .5rem .4rem 0 
+#000,.5rem .4rem 0 ;
+
+}
+}
+
+@media(max-width:1000px){
+  .text1
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  -webkit-text-stroke: 1.7px #E16C3F;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  }
+  .text2
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.7px 
+  #E49BDB;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  
+  }
+  .text3
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.7px 
+  #E49BDB;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  
+  }
+  .text4
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.7px 
+  #EAA1E2;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  
+  }
+  .text5
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.7px 
+  #6F8214;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  }
+  .text6
+  {
+    /* position: relative; */
+  font-family: 'My Custom Font';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 22vh;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  -webkit-text-stroke: 1.7px #E16C3F;
+  text-shadow: -.45rem -.3rem 0
+  #000, .5rem -.3rem 0
+  #000, -.5rem .3rem 0
+  #000, .4rem .3rem 0 
+  #000,.4rem .3rem 0 ;
+  
+  }
+}
+
 @media only screen and (max-width:800px) {
   .cambox1i1
 {
