@@ -57,7 +57,7 @@ const MerchPart = () => {
     },
   });
 
-  useEffect(() => {}, [bagboop, redboop, blackboop]);
+  useEffect(() => { }, [bagboop, redboop, blackboop]);
 
   return (
     <div className="merchPart">
@@ -89,29 +89,32 @@ const MerchPart = () => {
           <img src={PurpleCurve} alt="" className="purplecurve" />
           <img src={YellowCurve} alt="" className="yellowcurve" />
           <animated.img
-            onMouseEnter={() => setblackBoop(true)}
-            onMouseLeave={() => setblackBoop(false)}
             style={blackshirtstyle}
             src={BlackShirt}
             alt=""
             className="blackShirt"
           />
           <animated.img
-            onMouseEnter={() => setredBoop(true)}
-            onMouseLeave={() => setredBoop(false)}
             style={redshirtstyle}
             src={RedShirt}
             alt=""
             className="redShirt"
           />
           <animated.img
-            onMouseEnter={() => setbagBoop(true)}
-            onMouseLeave={() => setbagBoop(false)}
             style={bagstyle}
             src={Bag}
             alt=""
             className="bag"
           />
+          <div className="bag2"
+            onMouseEnter={() => setbagBoop(true)}
+            onMouseLeave={() => setbagBoop(false)} />
+          <div className="redShirt2"
+            onMouseEnter={() => setredBoop(true)}
+            onMouseLeave={() => setredBoop(false)} />
+          <div className="blackShirt2"
+            onMouseEnter={() => setblackBoop(true)}
+            onMouseLeave={() => setblackBoop(false)} />
           <img src={PinkCurve} alt="" className="pinkcurve" />
         </div>
       </div>

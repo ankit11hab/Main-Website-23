@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Star Guard Italic";
+  src: url("../../fonts/star-guard-italic.ttf") format("truetype");
+}
 .footer_desk {
   /* position: absolute; */
   width: 100vw;
@@ -9,13 +13,14 @@
   flex-direction: column;
   /* justify-content: space-between; */
   box-sizing: border-box;
-  padding: 2vh 5vw 2vh 5vw;
+  padding: 5vh 5vw 2vh 5vw;
 }
 .footer_main {
   display: flex;
   justify-content: space-between;
 }
 .logo {
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +66,20 @@
   top: -6vw;
   left: 12vw;
 }
+/* .red:hover{
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 0.5s infinite  alternate;
+  
 
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+} */
 .violet {
   width: 10vw;
   height: 13vw;
@@ -69,6 +87,20 @@
   top: 6vw;
   left: -6vw;
 }
+/* .violet:hover{
+  -webkit-animation: moverv 0.5s infinite  alternate;
+  animation: moverv 0.5s infinite  alternate;
+  
+
+}
+@-webkit-keyframes moverv {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes moverv {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+} */
 
 .green {
   width: 10vw;
@@ -77,7 +109,20 @@
   top: 10vw;
   left: -8vw;
 }
+/* .green:hover{
+  -webkit-animation: moverg 0.5s infinite  alternate;
+  animation: moverg 0.5s infinite  alternate;
+  
 
+}
+@-webkit-keyframes moverg {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes moverg {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+} */
 .yellow {
   width: 10vw;
   height: 15vw;
@@ -85,6 +130,20 @@
   left: 6vw;
   top: -6vw;
 }
+/* .yellow:hover{
+  -webkit-animation: movery 0.5s infinite  alternate;
+  animation: movery 0.5s infinite  alternate;
+  
+
+}
+@-webkit-keyframes movery {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+}
+@keyframes movery {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-50px); }
+} */
 
 .stones {
   display: flex;
@@ -98,6 +157,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   /* margin-top: 6vw; */
   /* height: 17vw; */
   /* margin-left: 5vw; */
@@ -111,6 +171,7 @@
   line-height: 3.2vh;
   padding-top: 3.73vh;
   /* identical to box height */
+  margin-top:-1vh ;
 
   text-align: center;
   text-transform: uppercase;
@@ -183,8 +244,10 @@
   display: none;
 }
 .footer_bottom{
+  margin-top: 8vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .logo {
@@ -197,6 +260,7 @@
     align-items: center;
   }
   .hail {
+    font-family: "Star Guard Italic";
     font-weight: 400;
     font-size: 17vw;
     line-height: 18vw;
@@ -276,6 +340,7 @@
         flex-direction: row; */
   }
   .footer_bottom{
+
     margin: 4vh ;
     display: flex;
     justify-content: space-between;
@@ -370,4 +435,173 @@
     width: 2.18vh;
     height: 2.18vh;
   }
+}
+
+/* animations */
+/* :root{
+  --X:10px;
+  --Y:10px;
+  --deg:10deg;
+} */
+@-o-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}@-ms-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}@-moz-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}
+@-webkit-keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+}
+@keyframes movery {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(15px,-15px) rotate(-15deg); }
+  50% { transform: translate(15px,-15px) rotate(15deg); }
+  75% { transform: translate(15px,-15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+} 
+
+/* body:has(.hail:hover) */
+ .yellow{
+  -webkit-animation: movery 20s infinite alternate;
+  animation: movery 20s infinite alternate;
+}
+
+@-o-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}@-ms-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}@-moz-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-webkit-keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverr {
+  0% { transform: translate(0px,0px);}
+  19% { transform: translate(-15px,-15px) rotate(-15deg); }
+  45% { transform: translate(15px,15px) rotate(15deg); }
+  79% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+} 
+
+/* body:has(.hail:hover) */
+ .red{
+  -webkit-animation: moverr 20s infinite alternate;
+  animation: moverr 20s infinite alternate ;
+}
+@-ms-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-moz-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-o-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-webkit-keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  25% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,25px) rotate(15deg); }
+  75% { transform: translate(-15px,-15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverv {
+  0% { transform: translate(0px,0px);}
+  35% { transform: translate(15px,15px) rotate(-15deg); }
+  50% { transform: translate(-15px,15px) rotate(15deg); }
+  78% { transform: translate(15px,25px) rotate(-15deg); }
+  100% { transform: translate(25px,25px) rotate(15deg); }
+} 
+
+ /* body:has(.hail:hover) */
+ .violet{
+  -webkit-animation: moverv 20s infinite alternate;
+  animation: moverv 20s infinite alternate ;
+}
+@-ms-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-o-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@-moz-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+
+@-webkit-keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  21% { transform: translate(-15px,15px) rotate(-15deg); }
+  50% { transform: translate(15px,15px) rotate(15deg); }
+  74% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(15px,-15px) rotate(15deg); }
+}
+@keyframes moverg {
+  0% { transform: translate(0px,0px);}
+  22% { transform: translate(15px,-15px) rotate(-15deg); }
+  59% { transform: translate(15px,-15px) rotate(15deg); }
+  76% { transform: translate(-15px,15px) rotate(-15deg); }
+  100% { transform: translate(-15px,-15px) rotate(15deg); }
+} 
+
+/* body:has(.hail:hover) */
+ .green{
+  -webkit-animation: moverg 20s infinite alternate;
+  animation: moverg 20s infinite alternate ;
 }

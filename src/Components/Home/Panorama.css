@@ -23,8 +23,10 @@
   }
   .aframe_container{
     display: flex;
-    height: 100vh;
+    height: auto;
     width: 100vw;
+    /* transform: translate3d(0px, 2768px, 0px); */
+height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -64,4 +66,12 @@
     position: relative !important;
     overflow-x:scroll !important ;
   }
+}
+
+.blank_div3{
+  width: 100vw;
+  height: 200vh;
+}
+.pnlm-about-msg{
+  display: none !important;
 }

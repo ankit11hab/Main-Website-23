@@ -11,16 +11,20 @@ import Strips from './Strips';
 import Sponsers from './Sponsers';
 import AppSection from './AppSection';
 import HeroSection from './HeroSection';
-  
+import Carousel from './Carousel';
 function Home() {
   return (
     <div>
+      <div className="navbar" >
       <Nav/>
+      </div>
+      
         <NavMob />
        {/* <Panorama/> */}
        <HeroSection />
        <VRScene/>
-       <Book />
+       {/* <Book /> */}
+       <Carousel />
        <MerchPart />
        <Strips /> 
        <Sponsers />
