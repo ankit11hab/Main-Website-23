@@ -45,17 +45,11 @@ function Nav({ icon }) {
                   <b>TEAMS</b>
                 </NavLink>
               </li>
-              <li className="Mun">
-                <NavLink to="/MUN">
-                  <b>MUN &emsp;</b>
-                </NavLink>
-              </li>
+           
               <li className="Sponsors">
                 <NavLink
                   to="/Sponsors"
-                  style={{
-                    marginLeft: "-25px",
-                  }}
+                 
                 >
                   <b>SPONSORS</b>
                 </NavLink>

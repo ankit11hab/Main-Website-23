@@ -19,17 +19,9 @@ function Home() {
       <Nav icon/>
       </div>
       
-        <NavMob />
-       {/* <Panorama/> */}
-       <HeroSection />
-       <VRScene/>
-       {/* <Book /> */}
-       <Carousel />
-       <MerchPart />
-       <Strips /> 
-       <Sponsers />
-       <AppSection />
-      <Footer/>
+ 
+    
+  
     </div>
   )
 }

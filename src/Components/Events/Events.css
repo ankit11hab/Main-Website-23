@@ -81,10 +81,10 @@
 }
 .event_card{
 	border:2px solid black;
-	padding: 0vw 1vw 1vw 1vw ;
+	padding: 0vw 15px 15px 15px;
 	background-color: #FEF8F1;
-	box-shadow: 4px 4px 0px #1A1A1A;
-	margin-bottom: 5vh;
+	box-shadow: 3px 3px 0px #1A1A1A;
+	margin-bottom: 4vh;
 }
 .event_card img{
 	/* height: 10vh; */
@@ -402,9 +402,10 @@
 .sidebar11 {
 	align-items: center;
 	display: flex;
-	width: 50rem;
+	width: 50vw;
 	height: 6rem;
-	justify-content: space-between;
+justify-content: center;
+gap:2vw;
 
 }
 

@@ -17,13 +17,15 @@
     -webkit-text-stroke-color: black;
     font-size: 1.3vw;
 
-    margin-top:2.3vw;
-    padding-top:1.8vw;
+    display: flex;
+    align-items: center;
     background-image: url(./Images/Back.png);
-    
-    background-position:top;
+background-position: center;
+background-size: 10vh 10vh;
+    height: 14vh;
+
     background-repeat: no-repeat;
-    background-size: contain;
+
 
     text-align: center;
     letter-spacing: 0.01em;
@@ -31,30 +33,7 @@
 
     color: #FFFFFF;
 }
-.Events .active{
-    padding-left: 1.2vw;
-    padding-right: 1vw;
-}
-.Merch .active{
-    padding-left: 1.2vw;
-    padding-right: 1vw;
-}
-.Teams .active{
-    padding-left: 1.2vw;
-    padding-right: 1vw;
-}
-.Mun .active{
-    margin-top: 2.8vw;
-    padding-left: 1.2vw;
-} 
-.Sponsors .active{
-    padding-left: 0.4vw;
-    padding-right: 0.5vw;
-}
-.Contests .active{
-    padding-left: 0.4vw;
-    padding-right: 0.5vw;
-}
+
 header{
     width: 100%;
     /* height: 7vw; */
@@ -88,25 +67,34 @@ nav{
     /* margin-top: 0.25vw; */
 }
 .NavigationBar ul{
-    /* height: 7vw; */
+    
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0.5vw;
+    height: 13vh;
+    
+    box-sizing: border-box;
 }
-li{
+.NavigationBar ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: fit-content;
+    
+
 }
+
 .NavigationBar a{
     text-decoration: none;
     color: black;
-    /* height: 12vh; */
-    /* background-color: aqua; */
     padding-top: auto;
+    padding: 0vh 1.5vw ;
+}
+.NavigationBar li{
+    height: 14vh;
+display: flex;
+align-items: center;
 }
 .image{
     display: grid;
@@ -119,10 +107,7 @@ li{
     width: 9vw;
 } */
 
-.NavigationBar a{
-    height: 6vw;
-    margin-top:8vh;
-}
+
 .nonGradient{
     transition: all 0.5s ease-in-out;
 }
@@ -210,4 +195,15 @@ li{
     box-shadow: none;
     -webkit-transform: translateY(-1px);
       transform: translateY(1px)
+  }
+  @media screen and (max-width:1025px) {
+    .NavigationBar .active{
+     
+    
+        
+       
+    background-size: 7vw 7vw;
+
+   
+    }
   }
