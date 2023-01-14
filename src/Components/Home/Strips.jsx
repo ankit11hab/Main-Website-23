@@ -24,7 +24,6 @@ function Strips() {
     backgroundColor: "white",
     textShadow:
       "-0.2vw -0.2vw 0 #000, 0.2vw -0.2vw 0 #000, -0.2vw 0.2vw 0 #000, 0.2vw 0.2vw 0 #000",
-    // background:"transparent"
     borderTop: "3px solid",
     marginTop: "0px",
     paddingTop: "5px",

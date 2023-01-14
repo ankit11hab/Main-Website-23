@@ -1,8 +1,19 @@
-
+/* carousel css starts */
+.main__cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+video {
+    z-index: 999 !important;
+    width: 100vw;
+    height: 100vh;
+}
 
 .video_container {
     margin-left: 2vw;
-
+    position: absolute;
 }
 
 .openbookBtn {
@@ -14,6 +25,12 @@
     border-radius: 2.5vw;
     cursor: pointer;
     background-color: red;
+    color: white;
+    border-color: white;
+    border-width: 0.2vw;
+    border: solid;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
 }
 .nxtBtn{
     position: absolute;
@@ -51,4 +68,14 @@
     padding: 0.8vw 1.2vw 0.6vw;
     border-radius: 2vw;
     box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+}
+.bg__img{
+    position: absolute;
+    top: -0.8vh;
+    left: 8.55vw;
+}
+.img__{ 
+    width: 100vw;
+    z-index:-1 !important;
+    height: 101.5vh !important;
 }

@@ -3,6 +3,10 @@ import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
 import "./Sponsors.css";
 import SponserLogo from "./images/AalooLogo.png";
+import title from "./images/title.png"
+import cotitle from "./images/cotitle.png"
+import other from "./images/other.png"
+import wework from "./images/wework.png"
 function Sponsors() {
   return (
     <div>
@@ -13,13 +17,13 @@ function Sponsors() {
       <div className="container">
         <div className="rect">
           <div className="bg">
-            <p className="para"> WE 'VE WORKED WITH</p>
+           <img src={wework} alt="" />
           </div>
         </div>
         <div className="layout">
           <div className="box1">
             <div className="frame">
-              <p className="para"> Title sponsor </p>
+             <img src={title} alt="" />
             </div>
 
             <div className="box2">
@@ -30,7 +34,9 @@ function Sponsors() {
 
           <div className="cosponsor">
             <div className="frame">
-              <div className="para"> Co Title Sponsors </div>
+           
+              <img src={cotitle} alt="" />
+        
             </div>
 
             <div className="parent">
@@ -50,7 +56,7 @@ function Sponsors() {
           </div>
           <div className="othersponsor">
             <div className="frame">
-              <div className="para">Other Sponsors</div>
+             <img src={other} alt="" />
             </div>
             <div className="parent">
               <div className="maincard">

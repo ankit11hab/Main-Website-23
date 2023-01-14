@@ -99,11 +99,7 @@ function Nav({ icon }) {
                   <b>TEAMS</b>
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/MUN">
-                  <b>MUN</b>
-                </NavLink>
-              </li>
+           
               <li>
                 <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
