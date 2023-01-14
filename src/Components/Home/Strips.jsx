@@ -72,7 +72,7 @@ function Strips() {
             <div>
               <img className="star star3" src={star}></img>
             </div>
-            <div className="edition_text2">26 EDITIONS</div>
+            <div className="edition_text2">HAIL ALCHER</div>
           </Marquee>
         </div>
         <div>
