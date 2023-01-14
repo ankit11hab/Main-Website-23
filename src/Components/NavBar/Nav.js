@@ -29,6 +29,7 @@ function Nav({ icon, pic }) {
     const alcherlogo = document.getElementByClassName("AlcherLogo")
     alcherlogo.style.display = "block";
   };
+
   return (
     <>
       <div className="main">
@@ -44,7 +45,7 @@ function Nav({ icon, pic }) {
           <nav className="NavigationBar">
             <ul className="NavigationList">
               <li className="Events">
-                <NavLink to="/Events/pt">
+                <NavLink to="/Events">
                   <b>EVENTS</b>
                 </NavLink>
               </li>
@@ -70,7 +71,7 @@ function Nav({ icon, pic }) {
                 </NavLink>
               </li>
               <li className="Contests">
-                <NavLink to="/Contests/vn">
+                <NavLink to="/Contests">
                   <b>CONTESTS</b>
                 </NavLink>
               </li>
@@ -110,6 +111,9 @@ function Nav({ icon, pic }) {
                   </div>
                 </NavLink>
               </li>
+                {/* <NavLink to="/Events">
+                  <b>EVENTS</b>
+                </NavLink> */}
               <li className="Merch">
                 <NavLink to="/Merch" style={{textDecoration: "#0B0B0B"}}>
                   <div className="hoverdivmob merch">
@@ -135,6 +139,17 @@ function Nav({ icon, pic }) {
                   <b className="listtext listtext4">TEAMS</b>
                   </div>
                   <img src="" alt="" className="eventsActive" />
+                  </NavLink>
+                  </li>
+              <li>
+                <NavLink to="/Teams">
+                  <b>TEAMS</b>
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/Sponsors">
+                  <b>SPONSORS</b>
                 </NavLink>
               </li>
               <li className="Contests">
@@ -160,7 +175,7 @@ function Nav({ icon, pic }) {
               </li>
             </ul>
           </div>
-        ) : (
+          ) : (
           <></>
         )}
       </div>

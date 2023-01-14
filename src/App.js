@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Eventspt from "./Components/Events/Eventspt";
 import Eventsps from "./Components/Events/Eventsps";
@@ -29,10 +29,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Events/pt" element={<Eventspt />} />
         <Route path="/Events/ps" element={<Eventsps />} />
         <Route path="/Events/cc" element={<Eventscc />} />
         <Route path="/Events/hf" element={<Eventshf />} />
+        <Route path="/Events/pt" element={<Eventspt />} />
+        <Route path="/Events" element={<Navigate to="/Events/pt" />} />
         <Route path="Merch" element={<Merch />} />
         <Route path="/hero" element={<HeroSection />} />
         <Route path="Campaigns" element={<Campaigns />} />
@@ -48,6 +49,7 @@ function App() {
         <Route path="Contests/s" element={<Contestss />} />
         <Route path="Contests/q" element={<Contestsq />} />
         <Route path="Contests/dr" element={<Contestsdr />} />
+        <Route path="Contests" element={<Navigate to="/Contests/vn" />} />
         <Route path="MUN" element={<MUN />} />
         <Route path="Sponsors" element={<Sponsors />} />
         <Route path="BookTickets" element={<BookTickets />} />
