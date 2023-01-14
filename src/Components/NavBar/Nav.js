@@ -26,7 +26,7 @@ function Nav({ icon }) {
           <nav className="NavigationBar">
             <ul className="NavigationList">
               <li className="Events">
-                <NavLink to="/Events/pt">
+                <NavLink to="/Events">
                   <b>EVENTS</b>
                 </NavLink>
               </li>
@@ -52,7 +52,7 @@ function Nav({ icon }) {
                 </NavLink>
               </li>
               <li className="Contests">
-                <NavLink to="/Contests/vn">
+                <NavLink to="/Contests">
                   <b>CONTESTS</b>
                 </NavLink>
               </li>
@@ -80,7 +80,7 @@ function Nav({ icon }) {
           <div>
             <ul className="mobileList">
               <li>
-                <NavLink to="/Events/pt">
+                <NavLink to="/Events">
                   <b>EVENTS</b>
                 </NavLink>
               </li>
@@ -99,7 +99,7 @@ function Nav({ icon }) {
                   <b>TEAMS</b>
                 </NavLink>
               </li>
-           
+
               <li>
                 <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
