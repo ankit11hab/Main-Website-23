@@ -17,7 +17,7 @@ function Nav({ icon, pic }) {
     const mobile = document.getElementById("mobile");
     mobile.style.backgroundColor = "#1A1A1A";
     mobile.style.height = "100vh";
-    const alcherlogo = document.getElementByClassName("AlcherLogo")
+    const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.zIndex = "-1";
   };
   const handleClickCross = (e) => {
@@ -26,7 +26,7 @@ function Nav({ icon, pic }) {
     const mobile = document.getElementById("mobile");
     mobile.style.background = "transparent";
     mobile.style.height = "10vh";
-    const alcherlogo = document.getElementByClassName("AlcherLogo")
+    const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.display = "block";
   };
 
@@ -92,11 +92,17 @@ function Nav({ icon, pic }) {
             </Link>
           </div>
           {!active ? (
-            <div onClick={handleClick} style={{cursor: "pointer", marginRight: "5%", zIndex: "2"}}>
+            <div
+              onClick={handleClick}
+              style={{ cursor: "pointer", marginRight: "5%", zIndex: "2" }}
+            >
               <Hamburger />
             </div>
           ) : (
-            <div onClick={handleClickCross} style={{cursor: "pointer", marginRight: "5%", zIndex: "2"}}>
+            <div
+              onClick={handleClickCross}
+              style={{ cursor: "pointer", marginRight: "5%", zIndex: "2" }}
+            >
               <Cross />
             </div>
           )}
@@ -105,77 +111,59 @@ function Nav({ icon, pic }) {
           <div className="extendednavmob" style={{ background: "#1a1a1a" }}>
             <ul className="mobileList">
               <li className="Events">
-                <NavLink to="/Events" style={{textDecoration: "#0B0B0B"}}>
+                <NavLink to="/Events" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob">
-                  <b className="listtext listtext1 events">EVENTS</b>
+                    <b className="listtext listtext1 events">EVENTS</b>
                   </div>
                 </NavLink>
               </li>
-                {/* <NavLink to="/Events">
-                  <b>EVENTS</b>
-                </NavLink> */}
               <li className="Merch">
-                <NavLink to="/Merch" style={{textDecoration: "#0B0B0B"}}>
+                <NavLink to="/Merch" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob merch">
-                  
-                  <b className="listtext listtext2">MERCH</b>
+                    <b className="listtext listtext2">MERCH</b>
                   </div>
-                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
               <li className="Campaigns">
-                <NavLink to="/Campaigns" style={{textDecoration: "#0B0B0B"}}>
+                <NavLink to="/Campaigns" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob campaigns">
-                
-                  <b className="listtext listtext3">CAMPAIGNS</b>
+                    <b className="listtext listtext3">CAMPAIGNS</b>
                   </div>
-                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
               <li className="Teams">
-                <NavLink to="/Teams" style={{textDecoration: "#0B0B0B"}}>
+                <NavLink to="/Teams" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob teams">
-                  
-                  <b className="listtext listtext4">TEAMS</b>
+                    <b className="listtext listtext4">TEAMS</b>
                   </div>
-                  <img src="" alt="" className="eventsActive" />
-                  </NavLink>
-                  </li>
-              <li>
+                </NavLink>
+              </li>
+              {/* <li>
                 <NavLink to="/Teams">
                   <b>TEAMS</b>
                 </NavLink>
-              </li>
+              </li> */}
 
-              <li>
-                <NavLink to="/Sponsors">
+              {/* <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
-                </NavLink>
-              </li>
+                </NavLink> */}
               <li className="Contests">
-                <NavLink
-                  to="/Contests"
-                  style={{textDecoration: "#0B0B0B"}}
-                >
+                <NavLink to="/Contests" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob contests">
-                  
-                  <b className="listtext listtext5">CONTESTS</b>
+                    <b className="listtext listtext5">CONTESTS</b>
                   </div>
-                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
               <li className="Sponsors">
-                <NavLink to="/Sponsors" style={{textDecoration: "#0B0B0B"}}>
+                <NavLink to="/Sponsors" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob sponsors">
-                  
-                  <b className="listtext listtext6">SPONSORS</b>
+                    <b className="listtext listtext6">SPONSORS</b>
                   </div>
-                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
             </ul>
           </div>
-          ) : (
+        ) : (
           <></>
         )}
       </div>

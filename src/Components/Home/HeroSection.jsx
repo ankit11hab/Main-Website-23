@@ -612,7 +612,7 @@ function HeroSection() {
                     toggleActions: "play reverse play reverse",
                     scrub: true,
                     id: "geet",
-                    markers: true,
+                    // markers: true,
                     // duration:2,
                 },
                 css: {

@@ -5,7 +5,7 @@
 * {
   margin: 0%;
 }
-.merchPart{
+.merchPart {
   width: 99vw;
 }
 
@@ -42,15 +42,17 @@
 .purplestar {
   height: 5vw;
   position: absolute;
-  left: -1%;
+  left: 11%;
   top: -8%;
+  z-index: 1;
 }
 
 .pinkstar {
   height: 8vw;
   position: absolute;
   bottom: -13%;
-  left: -5%;
+  left: 5%;
+  z-index: 1;
 }
 
 .greenstar {
@@ -65,6 +67,7 @@
   font-family: "Star Guard Gradient";
   font-style: italic;
   font-size: 7vw;
+  margin-top: 3%;
 }
 
 .merchpara {
@@ -83,6 +86,7 @@
 
 .rightpart {
   position: relative;
+  left: 5%;
 }
 
 .yellowstrip {
@@ -116,20 +120,20 @@
   font-size: 1vw;
   justify-content: center;
   text-align: center;
-  width: 11vw;
+  width: 8vw;
   background: #daee75;
   border: 2px solid #1a1a1a;
   box-shadow: 2px 2px 0px #ffffff;
   border-radius: 30px;
   left: -19vw;
   bottom: -30vh;
-  height: 5vh;
+  height: 8vh;
 }
 
 .shopNowbtn:hover {
   box-shadow: 0px 0px;
-  transform: translate(5%,20%);
-  transition-duration: .3s;
+  transform: translate(5%, 20%);
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -143,10 +147,9 @@
 
 .yellowcurve {
   position: absolute;
-  height: 19vw;
-  top: -24vw;
-  left: 20vw;
-  transform: scale(1.1);
+  height: 13vw;
+  top: -18vw;
+  left: 17vw;
 }
 
 .pinkcurve {
@@ -220,8 +223,6 @@
   top: 31%;
   left: 15%;
   z-index: 5;
-  /* background-color: pink; */
-  /* opacity: 50%; */
   margin-left: 29px;
 }
 
@@ -234,7 +235,7 @@
     background-color: #161616;
     border: 2px solid black;
     width: 100vw;
-    height: 76vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     margin-top: 5%;
@@ -338,8 +339,8 @@
   }
   .shopNowbtn:hover {
     box-shadow: 0px 0px;
-    transform: translate(5%,20%);
-    transition-duration: .3s;
+    transform: translate(5%, 20%);
+    transition-duration: 0.3s;
     cursor: pointer;
   }
 
@@ -350,35 +351,44 @@
 }
 
 /* Shop button */
-#btnn1{
-  width: 10.2vw;
-  height: 2.3vw;
+#btnn1 {
+  width: 10vw;
+  height: 2.8vw;
   border-radius: 2vw;
   box-shadow: px 6px 4px white;
-  background-color: #DAEE75;
+  background-color: #daee75;
   color: white;
- 
 }
 
-.book-btnn1{
+.book-btnn1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.shopticket{
+.shopticket {
   width: 1.3vw;
   border: none;
   box-shadow: none;
 }
-.shoptickets{
+.shoptickets {
   border: none;
   box-shadow: none;
   width: 4.8vw;
   padding-bottom: 0.4rem;
-
 }
-#btnn1:hover{
-  box-shadow: none;
-  -webkit-transform: translateY(-1px);
-	transform: translateY(1px)
+#btnn1:hover {
+  box-shadow: 0px 0px;
+  transform: translate(3%, 15%);
+  transition-duration: 0.35s;
+  cursor: pointer;
+}
+
+.rockthelook {
+  position: relative;
+  left: -5%;
+  width: 17vw;
+}
+
+@media (min-width: 600px) and (max-width: 1150px) {
+
 }
