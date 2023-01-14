@@ -13,34 +13,36 @@ import { NavLink, Link } from "react-router-dom";
 function Events1() {
   return (
     <div>
-
       <div className="navbar">
-      <Nav  />
-     
+        <Nav />
       </div>
 
       <NavMob />
-      
+
       <div className="main_event">
         <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <Book />
+            </Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <Book />
+            </Link>
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={Banger} alt="" />
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={Banger} alt="" />
           </div>
         </div>
         <div className="upnav">
           <div className="sidebar11">
-            <NavLink to="/Events">
+            <NavLink to="/Events/pt">
               <div className="pronites1">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
@@ -59,22 +61,26 @@ function Events1() {
         <div className="content_event">
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <Book />
+            </Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <Book />
+            </Link>
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={BangerMob} alt="" />
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={BangerMob} alt="" />
           </div>
         </div>
         <div className="upnav">
           <div className="sidebar11">
-            <NavLink to="/Events">
+            <NavLink to="/Events/pt">
               <div className="pronites1">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">

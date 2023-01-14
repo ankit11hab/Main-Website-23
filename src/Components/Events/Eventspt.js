@@ -42,7 +42,7 @@ function Events1() {
         </div>
         <div className="upnav">
           <div className="sidebar11">
-            <NavLink to="/Events">
+            <NavLink to="/Events/pt">
               <div className="pronites1">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
@@ -80,7 +80,7 @@ function Events1() {
         </div>
         <div className="upnav">
           <div className="sidebar11">
-            <NavLink to="/Events">
+            <NavLink to="/Events/pt">
               <div className="pronites1">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">

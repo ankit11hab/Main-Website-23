@@ -143,6 +143,10 @@ gap:2vw;
 .upnav .sidebar11 .active {
 	display: flex;
 }
+.upnav .sidebar11 .active div{
+	display: flex;
+	color: #F35C41;
+}
 
 .sidebar11 a{
 	text-decoration: none;

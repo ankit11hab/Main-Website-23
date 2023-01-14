@@ -25,10 +25,8 @@ function Events() {
           <div className="sidebar1">
             <div className="head">MODULES</div>
             <ul className="mlist">
-              <li className="hey">
-                <NavLink to="/Contests">
-                  <b>VOUGUE NATION</b>
-                </NavLink>
+              <li>
+                <NavLink to="/Contests/vn">VOUGUE NATION</NavLink>
               </li>
               <li>
                 <NavLink to="/Contests/ca">CLASS APART</NavLink>
