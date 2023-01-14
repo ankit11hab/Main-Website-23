@@ -1,11 +1,9 @@
 import React, { Component, useState, useRef } from "react";
 import "./Panorama.css";
-import { Video } from "react-video-renderer/dist/es5/video";
 import { Pannellum } from "pannellum-react";
 import myImage from "./images/image.jpg";
 import video1 from './bookCoverVideos/cover-pronites animation.webm';
 import playLogo from './images/Polygon 57.png'
-import $ from 'jquery';
 let count=0;
 const VRScene = () => {
     const logoref = useRef(null);

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./HeroSection.scss";
-import $ from 'jquery';
 
 // import frame1 from "./images/Timeline 1_0000 - Copy.png";
 // import frame2 from "./images/Timeline 1_0001 - Copy.png";
@@ -727,26 +726,6 @@ height:sizeHeight*0.15,
     }
     
   },[]);
-  let flag = 0;
-    $.fn.isInViewport = function () {
-      var elementTop = $(this).offset().top;
-      var elementBottom = elementTop + $(this).outerHeight();
-  
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-  
-      return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-  
-    $(window).bind("mousewheel", function (event) {
-      console.log("Scrolling")
-      if (event.originalEvent.wheelDelta >= 0) {
-        // scroll up
-        console.log("OK")
-      } else {
-        // scroll down
-      }
-    });
   return (
     <div className="hero_animation_div" id="heroAnimationDiv">
       
