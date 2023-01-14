@@ -149,6 +149,36 @@ import frame112 from "./images/Web_0112.png"
 import frame113 from "./images/Web_0113.png"
 import frame114 from "./images/Web_0114.png"
 import frame115 from "./images/Web_0115.png"
+////////////////////////////////////////////
+import frameMob0 from "./mobile_images/Mobile_NoBG_0000.png";
+import frameMob1 from "./mobile_images/Mobile_NoBG_0001.png";
+import frameMob2 from "./mobile_images/Mobile_NoBG_0002.png";
+import frameMob3 from "./mobile_images/Mobile_NoBG_0003.png";
+import frameMob4 from "./mobile_images/Mobile_NoBG_0004.png";
+import frameMob5 from "./mobile_images/Mobile_NoBG_0005.png";
+import frameMob6 from "./mobile_images/Mobile_NoBG_0006.png";
+import frameMob7 from "./mobile_images/Mobile_NoBG_0007.png";
+import frameMob8 from "./mobile_images/Mobile_NoBG_0008.png";
+import frameMob9 from "./mobile_images/Mobile_NoBG_0009.png";
+import frameMob10 from "./mobile_images/Mobile_NoBG_0010.png";
+import frameMob11 from "./mobile_images/Mobile_NoBG_0011.png";
+import frameMob12 from "./mobile_images/Mobile_NoBG_0012.png";
+import frameMob13 from "./mobile_images/Mobile_NoBG_0013.png";
+import frameMob14 from "./mobile_images/Mobile_NoBG_0014.png";
+import frameMob15 from "./mobile_images/Mobile_NoBG_0015.png";
+import frameMob16 from "./mobile_images/Mobile_NoBG_0016.png";
+import frameMob17 from "./mobile_images/Mobile_NoBG_0017.png";
+import frameMob18 from "./mobile_images/Mobile_NoBG_0018.png";
+import frameMob19 from "./mobile_images/Mobile_NoBG_0019.png";
+import frameMob20 from "./mobile_images/Mobile_NoBG_0020.png";
+import frameMob21 from "./mobile_images/Mobile_NoBG_0021.png";
+import frameMob22 from "./mobile_images/Mobile_NoBG_0022.png";
+import frameMob23 from "./mobile_images/Mobile_NoBG_0023.png";
+import frameMob24 from "./mobile_images/Mobile_NoBG_0024.png";
+import frameMob25 from "./mobile_images/Mobile_NoBG_0025.png";
+import frameMob26 from "./mobile_images/Mobile_NoBG_0026.png";
+import frameMob27 from "./mobile_images/Mobile_NoBG_0027.png";
+import frameMob28 from "./mobile_images/Mobile_NoBG_0028.png";
 import AlcherLogo from "./images/alcher_2023_logo.png"
 const frameArr = [
   frame0,
@@ -270,11 +300,44 @@ const frameArr = [
 
 ];
 
+const frameArrMob=[frameMob0,
+  frameMob1,
+  frameMob2,
+  frameMob3,
+  frameMob4,
+  frameMob5,
+  frameMob6,
+  frameMob7,
+  frameMob8,
+  frameMob9,
+  frameMob10,
+  frameMob11,
+  frameMob12,
+  frameMob13,
+  frameMob14,
+  frameMob15,
+  frameMob16,
+  frameMob17,
+  frameMob18,
+  frameMob19,
+  frameMob20,
+  frameMob21,
+  frameMob22,
+  frameMob23,
+  frameMob24,
+  frameMob25,
+  frameMob26,
+  frameMob27,
+  frameMob28,
+];
+
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
   console.clear();
   useEffect(() => {
-    const canvas = document.getElementById("canvas1");
+
+    if (!window.matchMedia('(max-width: 800px)').matches){
+      const canvas = document.getElementById("canvas1");
     const context = canvas.getContext("2d");
 
 
@@ -342,22 +405,7 @@ function HeroSection() {
       // },
     });
 
-    // const logo=gsap.to(".logo_img",{
-    //     scrollTrigger:{
-    //         trigger:'.hero_container',
-    //         start:'top top',
-    //         end:'bottom top',
-
-
-    //         markers:true,
-    //         id:'alcher_logo',
-    //         toggleActions: 'play none none reverse',
-    //     },
-    //     css:{
-    //         opacity:0,
-    //     }
-    // });
-
+    
     const tl=gsap.timeline({
         scrollTrigger:{
             trigger:'.hero_container',
@@ -370,11 +418,209 @@ function HeroSection() {
             // pin:true
         }
     });
-    // tl.from('.hero_container',{
-    //     css:{
-    //         top:20,
-    //     },
-    // });
+   
+    tl.to('.hero_container',{
+        css:{
+            position:'fixed',
+            top:0,
+            left:0,
+
+        },
+    });
+
+    tl.to('.hero_container',{
+      scrollTrigger:{
+      trigger:'.hero_container',
+      start:'400% top',
+      end:'bottom bottom',
+      toggleActions: 'play reverse play reverse',
+      scrub:true,
+      id:'lastFrame',
+      // markers:true,
+  },
+  css:{
+      position:'static',
+  }
+});
+tl.to('.blank_div',{
+  scrollTrigger:{
+  trigger:'.hero_container',
+  start:'400% top',
+  end:'bottom bottom',
+  toggleActions: 'play reverse play reverse',
+  scrub:true,
+  id:'blankdiv',
+  // markers:true,
+},
+css:{
+  // position:'absolute',
+  // width:'10%',
+  height:4*sizeHeight,
+  // opacity:0,
+}
+});
+tl.to('.geet',{
+  scrollTrigger:{
+  trigger:'.hero_container',
+  start:'400% center',
+  end:'+=150%',
+  toggleActions: 'play reverse play reverse',
+  scrub:true,
+  id:'geet',
+  markers:true,
+  // duration:2,
+},
+css:{
+ position:'fixed',
+ top:0,
+ left:0,
+ opacity:1,
+ zIndex:6,
+}
+});
+tl.to('.geet',{
+  scrollTrigger:{
+  trigger:'.hero_container',
+  start:'550% center',
+  // end:'100% top',
+  // end:'+=100%',
+  toggleActions: 'play reverse play reverse',
+  scrub:true,
+  id:'geetee1',
+  // markers:true,
+},
+css:{
+ position:'static',
+}
+});
+tl.to('.blank_div4',{
+  scrollTrigger:{
+  trigger:'.hero_container',
+  start:'550% center',
+  // end:'100% top',
+  // end:'+=100%',
+  toggleActions: 'play reverse play reverse',
+  scrub:true,
+  id:'geetee1',
+  // markers:true,
+},
+css:{
+ height:0,
+}
+});
+tl.to('.blank_div3',{
+  scrollTrigger:{
+  trigger:'.hero_container',
+  start:'550% center',
+  end:'+=100%',
+  toggleActions: 'play reverse play reverse',
+  scrub:true,
+  id:'geetee2',
+  // markers:true,
+},
+css:{
+  //  position:'fixed',
+  //  opacity:0,
+// height:sizeHeight*1,
+height:sizeHeight*0.15,
+}
+});
+
+  
+    images[0].onload = render;
+
+    function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      // console.log(book_cover.frame);
+    //   context.drawImage(images[book_cover.frame], 0, 0);
+    context.drawImage(images[book_cover.frame], 0,0, 3840, 2160, 0,0,3840*factor1, 2160*factor2);
+    }
+
+    }
+    else{
+      const canvas = document.getElementById("canvas1");
+    const context = canvas.getContext("2d");
+
+
+    // Set display size (vw/vh).
+  var sizeWidth = 100 * window.innerWidth / 100,
+  sizeHeight = 100 * window.innerHeight / 100 ;
+   //Setting the canvas site and width to be responsive
+   canvas.width = sizeWidth;
+   canvas.height = sizeHeight;
+   canvas.style.width = sizeWidth;
+   canvas.style.height = sizeHeight;
+   const factor1=sizeWidth/1184;
+   const factor2=sizeHeight/2960;
+//    var ratio  = Math.min ( factor1, factor2 );
+
+//    context.scale(1/factor1,1/factor2);
+    // canvas.width = 1920;
+    // canvas.height = 1080;
+
+    const frameCount = 29;
+    const currentFrame = (index) => frameArrMob[index];
+
+    const images = [];
+    const book_cover = {
+      frame: 0,
+    };
+
+    for (let i = 0; i < frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+      images.push(img);
+    }
+    // const video = document.createElement('video');
+    // video.src=currentFrame(200);
+    // video.controls=true;
+    // images.push(video)
+    // console.log(images);
+
+    const animation = gsap.to(book_cover, {
+      frame: frameCount - 1,
+      snap: "frame",
+      ease: "none",
+      duration: 2000,
+      scrollTrigger: {
+        trigger: ".book-container1",
+        // start: "35% 25%",
+        start:'25% 20%',
+        end: "400% 25%",
+        scrub: 2,
+        markers: true,
+      },
+
+
+      onUpdate: render,
+
+      // use animation onUpdate instead of scrollTrigger's onUpdate
+      // onComplete:(e)=>{
+      //     // document.getElementById('canvas_section').setAttribute('display','none');
+      //     // const video = document.createElement('video');
+      //     // video.src=bookcovervideo;
+      //     // video.controls=true;
+      //     // document.getElementById('animation__Container').appendChild(video);
+      //     // video.play();
+      //     // context.drawImage(video,0,0);
+      //     console.log('completed')
+      // },
+    });
+
+    
+    const tl=gsap.timeline({
+        scrollTrigger:{
+            trigger:'.hero_container',
+            start:'25% 20%',
+            end:'400% center',
+            toggleActions: 'play reverse play reverse',
+            id:'hero container',
+            markers:true,
+            scrub:true,
+            // pin:true
+        }
+    });
+   
     tl.to('.hero_container',{
         css:{
             position:'fixed',
@@ -442,7 +688,7 @@ tl.to('.geet',{
   toggleActions: 'play reverse play reverse',
   scrub:true,
   id:'geetee1',
-  markers:true,
+  // markers:true,
 },
 css:{
  position:'static',
@@ -465,85 +711,25 @@ height:sizeHeight*0.15,
 
 }
 });
-    // const lastframe=gsap.to('.hero_container',{
-    //     scrollTrigger:{
-    //         trigger:'.hero_container',
-    //         start:'110% center',
-    //         end:'bottom bottom',
-    //         toggleActions: 'play none none reverse',
-    //         scrub:true,
-    //         id:'lastframe',
-    //         markers:true,
-
-    //     },
-    //     css:{
-    //         // opacity:0,
-    //         position:'static',
-    //     }
-    // });
-
-    // const panorama=gsap.to('.geet',{
-    //     scrollTrigger:{
-    //         trigger:'.hero_container',
-    //         start:'110% center',
-    //         end:'120% center',
-    //         toggleActions: 'play none none reverse',
-    //         scrub:true,
-    //         id:'panorama',
-    //         markers:true,
 
 
-    //     },
-    //     css:{
-    //         // opacity:0,
-    //         position:'fixed',
-    //         top:0,
-    //         left:0,
-
-    //         // translateY:0,
-    //     },
-    // });
-
-    // const panorama2=gsap.to('.geet',{
-    //     scrollTrigger:{
-    //         trigger:'.hero_container',
-    //         start:'120% center',
-    //         end:'bottom bottom',
-    //         toggleActions: 'play none none reverse',
-    //         scrub:true,
-    //         id:'panorama2',
-    //         markers:true,
-
-
-    //     },
-    //     css:{
-    //         // opacity:0,
-    //         position:'static',
-
-    //     },
-    // });
-
-
-    // tl.to('.hero_container',{
-    //     css:{
-    //         position:'absolute',
-    //         // top:0,
-    //         // left:0,
-    //     },
-    // });
-
+  
     images[0].onload = render;
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
-      console.log(book_cover.frame);
+      // console.log(book_cover.frame);
     //   context.drawImage(images[book_cover.frame], 0, 0);
-    context.drawImage(images[book_cover.frame], 0,0, 3840, 2160, 0,0,3840*factor1, 2160*factor2);
+    context.drawImage(images[book_cover.frame], 0,0, 1184, 2960, 0,0,1184*factor1, 2960*factor2);
     }
 
-  });
+    }
+    
+  },[]);
   return (
     <div className="hero_animation_div" id="heroAnimationDiv">
+      
+      
         <div className="AlcherLogo" >
             <span class="t_over"></span>
         		<span class="t_over"></span>

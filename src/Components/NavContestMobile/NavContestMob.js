@@ -14,7 +14,7 @@ const NavMobContest = () => {
         setClick(!click);
     }
     return ( 
-        <div className='overall_nav'>
+        <div className='overall_nav_contest'>
             <div className='main-nav'>
             {pathname==='/Contests'?
                 <ul className="Navmoblist" style={{listStyle: 'none'}}>

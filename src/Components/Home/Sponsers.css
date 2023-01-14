@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
-
+@font-face {
+    font-family: "Aileron";
+    src: url("../../fonts/aileron.regular.otf") format("opentype");
+}
 html body {
     font-family: 'Syne', sans-serif;
     overflow-x: hidden !important;
 }
 
 .featured-event-heading {
+    font-family: "Aileron";
     margin: 4vw 1vw 2vw 1vw;
     text-align: center;
     font-size: 30px;
-    font-weight: 600;
-    color: #2F4858;
-    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #000000;
 }
 
 .marquee-body {
@@ -37,17 +40,19 @@ html body {
     --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
 
-.marquee {
+.marquee1 {
     width: var(--marquee-width);
     height: var(--marquee-height);
-    background-color: rgb(255, 255, 255);
+    
     color: #2F4858;
     overflow: hidden;
     position: relative;
+ 
+    background-size: 100vh 500vw;
 }
 
-.marquee:before,
-.marquee:after {
+.marquee1:before,
+.marquee1:after {
     position: absolute;
     top: 0;
     width: 10rem;
@@ -56,11 +61,11 @@ html body {
     z-index: 1;
 }
 
-.marquee:before {
+.marquee1:before {
     left: 0;
 }
 
-.marquee:after {
+.marquee1:after {
     right: 0;
 }
 

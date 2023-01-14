@@ -1,9 +1,81 @@
 /* carousel css starts */
-main {
+.main__cont {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+video {
+    z-index: 999 !important;
     width: 100vw;
     height: 100vh;
 }
-main video {
+
+.video_container {
+    margin-left: 2vw;
+    position: absolute;
+}
+
+.openbookBtn {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 2.5vw;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-color: white;
+    border-width: 0.2vw;
+    border: solid;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+}
+.nxtBtn{
+    position: absolute;
+    top: 50%;
+    right: 9%;
+    border: none;
+    cursor: pointer;
+    background-color: #FF598A;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 2vw;
+    text-align: center;
+    padding: 0.8vw 1.2vw 0.6vw;
+    box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+    color: white;
+}
+.nxtBtn:hover{
+    box-shadow: none;
+    -webkit-transform: translateY(-1px);
+      transform: translateY(1px)}
+.prevBtn:hover{
+    box-shadow: none;
+    -webkit-transform: translateY(-1px);
+      transform: translateY(1px)}
+.prevBtn{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #FF598A;
+    font-weight: 500;
+    font-size: 1vw;
+    padding: 0.8vw 1.2vw 0.6vw;
+    border-radius: 2vw;
+    box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+}
+.bg__img{
+    position: absolute;
+    top: -0.8vh;
+    left: 8.55vw;
+}
+.img__{ 
     width: 100vw;
-    height: 100vh;
+    z-index:-1 !important;
+    height: 101.5vh !important;
 }
