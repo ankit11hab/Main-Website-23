@@ -14,6 +14,7 @@ const VRScene = () => {
   
 
   function playVideo(){
+    console.log(count);
         // //as noted in addendum, check for querystring exitence
         // var symbol = document.getElementById("themevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
         // //modify source to autoplay and start video
@@ -38,6 +39,7 @@ if(count %2== 0){
         document.getElementById('playLogo').style.display='block';
     }, 500);
     Player.src = Player.src.split('?')[0];
+    count++;
 
  } 
 
