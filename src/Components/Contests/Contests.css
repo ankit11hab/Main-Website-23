@@ -470,11 +470,11 @@ list-style-type: none;
 	
 }
 
-@media only screen and (max-width:460px) {
+/* @media only screen and (max-width:460px) {
 	.contest_card img{
 		height: 85%;
 	}
-}
+} */
 
 
 
