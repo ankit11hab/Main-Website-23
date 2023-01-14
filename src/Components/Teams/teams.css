@@ -1,232 +1,341 @@
-@import url('https://fonts.cdnfonts.com/css/aileron');
+@import url("https://fonts.cdnfonts.com/css/aileron");
 @font-face {
   font-family: "Star Guard";
   src: url(../../fonts/starguardsemital.ttf) format("truetype");
 }
-        body {
-            margin: 0;
-        }
-        .home{
-          background:#FFFBF5;
-          mix-blend-mode: multiply;
-        }
-        .wemade-img{
-          display: none;
-        }
+body {
+  margin: 0;
+}
+.home {
+  background: #fffbf5;
+  mix-blend-mode: multiply;
+}
+.wemade-img {
+  display: none;
+}
 
-        .temp {
-            width: 80vw;
-            height: 100%;
-            margin: auto;
-            position: relative;
-        }
+.temp {
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
 
-        .pic {
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-        }
+.pic {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
-        .hover-grp {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            overflow: visible;
-        }
+.hover-grp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: visible;
+}
 
-        .hovershow {
-            height: 100%;
-            width: 25%;
-            overflow: visible;
-            position: relative;
-        }
+.hovershow {
+  height: 100%;
+  width: 25%;
+  overflow: visible;
+  position: relative;
+}
 
-        .hovershow .bubble-container {
-            visibility: hidden;
-        }
+.hovershow .bubble-container {
+  visibility: hidden;
+}
 
-        .hovershow:hover .bubble-container {
-            visibility: visible;
-        }
+.hovershow:hover .bubble-container {
+  visibility: visible;
+}
 
-        .bubble-container {
-            height: 40%;
-            width: 100%;
-            position: relative;
-            left: 80%;
-            margin-top: 30%;
-        }
+.bubble-container {
+  height: 40%;
+  width: 40vh;
+  position: relative;
+  left: 70%;
+  margin-top: 30%;
+}
 
-        .bubble {
-            width: 100%;
-            position: relative;
-        }
+.bubble {
+  width: 100%;
+  position: relative;
+  left: -0%;
+  top: 50%;
+  padding:-50%;
+}
+.bubble1 {
+  width: 100%;
+  position: relative;
+  left: -5%;
+  top: 35%;
+}
+.bubble2 {
+  width: 100%;
+  position: relative;
+  left: 10%;
+  top: 30%;
+}
 
-        .bubble-blank {
-            width: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-        }
+.bubble-blank {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-        .icons {
-            cursor: pointer;
-            height: 100%;
-        }
+.icons {
+  cursor: pointer;
+  height: 100%;
+}
 
-        .icons-box {
-            width: 30%;
-            height: 20%;
-            position: absolute;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            top: 50%;
-            right: 5%;
-        }
+.icons-box {
+  width: 30%;
+  height: 20%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 50%;
+  right: 5%;
+}
 
-        .contact-title {
-            font-size: large;
-            position: absolute;
-            font-family: 'Aileron', sans-serif;
-            top: 10%;
-            left: 5%;
-        }
+.contact-title {
+  font-size: large;
+  position: absolute;
+  font-family: "Aileron", sans-serif;
+  top: 10%;
+  left: 5%;
+}
 
-        .contact-info {
-            font-size: large;
-            font-weight: 600;
-            position: absolute;
-            font-family: 'Aileron', sans-serif;
-            left: 5%;
-            bottom: 30%;
-            line-height: 2rem;
-        }
+.contact-info {
+  font-size: large;
+  font-weight: 600;
+  position: absolute;
+  font-family: "Aileron", sans-serif;
+  left: 5%;
+  bottom: 30%;
+  line-height: 2rem;
+}
 
-        .linkedin-black-b {
-            width: 9%;
-            position: absolute;
-            right: 5%;
-            top: 10%;
-            cursor: pointer;
-        }
+.linkedin-black-b {
+  width: 9%;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  cursor: pointer;
+}
 
-        .teams-section {
-            margin: 10rem 0;
-            height: 45vw;
-            width: 100%;
-            background-color: #099FBC;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-top: black 4px solid;
-            border-bottom: black 8px solid;
-            position: relative;
-        }
+.teams-section {
+  margin: 10rem 0;
+  height: 45vw;
+  width: 100%;
+  background-color: #099fbc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: black 4px solid;
+  border-bottom: black 8px solid;
+  position: relative;
+}
 
-        .teams-title {
-            position: absolute;
-            bottom: 0px;
-            margin-bottom: -2.5rem;
-            font-family: 'Star Guard', sans-serif;
-            font-size: 7rem;
-            color: white;
-            text-shadow: -0.2rem -0.2rem 0 #099FBC, 0.2rem -0.2rem 0 #099FBC, -0.2rem 0.2rem 0 #099FBC, 0.2rem 0.2rem 0 #099FBC,-0.4rem -0.4rem 0 #000, 0.4rem -0.4rem 0 #000, -0.4rem 0.4rem 0 #000, 0.4rem 0.4rem 0 #000;
-        }
-        .teamheading{
-          margin: auto;
-          font-family: 'Star Guard', sans-serif;
-          font-size: 7rem;
-          color: white;
-          text-shadow: -0.2rem -0.2rem 0 #FF598A, 0.2rem -0.2rem 0 #FF598A, -0.2rem 0.2rem 0 #FF598A, 0.2rem 0.2rem 0 #FF598A,-0.4rem -0.4rem 0 #000, 0.4rem -0.4rem 0 #000, -0.4rem 0.4rem 0 #000, 0.4rem 0.4rem 0 #000;
-          width: fit-content;
-        }
-          .temp-mob{
-            display: none;
-          }
-
-        @media screen and (max-device-width: 480px) and (orientation: portrait) {
-          .temp-mob{
-            display: block;
-          }
+.teams-title {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: -2.5rem;
+  font-family: "Star Guard Semi-Italic";
+  font-style: italic;
+  font-size: 7rem;
+  color: white;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 
 
-            .teamheading{
-              display: none;
-            }
-            .wemade-img{
-              width: 100%;
-              display: block;
-              margin: auto;
-            }
-            .temp{
-              display: none;
-            }
-            .teams-section{
-              height: auto;
-            }
-            .temp-mob{
-              width: 90%;
-              margin: auto;
-              position: relative;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              margin-bottom: 5rem;
-             }
-            .mobpic{
-              width: 100%;
-            }
-            .contact-info-container{
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-around;
-              margin-bottom: 3rem;
-            }
-            .contact-info-mob{
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              width: 30%;
-            }
-            .teams-title{
-              display: none;
-            }
-            .teams-title-mob {
-                position: absolute;
-                bottom: 0px;
-                margin: auto;
-                width: fit-content;
-                font-family: 'Star Guard', sans-serif;
-                font-size: 4rem;
-                color: white;
-                text-shadow: -0.2rem -0.2rem 0 #099FBC, 0.2rem -0.2rem 0 #099FBC, -0.2rem 0.2rem 0 #099FBC, 0.2rem 0.2rem 0 #099FBC,-0.4rem -0.4rem 0 #000, 0.4rem -0.4rem 0 #000, -0.4rem 0.4rem 0 #000, 0.4rem 0.4rem 0 #000;
-                margin-bottom: -4.2rem;
-            }
-            .contact-mob{
-              width: fit-content;
-              margin: auto;
-              line-height: 1.5rem;
-              font-family: 'Aileron', sans-serif;
-            }
-            .icon-box-mob{
-              width: 80%;
-              height: 1.5rem;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-around;
-              margin: auto;
-              margin-top:0.5rem;
-            }
 
-        }
+-webkit-text-stroke: 2px #099FBC;
+text-shadow: -.4rem -.4rem 0
+#000, .4rem -.4rem 0
+#000, -.4rem .4rem 0
+#000, .4rem .4rem 0 
+#000,.4rem .4rem 0 ;
+}
+.teamheading {
+  margin: auto;
+  font-family: "Star Guard", sans-serif;
+  font-size: 10rem;
+  color: white;
+  
+  width: fit-content;
+  -webkit-text-stroke: 2px #ff598a;
+text-shadow: -.4rem -.4rem 0
+#000, .4rem -.4rem 0
+#000, -.4rem .4rem 0
+#000, .4rem .4rem 0 
+#000,.4rem .4rem 0 ;
+}
+.temp-mob {
+  display: none;
+}
+
+@media screen and (max-device-width: 494px) and (orientation: portrait) {
+  .temp-mob {
+    display: block;
+  }
+
+  .teamheading {
+    display: none;
+  }
+  .wemade-img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .temp {
+    display: none;
+  }
+  .teams-section {
+    height: auto;
+  }
+  .temp-mob {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .mobpic {
+    width: 100%;
+  }
+  .contact-info-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+  .contact-info-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .teams-title {
+    display: none;
+  }
+  .teams-title-mob {
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: fit-content;
+    font-family: "Star Guard", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: -0.2rem -0.2rem 0 #099fbc, 0.2rem -0.2rem 0 #099fbc,
+      -0.2rem 0.2rem 0 #099fbc, 0.2rem 0.2rem 0 #099fbc, -0.4rem -0.4rem 0 #000,
+      0.4rem -0.4rem 0 #000, -0.4rem 0.4rem 0 #000, 0.4rem 0.4rem 0 #000;
+    margin-bottom: -4.2rem;
+  }
+  .contact-mob {
+    width: fit-content;
+    margin: auto;
+    line-height: 1.5rem;
+    font-family: "Aileron", sans-serif;
+  }
+  .icon-box-mob {
+    width: 80%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-device-width: 280px) and (orientation: portrait) {
+  .temp-mob {
+    display: block;
+  }
+
+  .teamheading {
+    display: none;
+  }
+  .wemade-img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .temp {
+    display: none;
+  }
+  .teams-section {
+    height: auto;
+  }
+  .temp-mob {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .mobpic {
+    width: 100%;
+  }
+  .contact-info-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  .contact-info-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .teams-title {
+    display: none;
+  }
+  .teams-title-mob {
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: fit-content;
+    font-family: "Star Guard", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: -0.2rem -0.2rem 0 #099fbc, 0.2rem -0.2rem 0 #099fbc,
+      -0.2rem 0.2rem 0 #099fbc, 0.2rem 0.2rem 0 #099fbc, -0.4rem -0.4rem 0 #000,
+      0.4rem -0.4rem 0 #000, -0.4rem 0.4rem 0 #000, 0.4rem 0.4rem 0 #000;
+    margin-bottom: -4.2rem;
+  }
+  .contact-mob {
+    width: fit-content;
+    margin: auto;
+    line-height: 1.5rem;
+    font-family: "Aileron", sans-serif;
+  }
+  .icon-box-mob {
+    width: 80%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+}
+
