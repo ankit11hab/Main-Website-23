@@ -14,8 +14,7 @@ const bubbleBlank = new URL("./images/bubble-blank.png",
     import.meta.url);
 const instagram = new URL("./images/instagram.png",
     import.meta.url);
-const linkedinBlack = new URL("./images/linkedin-black.png",
-    import.meta.url);
+
     const linkedinWhite = new URL("./images/linkedin-white.png",
         import.meta.url);
 const twitter = new URL("./images/twitter.png",
@@ -36,15 +35,19 @@ const Teambox = (props) => {
 
         <div className="temp">
             <img className="pic" src={piC1} alt=""/>
-            <div className="hover-grp">
-                <div className="hovershow">
-                    <div className="bubble-container">
-                        <div className="bubble">
+            
+         
+
+            <div className="hover-grp ">
+                <div className="hovershow ">
+                    <div className="bubble-container ">
+                        <div className="bubble1 ">
+
                             <img className="bubble-blank" src={bubbleBlank} alt=""/>
                             <div className="contact-title">Contact:</div>
                             <div className="contact-info">
-                                <div>1234567890</div>
-                                <div>creatives@iitg.ac.in</div>
+                                <div>123456789</div>
+                                <div>sarvesh@iitg.ac.in</div>
                             </div>
                             <div className="icons-box">
                                 <a href={leftInsta}>
@@ -57,20 +60,18 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            <a href={lefttwit}>
-                            <img className="linkedin-black-b" src={linkedinBlack} alt=""/>
-                        </a>
+                            
                         </div>
                     </div>
                 </div>
-                <div className="hovershow">
+                <div className="hovershow ">
                     <div className="bubble-container">
                         <div className="bubble">
                             <img className="bubble-blank" src={bubbleBlank} alt=""/>
                             <div className="contact-title">Contact:</div>
                             <div className="contact-info">
-                                <div>1234567890</div>
-                                <div>creatives@iitg.ac.in</div>
+                                <div>1234</div>
+                                <div>Aabha@iitg.ac.in</div>
                             </div>
                             <div className="icons-box">
                                 <a href={midInsta}>
@@ -83,20 +84,18 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            <a href={midtwit}>
-                            <img className="linkedin-black-b" src={linkedinBlack} alt=""/>
-                        </a>
+                            
                         </div>
                     </div>
                 </div>
                 <div className="hovershow">
                     <div className="bubble-container">
-                        <div className="bubble">
+                        <div className="bubble2">
                             <img className="bubble-blank" src={bubbleBlank} alt=""/>
                             <div className="contact-title">Contact:</div>
                             <div className="contact-info">
-                                <div>1234567890</div>
-                                <div>creatives@iitg.ac.in</div>
+                                <div>1234567</div>
+                                <div>AyushSingh@iitg.ac.in</div>
                             </div>
                             <div className="icons-box">
                                 <a href={rightInsta}>
@@ -109,9 +108,7 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            <a href={righttwit}>
-                            <img className="linkedin-black-b" src={linkedinBlack} alt=""/>
-                        </a>
+                            
                         </div>
                     </div>
                 </div>
