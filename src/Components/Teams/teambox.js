@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useState } from "react";
 const piC1 = new URL("./images/pic1.png",
     import.meta.url);
 
@@ -19,6 +19,8 @@ const instagram = new URL("./images/instagram.png",
         import.meta.url);
 const twitter = new URL("./images/twitter.png",
     import.meta.url);
+const closeX = new URL("./images/close.png",
+    import.meta.url);
 const Teambox = (props) => {
     const leftInsta = props.leftInsta;
     const leftlink = props.leftlink;
@@ -29,17 +31,57 @@ const Teambox = (props) => {
     const rightInsta = props.rightInsta;
     const rightlink = props.rightlink;
     const righttwit = props.righttwit;
-    return ( <div className="teams-section">
+
+    const [isMouseOver1,setIsMouseOver1] = useState(false)
+
+  const handleEnter1 = () => {
+    setIsMouseOver1(true)
+  }
+
+  const handleLeave1 = () => {
+    setIsMouseOver1(false)
+  }
+
+  const [isMouseOver2,setIsMouseOver2] = useState(false)
+
+  const handleEnter2 = () => {
+    setIsMouseOver2(true)
+  }
+
+  const handleLeave2 = () => {
+    setIsMouseOver2(false)
+  }
+  const [isMouseOver3,setIsMouseOver3] = useState(false)
+
+    const handleEnter3 = () => {
+      setIsMouseOver3(true)
+    }
+
+    const handleLeave3 = () => {
+      setIsMouseOver3(false)
+    }
+
+
+    return (
+
+
+
+
+
+
+      <div className="teams-section">
 
 
 
         <div className="temp">
             <img className="pic" src={piC1} alt=""/>
-            
-         
+
+
 
             <div className="hover-grp ">
-                <div className="hovershow ">
+                <div className="hovershow " onMouseEnter={handleEnter1}>
+                {isMouseOver1 ?
+                <>
                     <div className="bubble-container ">
                         <div className="bubble1 ">
 
@@ -60,11 +102,19 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            
+                            <img className="close-button" src={closeX} onClick={handleLeave1} alt=""/>
+
                         </div>
                     </div>
+
+                    </>:
+                    null
+
+                  }
                 </div>
-                <div className="hovershow ">
+                <div className="hovershow " onMouseEnter={handleEnter2}>
+                {isMouseOver2 ?
+                <>
                     <div className="bubble-container">
                         <div className="bubble">
                             <img className="bubble-blank" src={bubbleBlank} alt=""/>
@@ -84,11 +134,18 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            
+                            <img className="close-button" src={closeX} onClick={handleLeave2} alt=""/>
+
                         </div>
                     </div>
+                    </>:
+                    null
+
+                    }
                 </div>
-                <div className="hovershow">
+                <div className="hovershow " onMouseEnter={handleEnter3}>
+                {isMouseOver3 ?
+                <>
                     <div className="bubble-container">
                         <div className="bubble2">
                             <img className="bubble-blank" src={bubbleBlank} alt=""/>
@@ -108,9 +165,14 @@ const Teambox = (props) => {
                                     <img className="icons twitter-b" src={twitter} alt=""/>
                                 </a>
                             </div>
-                            
+                            <img className="close-button" src={closeX} onClick={handleLeave3}alt=""/>
+
                         </div>
                     </div>
+                    </>:
+                    null
+
+                    }
                 </div>
             </div>
         </div>
