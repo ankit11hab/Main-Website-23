@@ -20,6 +20,7 @@ import YellowCurve from "./Images/yellowCurve.svg";
 import PinkCurve from "./Images/pinkCurve.svg";
 import shop from './Images/shop.png'
 import shoplogo from './Images/shoplogo.png'
+import RockTheLook from './Images/rockthelook.svg'
 
 const MerchPart = () => {
   const [bagboop, setbagBoop] = useState(false);
@@ -67,7 +68,8 @@ const MerchPart = () => {
           <img src={PinkStar} alt="" className="pinkstar" />
           <img src={ZebraStrip} alt="" className="zebraStrip" />
           <h1 className="heading">
-            ROCK <br /> THE <br /> LOOK
+          <img src={RockTheLook} alt="" className="rockthelook" />
+            {/* ROCK <br /> THE <br /> LOOK */}
           </h1>
           <br />
           <img src={GreenStar} alt="" className="greenstar" />
