@@ -4,12 +4,30 @@ import { useState } from "react";
 import "./Nav.css";
 import Book from "./Book";
 import Logo from "./Logo";
+import Cross from "./Cross";
 import Hamburger from "./Hamburger";
 
-function Nav({ icon }) {
+function Nav({ icon, pic }) {
   const [active, setActive] = useState(false);
+  const [activeMob, setActiveMob] = useState(false);
+
   const handleClick = (e) => {
     setActive(!active);
+    setActiveMob(!activeMob);
+    const mobile = document.getElementById("mobile");
+    mobile.style.backgroundColor = "#1A1A1A";
+    mobile.style.height = "100vh";
+    const alcherlogo = document.getElementByClassName("AlcherLogo")
+    alcherlogo.style.zIndex = "-1";
+  };
+  const handleClickCross = (e) => {
+    setActive(!active);
+    setActiveMob(!activeMob);
+    const mobile = document.getElementById("mobile");
+    mobile.style.background = "transparent";
+    mobile.style.height = "10vh";
+    const alcherlogo = document.getElementByClassName("AlcherLogo")
+    alcherlogo.style.display = "block";
   };
   return (
     <>
@@ -65,52 +83,79 @@ function Nav({ icon }) {
           )}
         </header>
       </div>
-      <div className="mobile">
+      <div className="mobile" id="mobile">
         <div className="navmob">
           <div>
             <Link to="/">
-              <Logo />
+              <Logo pic={pic} />
             </Link>
           </div>
-          <div onClick={handleClick}>
-            <Hamburger />
-          </div>
+          {!active ? (
+            <div onClick={handleClick} style={{cursor: "pointer", marginRight: "5%", zIndex: "2"}}>
+              <Hamburger />
+            </div>
+          ) : (
+            <div onClick={handleClickCross} style={{cursor: "pointer", marginRight: "5%", zIndex: "2"}}>
+              <Cross />
+            </div>
+          )}
         </div>
-        {active ? (
-          <div>
+        {activeMob ? (
+          <div className="extendednavmob" style={{ background: "#1a1a1a" }}>
             <ul className="mobileList">
-              <li>
-                <NavLink to="/Events/pt">
-                  <b>EVENTS</b>
+              <li className="Events">
+                <NavLink to="/Events" style={{textDecoration: "#0B0B0B"}}>
+                  <div className="hoverdivmob">
+                  <b className="listtext listtext1 events">EVENTS</b>
+                  </div>
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/Merch">
-                  <b>MERCH</b>
+              <li className="Merch">
+                <NavLink to="/Merch" style={{textDecoration: "#0B0B0B"}}>
+                  <div className="hoverdivmob merch">
+                  
+                  <b className="listtext listtext2">MERCH</b>
+                  </div>
+                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/Campaigns">
-                  <b>CAMPAIGNS</b>
+              <li className="Campaigns">
+                <NavLink to="/Campaigns" style={{textDecoration: "#0B0B0B"}}>
+                  <div className="hoverdivmob campaigns">
+                
+                  <b className="listtext listtext3">CAMPAIGNS</b>
+                  </div>
+                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/Teams">
-                  <b>TEAMS</b>
-                </NavLink>
-              </li>
-           
-              <li>
-                <NavLink to="/Sponsors">
-                  <b>SPONSORS</b>
+              <li className="Teams">
+                <NavLink to="/Teams" style={{textDecoration: "#0B0B0B"}}>
+                  <div className="hoverdivmob teams">
+                  
+                  <b className="listtext listtext4">TEAMS</b>
+                  </div>
+                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
               <li className="Contests">
                 <NavLink
-                  to="/Contests/vn"
-                  style={{ paddingTop: "1.5vw", marginTop: "2.5vw" }}
+                  to="/Contests"
+                  style={{textDecoration: "#0B0B0B"}}
                 >
-                  <b>CONTESTS</b>
+                  <div className="hoverdivmob contests">
+                  
+                  <b className="listtext listtext5">CONTESTS</b>
+                  </div>
+                  <img src="" alt="" className="eventsActive" />
+                </NavLink>
+              </li>
+              <li className="Sponsors">
+                <NavLink to="/Sponsors" style={{textDecoration: "#0B0B0B"}}>
+                  <div className="hoverdivmob sponsors">
+                  
+                  <b className="listtext listtext6">SPONSORS</b>
+                  </div>
+                  <img src="" alt="" className="eventsActive" />
                 </NavLink>
               </li>
             </ul>
