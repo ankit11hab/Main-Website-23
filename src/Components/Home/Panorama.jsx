@@ -4,6 +4,7 @@ import { Pannellum } from "pannellum-react";
 import myImage from "./images/image.jpg";
 import video1 from './bookCoverVideos/cover-pronites animation.webm';
 import playLogo from './images/Polygon 57.png'
+import lotus from './images/lotus 1.png';
 let count=0;
 const VRScene = () => {
     const logoref = useRef(null);
@@ -60,6 +61,7 @@ if(count %2== 0){
 
   return (
     <div>
+      
       <div className="geet">
         <div className="description">
             {/* <div style={{position:'relative',height:'100vw'}}>
@@ -68,6 +70,18 @@ if(count %2== 0){
         {/* Alcheringa is the annual cultural festival of the Indian Institute of Technology, Guwahati. A splendid idea realised by a group of students in 1996 at IITG marked the dawn of one of Asia’s most ehilarating and significant cultural college fests as we know it today.  */}
         <video className="pano__video"  autoPlay loop  muted src={video1}></video>
         </div>
+        <div className="lotus__img">
+          <div className="texts__ lotus__text1">
+          Alcheringa is the annual cultural festival of the Indian Institute of Technology, Guwahati.
+          </div>
+          <div className="texts__ lotus__text2">
+          A splendid idea realized by a group of students in 1996 at IITG marked the dawn of one of Asia’s most exhilarating and significant cultural college fests as we know it today. 
+          </div>
+        <img className="img__after_hero" src={lotus} alt=''/>
+
+      </div>
+      <div  className='panorama__main'>
+
         <Pannellum
           width="100%"
           height="100vh"
@@ -81,6 +95,7 @@ if(count %2== 0){
           showFullscreenCtrl={false}
           mouseZoom={false}
         />
+        </div>
       </div>
       <div className="blank_div4"></div>
       <div className="video_box"   >

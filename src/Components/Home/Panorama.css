@@ -107,11 +107,50 @@ height: 100vh;
     position: relative !important;
     /* overflow-x:hidden !important ; */
   }
-
-@media screen and ( max-width:768px) {
-  .geet{
+  .lotus__img{
     display: none;
   }
+
+@media screen and ( max-width:768px) {
+  .panorama__main{
+    display: none;
+  }
+  iframe{
+    height: auto;
+  }
+  .pano__video{
+    display: none;
+  }
+  .img__after_hero{
+    display: block;
+    height: 100vh;
+    width: 99vw;
+  }
+  .lotus__img{
+    display: block;
+    position: relative;
+    margin: 0;
+  }
+  .lotus__text1{
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-size: 2vh;
+  }
+  .lotus__text2{
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    display: none;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-size: 2vh;
+  }
+
   body {
     height: auto !important;
     overflow: scroll;
@@ -132,4 +171,20 @@ height: 100vh;
 }
 .pnlm-about-msg{
   display: none !important;
+}
+
+@media (orientation: portrait) {
+  .panorama__main{
+    display: none;
+  }
+  iframe{
+    height: 30vh;
+  }
+  .play_logo{
+    display: none;
+  }
+  .div_on_iframe{
+    display: none;
+  }
+  
 }

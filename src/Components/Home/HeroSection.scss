@@ -87,3 +87,10 @@ z-index: 1;
     height: 20vh;
   }
 }
+
+@media (orientation:portrait) {
+      .blank_div{
+        height: 450vh;
+      }
+      
+}

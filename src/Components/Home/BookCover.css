@@ -5,7 +5,7 @@
     height: 100vh;
     display: flex;
 }
-video {
+#vid1 {
     z-index: 9 !important;
     width: 100vw;
     height: 100vh;
@@ -76,5 +76,18 @@ video {
 .img__{ 
     width: 100vw;
     z-index:1 !important;
-    height: 101.5vh !important;
+    height: 101.5vh ;
+}
+
+@media (orientation:portrait) {
+    .main__cont{
+        height: 50vh;
+    }
+    #vid1{
+        height: auto;
+        width: 100vw;
+      }
+    .img__{
+        height: 27vh;
+    }
 }
