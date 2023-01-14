@@ -38,6 +38,7 @@ const Home = () => {
       righttwit: "",
       id: 2,
     },
+    
   ]);
 
   return (

@@ -66,7 +66,7 @@ if(count %2== 0){
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa obcaecati nesciunt vitae, perferendis aut eos saepe laudantium. In laborum ipsa cupiditate voluptate quasi quisquam, culpa similique corrupti! Vitae neque officia laudantium necessitatibus quos nostrum consequatur, repudiandae perferendis a debitis, ullam, quo ducimus eveniet incidunt vero. Totam minima nemo asperiores numquam!
             </div> */}
         {/* Alcheringa is the annual cultural festival of the Indian Institute of Technology, Guwahati. A splendid idea realised by a group of students in 1996 at IITG marked the dawn of one of Asia’s most ehilarating and significant cultural college fests as we know it today.  */}
-        <video  autoPlay loop  muted src={video1}></video>
+        <video className="pano__video"  autoPlay loop  muted src={video1}></video>
         </div>
         <Pannellum
           width="100%"
