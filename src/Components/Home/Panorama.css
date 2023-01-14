@@ -22,7 +22,7 @@
   text-shadow: 1px 4px 42px #000000;
   line-height: 1.25;
   }
-  video{
+  .pano__video{
     width: 45vw;
     height: 45vw;
     position: absolute;

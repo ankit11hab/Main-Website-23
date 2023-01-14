@@ -30,17 +30,20 @@ function App() {
       openBook.current.disabled=false;
     },1700)}
     useEffect(()=>{
-      if(index===0){
-        videoSrc.current.addEventListener('ended',()=>{
+      videoSrc.current.addEventListener('ended',()=>{
+          if(index===0){
           openBook.current.style.display='block';
+        }
         })
-      }
     },[videoSrc.current])
     const timeout1=()=>{
       setTimeout(()=>{
-        videoBg.current.src=bgimg[index];
+        if(index<=4){
+          videoBg.current.src=bgimg[index];
+        }
       },2000)
     }
+
     function showNext(e){
       if(index<=5){
         index=index+1;
@@ -62,9 +65,9 @@ function App() {
       return true;
     }
     function showNext1(e){
+      openBook.current.style.display='none';
       index=index+1;
       videoBg.current.style.display='block';
-      openBook.current.style.display='none';
       prevBtn.current.style.display='none';
       nextBtn.current.style.display='block';
       videoSrc.current.src=videos[index];
@@ -74,7 +77,7 @@ function App() {
       timeout();
       }
       function showPrevious(e){
-        if(index>=0){
+        if(index>0){
           index=index-1;
         }
         if(index<=1){

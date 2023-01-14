@@ -6,7 +6,7 @@
     display: flex;
 }
 video {
-    z-index: 999 !important;
+    z-index: 9 !important;
     width: 100vw;
     height: 100vh;
 }
@@ -29,8 +29,7 @@ video {
     border-color: white;
     border-width: 0.2vw;
     border: solid;
-    transition-timing-function: ease-in;
-    transition-delay: 0.5s;
+    z-index: 1;
 }
 .nxtBtn{
     position: absolute;
@@ -76,6 +75,6 @@ video {
 }
 .img__{ 
     width: 100vw;
-    z-index:-1 !important;
+    z-index:1 !important;
     height: 101.5vh !important;
 }
