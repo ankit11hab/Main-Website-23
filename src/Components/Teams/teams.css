@@ -47,9 +47,7 @@ body {
   position: relative;
 }
 
-.hovershow .bubble-container {
-  /* display: none; */
-}
+
 
 .hovershow:hover .bubble-container {
   display: block;
@@ -171,7 +169,7 @@ text-shadow: -.4rem -.4rem 0
 .teamheading {
   margin: auto;
   font-family: "Star Guard", sans-serif;
-  font-size: 10rem;
+  font-size: 7.4rem;
   color: white;
 
   width: fit-content;

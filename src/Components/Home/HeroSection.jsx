@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./HeroSection.scss";
+import BookTicketIcon from "./images/bookticketsicon.svg";
 
 // import frame1 from "./images/Timeline 1_0000 - Copy.png";
 // import frame2 from "./images/Timeline 1_0001 - Copy.png";
@@ -329,608 +330,615 @@ import frameMob27 from "./mobile images webp/Mobile_NoBG_0027.webp";
 import frameMob28 from "./mobile images webp/Mobile_NoBG_0028.webp";
 //////////////////////////////////////////////////////////////
 import AlcherLogo from "./images/alcher_2023_logo.png";
+import { NavLink } from "react-router-dom";
 const frameArr = [
-    frame0,
-    frame1,
-    frame2,
-    frame3,
-    frame4,
-    frame5,
-    frame6,
-    frame7,
-    frame8,
-    frame9,
-    frame10,
-    frame11,
-    frame12,
-    frame13,
-    frame14,
-    frame15,
-    frame16,
-    frame17,
-    frame18,
-    frame19,
-    frame20,
-    frame21,
-    frame22,
-    frame23,
-    frame24,
-    frame25,
-    frame26,
-    frame27,
-    frame28,
-    frame29,
-    frame30,
-    frame31,
-    frame32,
-    frame33,
-    frame34,
-    frame35,
-    frame36,
-    frame37,
-    frame38,
-    frame39,
-    frame40,
-    frame41,
-    frame42,
-    frame43,
-    frame44,
-    frame45,
-    frame46,
-    frame47,
-    frame48,
-    frame49,
-    frame50,
-    frame51,
-    frame52,
-    frame53,
-    frame54,
-    frame55,
-    frame56,
-    frame57,
-    frame58,
-    frame59,
-    frame60,
-    frame61,
-    frame62,
-    frame63,
-    frame64,
-    frame65,
-    frame66,
-    frame67,
-    frame68,
-    frame69,
-    frame70,
-    frame71,
-    frame72,
-    frame73,
-    frame74,
-    frame75,
-    frame76,
-    frame77,
-    frame78,
-    frame79,
-    frame80,
-    frame81,
-    frame82,
-    frame83,
-    frame84,
-    frame85,
-    frame86,
-    frame87,
-    frame88,
-    frame89,
-    frame90,
-    frame91,
-    frame92,
-    frame93,
-    frame94,
-    frame95,
-    frame96,
-    frame97,
-    frame98,
-    frame99,
-    frame100,
-    frame101,
-    frame102,
-    frame103,
-    frame104,
-    frame105,
-    frame106,
-    frame107,
-    frame108,
-    frame109,
-    frame110,
-    frame111,
-    frame112,
-    frame113,
-    frame114,
-    frame115,
+  frame0,
+  frame1,
+  frame2,
+  frame3,
+  frame4,
+  frame5,
+  frame6,
+  frame7,
+  frame8,
+  frame9,
+  frame10,
+  frame11,
+  frame12,
+  frame13,
+  frame14,
+  frame15,
+  frame16,
+  frame17,
+  frame18,
+  frame19,
+  frame20,
+  frame21,
+  frame22,
+  frame23,
+  frame24,
+  frame25,
+  frame26,
+  frame27,
+  frame28,
+  frame29,
+  frame30,
+  frame31,
+  frame32,
+  frame33,
+  frame34,
+  frame35,
+  frame36,
+  frame37,
+  frame38,
+  frame39,
+  frame40,
+  frame41,
+  frame42,
+  frame43,
+  frame44,
+  frame45,
+  frame46,
+  frame47,
+  frame48,
+  frame49,
+  frame50,
+  frame51,
+  frame52,
+  frame53,
+  frame54,
+  frame55,
+  frame56,
+  frame57,
+  frame58,
+  frame59,
+  frame60,
+  frame61,
+  frame62,
+  frame63,
+  frame64,
+  frame65,
+  frame66,
+  frame67,
+  frame68,
+  frame69,
+  frame70,
+  frame71,
+  frame72,
+  frame73,
+  frame74,
+  frame75,
+  frame76,
+  frame77,
+  frame78,
+  frame79,
+  frame80,
+  frame81,
+  frame82,
+  frame83,
+  frame84,
+  frame85,
+  frame86,
+  frame87,
+  frame88,
+  frame89,
+  frame90,
+  frame91,
+  frame92,
+  frame93,
+  frame94,
+  frame95,
+  frame96,
+  frame97,
+  frame98,
+  frame99,
+  frame100,
+  frame101,
+  frame102,
+  frame103,
+  frame104,
+  frame105,
+  frame106,
+  frame107,
+  frame108,
+  frame109,
+  frame110,
+  frame111,
+  frame112,
+  frame113,
+  frame114,
+  frame115,
 ];
 
 const frameArrMob = [
-    frameMob0,
-    frameMob1,
-    frameMob2,
-    frameMob3,
-    frameMob4,
-    frameMob5,
-    frameMob6,
-    frameMob7,
-    frameMob8,
-    frameMob9,
-    frameMob10,
-    frameMob11,
-    frameMob12,
-    frameMob13,
-    frameMob14,
-    frameMob15,
-    frameMob16,
-    frameMob17,
-    frameMob18,
-    frameMob19,
-    frameMob20,
-    frameMob21,
-    frameMob22,
-    frameMob23,
-    frameMob24,
-    frameMob25,
-    frameMob26,
-    frameMob27,
-    frameMob28,
+  frameMob0,
+  frameMob1,
+  frameMob2,
+  frameMob3,
+  frameMob4,
+  frameMob5,
+  frameMob6,
+  frameMob7,
+  frameMob8,
+  frameMob9,
+  frameMob10,
+  frameMob11,
+  frameMob12,
+  frameMob13,
+  frameMob14,
+  frameMob15,
+  frameMob16,
+  frameMob17,
+  frameMob18,
+  frameMob19,
+  frameMob20,
+  frameMob21,
+  frameMob22,
+  frameMob23,
+  frameMob24,
+  frameMob25,
+  frameMob26,
+  frameMob27,
+  frameMob28,
 ];
 
 gsap.registerPlugin(ScrollTrigger);
-const texts = document.querySelectorAll('texts__')
+const texts = document.querySelectorAll("texts__");
 function HeroSection() {
-    console.clear();
-    useEffect(() => {
-        if (!window.matchMedia("(max-width: 800px)").matches) {
-            const canvas = document.getElementById("canvas1");
-            const context = canvas.getContext("2d");
+  console.clear();
+  useEffect(() => {
+    if (!window.matchMedia("(max-width: 800px)").matches) {
+      const canvas = document.getElementById("canvas1");
+      const context = canvas.getContext("2d");
 
-            // Set display size (vw/vh).
-            var sizeWidth = (100 * window.innerWidth) / 100,
-                sizeHeight = (100 * window.innerHeight) / 100;
-            //Setting the canvas site and width to be responsive
-            canvas.width = sizeWidth;
-            canvas.height = sizeHeight;
-            canvas.style.width = sizeWidth;
-            canvas.style.height = sizeHeight;
-            const factor1 = sizeWidth / 3840;
-            const factor2 = sizeHeight / 2160;
-            //    var ratio  = Math.min ( factor1, factor2 );
+      // Set display size (vw/vh).
+      var sizeWidth = (100 * window.innerWidth) / 100,
+        sizeHeight = (100 * window.innerHeight) / 100;
+      //Setting the canvas site and width to be responsive
+      canvas.width = sizeWidth;
+      canvas.height = sizeHeight;
+      canvas.style.width = sizeWidth;
+      canvas.style.height = sizeHeight;
+      const factor1 = sizeWidth / 3840;
+      const factor2 = sizeHeight / 2160;
+      //    var ratio  = Math.min ( factor1, factor2 );
 
-            //    context.scale(1/factor1,1/factor2);
-            // canvas.width = 1920;
-            // canvas.height = 1080;
+      //    context.scale(1/factor1,1/factor2);
+      // canvas.width = 1920;
+      // canvas.height = 1080;
 
-            const frameCount = 116;
-            const currentFrame = (index) => frameArr[index];
+      const frameCount = 116;
+      const currentFrame = (index) => frameArr[index];
 
-            const images = [];
-            const book_cover = {
-                frame: 0,
-            };
+      const images = [];
+      const book_cover = {
+        frame: 0,
+      };
 
-            for (let i = 0; i < frameCount; i++) {
-                const img = new Image();
-                img.src = currentFrame(i);
-                images.push(img);
-            }
-            // const video = document.createElement('video');
-            // video.src=currentFrame(200);
-            // video.controls=true;
-            // images.push(video)
-            // console.log(images);
+      for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+        images.push(img);
+      }
+      // const video = document.createElement('video');
+      // video.src=currentFrame(200);
+      // video.controls=true;
+      // images.push(video)
+      // console.log(images);
 
-            const animation = gsap.to(book_cover, {
-                frame: frameCount - 1,
-                snap: "frame",
-                ease: "none",
-                duration: 2000,
-                scrollTrigger: {
-                    trigger: ".book-container1",
-                    start: "top 25%",
-                    end: "400% 25%",
-                    scrub: 2,
-                    // markers: true,
-                },
+      const animation = gsap.to(book_cover, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        duration: 2000,
+        scrollTrigger: {
+          trigger: ".book-container1",
+          start: "top 25%",
+          end: "400% 25%",
+          scrub: 2,
+          // markers: true,
+        },
 
-                onUpdate: render,
+        onUpdate: render,
 
-                // use animation onUpdate instead of scrollTrigger's onUpdate
-                // onComplete:(e)=>{
-                //     // document.getElementById('canvas_section').setAttribute('display','none');
-                //     // const video = document.createElement('video');
-                //     // video.src=bookcovervideo;
-                //     // video.controls=true;
-                //     // document.getElementById('animation__Container').appendChild(video);
-                //     // video.play();
-                //     // context.drawImage(video,0,0);
-                //     console.log('completed')
-                // },
-            });
+        // use animation onUpdate instead of scrollTrigger's onUpdate
+        // onComplete:(e)=>{
+        //     // document.getElementById('canvas_section').setAttribute('display','none');
+        //     // const video = document.createElement('video');
+        //     // video.src=bookcovervideo;
+        //     // video.controls=true;
+        //     // document.getElementById('animation__Container').appendChild(video);
+        //     // video.play();
+        //     // context.drawImage(video,0,0);
+        //     console.log('completed')
+        // },
+      });
 
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "top 25%",
-                    end: "400% center",
-                    toggleActions: "play reverse play reverse",
-                    id: "hero container",
-                    // markers:true,
-                    scrub: true,
-                    // pin:true
-                },
-            });
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "top 25%",
+          end: "400% center",
+          toggleActions: "play reverse play reverse",
+          id: "hero container",
+          // markers:true,
+          scrub: true,
+          // pin:true
+        },
+      });
 
-            tl.to(".hero_container", {
-                css: {
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                },
-            });
+      tl.to(".hero_container", {
+        css: {
+          position: "fixed",
+          top: 0,
+          left: 0,
+        },
+      });
 
-            tl.to(".hero_container", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% top",
-                    end: "bottom bottom",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "lastFrame",
-                    // markers:true,
-                },
-                css: {
-                    position: "static",
-                },
-            });
-            tl.to(".blank_div", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% top",
-                    end: "bottom bottom",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "blankdiv",
-                    // markers:true,
-                },
-                css: {
-                    // position:'absolute',
-                    // width:'10%',
-                    height: 4 * sizeHeight,
-                    // opacity:0,
-                },
-            });
-            tl.to(".geet", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% center",
-                    end: "+=150%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geet",
-                    // markers: true,
-                    // duration:2,
-                },
-                css: {
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    opacity: 1,
-                    zIndex: 6,
-                },
-            });
-            tl.to(".geet", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "550% center",
-                    // end:'100% top',
-                    // end:'+=100%',
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geetee1",
-                    // markers:true,
-                },
-                css: {
-                    position: "static",
-                },
-            });
-            tl.to(".blank_div4", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "550% center",
-                    // end:'100% top',
-                    // end:'+=100%',
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geetee1",
-                    // markers:true,
-                },
-                css: {
-                    height: 0,
-                },
-            });
-            tl.to(".blank_div3", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "550% center",
-                    end: "+=100%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geetee2",
-                    // markers:true,
-                },
-                css: {
-                    //  position:'fixed',
-                    //  opacity:0,
-                    // height:sizeHeight*1,
-                    height: sizeHeight * 0.15,
-                },
-            });
+      tl.to(".hero_container", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% top",
+          end: "bottom bottom",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "lastFrame",
+          // markers:true,
+        },
+        css: {
+          position: "static",
+        },
+      });
+      tl.to(".blank_div", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% top",
+          end: "bottom bottom",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "blankdiv",
+          // markers:true,
+        },
+        css: {
+          // position:'absolute',
+          // width:'10%',
+          height: 4 * sizeHeight,
+          // opacity:0,
+        },
+      });
+      tl.to(".geet", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% center",
+          end: "+=150%",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geet",
+          // markers: true,
+          // duration:2,
+        },
+        css: {
+          position: "fixed",
+          top: 0,
+          left: 0,
+          opacity: 1,
+          zIndex: 6,
+        },
+      });
+      tl.to(".geet", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          // end:'100% top',
+          // end:'+=100%',
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee1",
+          // markers:true,
+        },
+        css: {
+          position: "static",
+        },
+      });
+      tl.to(".blank_div4", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          // end:'100% top',
+          // end:'+=100%',
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee1",
+          // markers:true,
+        },
+        css: {
+          height: 0,
+        },
+      });
+      tl.to(".blank_div3", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          end: "+=100%",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee2",
+          // markers:true,
+        },
+        css: {
+          //  position:'fixed',
+          //  opacity:0,
+          // height:sizeHeight*1,
+          height: sizeHeight * 0.15,
+        },
+      });
 
-            images[0].onload = render;
+      images[0].onload = render;
 
-            function render() {
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                // console.log(book_cover.frame);
-                //   context.drawImage(images[book_cover.frame], 0, 0);
-                context.drawImage(
-                    images[book_cover.frame],
-                    0,
-                    0,
-                    3840,
-                    2160,
-                    0,
-                    0,
-                    3840 * factor1,
-                    2160 * factor2
-                );
-            }
-        } else {
-            const canvas = document.getElementById("canvas1");
-            const context = canvas.getContext("2d");
+      function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // console.log(book_cover.frame);
+        //   context.drawImage(images[book_cover.frame], 0, 0);
+        context.drawImage(
+          images[book_cover.frame],
+          0,
+          0,
+          3840,
+          2160,
+          0,
+          0,
+          3840 * factor1,
+          2160 * factor2
+        );
+      }
+    } else {
+      const canvas = document.getElementById("canvas1");
+      const context = canvas.getContext("2d");
 
-            // Set display size (vw/vh).
-            var sizeWidth = (100 * window.innerWidth) / 100,
-                sizeHeight = (100 * window.innerHeight) / 100;
-            //Setting the canvas site and width to be responsive
-            canvas.width = sizeWidth;
-            canvas.height = sizeHeight;
-            canvas.style.width = sizeWidth;
-            canvas.style.height = sizeHeight;
-            const factor1 = sizeWidth / 1184;
-            const factor2 = sizeHeight / 2960;
-            //    var ratio  = Math.min ( factor1, factor2 );
+      // Set display size (vw/vh).
+      var sizeWidth = (100 * window.innerWidth) / 100,
+        sizeHeight = (100 * window.innerHeight) / 100;
+      //Setting the canvas site and width to be responsive
+      canvas.width = sizeWidth;
+      canvas.height = sizeHeight;
+      canvas.style.width = sizeWidth;
+      canvas.style.height = sizeHeight;
+      const factor1 = sizeWidth / 1184;
+      const factor2 = sizeHeight / 2960;
+      //    var ratio  = Math.min ( factor1, factor2 );
 
-            //    context.scale(1/factor1,1/factor2);
-            // canvas.width = 1920;
-            // canvas.height = 1080;
+      //    context.scale(1/factor1,1/factor2);
+      // canvas.width = 1920;
+      // canvas.height = 1080;
 
-            const frameCount = 29;
-            const currentFrame = (index) => frameArrMob[index];
+      const frameCount = 29;
+      const currentFrame = (index) => frameArrMob[index];
 
-            const images = [];
-            const book_cover = {
-                frame: 0,
-            };
+      const images = [];
+      const book_cover = {
+        frame: 0,
+      };
 
-            for (let i = 0; i < frameCount; i++) {
-                const img = new Image();
-                img.src = currentFrame(i);
-                images.push(img);
-            }
-            // const video = document.createElement('video');
-            // video.src=currentFrame(200);
-            // video.controls=true;
-            // images.push(video)
-            // console.log(images);
+      for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+        images.push(img);
+      }
+      // const video = document.createElement('video');
+      // video.src=currentFrame(200);
+      // video.controls=true;
+      // images.push(video)
+      // console.log(images);
 
-            const animation = gsap.to(book_cover, {
-                frame: frameCount - 1,
-                snap: "frame",
-                ease: "none",
-                duration: 2000,
-                scrollTrigger: {
-                    trigger: ".book-container1",
-                    // start: "35% 25%",
-                    start: "25% 20%",
-                    end: "400% 25%",
-                    scrub: 2,
-                    // markers: true,
-                },
+      const animation = gsap.to(book_cover, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        duration: 2000,
+        scrollTrigger: {
+          trigger: ".book-container1",
+          // start: "35% 25%",
+          start: "25% 20%",
+          end: "400% 25%",
+          scrub: 2,
+          // markers: true,
+        },
 
-                onUpdate: render,
+        onUpdate: render,
 
-                // use animation onUpdate instead of scrollTrigger's onUpdate
-                // onComplete:(e)=>{
-                //     // document.getElementById('canvas_section').setAttribute('display','none');
-                //     // const video = document.createElement('video');
-                //     // video.src=bookcovervideo;
-                //     // video.controls=true;
-                //     // document.getElementById('animation__Container').appendChild(video);
-                //     // video.play();
-                //     // context.drawImage(video,0,0);
-                //     console.log('completed')
-                // },
-            });
+        // use animation onUpdate instead of scrollTrigger's onUpdate
+        // onComplete:(e)=>{
+        //     // document.getElementById('canvas_section').setAttribute('display','none');
+        //     // const video = document.createElement('video');
+        //     // video.src=bookcovervideo;
+        //     // video.controls=true;
+        //     // document.getElementById('animation__Container').appendChild(video);
+        //     // video.play();
+        //     // context.drawImage(video,0,0);
+        //     console.log('completed')
+        // },
+      });
 
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "25% 20%",
-                    end: "400% center",
-                    toggleActions: "play reverse play reverse",
-                    id: "hero container",
-                    // markers: true,
-                    scrub: true,
-                    // pin:true
-                },
-            });
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "25% 20%",
+          end: "400% center",
+          toggleActions: "play reverse play reverse",
+          id: "hero container",
+          // markers: true,
+          scrub: true,
+          // pin:true
+        },
+      });
 
-            tl.to(".hero_container", {
-                css: {
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                },
-            });
+      tl.to(".hero_container", {
+        css: {
+          position: "fixed",
+          top: 0,
+          left: 0,
+        },
+      });
 
-            tl.to(".hero_container", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% top",
-                    end: "bottom bottom",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "lastFrame",
-                    // markers:true,
-                },
-                css: {
-                    position: "static",
-                },
-            });
-            tl.to(".blank_div", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% top",
-                    end: "bottom bottom",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "blankdiv",
-                    // markers:true,
-                },
-                css: {
-                    // position:'absolute',
-                    // width:'10%',
-                    height: 4 * sizeHeight,
-                    // opacity:0,
-                },
-            });
-            tl.to(".geet", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "400% center",
-                    end: "+=150%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geet",
-                    // markers:true,
-                    // duration:2,
-                },
-                css: {
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    opacity: 1,
-                    zIndex: 6,
-                },
-            });
-            // tl.to('.lotus__img',{
-            //     scrollTrigger:{
-            //         trigger:'lotus__text1',
-            //         start:'420% center',
-            //         end:'+=50%',
-            //         markers:true,
-            //     },
-            //     css:{
-            //         // position:'static',
-            //         // opacity:0.5,
-            //         color:'green',
-            //         translateY:'-200px',
-            //     }
-            // })
-            tl.to(".geet", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "550% center",
-                    end: "+=100%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geetee1",
-                    // markers:true,
-                },
-                css: {
-                    position: "static",
-                },
-            });
-            tl.to(".blank_div4", {
-              scrollTrigger: {
-                  trigger: ".hero_container",
-                  start: "550% center",
-                  // end:'100% top',
-                  // end:'+=100%',
-                  toggleActions: "play reverse play reverse",
-                  scrub: true,
-                  id: "geetee1",
-                  // markers:true,
-              },
-              css: {
-                  height: 0,
-              },
-          });
-            tl.to(".blank_div3", {
-                scrollTrigger: {
-                    trigger: ".hero_container",
-                    start: "550% center",
-                    end: "+=100%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true,
-                    id: "geetee2",
-                    // markers:true,
-                },
-                css: {
-                    //    position:'absolute',
-                    //    opacity:0,
-                    height: sizeHeight * 0.15,
-                },
-            });
+      tl.to(".hero_container", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% top",
+          end: "bottom bottom",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "lastFrame",
+          // markers:true,
+        },
+        css: {
+          position: "static",
+        },
+      });
+      tl.to(".blank_div", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% top",
+          end: "bottom bottom",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "blankdiv",
+          // markers:true,
+        },
+        css: {
+          // position:'absolute',
+          // width:'10%',
+          height: 4 * sizeHeight,
+          // opacity:0,
+        },
+      });
+      tl.to(".geet", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "400% center",
+          end: "+=150%",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geet",
+          // markers:true,
+          // duration:2,
+        },
+        css: {
+          position: "fixed",
+          top: 0,
+          left: 0,
+          opacity: 1,
+          zIndex: 6,
+        },
+      });
+      // tl.to('.lotus__img',{
+      //     scrollTrigger:{
+      //         trigger:'lotus__text1',
+      //         start:'420% center',
+      //         end:'+=50%',
+      //         markers:true,
+      //     },
+      //     css:{
+      //         // position:'static',
+      //         // opacity:0.5,
+      //         color:'green',
+      //         translateY:'-200px',
+      //     }
+      // })
+      tl.to(".geet", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          end: "+=100%",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee1",
+          // markers:true,
+        },
+        css: {
+          position: "static",
+        },
+      });
+      tl.to(".blank_div4", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          // end:'100% top',
+          // end:'+=100%',
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee1",
+          // markers:true,
+        },
+        css: {
+          height: 0,
+        },
+      });
+      tl.to(".blank_div3", {
+        scrollTrigger: {
+          trigger: ".hero_container",
+          start: "550% center",
+          end: "+=100%",
+          toggleActions: "play reverse play reverse",
+          scrub: true,
+          id: "geetee2",
+          // markers:true,
+        },
+        css: {
+          //    position:'absolute',
+          //    opacity:0,
+          height: sizeHeight * 0.15,
+        },
+      });
 
-            images[0].onload = render;
+      images[0].onload = render;
 
-            function render() {
-                context.clearRect(0, 0, canvas.width, canvas.height);
-                // console.log(book_cover.frame);
-                //   context.drawImage(images[book_cover.frame], 0, 0);
-                context.drawImage(
-                    images[book_cover.frame],
-                    0,
-                    0,
-                    1184,
-                    2960,
-                    0,
-                    0,
-                    1184 * factor1,
-                    2960 * factor2
-                );
-            }
-        }
-    }, []);
-    return (
-        <div className="hero_animation_div" id="heroAnimationDiv">
-            <div className="AlcherLogo">
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <img className="logo_img" src={AlcherLogo} alt="" />
-            </div>
-            <div className="blank_div2"></div>
-            <div id="hero_container" className="hero_container">
-                <section id="canvas_section1" className="book-container1">
-                    <canvas id="canvas1" />
-                </section>
-            </div>
-            <div className="blank_div" id="blankDivId"></div>
-        </div>
-    );
+      function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        // console.log(book_cover.frame);
+        //   context.drawImage(images[book_cover.frame], 0, 0);
+        context.drawImage(
+          images[book_cover.frame],
+          0,
+          0,
+          1184,
+          2960,
+          0,
+          0,
+          1184 * factor1,
+          2960 * factor2
+        );
+      }
+    }
+  }, []);
+  return (
+    <div className="hero_animation_div" id="heroAnimationDiv">
+      <div className="AlcherLogo">
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <img className="logo_img" src={AlcherLogo} alt="" />
+      </div>
+      <div className="bookticketbtn">
+        <button type="button" id="bookbtn" className="bookbtn">
+          <img src={BookTicketIcon} alt="" />
+          <div>&nbsp; &nbsp; BOOK TICKETS</div>
+        </button>
+      </div>
+      <div className="blank_div2"></div>
+      <div id="hero_container" className="hero_container">
+        <section id="canvas_section1" className="book-container1">
+          <canvas id="canvas1" />
+        </section>
+      </div>
+      <div className="blank_div" id="blankDivId"></div>
+    </div>
+  );
 }
 
 export default HeroSection;
