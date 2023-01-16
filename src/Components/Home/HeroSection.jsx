@@ -830,20 +830,6 @@ function HeroSection() {
           zIndex: 6,
         },
       });
-      // tl.to('.lotus__img',{
-      //     scrollTrigger:{
-      //         trigger:'lotus__text1',
-      //         start:'420% center',
-      //         end:'+=50%',
-      //         markers:true,
-      //     },
-      //     css:{
-      //         // position:'static',
-      //         // opacity:0.5,
-      //         color:'green',
-      //         translateY:'-200px',
-      //     }
-      // })
       tl.to(".geet", {
         scrollTrigger: {
           trigger: ".hero_container",
@@ -923,12 +909,12 @@ function HeroSection() {
         <span class="t_over"></span>
         <span class="t_over"></span>
         <img className="logo_img" src={AlcherLogo} alt="" />
-      </div>
       <div className="bookticketbtn">
         <button type="button" id="bookbtn" className="bookbtn">
           <img src={BookTicketIcon} alt="" />
           <div>&nbsp; &nbsp; BOOK TICKETS</div>
         </button>
+      </div>
       </div>
       <div className="blank_div2"></div>
       <div id="hero_container" className="hero_container">

@@ -64,7 +64,7 @@ if(count %2== 0){
   return (
     <div>
       
-      <div className="geet">
+      <div className="geet" id="geet">
         <div className="description">
             {/* <div style={{position:'relative',height:'100vw'}}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa obcaecati nesciunt vitae, perferendis aut eos saepe laudantium. In laborum ipsa cupiditate voluptate quasi quisquam, culpa similique corrupti! Vitae neque officia laudantium necessitatibus quos nostrum consequatur, repudiandae perferendis a debitis, ullam, quo ducimus eveniet incidunt vero. Totam minima nemo asperiores numquam!
