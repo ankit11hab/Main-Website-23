@@ -24,9 +24,10 @@
   }
   .pano__video{
     width: 45vw;
-    height: 45vw;
+    /* height: 15vw; */
     position: absolute;
-    left: 50vw;
+    top: 27vw;
+    left: 55vw;
   }
   .video_box{
     position: relative;

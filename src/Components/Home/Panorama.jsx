@@ -2,7 +2,7 @@ import React, { Component, useState, useRef } from "react";
 import "./Panorama.css";
 import { Pannellum } from "pannellum-react";
 import myImage from "./images/image.jpg";
-import video1 from './bookCoverVideos/cover-pronites animation.webm';
+import video1 from '../../assets/text_animation.webm';
 import playLogo from './images/Polygon 57.png'
 import lotus from './images/lotus 1.png';
 let count=0;
