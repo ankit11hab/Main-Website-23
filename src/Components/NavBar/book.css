@@ -1,0 +1,56 @@
+#bookbtnnav {
+  display: flex;
+  flex-direction: row;
+  background: #f35c41;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 5vw;
+  color: #ffffff;
+  font-family: "Aileron";
+  font-size: 1vw;
+  font-weight: 700;
+  text-align: right;
+  width: 11.6vw;
+  box-shadow: 3px 3px 0px #1a1a1a;
+  padding: 4% 3% 4% 3%;
+  margin-top: 1%;
+}
+
+.bookicon {
+    width: 1.5vw;
+}
+
+.booktextnav {
+    display: flex;
+    align-self: center;
+}
+
+@media (max-width: 900px) {
+  #bookbtn {
+    width: fit-content;
+    height: 4.7vh;
+    font-size: 1vw;
+    border-radius: 20vw;
+    padding-right: 5%;
+    padding-right: 5%;
+    box-shadow: 3.5px 3.5px 0px #1a1a1a;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  #bookbtnnav {
+    /* height: 4.7vh; */
+    font-size: 1vw;
+    border-radius: 20vw;
+    padding: 5% 4% 5% 4%;
+  }
+}
+
+.bookticketbtnnav {
+  display: flex;
+  justify-content: center;
+}
+#bookbtnnav:hover {
+  box-shadow: none;
+  transform: translate(5%, 10%);
+  transition-duration: 0.3s;
+}

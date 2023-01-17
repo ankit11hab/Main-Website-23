@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./HeroSection.scss";
@@ -485,7 +485,6 @@ const frameArrMob = [
 gsap.registerPlugin(ScrollTrigger);
 const texts = document.querySelectorAll("texts__");
 function HeroSection() {
-  const [isPending, setisPending] = useState(true);
   console.clear();
   useEffect(() => {
     if (!window.matchMedia("(max-width: 800px)").matches) {
@@ -630,7 +629,7 @@ function HeroSection() {
         scrollTrigger: {
           trigger: ".hero_container",
           start: "550% center",
-          // end:'100% top',
+          end: "100% top",
           // end:'+=100%',
           toggleActions: "play reverse play reverse",
           scrub: true,
@@ -835,7 +834,7 @@ function HeroSection() {
         scrollTrigger: {
           trigger: ".hero_container",
           start: "550% center",
-          end: "+=100%",
+          end: "100% top",
           toggleActions: "play reverse play reverse",
           scrub: true,
           id: "geetee1",
@@ -850,7 +849,7 @@ function HeroSection() {
           trigger: ".hero_container",
           start: "550% center",
           // end:'100% top',
-          // end:'+=100%',
+          end: "+=100%",
           toggleActions: "play reverse play reverse",
           scrub: true,
           id: "geetee1",
@@ -896,55 +895,35 @@ function HeroSection() {
         );
       }
     }
-    setisPending(false);
   }, []);
   return (
-    <>
-      {isPending && <style>{`body{overflow:hidden !important}`}</style>}
-      {isPending && (
-        <div className="loader-container">
-          <div class="loader book">
-            <figure class="page"></figure>
-            <figure class="page"></figure>
-            <figure class="page"></figure>
-          </div>
-          <h4>Loading</h4>
+    <div className="hero_animation_div" id="heroAnimationDiv">
+      <div className="AlcherLogo">
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <span class="t_over"></span>
+        <img className="logo_img" src={AlcherLogo} alt="" />
+        <div className="bookticketbtn">
+          <button type="button" id="bookbtn" className="bookbtn">
+            <img src={BookTicketIcon} alt="" />
+            <div>&nbsp; &nbsp; BOOK TICKETS</div>
+          </button>
         </div>
-      )}
-      <div
-        className="hero_animation_div"
-        id="heroAnimationDiv"
-        style={{
-          backdropFilter: isPending && "blur(10px)",
-        }}
-      >
-        <div className="AlcherLogo">
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <span class="t_over"></span>
-          <img className="logo_img" src={AlcherLogo} alt="" />
-          <div className="bookticketbtn">
-            <button type="button" id="bookbtn" className="bookbtn">
-              <img src={BookTicketIcon} alt="" />
-              <div>&nbsp; &nbsp; BOOK TICKETS</div>
-            </button>
-          </div>
-        </div>
-        <div className="blank_div2"></div>
-        <div id="hero_container" className="hero_container">
-          <section id="canvas_section1" className="book-container1">
-            <canvas id="canvas1" />
-          </section>
-        </div>
-        <div className="blank_div" id="blankDivId"></div>
       </div>
-    </>
+      <div className="blank_div2"></div>
+      <div id="hero_container" className="hero_container">
+        <section id="canvas_section1" className="book-container1">
+          <canvas id="canvas1" />
+        </section>
+      </div>
+      <div className="blank_div" id="blankDivId"></div>
+    </div>
   );
 }
 
