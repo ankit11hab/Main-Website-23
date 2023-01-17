@@ -926,10 +926,11 @@ function HeroSection() {
           <span class="t_over"></span>
           <span class="t_over"></span>
           <img className="logo_img" src={AlcherLogo} alt="" />
+          <div className="headingmob"></div>
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
               <img src={BookTicketIcon} alt="" />
-              <div>&nbsp; &nbsp; BOOK TICKETS</div>
+              <div className="bookticketstext">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
             </button>
           </div>
         </div>

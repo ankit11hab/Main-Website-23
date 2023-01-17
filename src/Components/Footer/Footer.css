@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 6vw;
-  line-height: 7vw;
+  line-height: 5.9vw;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -52,7 +52,7 @@
   font-family: "Aileron";
   font-style: normal;
   font-weight: 300;
-  font-size: 2.6vh;
+  font-size: 1.0vw;
   line-height: 24px;
   color: #ffffff;
   padding-top: 3.06vh;
@@ -167,7 +167,7 @@
   font-family: "Aileron";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.6vh;
+  font-size: 0.98vw;
   line-height: 3.2vh;
   padding-top: 3.73vh;
   /* identical to box height */
@@ -198,7 +198,7 @@
   justify-content: space-between;
   font-family: "Aileron";
   font-style: normal;
-  font-size: 2.6vh;
+  font-size: 1.2vw;
   line-height: 3.2vh;
   text-align: right;
   /* margin: 2vw; */
@@ -210,7 +210,7 @@
   justify-content: space-between;
   font-family: "Aileron";
   font-style: normal;
-  font-size: 2.6vh;
+  font-size: 1.2vw;
   line-height: 3.2vh;
   text-align: right;
   /* margin: 2vw; */

@@ -349,12 +349,13 @@
 .sidebar1 .head {
 	font-family: 'Aileron', sans-serif;
 	font-size: 1.4rem;
-	font-weight: 700;
+	font-weight: 900;
+	margin-bottom: 1.8vw;
 }
 
 .sidebar1 ul {
 	font-family: 'Aileron', sans-serif;
-	font-weight: 500;
+	font-weight: 670;
 	font-size: 1.4rem;
 	color: rgba(26,26,26,1.00);
 	display: flex;
@@ -367,6 +368,7 @@
 
 .sidebar1 ul  li{
 list-style-type: none;
+line-height: 2.0vw;
 }
 .sidebar1 a{
 	text-decoration: none;
@@ -375,7 +377,7 @@ list-style-type: none;
 
 .sidebar1 .mlist .active {
 	color: #F35C41;
-	font-weight: 600;
+	font-weight: 700;
 	display: flex;
 }
 

@@ -13,51 +13,51 @@ const VRScene = () => {
 
   
 
-  function playVideo(){
-    console.log(count);
-        // //as noted in addendum, check for querystring exitence
-        // var symbol = document.getElementById("themevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
-        // //modify source to autoplay and start video
-        // document.getElementById("themevideo")[0].src += symbol + "autoplay=1";
-        // console.log(logoref.current)
-        // logoref.current.style.display='none';
-        const Player = document.getElementById('themevideo');
-const PlayBtn = document.getElementById('playLogo');
-// const stopBtn = document.getElementById('stop');
-let  playY;
+//   function playVideo(){
+//     console.log(count);
+//         // //as noted in addendum, check for querystring exitence
+//         // var symbol = document.getElementById("themevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
+//         // //modify source to autoplay and start video
+//         // document.getElementById("themevideo")[0].src += symbol + "autoplay=1";
+//         // console.log(logoref.current)
+//         // logoref.current.style.display='none';
+//         const Player = document.getElementById('themevideo');
+// const PlayBtn = document.getElementById('playLogo');
+// // const stopBtn = document.getElementById('stop');
+// let  playY;
 
-if(count %2== 0){
-    playY = Player.src += '?autoplay=1';
-    count++;
-    setTimeout(()=>{
-        document.getElementById('playLogo').style.display='none';
-    }, 500);
+// // if(count %2== 0){
+// //     playY = Player.src += '?autoplay=1';
+// //     count++;
+// //     setTimeout(()=>{
+// //         document.getElementById('playLogo').style.display='none';
+// //     }, 500);
 
-  }
- else if(count %2== 1){
-    setTimeout(()=>{
-        document.getElementById('playLogo').style.display='block';
-    }, 500);
-    Player.src = Player.src.split('?')[0];
-    count++;
+// //   }
+// //  else if(count %2== 1){
+// //     setTimeout(()=>{
+// //         document.getElementById('playLogo').style.display='block';
+// //     }, 500);
+// //     Player.src = Player.src.split('?')[0];
+// //     count++;
 
- } 
+// //  } 
 
-// stopBtn.addEventListener( 'click' , () => {
-//     playY = playY.slice(0, -11);
-//     Player.src = playY
-//     times = 0;
-// });
+// // stopBtn.addEventListener( 'click' , () => {
+// //     playY = playY.slice(0, -11);
+// //     Player.src = playY
+// //     times = 0;
+// // });
 
-// document.ready(function(){
-//     $("#themevideo").on("load",function(){
-//         $(this).contents().on("mousedown, mouseup,click",function(){
+// // document.ready(function(){
+// //     $("#themevideo").on("load",function(){
+// //         $(this).contents().on("mousedown, mouseup,click",function(){
             
 
-//         })
-//     })
-// })
-  }
+// //         })
+// //     })
+// // })
+//   }
 
  
 
@@ -101,8 +101,8 @@ if(count %2== 0){
       </div>
       <div className="blank_div4"></div>
       <div className="video_box"   >
-        <div className="play_logo" id="playLogo" ref={logoref}  ><img src={playLogo} alt="" /></div>
-        <div className="div_on_iframe" onClick={playVideo}></div>
+        {/* <div className="play_logo" id="playLogo" ref={logoref}  ><img src={playLogo} alt="" /></div> */}
+        {/* <div className="div_on_iframe" ></div> */}
       <iframe   id="themevideo" src="https://www.youtube.com/embed/quUzUB0D6tk" title="Alcheringa 2023 Official Theme | Pledge to Persist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
         
       </iframe>
