@@ -38,8 +38,9 @@ const Teambox = (props) => {
     setIsMouseOver1(true)
   }
 
-  const handleLeave1 = () => {
-    setIsMouseOver1(false)
+  const handleLeave1 = (event) => {
+    setIsMouseOver1(false);
+    event.stopPropagation();
   }
 
   const [isMouseOver2,setIsMouseOver2] = useState(false)
@@ -48,8 +49,9 @@ const Teambox = (props) => {
     setIsMouseOver2(true)
   }
 
-  const handleLeave2 = () => {
-    setIsMouseOver2(false)
+  const handleLeave2 = (event) => {
+    setIsMouseOver2(false);
+    event.stopPropagation();
   }
   const [isMouseOver3,setIsMouseOver3] = useState(false)
 
@@ -57,8 +59,9 @@ const Teambox = (props) => {
       setIsMouseOver3(true)
     }
 
-    const handleLeave3 = () => {
-      setIsMouseOver3(false)
+    const handleLeave3 = (event) => {
+      setIsMouseOver3(false);
+      event.stopPropagation();
     }
 
 
@@ -79,7 +82,7 @@ const Teambox = (props) => {
 
 
             <div className="hover-grp ">
-                <div className="hovershow " onMouseEnter={handleEnter1}>
+                <div className="hovershow " onClick={handleEnter1} data-tooltip="Click for contact info" data-tooltip-location="left">
                 {isMouseOver1 ?
                 <>
                     <div className="bubble-container ">
@@ -112,7 +115,7 @@ const Teambox = (props) => {
 
                   }
                 </div>
-                <div className="hovershow " onMouseEnter={handleEnter2}>
+                <div className="hovershow " onClick={handleEnter2} data-tooltip="Click for contact info">
                 {isMouseOver2 ?
                 <>
                     <div className="bubble-container">
@@ -143,7 +146,7 @@ const Teambox = (props) => {
 
                     }
                 </div>
-                <div className="hovershow " onMouseEnter={handleEnter3}>
+                <div className="hovershow " onClick={handleEnter3} data-tooltip="Click for contact info" data-tooltip-location="right">
                 {isMouseOver3 ?
                 <>
                     <div className="bubble-container">

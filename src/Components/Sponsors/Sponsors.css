@@ -39,7 +39,7 @@
   box-shadow: 0px 10px #f8e55f;
 }
 .bg img {
-width: 85vw;
+width: 65vw;
 }
 
 
@@ -155,7 +155,7 @@ padding: 2vh 0vw;
   font-size: 54px;
   /* line-height: 70px; */
   line-height: 150%;
-  /* 
+  /*
   padding-top: 24px;
   padding-left: 12px; */
 
@@ -280,7 +280,7 @@ padding: 2vh 0vw;
   .rect {
     margin-bottom: 10vh;
   }
-  
+
   .box2 {
     flex-direction: column;
     height: fit-content;
@@ -302,7 +302,7 @@ padding: 2vh 0vw;
 
 @media screen and (max-width: 480px) {
 
- 
+
 
   .newpara,
   .updatedpara,
@@ -310,5 +310,3 @@ padding: 2vh 0vw;
     font-size: 12px;
   }
 }
-
- 
