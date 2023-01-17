@@ -8,6 +8,7 @@
 .navHeader a {
   text-decoration: none;
 }
+
 .mobileList li {
   list-style-type: none;
   margin-bottom: 1vh;
@@ -39,7 +40,7 @@
 header {
   width: 100%;
   /* height: 7vw; */
-  background-color: #fffbf5;
+  
   background-blend-mode: multiply;
   display: grid;
   grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
