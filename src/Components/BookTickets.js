@@ -9,7 +9,7 @@ function BookTickets() {
       <div className='navbar'>
         <Nav />
       </div>
-
+      
         <Footer />
     </div>
   )
