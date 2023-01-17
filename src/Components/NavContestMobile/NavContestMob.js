@@ -25,6 +25,7 @@ const NavMobContest = () => {
               >
                 VOUGUE NATION
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -125,6 +126,7 @@ const NavMobContest = () => {
               >
                 CLASS APART
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -225,6 +227,7 @@ const NavMobContest = () => {
               >
                 DANCE
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -325,6 +328,7 @@ const NavMobContest = () => {
               >
                 MUSIC
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -425,6 +429,7 @@ const NavMobContest = () => {
               >
                 LITERARY
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -525,6 +530,7 @@ const NavMobContest = () => {
               >
                 ART TALKIES
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -625,6 +631,7 @@ const NavMobContest = () => {
               >
                 DIGITAL DEXTERITY
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -725,6 +732,7 @@ const NavMobContest = () => {
               >
                 LIGHTS CAMERA ACTION
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -825,6 +833,7 @@ const NavMobContest = () => {
               >
                 SPORTS
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -925,6 +934,7 @@ const NavMobContest = () => {
               >
                 QUIZ
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}
@@ -1025,6 +1035,7 @@ const NavMobContest = () => {
               >
                 DRAMA
                 <img
+                  className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
                   style={{ cursor: "pointer" }}

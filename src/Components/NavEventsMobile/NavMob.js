@@ -18,7 +18,7 @@ const NavMob = () => {
             <div className='main-nav'>
                 {pathname==='/Events'?
                 <ul className="Navmoblist" style={{listStyle: 'none'}}>
-                    <li><NavLink to="/Events" style={{textDecoration: 'none',color:'#F35C41'}}>PRONITES</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick}></img></li>
+                    <li><NavLink to="/Events" style={{textDecoration: 'none',color:'#F35C41'}}>PRONITES</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick} className="PointerCursor"></img></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/cc" style={{textDecoration: 'none',color:'#1A1A1A',}} >CREATORS CAMP</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/hf" style={{textDecoration: 'none',color:'#1A1A1A'}} >HUMOUR FEST</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/ps" style={{textDecoration: 'none',color:'#1A1A1A'}} >PROSHOWS</NavLink></li>
@@ -26,7 +26,7 @@ const NavMob = () => {
                 :<></>}
                 {pathname==='/Events/cc'?
                 <ul className="Navmoblist" style={{listStyle: 'none'}}>
-                    <li><NavLink to="/Events/cc" style={{textDecoration: 'none',color:'#F35C41',}} >CREATORS CAMP</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick}></img></li>
+                    <li><NavLink to="/Events/cc" style={{textDecoration: 'none',color:'#F35C41',}} >CREATORS CAMP</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick} className="PointerCursor"></img></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events" style={{textDecoration: 'none',color:'#1A1A1A'}}>PRONITES</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/hf" style={{textDecoration: 'none',color:'#1A1A1A'}} >HUMOUR FEST</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/ps" style={{textDecoration: 'none',color:'#1A1A1A'}} >PROSHOWS</NavLink></li>
@@ -34,7 +34,7 @@ const NavMob = () => {
                 :<></>}
                 {pathname==='/Events/hf'?
                 <ul className="Navmoblist" style={{listStyle: 'none'}}>
-                    <li><NavLink to="/Events/hf" style={{textDecoration: 'none',color:'#1A1A1A'}} >HUMOUR FEST</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick}></img></li>
+                    <li><NavLink to="/Events/hf" style={{textDecoration: 'none',color:'#1A1A1A'}} >HUMOUR FEST</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick} className="PointerCursor"></img></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events" style={{textDecoration: 'none',color:'#1A1A1A'}}>PRONITES</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/cc" style={{textDecoration: 'none',color:'#1A1A1A',}} >CREATORS CAMP</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/ps" style={{textDecoration: 'none',color:'#1A1A1A'}} >PROSHOWS</NavLink></li>
@@ -42,7 +42,7 @@ const NavMob = () => {
                 :<></>}
                  {pathname==='/Events/ps'?
                 <ul className="Navmoblist" style={{listStyle: 'none'}}>
-                    <li><NavLink to="/Events/ps" style={{textDecoration: 'none',color:'#1A1A1A'}} >PROSHOWS</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick}></img></li>
+                    <li><NavLink to="/Events/ps" style={{textDecoration: 'none',color:'#1A1A1A'}} >PROSHOWS</NavLink><img src={click?dropimg:uparrow} alt="" style={{cursor:'pointer'}} onClick={handleClick} className="PointerCursor"></img></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events" style={{textDecoration: 'none',color:'#1A1A1A'}}>PRONITES</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/cc" style={{textDecoration: 'none',color:'#1A1A1A',}} >CREATORS CAMP</NavLink></li>
                     <li className={click?'inactive':'active'}><NavLink to="/Events/hf" style={{textDecoration: 'none',color:'#1A1A1A'}} >HUMOUR FEST</NavLink></li>

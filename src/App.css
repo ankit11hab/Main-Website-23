@@ -3,7 +3,9 @@
 }
 
 body{
-  background:url('../src/Components/Contests/Images/background.png');
+  background:url('../src/assets/texture_background.webp');
+  background-size: 100%;
+  /* filter: brightness(120%); */
   cursor: url(https://cdn.custom-cursor.com/db/7118/32/starter-comic-cursor-cursor.png) , default!important;
 }
 
@@ -42,7 +44,7 @@ body{
   }
 }
 
-.rectanlgle{
+/* .rectanlgle{
   position: absolute;
   width: 227px;
   height: 55px;
@@ -51,4 +53,4 @@ body{
 
   background: #000000;
   opacity: 0.1;
-}
+} */

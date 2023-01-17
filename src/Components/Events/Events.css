@@ -97,10 +97,15 @@
 	display: flex;
 	width: 60vw;
 	justify-content: flex-end;
-    margin-top: -1%;
+    margin-top: -4%;
+	margin-left: -1%;
 }
 .event_card a img{
-	width: 10vw!important;
+	margin-top: -3%;
+	width: 2vw!important;
+}
+.event_card a{
+	text-decoration: none;
 }
 
 .main_event {
@@ -285,7 +290,7 @@ gap:2vw;
 	}
 	.event_card img{
 		/* height: 10vh; */
-		margin-top: 0;
+		margin-top: -3.5%;
 		margin-left: 0;
 		z-index: 1;
 		width: 60vw;
@@ -294,7 +299,7 @@ gap:2vw;
 		padding: 2vw 2vw 1.3vw 2vw ;
 	}
 	.event_card a img{
-		width: 22vw!important;
+		width: 10vw!important;
 	}
 	.event_button{
 		margin-top: -9%;

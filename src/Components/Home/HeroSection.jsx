@@ -629,7 +629,7 @@ function HeroSection() {
         scrollTrigger: {
           trigger: ".hero_container",
           start: "550% center",
-          // end:'100% top',
+          end: "100% top",
           // end:'+=100%',
           toggleActions: "play reverse play reverse",
           scrub: true,
@@ -834,7 +834,7 @@ function HeroSection() {
         scrollTrigger: {
           trigger: ".hero_container",
           start: "550% center",
-          end: "+=100%",
+          end: "100% top",
           toggleActions: "play reverse play reverse",
           scrub: true,
           id: "geetee1",
@@ -849,7 +849,7 @@ function HeroSection() {
           trigger: ".hero_container",
           start: "550% center",
           // end:'100% top',
-          // end:'+=100%',
+          end: "+=100%",
           toggleActions: "play reverse play reverse",
           scrub: true,
           id: "geetee1",
@@ -909,12 +909,12 @@ function HeroSection() {
         <span class="t_over"></span>
         <span class="t_over"></span>
         <img className="logo_img" src={AlcherLogo} alt="" />
-      <div className="bookticketbtn">
-        <button type="button" id="bookbtn" className="bookbtn">
-          <img src={BookTicketIcon} alt="" />
-          <div>&nbsp; &nbsp; BOOK TICKETS</div>
-        </button>
-      </div>
+        <div className="bookticketbtn">
+          <button type="button" id="bookbtn" className="bookbtn">
+            <img src={BookTicketIcon} alt="" />
+            <div>&nbsp; &nbsp; BOOK TICKETS</div>
+          </button>
+        </div>
       </div>
       <div className="blank_div2"></div>
       <div id="hero_container" className="hero_container">

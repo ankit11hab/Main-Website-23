@@ -1,6 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/deb32b91d90407c8527dfeaac14994d6?family=Aileron);
-@import url(//db.onlinewebfonts.com/c/564f6ec12550d3a8d7ec25152231244d?family=Star+Guard+Semi+Italic);
+/* @import url(//db.onlinewebfonts.com/c/c9f5fb5728d93b32c16858c7acfec1ef?family=Star+Guard); */
+@font-face {
+  font-family: "My Custom Font";
+  src: url(../../fonts/starguardsemital.ttf) format("truetype");
+}
 
+b {
+  font-weight: bolder;
+}
 .navHeader {
   margin-top: 0;
 }
@@ -8,23 +15,28 @@
 .navHeader a {
   text-decoration: none;
 }
+
 .mobileList li {
   list-style-type: none;
   margin-bottom: 1vh;
 }
 .NavigationBar .active {
-  font-family: "Star Guard Semi-Italic";
-  font-style: italic;
+  font-family: "My Custom Font";
+  font-style: normal;
   font-weight: 400;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
+
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.7px #000000;
+  text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+    -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
   font-size: 1.3vw;
 
   display: flex;
   align-items: center;
   background-image: url(./Images/Back.png);
   background-position: center;
-  background-size: 10vh 10vh;
+  background-size: 13vh 12vh;
   height: 14vh;
 
   background-repeat: no-repeat;
@@ -35,11 +47,10 @@
 
   color: #ffffff;
 }
-
 header {
   width: 100%;
   /* height: 7vw; */
-  background-color: #fffbf5;
+  
   background-blend-mode: multiply;
   display: grid;
   grid-template-columns: 2rem 1fr 3fr 1fr 2rem;
@@ -248,12 +259,21 @@ nav {
     transform: skew(-8deg);
   }
 
-
   .Events .active {
     height: 7vw;
     width: fit-content;
     background: #f35c41;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     font-size: 8vw;
     padding: 1% 12% 7% 12%;
     font-weight: 400 !important;
@@ -268,7 +288,17 @@ nav {
     width: fit-content;
     padding: 2% 14% 7% 14%;
     background: #f35c41;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard Semi Italic"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     font-size: 8vw;
     font-weight: 400;
     box-shadow: 4px 4px 0px #fef8f1;
@@ -281,7 +311,17 @@ nav {
   .Teams .active {
     height: 7vw;
     width: fit-content;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard Semi Italic"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     background: #f35c41;
     font-size: 7.5vw;
     padding: 4% 8% 8% 8%;
@@ -295,7 +335,17 @@ nav {
   .Campaigns .active {
     height: 6vw;
     width: fit-content;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard Semi Italic"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     background: #f35c41;
     font-size: 7.5vw;
     padding: 2% 8% 8% 8%;
@@ -309,7 +359,17 @@ nav {
   .Sponsors .active {
     height: 6vw;
     width: fit-content;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard Semi Italic"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     background: #f35c41;
     font-size: 8vw;
     padding: 2% 11% 11% 11%;
@@ -323,7 +383,17 @@ nav {
   .Contests .active {
     height: 6.5vw;
     width: fit-content;
-    font-family: "Star Guard Semi Italic";
+    /* font-family: "Star Guard Semi Italic"; */
+    font-family: "My Custom Font";
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.7px #000000;
+    text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+      -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+
+    font-size: 1.3vw;
     background: #f35c41;
     font-size: 8vw;
     padding: 2% 8% 8% 8%;
