@@ -849,7 +849,7 @@ function HeroSection() {
           trigger: ".hero_container",
           start: "550% center",
           // end:'100% top',
-          // end:'+=100%',
+          end:'+=100%',
           toggleActions: "play reverse play reverse",
           scrub: true,
           id: "geetee1",
