@@ -27,15 +27,6 @@ import mob_bg4 from "./images/pronites_mob.webp";
 import mob_bg5 from "./images/proshows_mob.webp";
 
 function App() {
-    var isMobile = false;
-    console.log("isMobile");
-    useEffect(() => {
-        console.log("first");
-        isMobile =
-            Math.min(window.screen.width, window.screen.height) < 768 ||
-            navigator.userAgent.indexOf("Mobi") > -1;
-    });
-    console.log(isMobile);
     const videos = [vid1, vid2, vid5, vid3, vid4];
     const rvideos = ["bgg", rvid1, rvid2, rvid3, "ghgght"];
     const bgimg = [bg1, bg4, bg2, bg3, bg5];
@@ -139,7 +130,10 @@ function App() {
         <div className="main__cont">
             <div className="video_mobile">
                 <div className="mob_bg_img">
-                    <img src={mob_bgimg[index]} alt='' />
+                    <img ref={videoBgMob} className="bg__img" src={mob_bgimg[index]} alt='' />
+                </div>
+                <div className="mob_video">
+                    <video ref={videoSrcMob} className='video____' src={mob_videos[index]}  muted></video>
                 </div>
             </div>
             <div className="video_desktop">

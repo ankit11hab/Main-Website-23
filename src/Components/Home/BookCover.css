@@ -1,9 +1,9 @@
 /* carousel css starts */
 .main__cont {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* display: flex; */
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
 }
 #vid1 {
     z-index: 9 !important;
@@ -11,87 +11,87 @@
     height: 100vh;
 }
 .video_mobile{
-    display: none;
+  display: none;
 }
 
 .video_container {
-    /* margin-left: 2vw; */
-    position: absolute;
-    top: -0.5vh;
-    left: 1.85vw;
+  /* margin-left: 2vw; */
+  position: absolute;
+  top: -0.5vh;
+  left: 1.85vw;
 }
 
 .openbookBtn {
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 2.5vw;
-    cursor: pointer;
-    background-color: red;
-    color: white;
-    border-color: white;
-    border-width: 0.2vw;
-    border: solid;
-    z-index: 1;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 2.5vw;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-color: white;
+  border-width: 0.2vw;
+  border: solid;
+  z-index: 1;
 }
 .nxtBtn{
-    position: absolute;
-    top: 50%;
-    right: 9%;
-    border: none;
-    cursor: pointer;
-    background-color: #FF598A;
-    font-weight: 500;
-    font-size: 1vw;
-    border-radius: 2vw;
-    text-align: center;
-    padding: 0.8vw 1.2vw 0.6vw;
-    box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
-    color: white;
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  border: none;
+  cursor: pointer;
+  background-color: #FF598A;
+  font-weight: 500;
+  font-size: 1vw;
+  border-radius: 2vw;
+  text-align: center;
+  padding: 0.8vw 1.2vw 0.6vw;
+  box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+  color: white;
 }
 .nxtBtn:hover{
-    box-shadow: none;
-    -webkit-transform: translateY(-1px);
-      transform: translateY(1px)}
+  box-shadow: none;
+  -webkit-transform: translateY(-1px);
+    transform: translateY(1px)}
 .prevBtn:hover{
-    box-shadow: none;
-    -webkit-transform: translateY(-1px);
-      transform: translateY(1px)}
+  box-shadow: none;
+  -webkit-transform: translateY(-1px);
+    transform: translateY(1px)}
 .prevBtn{
-    position: absolute;
-    top: 50%;
-    left: 9%;
-    border: none;
-    color: white;
-    cursor: pointer;
-    background-color: #FF598A;
-    font-weight: 500;
-    font-size: 1vw;
-    padding: 0.8vw 1.2vw 0.6vw;
-    border-radius: 2vw;
-    box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #FF598A;
+  font-weight: 500;
+  font-size: 1vw;
+  padding: 0.8vw 1.2vw 0.6vw;
+  border-radius: 2vw;
+  box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
 }
 .bg__img{
-    position: absolute;
-    top: -0.8vh;
-    left: 8.55vw;
+  position: absolute;
+  top: -0.8vh;
+  left: 8.55vw;
 }
 .img__{ 
-    z-index:1 !important;
-    height: 101.5vh ;
+  z-index:1 !important;
+  height: 101.5vh ;
 }
 
 @media screen and  (max-width:800px) {
-      .video_mobile{
-          height: 100vh;
-          width: 100vw;
-      }
-    .video_desktop{
-        display: none;
-    }
-    .buttons_mob{
+    .video_mobile{
+        height: 100vh;
         width: 100vw;
     }
+  .video_desktop{
+      display: none;
+  }
+  .buttons_mob{
+      width: 100vw;
+  }
 }
