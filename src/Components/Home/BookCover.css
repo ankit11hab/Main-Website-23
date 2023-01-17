@@ -10,12 +10,12 @@
   width: 100vw;
   height: 100vh;
 }
-.video_mobile {
+.video_mobile{
   display: none;
 }
 
 .video_container {
-  
+  /* margin-left: 2vw; */
   position: absolute;
   top: -0.5vh;
   left: 1.85vw;
@@ -36,70 +36,62 @@
   border: solid;
   z-index: 1;
 }
-.nxtBtn {
+.nxtBtn{
   position: absolute;
   top: 50%;
   right: 9%;
   border: none;
   cursor: pointer;
-  background-color: #ff598a;
+  background-color: #FF598A;
   font-weight: 500;
   font-size: 1vw;
   border-radius: 2vw;
   text-align: center;
   padding: 0.8vw 1.2vw 0.6vw;
-  border: 2px solid #1a1a1a;
-  box-shadow: 0.18vw 0.2vw 0px rgba(0, 0, 0, 10);
+  box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
   color: white;
 }
-.nxtBtn:hover {
+.nxtBtn:hover{
   box-shadow: none;
-  /* -webkit-transform: translate(-1vw,-1vw);
-      transform: translateY(1px) */
-  transform: translate(10%, 20%);
-  transition-duration: 0.3s;
-}
-.prevBtn:hover {
+  -webkit-transform: translateY(-1px);
+    transform: translateY(1px)}
+.prevBtn:hover{
   box-shadow: none;
-  /* -webkit-transform: translateY(-1px);
-      transform: translateY(1px) */
-  transform: translate(10%, 20%);
-  transition-duration: 0.3s;
-}
-.prevBtn {
+  -webkit-transform: translateY(-1px);
+    transform: translateY(1px)}
+.prevBtn{
   position: absolute;
   top: 50%;
   left: 9%;
   border: none;
   color: white;
   cursor: pointer;
-  background-color: #ff598a;
+  background-color: #FF598A;
   font-weight: 500;
   font-size: 1vw;
   padding: 0.8vw 1.2vw 0.6vw;
-  border: 2px solid #1a1a1a;
   border-radius: 2vw;
-  box-shadow: 0.18vw 0.24vw 0px rgba(0, 0, 0, 10);
+  box-shadow: 0.3vw 0.3vw 0.1vw rgba(0,0,0,10);
+}
+.bg__img{
+  position: absolute;
+  top: -0.8vh;
+  left: 8.55vw;
+}
+.img__{ 
+  z-index:1 !important;
+  height: 101.5vh ;
 }
 
 @media screen and  (max-width:800px) {
-      .video_mobile{
-        display: block;
-          height: 100vh;
-      }
-    .video_desktop{
-        display: none;
-    }
-    .bg__img{
-        height: 100vh;
-        z-index: 1 !important;
-    }
-    .video____{
-        position: absolute;
-        left: 14vw;
-        z-index: 2 !important;
+    .video_mobile{
         height: 100vh;
         width: 100vw;
-
     }
+  .video_desktop{
+      display: none;
+  }
+  .buttons_mob{
+      width: 100vw;
+  }
 }
