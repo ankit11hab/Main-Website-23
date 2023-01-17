@@ -20,7 +20,7 @@
 }
 
 .merchWide {
-  width: 98%;
+  width: 100vw;
   height: 80vh;
   background-color: #161616;
   border: 2px solid black;

@@ -897,8 +897,8 @@ function HeroSection() {
   }, []);
   return (
     <>
-      {isPending && <style>{`body{overflow:hidden !important}`}</style>}
-      {isPending && (
+        {isPending && <style>{`body{overflow:hidden !important}`}</style>}
+        {isPending && (
         <div className="loader-container">
           <div class="loader book">
             <figure class="page"></figure>
@@ -911,9 +911,6 @@ function HeroSection() {
       <div
         className="hero_animation_div"
         id="heroAnimationDiv"
-        style={{
-          backdropFilter: isPending && "blur(10px)",
-        }}
       >
         <div className="AlcherLogo">
           <span class="t_over"></span>
