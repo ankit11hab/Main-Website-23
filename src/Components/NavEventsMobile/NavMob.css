@@ -2,7 +2,8 @@
 .overall_nav{
     width: 100%;
 	background-image: url('./Images/background.png');
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 20px;
     z-index: 1;
 }
 
