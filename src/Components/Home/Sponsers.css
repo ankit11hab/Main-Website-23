@@ -31,11 +31,11 @@ html body {
 }
 
 :root {
-    --marquee-width: 80vw;
+    --marquee-width: 100%;
     --marquee-height: 26vh;
     /* --marquee-elements: 12; */
     /* defined with JavaScript */
-    --marquee-elements-displayed: 5;
+    --marquee-elements-displayed: 7;
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
     --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
@@ -49,6 +49,7 @@ html body {
     position: relative;
  
     background-size: 100vh 500vw;
+  
 }
 
 .marquee1:before,
@@ -81,6 +82,8 @@ html body {
     height: 100%;
     display: flex;
     animation: scrolling2 var(--marquee-animation-duration) linear infinite;
+    
+ 
 }
 
 /* .marquee-content:hover {
@@ -133,7 +136,39 @@ animation-play-state: paused;
     :root {
         --marquee-width: 100vw;
         --marquee-height: 18vh;
-        --marquee-elements-displayed: 3;
+        --marquee-elements-displayed: 2;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+    .featured-event-heading {
+        font-family: "Aileron";
+        margin: 35vw 1vw 5vw 1vw;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .SponsorsImg{
+        margin-bottom: 30vw;
+    }
+}
+
+#dropdown {
+    display: none;
+}
+
+@media(max-width:450px){
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --marquee-width: 100vw;
+        --marquee-height: 18vh;
+        --marquee-elements-displayed: 2.4;
     }
 
     .marquee:before,
