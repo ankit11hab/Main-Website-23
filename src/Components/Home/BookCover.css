@@ -85,13 +85,22 @@
 
 @media screen and  (max-width:800px) {
       .video_mobile{
+        display: block;
           height: 100vh;
-          width: 100vw;
       }
     .video_desktop{
         display: none;
     }
-    .buttons_mob{
+    .bg__img{
+        height: 100vh;
+        z-index: 1 !important;
+    }
+    .video____{
+        position: absolute;
+        left: 14vw;
+        z-index: 2 !important;
+        height: 100vh;
         width: 100vw;
+
     }
 }
