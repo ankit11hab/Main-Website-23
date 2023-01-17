@@ -1,128 +1,197 @@
 import React, { useEffect, useRef, useState } from "react";
-import vid1 from './bookCoverVideos/book float.webm';
-import vid2 from './bookCoverVideos/cover-pronites animation.webm';
-import vid3 from './bookCoverVideos/creators camp-humor fest animation.webm';
-import vid4 from './bookCoverVideos/humor fest-proshows animation.webm';
-import vid5 from './bookCoverVideos/pronites-creators camp.webm';
-import rvid1 from './bookCoverVideos/pronites_cc_reverse.webm';
-import rvid2 from './bookCoverVideos/humorfest__cc__reverse.webm';
-import rvid3 from './bookCoverVideos/proshows-_humorfest_reverse.webm';
-import bg1 from './images/cover1.webp'
-import bg2 from './images/creators camp.webp'
-import bg3 from './images/humor fest.webp'
-import bg4 from './images/pronites.webp'
-import './BookCover.css';
-
+import vid1 from "./bookCoverVideos/book float.webm";
+import vid2 from "./bookCoverVideos/cover-pronites animation.webm";
+import vid3 from "./bookCoverVideos/creators camp-humor fest animation.webm";
+import vid4 from "./bookCoverVideos/humor fest-proshows animation.webm";
+import vid5 from "./bookCoverVideos/pronites-creators camp.webm";
+import rvid1 from "./bookCoverVideos/pronites_cc_reverse.webm";
+import rvid2 from "./bookCoverVideos/humorfest__cc__reverse.webm";
+import rvid3 from "./bookCoverVideos/proshows-_humorfest_reverse.webm";
+import bg1 from "./images/cover1.webp";
+import bg2 from "./images/creators camp.webp";
+import bg3 from "./images/humor fest.webp";
+import bg4 from "./images/pronites.webp";
+import bg5 from "./images/proshows.webp";
+import "./BookCover.css";
+import mobvid1 from "./bookcovervideos_mob/cover-pronites.webm";
+import mobvid2 from "./bookcovervideos_mob/creators camp-humorfest.webm";
+import mobvid3 from "./bookcovervideos_mob/humor fest-proshows.webm";
+import mobvid4 from "./bookcovervideos_mob/pronites-creators camp.webm";
+import rmobvid1 from "./bookcovervideos_mob/creatorscamp-pronites_rev.webm";
+import rmobvid2 from "./bookcovervideos_mob/humorfest-creatorscamp_rev.webm";
+import rmobvid3 from "./bookcovervideos_mob/proshows-humorfest_rev.webm";
+import mob_bg1 from "./images/cover_mob.webp";
+import mob_bg2 from "./images/creators_camp_mob.webp";
+import mob_bg3 from "./images/humorfest_mob.webp";
+import mob_bg4 from "./images/pronites_mob.webp";
+import mob_bg5 from "./images/proshows_mob.webp";
 
 function App() {
-    const videos=[vid1, vid2,vid5, vid3, vid4];
-    const rvideos=['bgg',rvid1, rvid2,rvid3,'ghgght'];
-    const bgimg = [bg1,bg4,bg2,bg3];
-    var index=0;
+    var isMobile = false;
+    console.log("isMobile");
+    useEffect(() => {
+        console.log("first");
+        isMobile =
+            Math.min(window.screen.width, window.screen.height) < 768 ||
+            navigator.userAgent.indexOf("Mobi") > -1;
+    });
+    console.log(isMobile);
+    const videos = [vid1, vid2, vid5, vid3, vid4];
+    const rvideos = ["bgg", rvid1, rvid2, rvid3, "ghgght"];
+    const bgimg = [bg1, bg4, bg2, bg3, bg5];
+    const mob_videos = [mobvid1, mobvid2, mobvid3, mobvid4];
+    const rmob_videos = ["gfg", rmobvid1, rmobvid2, rmobvid3, "fggh"];
+    const mob_bgimg = [mob_bg1, mob_bg2, mob_bg3, mob_bg4, mob_bg5];
+    var index = 0;
     const videoSrc = useRef();
+    const videoSrcMob = useRef();
     const videoBg = useRef();
+    const videoBgMob = useRef();
     const openBook = useRef();
     const nextBtn = useRef();
     const prevBtn = useRef();
-    const timeout=()=>{setTimeout(()=>{
-      prevBtn.current.disabled=false;
-      nextBtn.current.disabled=false;
-      openBook.current.disabled=false;
-    },1700)}
-    useEffect(()=>{
-      videoSrc.current.addEventListener('ended',()=>{
-          if(index===0){
-          openBook.current.style.display='block';
-        }
-        })
-    },[videoSrc.current])
-    const timeout1=()=>{
-      setTimeout(()=>{
-        if(index<=4){
-          videoBg.current.src=bgimg[index];
-        }
-      },2000)
-    }
+    const timeout = () => {
+        setTimeout(() => {
+            prevBtn.current.disabled = false;
+            nextBtn.current.disabled = false;
+            openBook.current.disabled = false;
+        }, 1700);
+    };
+    useEffect(() => {
+        videoSrc.current.addEventListener("ended", () => {
+            if (index === 0) {
+                openBook.current.style.display = "block";
+            }
+        });
+    }, [videoSrc.current]);
+    const timeout1 = () => {
+        setTimeout(() => {
+            if (index <= 4) {
+                videoBg.current.src = bgimg[index];
+            }
+        }, 2000);
+    };
 
-    function showNext(e){
-      if(index<=5){
-        index=index+1;
-      }
-      if(index>1){
-        prevBtn.current.style.display='block';
-      }
-      if(index<5){
-        videoSrc.current.src=videos[index];
-        prevBtn.current.disabled=true;
-        nextBtn.current.disabled=true;
-        timeout();
-        timeout1();
-        console.log(videoSrc.current);
-      }
-      if(index===4){
-        nextBtn.current.style.display='none';
-      }
-      return true;
+    function showNext(e) {
+        if (index <= 5) {
+            index = index + 1;
+        }
+        if (index > 1) {
+            prevBtn.current.style.display = "block";
+        }
+        if (index < 5) {
+            videoSrc.current.src = videos[index];
+            prevBtn.current.disabled = true;
+            nextBtn.current.disabled = true;
+            timeout();
+            timeout1();
+            console.log(videoSrc.current);
+        }
+        if (index === 4) {
+            nextBtn.current.style.display = "none";
+        }
+        return true;
     }
-    function showNext1(e){
-      openBook.current.style.display='none';
-      index=index+1;
-      videoBg.current.style.display='block';
-      prevBtn.current.style.display='none';
-      nextBtn.current.style.display='block';
-      videoSrc.current.src=videos[index];
-      prevBtn.current.setAttribute('disabled','true');
-      nextBtn.current.disabled=true;
-      timeout1();
-      timeout();
-      }
-      function showPrevious(e){
-        if(index>0){
-          index=index-1;
-        }
-        if(index<=1){
-          prevBtn.current.style.display='none';
-        }
-        if(1<=index<=4){
-        nextBtn.current.style.display='block';
-        videoSrc.current.src=rvideos[index];
-        prevBtn.current.disabled=true;
-        nextBtn.current.disabled=true;
+    function showNext1(e) {
+        openBook.current.style.display = "none";
+        index = index + 1;
+        videoBg.current.style.display = "block";
+        prevBtn.current.style.display = "none";
+        nextBtn.current.style.display = "block";
+        videoSrc.current.src = videos[index];
+        prevBtn.current.setAttribute("disabled", "true");
+        nextBtn.current.disabled = true;
         timeout1();
         timeout();
-      }
     }
-    useEffect(()=>{
-      if(index===0){
-        openBook.current.style.display='none';
-        openBook.current.disabled=true;
-        prevBtn.current.style.display='none';
-        nextBtn.current.style.display='none';
-        videoBg.current.style.display='none';
-        const f= ()=>{
-          timeout(()=>{
-            openBook.current.disabled=false;
-          })
+    function showPrevious(e) {
+        if (index > 0) {
+            index = index - 1;
         }
-        f();
-      }
+        if (index <= 1) {
+            prevBtn.current.style.display = "none";
+        }
+        if (1 <= index <= 4) {
+            nextBtn.current.style.display = "block";
+            videoSrc.current.src = rvideos[index];
+            prevBtn.current.disabled = true;
+            nextBtn.current.disabled = true;
+            timeout1();
+            timeout();
+        }
+    }
+    useEffect(() => {
+        if (index === 0) {
+            openBook.current.style.display = "none";
+            openBook.current.disabled = true;
+            prevBtn.current.style.display = "none";
+            nextBtn.current.style.display = "none";
+            videoBg.current.style.display = "none";
+            const f = () => {
+                timeout(() => {
+                    openBook.current.disabled = false;
+                });
+            };
+            f();
+        }
     });
-  return (
-    <div className="main__cont">
-          <div className="bg__img">
-            <img className="img__" ref={videoBg} src={bgimg[index]} alt="" />
-          </div>
-          <div className="video_container">
-            <video id="vid1" ref={videoSrc} src={videos[index]} autoPlay muted>
-            </video>
-          </div>
-          <div className="buttons">
-            <button ref={openBook} className='openbookBtn' onClick={(e)=>{showNext1()}}>Click to Open</button>
-            <button className='prevBtn' onClick={(e)=>{showPrevious()}} ref={prevBtn}>PREVIOUS</button>
-            <button className='nxtBtn' onClick={(e)=>{showNext()}} ref={nextBtn}>NEXT</button>
-          </div>
-    </div>
-  );
+    return (
+        <div className="main__cont">
+            <div className="video_mobile">
+                <div className="mob_bg_img">
+                    <img src={mob_bgimg[index]} alt='' />
+                </div>
+            </div>
+            <div className="video_desktop">
+                <div className="bg__img">
+                    <img
+                        className="img__"
+                        ref={videoBg}
+                        src={bgimg[index]}
+                        alt=""
+                    />
+                </div>
+                <div className="video_container">
+                    <video
+                        id="vid1"
+                        ref={videoSrc}
+                        src={videos[index]}
+                        autoPlay
+                        muted
+                    ></video>
+                </div>
+                <div className="buttons">
+                    <button
+                        ref={openBook}
+                        className="openbookBtn"
+                        onClick={(e) => {
+                            showNext1();
+                        }}
+                    >
+                        Click to Open
+                    </button>
+                    <button
+                        className="prevBtn"
+                        onClick={(e) => {
+                            showPrevious();
+                        }}
+                        ref={prevBtn}
+                    >
+                        PREVIOUS
+                    </button>
+                    <button
+                        className="nxtBtn"
+                        onClick={(e) => {
+                            showNext();
+                        }}
+                        ref={nextBtn}
+                    >
+                        NEXT
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

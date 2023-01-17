@@ -483,15 +483,12 @@ const frameArrMob = [
 ];
 
 gsap.registerPlugin(ScrollTrigger);
-const texts = document.querySelectorAll("texts__");
 function HeroSection() {
   const [isPending, setisPending] = useState(true);
-  console.clear();
   useEffect(() => {
     if (!window.matchMedia("(max-width: 800px)").matches) {
       const canvas = document.getElementById("canvas1");
       const context = canvas.getContext("2d");
-
       // Set display size (vw/vh).
       var sizeWidth = (100 * window.innerWidth) / 100,
         sizeHeight = (100 * window.innerHeight) / 100;
@@ -857,7 +854,7 @@ function HeroSection() {
           // markers:true,
         },
         css: {
-          height: 0,
+          height: '0',
         },
       });
       tl.to(".blank_div3", {

@@ -3,17 +3,22 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
 }
 #vid1 {
     z-index: 9 !important;
     width: 100vw;
     height: 100vh;
 }
+.video_mobile{
+    display: none;
+}
 
 .video_container {
-    margin-left: 2vw;
+    /* margin-left: 2vw; */
     position: absolute;
+    top: -0.5vh;
+    left: 1.85vw;
 }
 
 .openbookBtn {
@@ -74,20 +79,19 @@
     left: 8.55vw;
 }
 .img__{ 
-    width: 100vw;
     z-index:1 !important;
     height: 101.5vh ;
 }
 
-@media (orientation:portrait) {
-    .main__cont{
-        height: 50vh;
-    }
-    #vid1{
-        height: auto;
-        width: 100vw;
+@media screen and  (max-width:800px) {
+      .video_mobile{
+          height: 100vh;
+          width: 100vw;
       }
-    .img__{
-        height: 27vh;
+    .video_desktop{
+        display: none;
+    }
+    .buttons_mob{
+        width: 100vw;
     }
 }
