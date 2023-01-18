@@ -82,7 +82,7 @@ const MerchPart = () => {
             <img src={ShopNowIcon} alt="" className="btnicon" />
             SHOP&nbsp;NOW
           </button> */}
-           <button id='btnn1' type="button" className="shopNowbtn" >
+          <button id='btnn1' type="button" className="shopNowbtn" >
             <div className="book-btnn1">
                 <img src={ shoplogo } className='shopticket' alt="" />
                 <img src={ shop } className='shoptickets' alt="" />
