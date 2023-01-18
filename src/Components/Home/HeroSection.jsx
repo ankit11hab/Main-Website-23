@@ -312,7 +312,7 @@ function HeroSection() {
   //   setisPending(false);
   // });
   useLayoutEffect(() => {
-  if (!window.matchMedia("(max-width: 800px)").matches) {
+    if (!window.matchMedia("(max-width: 800px)").matches) {
       const canvas = document.getElementById("canvas1");
       const context = canvas.getContext("2d");
       const frameCount = 116;
@@ -330,14 +330,14 @@ function HeroSection() {
       const book_cover = {
         frame: 0,
       };
-  
+
       for (let i = 0; i < frameCount; i++) {
         const img = new Image();
         img.src = currentFrame(i);
         images.push(img);
       }
       images[0].onload = render;
-  
+
       function render() {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(
@@ -390,9 +390,93 @@ function HeroSection() {
             start: "top top",
             scrub: 10,
             pin: ".pano___",
-  
+
             onLeave: () => {},
-  
+
+            // markers: true,
+          },
+        });
+      });
+      return () => {
+        ctx.revert();
+      };
+    } else {
+      const canvas = document.getElementById("canvas1");
+      const context = canvas.getContext("2d");
+      const frameCount = 29;
+      const currentFrame = (index) => frameArrMob[index];
+      var sizeWidth = (100 * window.innerWidth) / 100,
+        sizeHeight = (100 * window.innerHeight) / 100;
+      //Setting the canvas site and width to be responsive
+      canvas.width = sizeWidth;
+      canvas.height = sizeHeight;
+      canvas.style.width = sizeWidth;
+      canvas.style.height = sizeHeight;
+      // const factor1 = sizeWidth / 1080;
+      // const factor2 = sizeHeight / 1920;
+      const images = [];
+      const book_cover = {
+        frame: 0,
+      };
+
+      for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+        images.push(img);
+      }
+      images[0].onload = render;
+
+      function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(
+          images[book_cover.frame],
+          0,
+          -(canvas.height / 5),
+          canvas.width,
+          canvas.height * 1.5
+        );
+      }
+      let ctx = gsap.context(() => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".hero_container",
+            // markers: true,
+          },
+        });
+        tl.to(book_cover, {
+          frame: frameCount - 1,
+          snap: "frame",
+          ease: "none",
+          duration: 2000,
+          scrollTrigger: {
+            trigger: ".hero_container",
+            start: "top top",
+            end: "300% bottom",
+            scrub: 0.1,
+            pin: true,
+            // markers: true,
+          },
+          onUpdate: render,
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top bottom",
+            end: "top top",
+            scrub: 2,
+            // markers: true,
+            toggleClass: { targets: ".overlay", className: "block" },
+          },
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top top",
+            scrub: 10,
+            pin: ".pano___",
+
+            onLeave: () => {},
+
             // markers: true,
           },
         });
@@ -401,97 +485,8 @@ function HeroSection() {
         ctx.revert();
       };
     }
-  else{
-        const canvas = document.getElementById("canvas1");
-        const context = canvas.getContext("2d");
-        const frameCount = 29;
-        const currentFrame = (index) => frameArrMob[index];
-        var sizeWidth = (100 * window.innerWidth) / 100,
-        sizeHeight = (100 * window.innerHeight) / 100;
-      //Setting the canvas site and width to be responsive
-      canvas.width = sizeWidth;
-      canvas.height = sizeHeight;
-      canvas.style.width = sizeWidth;
-      canvas.style.height = sizeHeight;
-      const factor1 = sizeWidth / 1184;
-      const factor2 = sizeHeight / 2960;
-        const images = [];
-        const book_cover = {
-          frame: 0,
-        };
-    
-        for (let i = 0; i < frameCount; i++) {
-          const img = new Image();
-          img.src = currentFrame(i);
-          images.push(img);
-        }
-        images[0].onload = render;
-    
-        function render() {
-          context.clearRect(0, 0, canvas.width, canvas.height);
-          context.drawImage(
-            images[book_cover.frame],
-            0,
-            0,
-            3840,
-            2160,
-            0,
-            0,
-            3840 * factor1,
-            2160 * factor2
-          );
-        }
-        let ctx = gsap.context(() => {
-          const tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: ".hero_container",
-              // markers: true,
-            },
-          });
-          tl.to(book_cover, {
-            frame: frameCount - 1,
-            snap: "frame",
-            ease: "none",
-            duration: 2000,
-            scrollTrigger: {
-              trigger: ".hero_container",
-              start: "top top",
-              end: "300% bottom",
-              scrub: 0.1,
-              pin: true,
-              // markers: true,
-            },
-            onUpdate: render,
-          });
-          tl.to(".pano___", {
-            scrollTrigger: {
-              trigger: ".pano___",
-              start: "top bottom",
-              end: "top top",
-              scrub: 2,
-              // markers: true,
-              toggleClass: { targets: ".overlay", className: "block" },
-            },
-          });
-          tl.to(".pano___", {
-            scrollTrigger: {
-              trigger: ".pano___",
-              start: "top top",
-              scrub: 10,
-              pin: ".pano___",
-    
-              onLeave: () => {},
-    
-              // markers: true,
-            },
-          });
-        });
-        return () => {
-          ctx.revert();
-        };
-    }
   }, []);
-  
+
   return (
     <>
       {/* {isPending && <style>{`body{overflow:hidden !important}`}</style>}
