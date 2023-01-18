@@ -130,7 +130,7 @@ height: 100vh;
     display: none;
   }
   iframe{
-    height: auto;
+    height: 65vh;
   }
   .pano__video{
     display: none;
@@ -192,7 +192,7 @@ height: 100vh;
     display: none;
   }
   iframe{
-    height: 30vh;
+    height: 65vh;
   }
   .play_logo{
     display: none;

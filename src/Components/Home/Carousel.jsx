@@ -25,14 +25,16 @@ import mob_bg2 from "./images/creators_camp_mob.webp";
 import mob_bg3 from "./images/humorfest_mob.webp";
 import mob_bg4 from "./images/pronites_mob.webp";
 import mob_bg5 from "./images/proshows_mob.webp";
+import leftbutton from '../Campaigns/images/left.svg';
+import rightbutton from '../Campaigns/images/right.svg';
 
 function App() {
     const videos = [vid1, vid2, vid5, vid3, vid4];
     const rvideos = ["bgg", rvid1, rvid2, rvid3, "ghgght"];
     const bgimg = [bg1, bg4, bg2, bg3, bg5];
-    const mob_videos = [mobvid1, mobvid2, mobvid3, mobvid4];
-    const rmob_videos = ["gfg", rmobvid1, rmobvid2, rmobvid3, "fggh"];
-    const mob_bgimg = [mob_bg1, mob_bg2, mob_bg3, mob_bg4, mob_bg5];
+    const mob_videos = [mobvid1, mobvid4, mobvid2, mobvid3];
+    const rmob_videos = [rmobvid1, rmobvid2, rmobvid3, "fggh"];
+    const mob_bgimg = [ mob_bg4, mob_bg2, mob_bg3, mob_bg5];
     var index = 0;
     const videoSrc = useRef();
     const videoSrcMob = useRef();
@@ -40,11 +42,15 @@ function App() {
     const videoBgMob = useRef();
     const openBook = useRef();
     const nextBtn = useRef();
+    const nextBtnMob = useRef();
     const prevBtn = useRef();
+    const prevBtnMob = useRef();
     const timeout = () => {
         setTimeout(() => {
+            prevBtnMob.current.disabled = false;
             prevBtn.current.disabled = false;
             nextBtn.current.disabled = false;
+            nextBtnMob.current.disabled = false;
             openBook.current.disabled = false;
         }, 1700);
     };
@@ -59,6 +65,7 @@ function App() {
         setTimeout(() => {
             if (index <= 4) {
                 videoBg.current.src = bgimg[index];
+                videoBgMob.current.src = mob_bgimg[index];
             }
         }, 2000);
     };
@@ -83,6 +90,26 @@ function App() {
         }
         return true;
     }
+    function showNextMob(e) {
+        videoBgMob.current.style.display = "block";
+        if (index <= 4) {
+            index = index + 1;
+        }
+        if (index >= 1) {
+            prevBtnMob.current.style.display = "block";
+        }
+        if (index < 4) {
+            videoSrcMob.current.src = mob_videos[index];
+            prevBtn.current.disabled = true;
+            nextBtn.current.disabled = true;
+            timeout();
+            timeout1();
+        }
+        if (index === 3) {
+            nextBtnMob.current.style.display = "none";
+        }
+        return true;
+    }
     function showNext1(e) {
         openBook.current.style.display = "none";
         index = index + 1;
@@ -99,7 +126,7 @@ function App() {
         if (index > 0) {
             index = index - 1;
         }
-        if (index <= 1) {
+        if (index < 1) {
             prevBtn.current.style.display = "none";
         }
         if (1 <= index <= 4) {
@@ -111,13 +138,31 @@ function App() {
             timeout();
         }
     }
+    function showPreviousMob(e) {
+        if (index > 0) {
+            index = index - 1;
+        }
+        if (index <= 0) {
+            prevBtnMob.current.style.display = "none";
+        }
+        if (1 <= index <= 3) {
+            nextBtnMob.current.style.display = "block";
+            videoSrcMob.current.src = rmob_videos[index];
+            prevBtnMob.current.disabled = true;
+            nextBtnMob.current.disabled = true;
+            timeout1();
+            timeout();
+        }
+    }
     useEffect(() => {
         if (index === 0) {
+            prevBtnMob.current.style.display = 'none';
             openBook.current.style.display = "none";
             openBook.current.disabled = true;
             prevBtn.current.style.display = "none";
             nextBtn.current.style.display = "none";
             videoBg.current.style.display = "none";
+            videoBgMob.current.style.display = "none";
             const f = () => {
                 timeout(() => {
                     openBook.current.disabled = false;
@@ -129,11 +174,19 @@ function App() {
     return (
         <div className="main__cont">
             <div className="video_mobile">
-                <div className="mob_bg_img">
-                    <img ref={videoBgMob} className="bg__img" src={mob_bgimg[index]} alt='' />
+                <div className="leftbutton_mob">
+                    <img  ref={prevBtnMob} src={leftbutton} className='mob__buttons' onClick={()=>{showPreviousMob()}}  alt=''></img>
                 </div>
-                <div className="mob_video">
-                    <video ref={videoSrcMob} className='video____' src={mob_videos[index]}  muted></video>
+                <div>
+                    <div className="mob_bg_img">
+                        <img ref={videoBgMob} className="bg__img" src={mob_bgimg[index]} alt='' />
+                    </div>
+                    <div className="mob_video">
+                        <video ref={videoSrcMob} className='video____' src={mob_videos[index]} autoPlay muted></video>
+                    </div>
+                </div>
+                <div className="rightbutton_mob">
+                <img className='mob__buttons' src={rightbutton} onClick={()=>{showNextMob()}} ref={nextBtnMob} alt=''></img>
                 </div>
             </div>
             <div className="video_desktop">
