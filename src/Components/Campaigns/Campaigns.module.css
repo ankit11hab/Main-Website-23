@@ -1345,12 +1345,12 @@ border-color: #000000;
   padding: 16px;
   perspective: 100px;
 }
-.slide-track:hover{
+.slideTrack:hover{
   animation-play-state: paused;
   
 }
 
-.slide-track {
+.slideTrack {
   display: flex;
   width: 90vw;
   animation: scroll 40s linear infinite;
@@ -1403,7 +1403,7 @@ border-color: #000000;
   transform: rotateZ(180deg);
 }
 
-.cards-slider {
+.cardsSlider {
   overflow-x: hidden;
 	white-space: nowrap;
 	width: 100%;
@@ -1432,7 +1432,7 @@ border-color: #000000;
   word-wrap: break-word;
   white-space: pre-wrap;
 }
-.slider-btn {
+.sliderBtn {
   padding: 0;
   font-size: 20px;
   text-align: center;
@@ -1448,7 +1448,7 @@ border-color: #000000;
   z-index: 9990;
   transition: all 0.7s ease 0s;
 }
-.slider-btns{
+.sliderBtns{
   box-sizing: border-box;
   position: relative;
   top:77px;
@@ -1459,15 +1459,15 @@ border-color: #000000;
   
 }
 
-.slider-btn:hover {
+.sliderBtn:hover {
   color: #5f5f5f;
   background: rgba(0,0,0,0.2);
 }
 
-.btn-r {
+.btnR {
   right: 0;
 }
-.btn-l {
+.btnL {
   left: 0px;
 }
 
@@ -1485,7 +1485,7 @@ border-color: #000000;
     display: block;
     padding: 0;
   }
-  .no-mobile{
+  .noMobile{
     display: none;
   }
   .slideri{
