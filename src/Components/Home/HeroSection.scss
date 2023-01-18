@@ -56,17 +56,18 @@ canvas {
   margin-top: 1%;
   @media (max-width: 900px) {
     width: fit-content;
+    display: flex;
     height: 4.7vh;
     font-size: 2.8vw;
     border-radius: 20vw;
-    padding-right: 5%;
-    padding-right: 5%;
+    padding: 4% 4% 4% 4%;
     box-shadow: 4px 5px 0px #1a1a1a;
   }
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
   #bookbtn {
+    display: flex;
     width: fit-content;
     height: 4.7vh;
     font-size: 1.8vw;
@@ -85,6 +86,10 @@ canvas {
   box-shadow: none;
   transform: translate(5%, 10%);
   transition-duration: 0.3s;
+}
+
+.bookiconhero {
+  margin-left: -3%;
 }
 
 .logo_img {

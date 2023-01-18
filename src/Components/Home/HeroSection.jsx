@@ -929,7 +929,7 @@ function HeroSection() {
           <div className="headingmob"></div>
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
-              <img src={BookTicketIcon} alt="" />
+              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
               <div className="bookticketstext">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
             </button>
           </div>
