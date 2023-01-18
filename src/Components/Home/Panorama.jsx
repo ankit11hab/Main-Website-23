@@ -11,51 +11,6 @@ const VRScene = () => {
   var sizeWidth = (100 * window.innerWidth) / 100,
     sizeHeight = (100 * window.innerHeight) / 100;
 
-  //   function playVideo(){
-  //     console.log(count);
-  //         // //as noted in addendum, check for querystring exitence
-  //         // var symbol = document.getElementById("themevideo")[0].src.indexOf("?") > -1 ? "&" : "?";
-  //         // //modify source to autoplay and start video
-  //         // document.getElementById("themevideo")[0].src += symbol + "autoplay=1";
-  //         // console.log(logoref.current)
-  //         // logoref.current.style.display='none';
-  //         const Player = document.getElementById('themevideo');
-  // const PlayBtn = document.getElementById('playLogo');
-  // // const stopBtn = document.getElementById('stop');
-  // let  playY;
-
-  // // if(count %2== 0){
-  // //     playY = Player.src += '?autoplay=1';
-  // //     count++;
-  // //     setTimeout(()=>{
-  // //         document.getElementById('playLogo').style.display='none';
-  // //     }, 500);
-
-  // //   }
-  // //  else if(count %2== 1){
-  // //     setTimeout(()=>{
-  // //         document.getElementById('playLogo').style.display='block';
-  // //     }, 500);
-  // //     Player.src = Player.src.split('?')[0];
-  // //     count++;
-
-  // //  }
-
-  // // stopBtn.addEventListener( 'click' , () => {
-  // //     playY = playY.slice(0, -11);
-  // //     Player.src = playY
-  // //     times = 0;
-  // // });
-
-  // // document.ready(function(){
-  // //     $("#themevideo").on("load",function(){
-  // //         $(this).contents().on("mousedown, mouseup,click",function(){
-
-  // //         })
-  // //     })
-  // // })
-  //   }
-
   return (
     <div>
       <div className="pano___ bl" id="pano___">

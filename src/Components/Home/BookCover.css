@@ -4,21 +4,10 @@
   width: 100vw;
   height: 100vh;
 }
-/* #vid1 {
-    z-index: 9 !important;
-    width: 98.5vw;
-    height: 100vh;
-} */
+
 .video_mobile{
   display: none;
 }
-
-/* .video_container {
-  position: absolute;
-  top: -0.5vh;
-  left: 1.85vw;
-} */
-
 .openbookBtn {
   position: absolute;
   top: 37%;
@@ -106,21 +95,20 @@
   .video____{
     margin: auto;
     position: absolute;
-    left:3.3vw;
+    left:0.3vw;
     height: 100vh;
-    right: 3.3vw;
+    right: 2.3vw;
     top: 0;
   }
   .mob_video{
-    /* width: 100vw; */
     height: 100vh;
   }
   .bg__img{
     margin: auto;
     position: absolute;
-    left: 3.3vw;
+    left: 0.3vw;
     height: 100vh;
-    right: 3.3vw;
+    right: 2.3vw;
     top: 0;
   }
   .leftbutton_mob, .rightbutton_mob{

@@ -174,7 +174,7 @@ function App() {
         <div className="main__cont">
             <div className="video_mobile">
                 <div className="leftbutton_mob">
-                    <img  ref={prevBtnMob} src={leftbutton} className='mob__buttons' onClick={()=>{showPreviousMob()}}  alt=''></img>
+                    <img  ref={prevBtnMob} src={leftbutton} style={{'marginLeft':'2vw'}} className='mob__buttons' onClick={()=>{showPreviousMob()}}  alt=''></img>
                 </div>
                 <div>
                     <div className="mob_bg_img">
@@ -185,7 +185,7 @@ function App() {
                     </div>
                 </div>
                 <div className="rightbutton_mob">
-                <img className='mob__buttons' src={rightbutton} onClick={()=>{showNextMob()}} ref={nextBtnMob} alt=''></img>
+                <img className='mob__buttons' src={rightbutton} style={{'marginRight':'2vw'}} onClick={()=>{showNextMob()}} ref={nextBtnMob} alt=''></img>
                 </div>
             </div>
             <div className="video_desktop">
@@ -224,54 +224,6 @@ function App() {
                     </button>
                 </div>
             </div>
-            {/* <div className="video_desktop">
-                <div className="bg__img">
-                    <img
-                        className="img__"
-                        ref={videoBg}
-                        src={bgimg[index]}
-                        alt=""
-                    />
-                </div>
-                <div className="video_container">
-                    <video
-                        id="vid1"
-                        ref={videoSrc}
-                        src={videos[index]}
-                        autoPlay
-                        muted
-                    ></video>
-                </div>
-                <div className="buttons">
-                    <button
-                        ref={openBook}
-                        className="openbookBtn"
-                        onClick={(e) => {
-                            showNext1();
-                        }}
-                    >
-                        Click to Open
-                    </button>
-                    <button
-                        className="prevBtn"
-                        onClick={(e) => {
-                            showPrevious();
-                        }}
-                        ref={prevBtn}
-                    >
-                        PREVIOUS
-                    </button>
-                    <button
-                        className="nxtBtn"
-                        onClick={(e) => {
-                            showNext();
-                        }}
-                        ref={nextBtn}
-                    >
-                        NEXT
-                    </button>
-                </div>
-            </div> */}
         </div>
     );
 }

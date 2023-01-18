@@ -153,7 +153,6 @@ import frameMob27 from "./mobile images webp/Mobile_NoBG_0027.webp";
 import frameMob28 from "./mobile images webp/Mobile_NoBG_0028.webp";
 //////////////////////////////////////////////////////////////
 import AlcherLogo from "./images/alcher_2023_logo.png";
-import { NavLink } from "react-router-dom";
 const frameArr = [
   frame0,
   frame1,
@@ -356,7 +355,6 @@ function HeroSection() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".hero_container",
-            // markers: true,
           },
         });
         tl.to(book_cover, {
@@ -370,7 +368,6 @@ function HeroSection() {
             end: "300% bottom",
             scrub: 0.1,
             pin: true,
-            // markers: true,
           },
           onUpdate: render,
         });
@@ -380,7 +377,6 @@ function HeroSection() {
             start: "top bottom",
             end: "top top",
             scrub: 1,
-            // markers: true,
             toggleClass: { targets: ".overlay", className: "block" },
           },
         });
@@ -393,7 +389,6 @@ function HeroSection() {
 
             onLeave: () => {},
 
-            // markers: true,
           },
         });
       });
@@ -412,8 +407,6 @@ function HeroSection() {
       canvas.height = sizeHeight;
       canvas.style.width = sizeWidth;
       canvas.style.height = sizeHeight;
-      // const factor1 = sizeWidth / 1080;
-      // const factor2 = sizeHeight / 1920;
       const images = [];
       const book_cover = {
         frame: 0,
@@ -440,7 +433,6 @@ function HeroSection() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".hero_container",
-            // markers: true,
           },
         });
         tl.to(book_cover, {
@@ -454,7 +446,6 @@ function HeroSection() {
             end: "300% bottom",
             scrub: 0.1,
             pin: true,
-            // markers: true,
           },
           onUpdate: render,
         });
@@ -464,7 +455,6 @@ function HeroSection() {
             start: "top bottom",
             end: "top top",
             scrub: 2,
-            // markers: true,
             toggleClass: { targets: ".overlay", className: "block" },
           },
         });
@@ -477,7 +467,6 @@ function HeroSection() {
 
             onLeave: () => {},
 
-            // markers: true,
           },
         });
       });
