@@ -3,9 +3,12 @@
   font-family: "Star Guard";
   src: url(../../fonts/starguardsemital.ttf) format("truetype");
 }
+.panorama__main{
+  width: 100vw;
+}
 .overlay{
   height: 101vw;
-  width: 100vw;
+  width: 101vw;
   position: absolute;
   top: -1vw;
   left: 0;
