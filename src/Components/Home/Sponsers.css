@@ -180,3 +180,35 @@ animation-play-state: paused;
 #dropdown {
     display: none;
 }
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --marquee-width: 100vw;
+        --marquee-height: 18vh;
+        --marquee-elements-displayed: 2;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+    .featured-event-heading {
+        font-family: "Aileron";
+        margin: 35vw 1vw 5vw 1vw;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .SponsorsImg{
+        margin-bottom: 30vw;
+    }
+}
+
+#dropdown {
+    display: none;
+}
