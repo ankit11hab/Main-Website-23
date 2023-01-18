@@ -83,7 +83,6 @@ function App() {
             nextBtn.current.disabled = true;
             timeout();
             timeout1();
-            console.log(videoSrc.current);
         }
         if (index === 4) {
             nextBtn.current.style.display = "none";
@@ -126,7 +125,7 @@ function App() {
         if (index > 0) {
             index = index - 1;
         }
-        if (index < 1) {
+        if (index <= 1) {
             prevBtn.current.style.display = "none";
         }
         if (1 <= index <= 4) {
@@ -190,6 +189,42 @@ function App() {
                 </div>
             </div>
             <div className="video_desktop">
+                <div className="leftbutton_desktop">
+                    <button
+                         className='desktop__buttons'
+                        onClick={(e) => {
+                            showPrevious();
+                        }}
+                        ref={prevBtn}
+                        style={{'marginLeft':'0vw'}}
+                    >
+                        PREVIOUS
+                    </button>
+                </div>
+                <div>
+                    <div className="desktop_bg_img">
+                        <img ref={videoBg} className="bg__img" src={bgimg[index]} alt='' />
+                    </div>
+                    <div className="desktop_video">
+                        <video ref={videoSrc} className='video____' src={videos[index]} autoPlay muted></video>
+                    </div>
+                </div>
+                <div>
+                    <button ref={openBook} className="openbookBtn" onClick={(e) => {showNext1();}}>
+                            Open
+                    </button>
+                </div>
+                <div className="rightbutton_desktop">
+                    <button className='desktop__buttons' style={{'marginRight':'4vw'}} onClick={(e) => {
+                            showNext();
+                        }}
+                        ref={nextBtn}
+                    >
+                        NEXT
+                    </button>
+                </div>
+            </div>
+            {/* <div className="video_desktop">
                 <div className="bg__img">
                     <img
                         className="img__"
@@ -236,7 +271,7 @@ function App() {
                         NEXT
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
