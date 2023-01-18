@@ -3,7 +3,20 @@
   font-family: "Star Guard";
   src: url(../../fonts/starguardsemital.ttf) format("truetype");
 }
-
+.overlay{
+  height: 101vw;
+  width: 100vw;
+  position: absolute;
+  top: -1vw;
+  left: 0;
+  background: #000000;
+  z-index: 1000000;
+  display: none;
+}
+.block{
+display: block;
+transition: all 2s ease-in-out;
+}
 .description {
   width: 45vw;
   font-family: 'Aileron';
