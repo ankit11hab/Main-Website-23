@@ -5,7 +5,9 @@
     padding-bottom: 20px;
     z-index: 1;
 }
-
+.Navmoblist a .active{
+    color: black;
+}
 .navheader{
     display: flex;
     flex-direction: row;
@@ -44,7 +46,7 @@ img{
     width: auto;
     margin-left: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
     .overall_nav{
         display:none;
     }

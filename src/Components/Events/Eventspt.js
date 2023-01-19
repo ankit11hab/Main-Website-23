@@ -16,9 +16,7 @@ function Events1() {
       <div className="navbar">
         <Nav />
       </div>
-
       <NavMob />
-
       <div className="main_event">
         <div className="content_event">
           <div className="event_card">
