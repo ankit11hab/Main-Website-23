@@ -80,6 +80,7 @@
 	mix-blend-mode: multiply;
 }
 .event_card{
+	position: relative;
 	border:2px solid black;
 	padding: 0vw 15px 15px 15px;
 	background-color: #FEF8F1;
@@ -94,14 +95,16 @@
 }
 .event_button{
 	position: absolute;
+	width: fit-content;
+	bottom: 13.5%;
+	right: 4%;
 	display: flex;
-	width: 60vw;
-	justify-content: flex-end;
-    margin-top: -1%;
+
 }
-.event_card a img{
+
+/* .event_card a img{
 	width: 10vw!important;
-}
+} */
 
 .main_event {
 	display: flex;

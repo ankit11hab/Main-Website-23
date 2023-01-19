@@ -68,21 +68,24 @@ function Footer() {
               <a
                 className="insta"
                 href="https://www.instagram.com/alcheringaiitg/"
+                target="_blank"
               >
                 <Insta2 />
               </a>
               <a
                 className="face"
                 href="https://www.facebook.com/alcheringaiitg"
+                target="_blank"
               >
                 <Facebook2 />
               </a>
-              <a className="tweet" href="https://twitter.com/alcheringaiitg">
+              <a className="tweet" href="https://twitter.com/alcheringaiitg" target="_blank">
                 <Twitter2 />
               </a>
               <a
                 className="youtube"
                 href="https://www.youtube.com/@alcheringaIITG"
+                target="_blank"
               >
                 <Youtube2 />
               </a>
@@ -100,21 +103,24 @@ function Footer() {
               <a
                 className="insta"
                 href="https://www.instagram.com/alcheringaiitg/"
+                target="_blank"
               >
                 <Insta />
               </a>
               <a
                 className="face"
                 href="https://www.facebook.com/alcheringaiitg"
+                target="_blank"
               >
                 <Facebook />
               </a>
-              <a className="tweet" href="https://twitter.com/alcheringaiitg">
+              <a className="tweet" href="https://twitter.com/alcheringaiitg" target="_blank">
                 <Twitter />
               </a>
               <a
                 className="youtube"
                 href="https://www.youtube.com/@alcheringaIITG"
+                target="_blank"
               >
                 <Youtube />
               </a>

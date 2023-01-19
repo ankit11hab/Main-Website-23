@@ -1,0 +1,63 @@
+#bookbtnevents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #f35c41;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 5vw;
+  color: #ffffff;
+  font-family: "Aileron";
+  font-size: 0.9vw;
+  font-weight: 700;
+  text-align: right;
+  height: 2.5vw;
+  box-shadow: 2.8px 2.8px 0px #1a1a1a;
+  padding: 4% 5% 4% 16%;
+  margin-top: 1%;
+}
+
+.bookiconevents {
+  height: 1.3vw;
+  width: 2vw !important;
+  padding-top: 3%;
+}
+
+.booktextevents {
+  text-decoration: underline;
+  text-decoration-color: #f35c41;
+  margin: 0% 12% 12% 8%;
+}
+
+@media (max-width: 900px) {
+  #bookbtnevents {
+    width: fit-content;
+    height: 3vw;
+    font-size: .4vw;
+    border-radius: 20vw;
+    padding: 4% 5% 4% 5%;
+    box-shadow: 3.5px 3.5px 0px #1a1a1a;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  #bookbtnevents {
+    height: 3.5vh;
+    margin-right: 13%;
+    width: fit-content;
+    font-size: .9vw;
+    border-radius: 20vw;
+    padding: 5% 8% 5% 15%;
+  }
+}
+
+.bookticketbtnevents {
+  display: flex;
+  justify-content: center;
+}
+#bookbtnevents:hover {
+  box-shadow: none;
+  transform: translate(3%, 5%);
+  transition-duration: 0.3s;
+}

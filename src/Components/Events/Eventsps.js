@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
-import Book from "../NavBar/Book";
+import EventsBook from "./EventsBook";
 import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
 import Banger from "./Images/Banger.png";
@@ -25,11 +25,11 @@ function Events1() {
         <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt=""/>
@@ -59,11 +59,11 @@ function Events1() {
         <div className="content_event">
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt=""/>

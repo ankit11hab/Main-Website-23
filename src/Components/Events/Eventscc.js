@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
-import Book from "../NavBar/Book";
+import EventsBook from "../NavBar/Book";
 import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
 import Banger from "./Images/Banger.png";
@@ -13,29 +13,31 @@ import { NavLink, Link } from "react-router-dom";
 function Events1() {
   return (
     <div>
-
       <div className="navbar">
-      <Nav  />
-     
+        <Nav />
       </div>
 
       <NavMob />
-      
+
       <div className="main_event">
         <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <EventsBook />
+            </Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <EventsBook />
+            </Link>
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={Banger} alt="" />
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={Banger} alt="" />
           </div>
         </div>
         <div className="upnav">
@@ -59,17 +61,21 @@ function Events1() {
         <div className="content_event">
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <EventsBook />
+            </Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><Book /></Link>
+            <Link className="event_button image" to="/BookTickets">
+              <EventsBook />
+            </Link>
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={BangerMob} alt="" />
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={BangerMob} alt="" />
           </div>
         </div>
         <div className="upnav">
