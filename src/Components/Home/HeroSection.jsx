@@ -365,7 +365,7 @@ function HeroSection() {
           scrollTrigger: {
             trigger: ".hero_container",
             start: "top top",
-            end: "300% bottom",
+            end: "400% bottom",
             scrub: 0.1,
             pin: true,
           },
@@ -443,7 +443,7 @@ function HeroSection() {
           scrollTrigger: {
             trigger: ".hero_container",
             start: "top top",
-            end: "300% bottom",
+            end: "400% bottom",
             scrub: 0.1,
             pin: true,
           },

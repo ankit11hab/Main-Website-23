@@ -235,9 +235,11 @@ nav {
   }
 
   .mobile {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 10vh;
+    z-index: 7;
     margin-bottom: 10%;
   }
   .navmob {
