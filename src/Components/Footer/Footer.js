@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { useState } from "react";
 import HailAlcher from "./HailAlcher";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
@@ -11,8 +12,30 @@ import { ReactComponent as Insta2 } from "./Images/insta2.svg";
 import { ReactComponent as Facebook2 } from "./Images/facebook2.svg";
 import { ReactComponent as Youtube2 } from "./Images/utube2.svg";
 import { ReactComponent as Twitter2 } from "./Images/twitter2.svg";
+import desBY from "./Images/designBY.png";
+import devBY from "./Images/developedBY.png";
 
 function Footer() {
+  const [isMouseOverC,setIsMouseOverC] = useState(false)
+
+const handleEnterC = () => {
+  setIsMouseOverC(true)
+}
+
+const handleLeaveC = (event) => {
+  setIsMouseOverC(false);
+  event.stopPropagation();
+}
+const [isMouseOverDev,setIsMouseOverDev] = useState(false)
+
+const handleEnterDev = () => {
+setIsMouseOverDev(true)
+}
+
+const handleLeaveDev = (event) => {
+setIsMouseOverDev(false);
+event.stopPropagation();
+}
   return (
     <div className="footer_desk">
       <div className="logo_mob">
@@ -130,6 +153,51 @@ function Footer() {
               <span style={{ fontWeight: 900 }}>alcheringa@iitg.ac.in</span>
             </div>
           </div>
+
+        </div>
+        <div className="ddby">
+          Designed & Developed by Alcher&nbsp;
+          <span className="underline" onMouseEnter={handleEnterC} onMouseLeave={handleLeaveC}>
+             Creatives
+             {isMouseOverC?
+               <>
+            <div className="creatives-ddby-container">
+              <div className="creatives-ddby">
+                <img src={desBY} className="designBY"/>
+                <div className="creatives-names">
+                  <span className="names-ddby">Arya Godhke</span>
+                  <br/>
+                  <span className="names-ddby">Dhwani</span>
+                </div>
+              </div>
+            </div>
+            </>:
+            null
+
+            }
+          </span>
+           &nbsp;&&nbsp;
+          <span className="underline" onMouseEnter={handleEnterDev} onMouseLeave={handleLeaveDev}>
+           Web-Ops
+           {isMouseOverDev?
+             <>
+           <div className="devops-ddby-container">
+          <div className="dev-ddby">
+            <img src={devBY} className="designBY"/>
+            <div className="creatives-names">
+              <span className="names-ddby">Arya Godhke</span>
+              <span className="names-ddby">Arya Godhke</span>
+              <span className="names-ddby">Arya Godhke</span>
+              <br/>
+              <span className="names-ddby">Dhwani</span>
+            </div>
+          </div>
+        </div>
+        </>:
+        null
+
+        }
+          </span>
         </div>
       </div>
     </div>
