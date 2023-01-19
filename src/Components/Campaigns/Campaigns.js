@@ -340,12 +340,20 @@ class Display extends React.Component {
     const cardNumber = 6; // the number of cards
     let currentCard = this.state.currentCard; // the index of the current card
     let position = this.state.position; // the position of the cards
+     
     if (type === "next" && currentCard < cardNumber - 1) {
       currentCard++;
       position -= cardWidth + cardMargin;
     } else if (type === "prev" && currentCard > 0) {
       currentCard--;
       position += cardWidth + cardMargin;
+    }
+    else if(type=='next' && currentCard==cardNumber-1){
+      currentCard=0;
+      position =0;
+    }else if(type === "prev" && currentCard === 0) {
+      currentCard = cardNumber-1;
+      position = -(cardWidth + cardMargin) * (cardNumber-1);
     }
     this.setCard(currentCard, position);
   }
