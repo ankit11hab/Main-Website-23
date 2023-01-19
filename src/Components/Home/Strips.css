@@ -68,7 +68,7 @@ text-shadow: -0.2vw -0.2vw 0 #000,
     text-align: center;
     letter-spacing: 0.02em;
     top: 0.5vw;
-    left: 14vw;
+    left: 12vw;
 }
 .edition_text2{
     color: #FFFFFF;
@@ -81,7 +81,7 @@ text-shadow: -0.2vw -0.2vw 0 #000,
     text-align: center;
     letter-spacing: 0.02em;
     top: 0.5vw;
-    left: 83vw;
+    left: 78vw;
 }
 .football_text{
     color: #FFFFFF;
@@ -94,7 +94,7 @@ text-shadow: -0.2vw -0.2vw 0 #000,
     line-height: 100%;
     text-align: center;
     letter-spacing: 0.02em;
-    left: 47vw;
+    left: 43vw;
 }
 .football_text1{
     color: #FFFFFF;
@@ -130,11 +130,11 @@ top: -0.2vw;
 }
 
 .star2{
-left: 39vw;
+left: 35vw;
 top: -0.2vw;
 }
 .star3{
-    left: 74vw;
+    left: 70vw;
     top: -0.2vw;
 }
 
