@@ -1,157 +1,10 @@
-import React, { useEffect, useState } from "react";
-import gsap from "gsap";
+import React, { useLayoutEffect, useState } from "react";
+import gsap, { Circ, Power0, Power1 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Sine, SteppedEase } from "gsap/src/all";
 import "./HeroSection.scss";
 import BookTicketIcon from "./images/bookticketsicon.svg";
 
-// import frame1 from "./images/Timeline 1_0000 - Copy.png";
-// import frame2 from "./images/Timeline 1_0001 - Copy.png";
-// import frame3 from "./images/Timeline 1_0002 - Copy.png";
-// import frame4 from "./images/Timeline 1_0003 - Copy.png";
-// import frame5 from "./images/Timeline 1_0004 - Copy.png";
-// import frame6 from "./images/Timeline 1_0005 - Copy.png";
-// import frame7 from "./images/Timeline 1_0006 - Copy.png";
-// import frame8 from "./images/Timeline 1_0007 - Copy.png";
-// import frame9 from "./images/Timeline 1_0008 - Copy.png";
-// import frame10 from "./images/Timeline 1_0009 - Copy.png";
-// import frame11 from "./images/Timeline 1_0010 - Copy.png";
-// import frame12 from "./images/Timeline 1_0011 - Copy.png";
-// import frame13 from "./images/Timeline 1_0012 - Copy.png";
-// import frame14 from "./images/Timeline 1_0013 - Copy.png";
-// import frame15 from "./images/Timeline 1_0014 - Copy.png";
-// import frame16 from "./images/Timeline 1_0015 - Copy.png";
-// import frame17 from "./images/Timeline 1_0016 - Copy.png";
-// import frame18 from "./images/Timeline 1_0017 - Copy.png";
-// import frame19 from "./images/Timeline 1_0018 - Copy.png";
-// import frame20 from "./images/Timeline 1_0019 - Copy.png";
-// import frame21 from "./images/Timeline 1_0020 - Copy.png";
-// import frame22 from "./images/Timeline 1_0021 - Copy.png";
-// import frame23 from "./images/Timeline 1_0022 - Copy.png";
-// import frame24 from "./images/Timeline 1_0023 - Copy.png";
-// import frame25 from "./images/Timeline 1_0024 - Copy.png";
-// import frame26 from "./images/Timeline 1_0025 - Copy.png";
-// import frame27 from "./images/Timeline 1_0026 - Copy.png";
-// import frame28 from "./images/Timeline 1_0027 - Copy.png";
-// import frame29 from "./images/Timeline 1_0028 - Copy.png";
-// import frame30 from "./images/HD_transparent_picture.png"
-/////////////////////////////////////////////////////////////////////////////
-// import frame0 from "./images/Web_0000.png";
-// import frame1 from "./images/Web_0001.png";
-// import frame2 from "./images/Web_0002.png";
-// import frame3 from "./images/Web_0003.png";
-// import frame4 from "./images/Web_0004.png";
-// import frame5 from "./images/Web_0005.png";
-// import frame6 from "./images/Web_0006.png";
-// import frame7 from "./images/Web_0007.png";
-// import frame8 from "./images/Web_0008.png";
-// import frame9 from "./images/Web_0009.png";
-// import frame10 from "./images/Web_0010.png";
-// import frame11 from "./images/Web_0011.png";
-// import frame12 from "./images/Web_0012.png";
-// import frame13 from "./images/Web_0013.png";
-// import frame14 from "./images/Web_0014.png";
-// import frame15 from "./images/Web_0015.png";
-// import frame16 from "./images/Web_0016.png";
-// import frame17 from "./images/Web_0017.png";
-// import frame18 from "./images/Web_0018.png";
-// import frame19 from "./images/Web_0019.png";
-// import frame20 from "./images/Web_0020.png";
-// import frame21 from "./images/Web_0021.png";
-// import frame22 from "./images/Web_0022.png";
-// import frame23 from "./images/Web_0023.png";
-// import frame24 from "./images/Web_0024.png";
-// import frame25 from "./images/Web_0025.png";
-// import frame26 from "./images/Web_0026.png";
-// import frame27 from "./images/Web_0027.png";
-// import frame28 from "./images/Web_0028.png";
-// import frame29 from "./images/Web_0029.png";
-// import frame30 from "./images/Web_0030.png";
-// import frame31 from "./images/Web_0031.png";
-// import frame32 from "./images/Web_0032.png";
-// import frame33 from "./images/Web_0033.png";
-// import frame34 from "./images/Web_0034.png";
-// import frame35 from "./images/Web_0035.png";
-// import frame36 from "./images/Web_0036.png";
-// import frame37 from "./images/Web_0037.png";
-// import frame38 from "./images/Web_0038.png";
-// import frame39 from "./images/Web_0039.png";
-// import frame40 from "./images/Web_0040.png";
-// import frame41 from "./images/Web_0041.png";
-// import frame42 from "./images/Web_0042.png";
-// import frame43 from "./images/Web_0043.png";
-// import frame44 from "./images/Web_0044.png";
-// import frame45 from "./images/Web_0045.png";
-// import frame46 from "./images/Web_0046.png";
-// import frame47 from "./images/Web_0047.png";
-// import frame48 from "./images/Web_0048.png";
-// import frame49 from "./images/Web_0049.png";
-// import frame50 from "./images/Web_0050.png";
-// import frame51 from "./images/Web_0051.png";
-// import frame52 from "./images/Web_0052.png";
-// import frame53 from "./images/Web_0053.png";
-// import frame54 from "./images/Web_0054.png";
-// import frame55 from "./images/Web_0055.png";
-// import frame56 from "./images/Web_0056.png";
-// import frame57 from "./images/Web_0057.png";
-// import frame58 from "./images/Web_0058.png";
-// import frame59 from "./images/Web_0059.png";
-// import frame60 from "./images/Web_0060.png";
-// import frame61 from "./images/Web_0061.png";
-// import frame62 from "./images/Web_0062.png";
-// import frame63 from "./images/Web_0063.png";
-// import frame64 from "./images/Web_0064.png";
-// import frame65 from "./images/Web_0065.png";
-// import frame66 from "./images/Web_0066.png";
-// import frame67 from "./images/Web_0067.png";
-// import frame68 from "./images/Web_0068.png";
-// import frame69 from "./images/Web_0069.png";
-// import frame70 from "./images/Web_0070.png";
-// import frame71 from "./images/Web_0071.png";
-// import frame72 from "./images/Web_0072.png";
-// import frame73 from "./images/Web_0073.png";
-// import frame74 from "./images/Web_0074.png";
-// import frame75 from "./images/Web_0075.png";
-// import frame76 from "./images/Web_0076.png";
-// import frame77 from "./images/Web_0077.png";
-// import frame78 from "./images/Web_0078.png";
-// import frame79 from "./images/Web_0079.png";
-// import frame80 from "./images/Web_0080.png";
-// import frame81 from "./images/Web_0081.png";
-// import frame82 from "./images/Web_0082.png";
-// import frame83 from "./images/Web_0083.png";
-// import frame84 from "./images/Web_0084.png";
-// import frame85 from "./images/Web_0085.png";
-// import frame86 from "./images/Web_0086.png";
-// import frame87 from "./images/Web_0087.png";
-// import frame88 from "./images/Web_0088.png";
-// import frame89 from "./images/Web_0089.png";
-// import frame90 from "./images/Web_0090.png";
-// import frame91 from "./images/Web_0091.png";
-// import frame92 from "./images/Web_0092.png";
-// import frame93 from "./images/Web_0093.png";
-// import frame94 from "./images/Web_0094.png";
-// import frame95 from "./images/Web_0095.png";
-// import frame96 from "./images/Web_0096.png";
-// import frame97 from "./images/Web_0097.png";
-// import frame98 from "./images/Web_0098.png";
-// import frame99 from "./images/Web_0099.png";
-// import frame100 from "./images/Web_0100.png";
-// import frame101 from "./images/Web_0101.png";
-// import frame102 from "./images/Web_0102.png";
-// import frame103 from "./images/Web_0103.png";
-// import frame104 from "./images/Web_0104.png";
-// import frame105 from "./images/Web_0105.png";
-// import frame106 from "./images/Web_0106.png";
-// import frame107 from "./images/Web_0107.png";
-// import frame108 from "./images/Web_0108.png";
-// import frame109 from "./images/Web_0109.png";
-// import frame110 from "./images/Web_0110.png";
-// import frame111 from "./images/Web_0111.png";
-// import frame112 from "./images/Web_0112.png";
-// import frame113 from "./images/Web_0113.png";
-// import frame114 from "./images/Web_0114.png";
-// import frame115 from "./images/Web_0115.png";
-////////////////////////////////////////////
 import frame0 from "./website webp/Web_0000.webp";
 import frame1 from "./website webp/Web_0001.webp";
 import frame2 from "./website webp/Web_0002.webp";
@@ -268,36 +121,6 @@ import frame112 from "./website webp/Web_0112.webp";
 import frame113 from "./website webp/Web_0113.webp";
 import frame114 from "./website webp/Web_0114.webp";
 import frame115 from "./website webp/Web_0115.webp";
-/////////////////////////////////////////////////////////////
-// import frameMob0 from "./mobile_images/Mobile_NoBG_0000.png";
-// import frameMob1 from "./mobile_images/Mobile_NoBG_0001.png";
-// import frameMob2 from "./mobile_images/Mobile_NoBG_0002.png";
-// import frameMob3 from "./mobile_images/Mobile_NoBG_0003.png";
-// import frameMob4 from "./mobile_images/Mobile_NoBG_0004.png";
-// import frameMob5 from "./mobile_images/Mobile_NoBG_0005.png";
-// import frameMob6 from "./mobile_images/Mobile_NoBG_0006.png";
-// import frameMob7 from "./mobile_images/Mobile_NoBG_0007.png";
-// import frameMob8 from "./mobile_images/Mobile_NoBG_0008.png";
-// import frameMob9 from "./mobile_images/Mobile_NoBG_0009.png";
-// import frameMob10 from "./mobile_images/Mobile_NoBG_0010.png";
-// import frameMob11 from "./mobile_images/Mobile_NoBG_0011.png";
-// import frameMob12 from "./mobile_images/Mobile_NoBG_0012.png";
-// import frameMob13 from "./mobile_images/Mobile_NoBG_0013.png";
-// import frameMob14 from "./mobile_images/Mobile_NoBG_0014.png";
-// import frameMob15 from "./mobile_images/Mobile_NoBG_0015.png";
-// import frameMob16 from "./mobile_images/Mobile_NoBG_0016.png";
-// import frameMob17 from "./mobile_images/Mobile_NoBG_0017.png";
-// import frameMob18 from "./mobile_images/Mobile_NoBG_0018.png";
-// import frameMob19 from "./mobile_images/Mobile_NoBG_0019.png";
-// import frameMob20 from "./mobile_images/Mobile_NoBG_0020.png";
-// import frameMob21 from "./mobile_images/Mobile_NoBG_0021.png";
-// import frameMob22 from "./mobile_images/Mobile_NoBG_0022.png";
-// import frameMob23 from "./mobile_images/Mobile_NoBG_0023.png";
-// import frameMob24 from "./mobile_images/Mobile_NoBG_0024.png";
-// import frameMob25 from "./mobile_images/Mobile_NoBG_0025.png";
-// import frameMob26 from "./mobile_images/Mobile_NoBG_0026.png";
-// import frameMob27 from "./mobile_images/Mobile_NoBG_0027.png";
-// import frameMob28 from "./mobile_images/Mobile_NoBG_0028.png";
 ///////////////////////////////////////////////////////////////
 import frameMob0 from "./mobile images webp/Mobile_NoBG_0000.webp";
 import frameMob1 from "./mobile images webp/Mobile_NoBG_0001.webp";
@@ -330,7 +153,6 @@ import frameMob27 from "./mobile images webp/Mobile_NoBG_0027.webp";
 import frameMob28 from "./mobile images webp/Mobile_NoBG_0028.webp";
 //////////////////////////////////////////////////////////////
 import AlcherLogo from "./images/alcher_2023_logo.png";
-import { NavLink } from "react-router-dom";
 const frameArr = [
   frame0,
   frame1,
@@ -484,12 +306,16 @@ const frameArrMob = [
 
 gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
-  const [isPending, setisPending] = useState(true);
-  useEffect(() => {
+  // const [isPending, setisPending] = useState(true);
+  // window.addEventListener("load", () => {
+  //   setisPending(false);
+  // });
+  useLayoutEffect(() => {
     if (!window.matchMedia("(max-width: 800px)").matches) {
       const canvas = document.getElementById("canvas1");
       const context = canvas.getContext("2d");
-      // Set display size (vw/vh).
+      const frameCount = 116;
+      const currentFrame = (index) => frameArr[index];
       var sizeWidth = (100 * window.innerWidth) / 100,
         sizeHeight = (100 * window.innerHeight) / 100;
       //Setting the canvas site and width to be responsive
@@ -499,15 +325,6 @@ function HeroSection() {
       canvas.style.height = sizeHeight;
       const factor1 = sizeWidth / 3840;
       const factor2 = sizeHeight / 2160;
-      //    var ratio  = Math.min ( factor1, factor2 );
-
-      //    context.scale(1/factor1,1/factor2);
-      // canvas.width = 1920;
-      // canvas.height = 1080;
-
-      const frameCount = 116;
-      const currentFrame = (index) => frameArr[index];
-
       const images = [];
       const book_cover = {
         frame: 0,
@@ -518,165 +335,10 @@ function HeroSection() {
         img.src = currentFrame(i);
         images.push(img);
       }
-      // const video = document.createElement('video');
-      // video.src=currentFrame(200);
-      // video.controls=true;
-      // images.push(video)
-      // console.log(images);
-
-      const animation = gsap.to(book_cover, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        duration: 2000,
-        scrollTrigger: {
-          trigger: ".book-container1",
-          start: "top 25%",
-          end: "400% 25%",
-          scrub: 2,
-          // markers: true,
-        },
-
-        onUpdate: render,
-
-        // use animation onUpdate instead of scrollTrigger's onUpdate
-        // onComplete:(e)=>{
-        //     // document.getElementById('canvas_section').setAttribute('display','none');
-        //     // const video = document.createElement('video');
-        //     // video.src=bookcovervideo;
-        //     // video.controls=true;
-        //     // document.getElementById('animation__Container').appendChild(video);
-        //     // video.play();
-        //     // context.drawImage(video,0,0);
-        //     console.log('completed')
-        // },
-      });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "top 25%",
-          end: "400% center",
-          toggleActions: "play reverse play reverse",
-          id: "hero container",
-          // markers:true,
-          scrub: true,
-          // pin:true
-        },
-      });
-
-      tl.to(".hero_container", {
-        css: {
-          position: "fixed",
-          top: 0,
-          left: 0,
-        },
-      });
-
-      tl.to(".hero_container", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% top",
-          end: "bottom bottom",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "lastFrame",
-          // markers:true,
-        },
-        css: {
-          position: "static",
-        },
-      });
-      tl.to(".blank_div", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% top",
-          end: "bottom bottom",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "blankdiv",
-          // markers:true,
-        },
-        css: {
-          // position:'absolute',
-          // width:'10%',
-          height: 4 * sizeHeight,
-          // opacity:0,
-        },
-      });
-      tl.to(".geet", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% center",
-          end: "+=150%",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geet",
-          // markers: true,
-          // duration:2,
-        },
-        css: {
-          position: "fixed",
-          top: 0,
-          left: 0,
-          opacity: 1,
-          zIndex: 6,
-        },
-      });
-      tl.to(".geet", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          // end:'100% top',
-          // end:'+=100%',
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee1",
-          // markers:true,
-        },
-        css: {
-          position: "static",
-        },
-      });
-      tl.to(".blank_div4", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          // end:'100% top',
-          // end:'+=100%',
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee1",
-          // markers:true,
-        },
-        css: {
-          height: 0,
-        },
-      });
-      tl.to(".blank_div3", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          end: "+=100%",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee2",
-          // markers:true,
-        },
-        css: {
-          //  position:'fixed',
-          //  opacity:0,
-          // height:sizeHeight*1,
-          height: sizeHeight * 0.15,
-        },
-      });
-
       images[0].onload = render;
 
       function render() {
         context.clearRect(0, 0, canvas.width, canvas.height);
-        // console.log(book_cover.frame);
-        //   context.drawImage(images[book_cover.frame], 0, 0);
         context.drawImage(
           images[book_cover.frame],
           0,
@@ -689,11 +351,55 @@ function HeroSection() {
           2160 * factor2
         );
       }
+      let ctx = gsap.context(() => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".hero_container",
+          },
+        });
+        tl.to(book_cover, {
+          frame: frameCount - 1,
+          snap: "frame",
+          ease: "none",
+          duration: 2000,
+          scrollTrigger: {
+            trigger: ".hero_container",
+            start: "top top",
+            end: "400% bottom",
+            scrub: 0.1,
+            pin: true,
+          },
+          onUpdate: render,
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top bottom",
+            end: "top top",
+            scrub: 1,
+            toggleClass: { targets: ".overlay", className: "block" },
+          },
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top top",
+            scrub: 10,
+            pin: ".pano___",
+
+            onLeave: () => {},
+
+          },
+        });
+      });
+      return () => {
+        ctx.revert();
+      };
     } else {
       const canvas = document.getElementById("canvas1");
       const context = canvas.getContext("2d");
-
-      // Set display size (vw/vh).
+      const frameCount = 29;
+      const currentFrame = (index) => frameArrMob[index];
       var sizeWidth = (100 * window.innerWidth) / 100,
         sizeHeight = (100 * window.innerHeight) / 100;
       //Setting the canvas site and width to be responsive
@@ -701,17 +407,6 @@ function HeroSection() {
       canvas.height = sizeHeight;
       canvas.style.width = sizeWidth;
       canvas.style.height = sizeHeight;
-      const factor1 = sizeWidth / 1184;
-      const factor2 = sizeHeight / 2960;
-      //    var ratio  = Math.min ( factor1, factor2 );
-
-      //    context.scale(1/factor1,1/factor2);
-      // canvas.width = 1920;
-      // canvas.height = 1080;
-
-      const frameCount = 29;
-      const currentFrame = (index) => frameArrMob[index];
-
       const images = [];
       const book_cover = {
         frame: 0,
@@ -722,182 +417,68 @@ function HeroSection() {
         img.src = currentFrame(i);
         images.push(img);
       }
-      // const video = document.createElement('video');
-      // video.src=currentFrame(200);
-      // video.controls=true;
-      // images.push(video)
-      // console.log(images);
-
-      const animation = gsap.to(book_cover, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        duration: 2000,
-        scrollTrigger: {
-          trigger: ".book-container1",
-          // start: "35% 25%",
-          start: "25% 20%",
-          end: "400% 25%",
-          scrub: 2,
-          // markers: true,
-        },
-
-        onUpdate: render,
-
-        // use animation onUpdate instead of scrollTrigger's onUpdate
-        // onComplete:(e)=>{
-        //     // document.getElementById('canvas_section').setAttribute('display','none');
-        //     // const video = document.createElement('video');
-        //     // video.src=bookcovervideo;
-        //     // video.controls=true;
-        //     // document.getElementById('animation__Container').appendChild(video);
-        //     // video.play();
-        //     // context.drawImage(video,0,0);
-        //     console.log('completed')
-        // },
-      });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "25% 20%",
-          end: "400% center",
-          toggleActions: "play reverse play reverse",
-          id: "hero container",
-          // markers: true,
-          scrub: true,
-          // pin:true
-        },
-      });
-
-      tl.to(".hero_container", {
-        css: {
-          position: "fixed",
-          top: 0,
-          left: 0,
-        },
-      });
-
-      tl.to(".hero_container", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% top",
-          end: "bottom bottom",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "lastFrame",
-          // markers:true,
-        },
-        css: {
-          position: "static",
-        },
-      });
-      tl.to(".blank_div", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% top",
-          end: "bottom bottom",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "blankdiv",
-          // markers:true,
-        },
-        css: {
-          // position:'absolute',
-          // width:'10%',
-          height: 4 * sizeHeight,
-          // opacity:0,
-        },
-      });
-      tl.to(".geet", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "400% center",
-          end: "+=150%",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geet",
-          // markers:true,
-          // duration:2,
-        },
-        css: {
-          position: "fixed",
-          top: 0,
-          left: 0,
-          opacity: 1,
-          zIndex: 6,
-        },
-      });
-      tl.to(".geet", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          end: "+=100%",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee1",
-          // markers:true,
-        },
-        css: {
-          position: "static",
-        },
-      });
-      tl.to(".blank_div4", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          // end:'100% top',
-          // end:'+=100%',
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee1",
-          // markers:true,
-        },
-        css: {
-          height: '0',
-        },
-      });
-      tl.to(".blank_div3", {
-        scrollTrigger: {
-          trigger: ".hero_container",
-          start: "550% center",
-          end: "+=100%",
-          toggleActions: "play reverse play reverse",
-          scrub: true,
-          id: "geetee2",
-          // markers:true,
-        },
-        css: {
-          //    position:'absolute',
-          //    opacity:0,
-          height: sizeHeight * 0.15,
-        },
-      });
-
       images[0].onload = render;
 
       function render() {
         context.clearRect(0, 0, canvas.width, canvas.height);
-        // console.log(book_cover.frame);
-        //   context.drawImage(images[book_cover.frame], 0, 0);
         context.drawImage(
           images[book_cover.frame],
           0,
-          0,
-          1184,
-          2960,
-          0,
-          0,
-          1184 * factor1,
-          2960 * factor2
+          -(canvas.height / 5),
+          canvas.width,
+          canvas.height * 1.5
         );
       }
+      let ctx = gsap.context(() => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".hero_container",
+          },
+        });
+        tl.to(book_cover, {
+          frame: frameCount - 1,
+          snap: "frame",
+          ease: "none",
+          duration: 2000,
+          scrollTrigger: {
+            trigger: ".hero_container",
+            start: "top top",
+            end: "400% bottom",
+            scrub: 0.1,
+            pin: true,
+          },
+          onUpdate: render,
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top bottom",
+            end: "top top",
+            scrub: 2,
+            toggleClass: { targets: ".overlay", className: "block" },
+          },
+        });
+        tl.to(".pano___", {
+          scrollTrigger: {
+            trigger: ".pano___",
+            start: "top top",
+            scrub: 10,
+            pin: ".pano___",
+
+            onLeave: () => {},
+
+          },
+        });
+      });
+      return () => {
+        ctx.revert();
+      };
     }
-    setisPending(false);
   }, []);
+
   return (
     <>
-      {isPending && <style>{`body{overflow:hidden !important}`}</style>}
+      {/* {isPending && <style>{`body{overflow:hidden !important}`}</style>}
       {isPending && (
         <div className="loader-container">
           <div class="loader book">
@@ -907,14 +488,8 @@ function HeroSection() {
           </div>
           <h4>Loading</h4>
         </div>
-      )}
-      <div
-        className="hero_animation_div"
-        id="heroAnimationDiv"
-        style={{
-          backdropFilter: isPending && "blur(10px)",
-        }}
-      >
+      )} */}
+      <div className="hero_animation_div" id="heroAnimationDiv">
         <div className="AlcherLogo">
           <span class="t_over"></span>
           <span class="t_over"></span>
@@ -926,21 +501,21 @@ function HeroSection() {
           <span class="t_over"></span>
           <span class="t_over"></span>
           <img className="logo_img" src={AlcherLogo} alt="" />
-          <div className="headingmob"></div>
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
               <img src={BookTicketIcon} alt="" className="bookiconhero"/>
               <div className="bookticketstext">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
+
+              {/* <img src={BookTicketIcon} alt="" />
+              <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
             </button>
           </div>
         </div>
-        <div className="blank_div2"></div>
-        <div id="hero_container" className="hero_container">
-          <section id="canvas_section1" className="book-container1">
-            <canvas id="canvas1" />
-          </section>
+      </div>
+      <div id="hero_container" className="hero_container">
+        <div id="canvas_section1" className="book-container1">
+          <canvas className="hero_canvas" id="canvas1" />
         </div>
-        <div className="blank_div" id="blankDivId"></div>
       </div>
     </>
   );

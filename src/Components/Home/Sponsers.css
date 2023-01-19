@@ -24,7 +24,7 @@ html body {
 }
 
 
-.marquee-content li img,.marquee-content2 li img {
+.marquee-content li img, .marquee-content2 li img {
     width: 100%;
     /* height: 100%; */
     border: 2px solid #eee;
@@ -35,7 +35,7 @@ html body {
     --marquee-height: 26vh;
     /* --marquee-elements: 12; */
     /* defined with JavaScript */
-    --marquee-elements-displayed: 7;
+    --marquee-elements-displayed: 5;
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
     --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
@@ -109,7 +109,7 @@ animation-play-state: paused;
     }
 }
 
-.marquee-content li,.marquee-content2 li {
+.marquee-content li, .marquee-content2 li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +122,7 @@ animation-play-state: paused;
     white-space: nowrap;
 }
 
-.marquee-content li img,.marquee-content2 li img {
+.marquee-content li img, .marquee-content2 li img {
     width: 100%;
     /* height: 100%; */
     border: 2px solid #eee;
@@ -174,6 +174,38 @@ animation-play-state: paused;
     .marquee:before,
     .marquee:after {
         width: 5rem;
+    }
+}
+
+#dropdown {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --marquee-width: 100vw;
+        --marquee-height: 18vh;
+        --marquee-elements-displayed: 2;
+    }
+
+    .marquee:before,
+    .marquee:after {
+        width: 5rem;
+    }
+    .featured-event-heading {
+        font-family: "Aileron";
+        margin: 35vw 1vw 5vw 1vw;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #000000;
+    }
+    .SponsorsImg{
+        margin-bottom: 30vw;
     }
 }
 

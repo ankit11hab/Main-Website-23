@@ -19,6 +19,8 @@ function Nav({ icon, pic }) {
     mobile.style.height = "100vh";
     const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.zIndex = "-1";
+    const logo_=document.getElementsByClassName('AlcherLogo');
+    logo_.style.position = "relative";
   };
   const handleClickCross = (e) => {
     setActive(!active);
@@ -28,6 +30,8 @@ function Nav({ icon, pic }) {
     mobile.style.height = "10vh";
     const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.display = "block";
+    const logo_=document.getElementsByClassName('AlcherLogo')[0];
+    logo_.style.position = "absolute";
   };
 
   return (

@@ -3,7 +3,23 @@
   font-family: "Star Guard";
   src: url(../../fonts/starguardsemital.ttf) format("truetype");
 }
-
+.panorama__main{
+  width: 100vw;
+}
+.overlay{
+  height: 101vw;
+  width: 101vw;
+  position: absolute;
+  top: -1vw;
+  left: 0;
+  background: #000000;
+  z-index: 1000000;
+  display: none;
+}
+.block{
+display: block;
+transition: all 2s ease-in-out;
+}
 .description {
   width: 45vw;
   font-family: 'Aileron';
@@ -80,8 +96,7 @@
     display: flex;
     height: auto;
     width: 100vw;
-    /* transform: translate3d(0px, 2768px, 0px); */
-height: 100vh;
+    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -106,7 +121,6 @@ height: 100vh;
   }
   html.a-fullscreen {
     position: relative !important;
-    /* overflow-x:hidden !important ; */
   }
   .lotus__img{
     display: none;
@@ -117,7 +131,7 @@ height: 100vh;
     display: none;
   }
   iframe{
-    height: auto;
+    height: 65vh;
   }
   .pano__video{
     display: none;
@@ -125,7 +139,7 @@ height: 100vh;
   .img__after_hero{
     display: block;
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
   }
   .lotus__img{
     display: block;
@@ -179,7 +193,7 @@ height: 100vh;
     display: none;
   }
   iframe{
-    height: 30vh;
+    height: 65vh;
   }
   .play_logo{
     display: none;
