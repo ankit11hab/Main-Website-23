@@ -5,6 +5,9 @@
     /* padding-bottom: 20px; */
     margin-bottom: 20px;
     z-index: 1;
+    background-color: #FFFBF5;
+    mix-blend-mode: multiply;
+
 }
 
 .navheader{
