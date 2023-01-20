@@ -38,7 +38,7 @@ const Home = () => {
       righttwit: "",
       id: 2,
     },
-    
+
   ]);
 
   return (
@@ -46,7 +46,7 @@ const Home = () => {
       <Nav />
       <img class="wemade-img" src={wemade}/>
       <div class="teamheading">
-        We made it happen
+        <br/>WE MADE IT HAPPEN
       </div>
       {boxes.map((box) => (
 
