@@ -82,7 +82,7 @@ const Teambox = (props) => {
 
 
             <div className="hover-grp ">
-                <div className="hovershow " onClick={handleEnter1} data-tooltip="Click for contact info" data-tooltip-location="left">
+                <div className="hovershow " onClick={handleEnter1} data-tooltip="Click for contact info" data-tooltip-location="left" >
                 {isMouseOver1 ?
                 <>
                     <div className="bubble-container ">
