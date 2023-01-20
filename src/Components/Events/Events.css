@@ -145,7 +145,7 @@
   width: 50vw;
   height: 6rem;
   justify-content: center;
-  gap: 2vw;
+  gap: 6vw;
 }
 
 .upnav .sidebar11 .active {
@@ -154,6 +154,10 @@
 .upnav .sidebar11 .active div {
   display: flex;
   color: #f35c41;
+}
+
+.eventsnavitem:hover {
+  color: #F35C41;
 }
 
 .sidebar11 a {

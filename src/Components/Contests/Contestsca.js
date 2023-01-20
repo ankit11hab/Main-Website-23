@@ -80,7 +80,7 @@ function Events() {
                 <NavLink to="/Contests/at"  className="sidebar1-item">ART TALKIES</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/dd">DIGITAL DEXTERITY</NavLink>
+                <NavLink to="/Contests/dd" className="sidebar1-item">DIGITAL DEXTERITY</NavLink>
               </li>
               <li>
                 <NavLink to="/Contests/lca"  className="sidebar1-item">LIGHTS CAMERA ACTION</NavLink>
