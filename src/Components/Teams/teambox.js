@@ -32,35 +32,43 @@ const Teambox = (props) => {
     const rightlink = props.rightlink;
     const righttwit = props.righttwit;
 
-    const [isMouseOver1,setIsMouseOver1] = useState(false)
-
+    const [isMouseOver1,setIsMouseOver1] = useState(false);
+    const [isdata1,setIsdata1] = useState("Click for contact info");
   const handleEnter1 = () => {
-    setIsMouseOver1(true)
+    setIsMouseOver1(true);
+    document.getElementById("tem1").removeAttribute("data-tooltip");
   }
 
   const handleLeave1 = (event) => {
     setIsMouseOver1(false);
+    document.getElementById("tem1").setAttribute("data-tooltip","Click for contact info");
     event.stopPropagation();
   }
 
-  const [isMouseOver2,setIsMouseOver2] = useState(false)
+
+
+  const [isMouseOver2,setIsMouseOver2] = useState(false);
 
   const handleEnter2 = () => {
-    setIsMouseOver2(true)
+    setIsMouseOver2(true);
+    document.getElementById("tem2").removeAttribute("data-tooltip");
   }
 
   const handleLeave2 = (event) => {
     setIsMouseOver2(false);
+    document.getElementById("tem2").setAttribute("data-tooltip","Click for contact info");
     event.stopPropagation();
   }
-  const [isMouseOver3,setIsMouseOver3] = useState(false)
+  const [isMouseOver3,setIsMouseOver3] = useState(false);
 
     const handleEnter3 = () => {
-      setIsMouseOver3(true)
+      setIsMouseOver3(true);
+      document.getElementById("tem3").removeAttribute("data-tooltip");
     }
 
     const handleLeave3 = (event) => {
       setIsMouseOver3(false);
+      document.getElementById("tem3").setAttribute("data-tooltip","Click for contact info");
       event.stopPropagation();
     }
 
@@ -82,7 +90,7 @@ const Teambox = (props) => {
 
 
             <div className="hover-grp ">
-                <div className="hovershow " onClick={handleEnter1} data-tooltip="Click for contact info" data-tooltip-location="left" >
+                <div className="hovershow " id="tem1" onClick={handleEnter1} data-tooltip="Click for contact info" data-tooltip-location="left" >
                 {isMouseOver1 ?
                 <>
                     <div className="bubble-container ">
@@ -115,7 +123,7 @@ const Teambox = (props) => {
 
                   }
                 </div>
-                <div className="hovershow " onClick={handleEnter2} data-tooltip="Click for contact info">
+                <div className="hovershow " id="tem2" onClick={handleEnter2} data-tooltip="Click for contact info">
                 {isMouseOver2 ?
                 <>
                     <div className="bubble-container">
@@ -146,7 +154,7 @@ const Teambox = (props) => {
 
                     }
                 </div>
-                <div className="hovershow " onClick={handleEnter3} data-tooltip="Click for contact info" data-tooltip-location="right">
+                <div className="hovershow " id="tem3" onClick={handleEnter3} data-tooltip="Click for contact info" data-tooltip-location="right">
                 {isMouseOver3 ?
                 <>
                     <div className="bubble-container">

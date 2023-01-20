@@ -42,7 +42,7 @@ body {
 
 .hovershow {
   height: 100%;
-  width: 20vw;
+  width: 19.5vw;
   overflow: visible;
   position: relative;
 }
@@ -282,7 +282,7 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   visibility: hidden;
   opacity: 0;
   left: 50%;
-  bottom: calc(83% + var(--arrow-size));
+  bottom: calc(86% + var(--arrow-size));
   pointer-events: none;
   transition: 0.2s;
   will-change: transform;
