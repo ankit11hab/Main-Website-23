@@ -27,37 +27,37 @@ function Events() {
             <div className="head">MODULES</div>
             <ul className="mlist">
               <li>
-                <NavLink to="/Contests/vn">VOUGUE NATION</NavLink>
+                <NavLink to="/Contests/vn" className="sidebar1-item">VOUGUE NATION</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/ca">CLASS APART</NavLink>
+                <NavLink to="/Contests/ca" className="sidebar1-item">CLASS APART</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/d">DANCE</NavLink>
+                <NavLink to="/Contests/d" className="sidebar1-item">DANCE</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/m">MUSIC</NavLink>
+                <NavLink to="/Contests/m"  className="sidebar1-item">MUSIC</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/l">LITERARY</NavLink>
+                <NavLink to="/Contests/l"  className="sidebar1-item">LITERARY</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/at">ART TALKIES</NavLink>
+                <NavLink to="/Contests/at"  className="sidebar1-item">ART TALKIES</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/dd">DIGITAL DEXTERITY</NavLink>
+                <NavLink to="/Contests/dd" className="sidebar1-item">DIGITAL DEXTERITY</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/lca">LIGHTS CAMERA ACTION</NavLink>
+                <NavLink to="/Contests/lca"  className="sidebar1-item">LIGHTS CAMERA ACTION</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/s">SPORTS</NavLink>
+                <NavLink to="/Contests/s"  className="sidebar1-item">SPORTS</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/q">QUIZ</NavLink>
+                <NavLink to="/Contests/q"  className="sidebar1-item">QUIZ</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests/dr">DRAMA</NavLink>
+                <NavLink to="/Contests/dr"  className="sidebar1-item">DRAMA</NavLink>
               </li>
             </ul>
           </div>

@@ -24,7 +24,7 @@ function Events() {
         <div className="contest_main">
           <div className="sidebar1">
             <div className="head">MODULES</div>
-            <ul className="mlist">
+            {/* <ul className="mlist">
               <li>
                 <NavLink to="/Contests">VOUGUE NATION</NavLink>
               </li>
@@ -57,6 +57,41 @@ function Events() {
               </li>
               <li>
                 <NavLink to="/Contests/dr">DRAMA</NavLink>
+              </li>
+            </ul> */}
+            <ul className="mlist">
+              <li>
+                <NavLink to="/Contests/vn" className="sidebar1-item">VOUGUE NATION</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/ca" className="sidebar1-item">CLASS APART</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/d" className="sidebar1-item">DANCE</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/m"  className="sidebar1-item">MUSIC</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/l"  className="sidebar1-item">LITERARY</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/at"  className="sidebar1-item">ART TALKIES</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/dd" className="sidebar1-item">DIGITAL DEXTERITY</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/lca"  className="sidebar1-item">LIGHTS CAMERA ACTION</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/s"  className="sidebar1-item">SPORTS</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/q"  className="sidebar1-item">QUIZ</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Contests/dr"  className="sidebar1-item">DRAMA</NavLink>
               </li>
             </ul>
           </div>

@@ -191,7 +191,7 @@ function App() {
             <div className="video_desktop">
                 <div className="leftbutton_desktop">
                     <button
-                         className='desktop__buttons'
+                         className="desktop__buttons previousbtn"
                         onClick={(e) => {
                             showPrevious();
                         }}
@@ -215,7 +215,7 @@ function App() {
                     </button>
                 </div>
                 <div className="rightbutton_desktop">
-                    <button className='desktop__buttons' style={{'marginRight':'4vw'}} onClick={(e) => {
+                    <button className="desktop__buttons nextbtn" style={{'marginRight':'4vw'}} onClick={(e) => {
                             showNext();
                         }}
                         ref={nextBtn}

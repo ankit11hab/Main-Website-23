@@ -391,6 +391,10 @@ line-height: 2.0vw;
 	font-weight: 600;
 }
 
+.sidebar1-item:hover {
+	color: #F35C41;
+} 
+
 /* mobile view */
 @media(max-width:840px){
 	.sidebar1{
