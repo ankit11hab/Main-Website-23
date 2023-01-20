@@ -45,6 +45,10 @@ transition: all 2s ease-in-out;
     top: 27vw;
     left: 55vw;
   }
+  .divider__{
+    height: 10vh;
+    background-color: black;
+  }
   .video_box{
     position: relative;
   }
@@ -135,6 +139,9 @@ transition: all 2s ease-in-out;
   }
   .pano__video{
     display: none;
+  }
+  .divider__{
+    height: 3vh;
   }
   .img__after_hero{
     display: block;

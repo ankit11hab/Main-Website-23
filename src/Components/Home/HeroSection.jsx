@@ -366,7 +366,7 @@ function HeroSection() {
             trigger: ".hero_container",
             start: "top top",
             end: "400% bottom",
-            scrub: 0.1,
+            scrub: 1,
             pin: true,
           },
           onUpdate: render,
@@ -384,11 +384,8 @@ function HeroSection() {
           scrollTrigger: {
             trigger: ".pano___",
             start: "top top",
-            scrub: 10,
+            scrub: 1,
             pin: ".pano___",
-
-            onLeave: () => {},
-
           },
         });
       });

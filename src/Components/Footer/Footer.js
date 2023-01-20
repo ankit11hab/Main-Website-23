@@ -185,11 +185,11 @@ event.stopPropagation();
           <div className="dev-ddby">
             <img src={devBY} className="designBY"/>
             <div className="creatives-names">
-              <span className="names-ddby">Arya Godhke</span>
-              <span className="names-ddby">Arya Godhke</span>
-              <span className="names-ddby">Arya Godhke</span>
+              <span className="names-ddby">Akshat</span>
+              <span className="names-ddby">digvijay</span>
+              <span className="names-ddby">Geeta</span>
               <br/>
-              <span className="names-ddby">Dhwani</span>
+              <span className="names-ddby">Ankit Guha</span>
             </div>
           </div>
         </div>
