@@ -6,6 +6,10 @@
 .panorama__main{
   width: 100vw;
 }
+.blankdiv{
+  background-color: black;
+  height: 40px;
+}
 .overlay{
   height: 101vw;
   width: 101vw;

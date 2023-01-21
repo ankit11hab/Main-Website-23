@@ -39,7 +39,7 @@ const VRScene = () => {
         <div className="panorama__main">
           <Pannellum
             width="100%"
-            height="100vh"
+            height="108vh"
             image={myImage}
             pitch={10}
             yaw={180}
@@ -52,7 +52,7 @@ const VRScene = () => {
           />
         </div>
       </div>
-      <div className='divider__'></div>
+      <div className="blankdiv"></div>
       <div className="video_box">
         <iframe
           id="themevideo"

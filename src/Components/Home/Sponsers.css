@@ -12,7 +12,7 @@ html body {
     font-family: "Aileron";
     margin: 4vw 1vw 2vw 1vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #000000;
 }
@@ -20,7 +20,7 @@ html body {
 .marquee-body {
     display: flex;
     justify-content: center;
-    margin-bottom: 5vw;
+    margin-bottom: 1vw;
 }
 
 
