@@ -75,7 +75,7 @@ event.stopPropagation();
             <div className="details">
               <div className="contact">
                 <div className="shareka">
-                  <b>Siddant Singh</b>
+                  <b>Siddhant Singh</b>
                   PR Head<br></br>
                   +91 9310859978
                 </div>
