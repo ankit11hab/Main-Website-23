@@ -1,0 +1,39 @@
+.Coming-soon{
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.coming-soon-monster{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.coming-soon-text{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: -4vh;
+}
+.coming-soon-text img{
+    width: 50vw;
+}
+.coming-soon-monster img{
+    height: 60vh;
+
+}
+@media(max-width:700px){
+    .coming-soon-text img{
+        width: 80vw;
+        height: auto;
+    }
+    .coming-soon-monster img{
+       width: 80vw;
+       height: auto;
+    
+    }
+    .Coming-soon{
+        height: auto;
+    }
+}

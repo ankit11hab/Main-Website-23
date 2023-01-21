@@ -78,9 +78,7 @@
 	width: 100%;
 } */
 .navbar{
-	background-color: #FFFBF5;
-	
-	mix-blend-mode: multiply;
+
 }
 .contest_main {
 	display: flex;
@@ -89,9 +87,7 @@
 	width: 100vw;
 	padding: 0% 5%;
 	/* overflow: auto; */
-	background-color: #FFFBF5;
 	
-	mix-blend-mode: multiply;
 
 	padding-top: 5rem;
 	/* column-gap: 2rem; */
