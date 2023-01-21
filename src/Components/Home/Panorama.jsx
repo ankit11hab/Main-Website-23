@@ -52,6 +52,7 @@ const VRScene = () => {
           />
         </div>
       </div>
+      <div className='divider__'></div>
       <div className="video_box">
         <iframe
           id="themevideo"
