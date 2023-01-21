@@ -31,7 +31,7 @@ function Events1() {
 
       <NavMob />
 
-      <div className="main_event">
+      {/* <div className="main_event">
         <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
@@ -65,11 +65,11 @@ function Events1() {
             </NavLink>
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink to="/Events/hf">
               <div className="HumourFest1">HUMOUR FEST</div>
             </NavLink> */}
-            <NavLink to="/Events/ps">
+            {/* <NavLink to="/Events/ps">
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
           </div>
@@ -104,15 +104,15 @@ function Events1() {
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1">CREATORS CAMP</div>
             </NavLink>
-            {/* <NavLink to="/Events/hf">
+           <NavLink to="/Events/hf">
               <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink> */}
+            </NavLink>
             <NavLink to="/Events/ps">
               <div className="PROSHOWS1">PROSHOWS</div>
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

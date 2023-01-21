@@ -9,8 +9,6 @@ width: 100vw;
 
 left: 1919px;
 top: 6771px;
-background:#FFFBF5;
-mix-blend-mode: multiply;
 
 
 transform: matrix(1, 0, 0, 1, 0, 0);
@@ -559,6 +557,7 @@ font-size: 1.1vw;
 line-height: 2vw;
 text-align: center;
 color: #000000;
+background:url('./images/texture_background.webp');
 }
 
 @media (max-width:1500px){
