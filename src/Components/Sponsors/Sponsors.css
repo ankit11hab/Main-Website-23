@@ -10,21 +10,17 @@
 }
 
 .navbar {
-  background: #fffbf5;
-  mix-blend-mode: multiply;
+
 }
 .container {
   padding-top: 20vh;
-  background: #fffbf5;
-  mix-blend-mode: multiply;
 }
 
 .rect {
   width: 100vw;
   margin-top: 1vh;
   margin-bottom: 15vh;
-  background: #fffbf5;
-  mix-blend-mode: multiply;
+ 
 }
 
 .bg {

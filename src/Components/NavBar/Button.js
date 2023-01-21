@@ -1,6 +1,7 @@
 import React from 'react'
 import logoo from './Images/logoticket.png'
 import booktickets from './Images/BOOK TICKETS.png'
+import "./Nav.css";
 
 function Button() {
   return (

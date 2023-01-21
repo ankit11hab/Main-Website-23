@@ -9,8 +9,6 @@ width: 100vw;
 
 left: 1919px;
 top: 6771px;
-background:#FFFBF5;
-mix-blend-mode: multiply;
 
 
 transform: matrix(1, 0, 0, 1, 0, 0);
@@ -559,6 +557,7 @@ font-size: 1.1vw;
 line-height: 2vw;
 text-align: center;
 color: #000000;
+background:url('./images/texture_background.webp');
 }
 
 @media (max-width:1500px){
@@ -1377,6 +1376,7 @@ border-color: #000000;
   padding: 5px;
   
 }
+
 .imgcam:hover{
   transform: translateZ(10px);
   /* border: none; */
@@ -1442,7 +1442,7 @@ border-color: #000000;
   width: 45px;
   height: 100%;
   border: 0;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
   background: none;
   outline: none;
   transform: scale(.9);

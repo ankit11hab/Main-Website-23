@@ -77,11 +77,6 @@
 	height: fit-content;
 	width: 100%;
 } */
-.navbar{
-	background-color: #FFFBF5;
-	
-	mix-blend-mode: multiply;
-}
 .contest_main {
 	margin-bottom: 4vh;
 	display: flex;
@@ -90,9 +85,7 @@
 	width: 100vw;
 	padding: 0% 5%;
 	/* overflow: auto; */
-	background-color: #FFFBF5;
 	
-	mix-blend-mode: multiply;
 
 	padding-top: 5rem;
 	/* column-gap: 2rem; */
@@ -102,7 +95,6 @@
 }
 .contest_box{
 	display: flex;
-	justify-content: center;
 	width: calc(100vw - 20rem - 5%);
 }
 .contest_content{
@@ -335,7 +327,9 @@
 	font-weight: 500;
 	line-height: 1.2008374214172363rem;
 }
-
+.contest_button{
+	cursor: url('../../images/Group\ 288.png'), default!important;
+}
 .sidebar1 {
 	height: 27rem;
 	width: 20rem;
@@ -345,6 +339,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	
 	/* margin-top: 10rem; */
 }
 
@@ -371,10 +366,12 @@
 .sidebar1 ul  li{
 list-style-type: none;
 line-height: 2.0vw;
+
 }
 .sidebar1 a{
 	text-decoration: none;
 	color: rgba(26,26,26,1.00);
+	cursor: url(../../images/Group\ 288.png),default!important;
 }
 
 .sidebar1 .mlist .active {

@@ -7,8 +7,7 @@ body {
   margin: 0;
 }
 .home {
-  background: #fffbf5;
-  mix-blend-mode: multiply;
+
 }
 .wemade-img {
   display: none;
@@ -90,7 +89,7 @@ body {
 }
 
 .icons {
-  cursor: pointer;
+cursor: url('../../images/Group\ 288.png'), default!important;  
   height: 100%;
 }
 
@@ -132,7 +131,7 @@ body {
   position: absolute;
   right: 5%;
   top: 10%;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
 }
 
 .teams-section {
@@ -186,7 +185,7 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   position: absolute;
   top: 8%;
   right: 5%;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
   opacity: 50%;
 }
 

@@ -499,10 +499,8 @@ function HeroSection() {
           <img className="logo_img" src={AlcherLogo} alt="" />
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
-              <img src={BookTicketIcon} alt="" className="bookiconhero" />
-              <div className="bookticketstext">
-                &nbsp; &nbsp; BOOK&nbsp;TICKETS
-              </div>
+              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
+              <div className="bookticketstext">&nbsp; &nbsp; Register</div>
 
               {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
