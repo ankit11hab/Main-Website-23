@@ -3,6 +3,8 @@ import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
 import Card from "./Images/tempcard.png";
 import "./Contests.css";
+import f1 from "./Images/Music/frame1.png"
+import f2 from "./Images/Music/frame2.png"
 import Book from "./register";
 import ContestLogo from "./Images/ContestLogo.svg";
 import { NavLink, Link } from "react-router-dom";
@@ -99,49 +101,13 @@ function Events() {
           <div className="contest_box">
             <div className="contest_content">
               <div className="contest_card">
-                <img src={Card} alt="" />
+                <img src={f1} alt="" />
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
                 </Link>
               </div>
               <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
+                <img src={f2} alt="" />
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
                 </Link>
