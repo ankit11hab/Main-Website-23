@@ -134,8 +134,8 @@
   position: sticky;
   top: 0;
   background-color: #fffbf5;
-  background: linear-gradient(0deg, rgba(243, 92, 65, 0) -3%, #fffbf5 100%);
-  width: 40vw;
+  background: linear-gradient(0deg, rgba(243, 92, 65, 0) -5%, #fffbf5 100%);
+  width: 99vw;
   height: 6rem;
 }
 
