@@ -32,7 +32,7 @@ function Events1() {
         <Nav />
       </div>
 
-      <NavMob />
+      {/* <NavMob /> */}
 
       {/* <div className="main_event">
         <div className="content_event">
