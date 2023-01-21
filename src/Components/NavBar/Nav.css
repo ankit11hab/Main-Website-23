@@ -22,21 +22,21 @@ b {
 }
 .NavigationBar .active {
   font-family: "My Custom Font";
-  font-style: normal;
-  font-weight: 400;
+  font-style: italic;
+  font-weight: 800;
 
   text-transform: uppercase;
   -webkit-text-stroke: 0.7px #000000;
-  text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
-    -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+  /* text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+    -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0; */
 
-  font-size: 1.3vw;
+  font-size: 1.6vw;
 
   display: flex;
   align-items: center;
   background-image: url(./Images/Back.png);
   background-position: center;
-  background-size: 13vh 12vh;
+  background-size: 22vh 22vh;
   height: 14vh;
 
   background-repeat: no-repeat;
@@ -199,7 +199,7 @@ nav {
 }
 @media screen and (max-width: 1025px) {
   .NavigationBar .active {
-    background-size: 7vw 7vw;
+    background-size: 12vw 12vw;
   }
 }
 

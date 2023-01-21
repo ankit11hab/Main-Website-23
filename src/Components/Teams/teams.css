@@ -166,6 +166,7 @@ body {
 text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
 }
 .teamheading {
+  margin-top:5vh;
   text-align: center;
   margin: auto;
   font-family: "Star Guard", sans-serif;

@@ -440,8 +440,8 @@ function HeroSection() {
           scrollTrigger: {
             trigger: ".hero_container",
             start: "top top",
-            end: "400% bottom",
-            scrub: 0.1,
+            end: "600% bottom",
+            scrub: 1,
             pin: true,
           },
           onUpdate: render,
@@ -451,7 +451,7 @@ function HeroSection() {
             trigger: ".pano___",
             start: "top bottom",
             end: "top top",
-            scrub: 2,
+            scrub: 1,
             toggleClass: { targets: ".overlay", className: "block" },
           },
         });
@@ -459,11 +459,10 @@ function HeroSection() {
           scrollTrigger: {
             trigger: ".pano___",
             start: "top top",
-            scrub: 10,
+            scrub: 1,
             pin: ".pano___",
 
             onLeave: () => {},
-
           },
         });
       });
@@ -500,8 +499,10 @@ function HeroSection() {
           <img className="logo_img" src={AlcherLogo} alt="" />
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
-              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
-              <div className="bookticketstext">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
+              <img src={BookTicketIcon} alt="" className="bookiconhero" />
+              <div className="bookticketstext">
+                &nbsp; &nbsp; BOOK&nbsp;TICKETS
+              </div>
 
               {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}

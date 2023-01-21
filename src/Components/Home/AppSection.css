@@ -6,18 +6,16 @@
 }
 .bg2{
     position: absolute;
-    width: 40vw;
-    left: 40vw;
-    top: -8vw;
-    height: 40vw;
+    left: 58vw;
+    top: -4vw;
+    height: 27vw;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .bg1{
     position: absolute;
-    width: 40vw;
-    height: 40vw;
-    left: 50vw;
-    top: 15vw;
+    height: 30vw;
+    left: 59vw;
+    top: 25vw;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transform: rotate(111.7deg);
 }
@@ -33,10 +31,11 @@
 .alcherlady{
     position: absolute;
     width: 33vw;
-    left: 55vw;
+    left: 66vw;
     top: 10vw;
+    z-index: 1;
 }
-.alcherlady:hover{
+.alcherlady_hover:hover{
     -webkit-animation: mover 0.5s infinite  alternate;
     animation: mover 0.5s infinite  alternate;
 
@@ -52,18 +51,57 @@
 .download{
     position: absolute;
     width: 40vw;
-    top: 17vw;
-    left: 20vw;
+    top: 16vw;
+    left: 24vw;
 }
 .our{
     position: absolute;
     width: 15vw;
     top: 25vw;
-    left: 24.6vw;
+    left: 32.6vw;
 }
 .app{
     position: absolute;
     width: 15vw;
     top: 25vw;
-    left: 43vw;
+    left: 49vw;
+}
+.mobile_app_icon{
+    position: absolute;
+    width: 11vw;
+    top: 16vw;
+    left: 9vw;
+    z-index: 1;
+}
+.mobile_app_style{
+    position: absolute;
+    width: 15vw;
+    top: 4vw;
+    left: 1vw;
+    z-index: 1;
+}
+.playstore_icon_badge{
+
+    display: flex;
+    position: absolute;
+    top: 34vw;
+    left: 24vw;
+    gap: 1vw;
+    z-index: 1;
+}
+.playstore_icon_badge div{
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1vw;
+}
+@media(max-width:){
+
+}
+
+.alcherlady_wings{
+    position: absolute;
+    width: 27vw;
+    top: -2vw;
+    left: 71vw;
 }

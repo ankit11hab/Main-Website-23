@@ -19,7 +19,7 @@ function Nav({ icon, pic }) {
     mobile.style.height = "100vh";
     const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.zIndex = "-1";
-    const logo_=document.getElementsByClassName('AlcherLogo');
+    const logo_ = document.getElementsByClassName("AlcherLogo");
     logo_.style.position = "relative";
   };
   const handleClickCross = (e) => {
@@ -30,7 +30,7 @@ function Nav({ icon, pic }) {
     mobile.style.height = "10vh";
     const alcherlogo = document.getElementByClassName("AlcherLogo");
     alcherlogo.style.display = "block";
-    const logo_=document.getElementsByClassName('AlcherLogo')[0];
+    const logo_ = document.getElementsByClassName("AlcherLogo")[0];
     logo_.style.position = "absolute";
   };
 
@@ -89,12 +89,22 @@ function Nav({ icon, pic }) {
         </header>
       </div>
       <div className="mobile" id="mobile">
-        <div className="navmob">
-          <div>
-            <Link to="/">
-              <Logo pic={pic} />
-            </Link>
-          </div>
+        <div className="navmob" style={{ paddingTop: "2vh" }}>
+          {!icon && (
+            <div>
+              <Link to="/">
+                <Logo pic={pic} />
+              </Link>
+            </div>
+          )}
+          {icon && !active && <div></div>}
+          {icon && active && (
+            <div>
+              <Link to="/">
+                <Logo pic={pic} />
+              </Link>
+            </div>
+          )}
           {!active ? (
             <div
               onClick={handleClick}

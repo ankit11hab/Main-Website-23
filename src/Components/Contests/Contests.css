@@ -83,6 +83,7 @@
 	mix-blend-mode: multiply;
 }
 .contest_main {
+	margin-bottom: 4vh;
 	display: flex;
 	/* justify-content: space-between; */
 	/* margin: auto; */
@@ -110,7 +111,7 @@
 	grid-template-columns: repeat( auto-fill, minmax(265px, 280px) );
 	justify-content: center;
     /* flex-wrap: wrap; */
-	gap: 2.5vw;
+	gap: 5vh;
 }
 .contest_card{
 	height: fit-content;

@@ -1316,6 +1316,7 @@ align-items: center;
    
   }
 
+
 .cambox1{
   gap:4vh;
 }}
@@ -1500,6 +1501,11 @@ border-color: #000000;
     height: 1200px;
   }
 }
+@media(max-width:600px){
+    .camtext2i{
+      font-size: 2vh;
+    }
+  }
 @media(max-width:480px){
   body{
     overflow-x: hidden;

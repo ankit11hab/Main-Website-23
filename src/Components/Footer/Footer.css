@@ -177,7 +177,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
 }
+
 
 .footer_desk a {
   font-weight:900;
@@ -438,6 +440,11 @@
   .socials a {
     width: 2.18vh;
     height: 2.18vh;
+  }
+}
+@media only screen and   (max-width:1000px){
+  .footer_desk li, .shareka, .abhi{
+    font-size: 2vw;
   }
 }
 
