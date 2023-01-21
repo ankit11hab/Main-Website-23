@@ -1372,15 +1372,16 @@ border-color: #000000;
   width: 22vw;
   transform: 0.5s;
   border: 1px solid;
-  box-shadow: 2px 2px 3px black;
+  box-shadow: 2px 2px 0px black;
   padding: 5px;
   
 }
 .imgcam:hover{
-  transform: translateZ(12px);
-  border: none;
+  transform: translateZ(10px);
+  /* border: none; */
   padding: 5px;
-  box-shadow: none;
+  /* box-shadow: none; */
+  transition-duration: .2s;
 }
 
 .slideri::before,

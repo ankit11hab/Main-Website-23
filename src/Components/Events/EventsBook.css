@@ -12,7 +12,7 @@
   font-weight: 700;
   text-align: right;
   height: 2.5vw;
-  box-shadow: 2.8px 2.8px 0px #1a1a1a;
+  box-shadow: 2.8px 2.5px 0px #1a1a1a;
   padding: 4% 5% 4% 16%;
   margin-top: 1%;
 }
@@ -58,6 +58,6 @@
 }
 #bookbtnevents:hover {
   box-shadow: none;
-  transform: translate(3%, 5%);
+  transform: translate(3%, 10%);
   transition-duration: 0.3s;
 }

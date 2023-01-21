@@ -80,6 +80,8 @@ event.stopPropagation();
                   +91 9310859978
                 </div>
                 <br />
+                <br />
+                <br />
                 <div className="abhi">
                   <b>Danda Akshara</b>
                   PR Head<br></br>
