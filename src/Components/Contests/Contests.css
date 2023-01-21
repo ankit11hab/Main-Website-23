@@ -97,7 +97,6 @@
 }
 .contest_box{
 	display: flex;
-	justify-content: center;
 	width: calc(100vw - 20rem - 5%);
 }
 .contest_content{
@@ -106,6 +105,7 @@
 	grid-template-columns: repeat( auto-fill, minmax(265px, 280px) );
 	justify-content: center;
     /* flex-wrap: wrap; */
+	/* margin-left: 10%; */
 	gap: 2.5vw;
 }
 .contest_card{

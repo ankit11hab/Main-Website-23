@@ -99,7 +99,7 @@ function Events() {
             </ul>
           </div>
           <div className="contest_box">
-            <div className="contest_content">
+            <div className="contest_content" style={{marginLeft: "1vw"}}>
               <div className="contest_card">
                 <img src={f1} alt="" />
                 <Link className="contest_button" to="/BookTickets">
