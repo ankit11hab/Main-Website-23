@@ -15,9 +15,16 @@
   box-sizing: border-box;
   padding: 5vh 5vw 2vh 5vw;
 }
-.footer_main {
+.footer_main  {
   display: flex;
   justify-content: space-between;
+  
+  
+}
+.footer_main a {
+ 
+  cursor: url('../../images/Group\ 288.png'), default!important;
+  
 }
 .logo {
   margin-top: 10vh;
@@ -414,6 +421,9 @@
 
     color: #fffffe;
   }
+  .footerlink a{
+    cursor: url('../../images/Group\ 288.png'), default!important;
+  }
   .abhi {
     display: flex;
     flex-direction: column;
@@ -624,7 +634,7 @@ margin:auto;
 }
 .underline{
   border-bottom: 2px solid currentColor;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
 }
 
 .creatives-ddby{

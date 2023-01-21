@@ -46,25 +46,25 @@ event.stopPropagation();
           <div className="options">
             <ul type="none">
               <li>
-                <NavLink to="/Events">EVENTS</NavLink>
+                <NavLink to="/Events" className="footerlink">EVENTS</NavLink>
               </li>
               <li>
-                <NavLink to="/Merch">MERCH</NavLink>
+                <NavLink to="/Merch" className="footerlink">MERCH</NavLink>
               </li>
               <li>
-                <NavLink to="/Campaigns">CAMPAIGNS</NavLink>
+                <NavLink to="/Campaigns" className="footerlink">CAMPAIGNS</NavLink>
               </li>
               <li>
-                <NavLink to="/Teams">TEAMS</NavLink>
+                <NavLink to="/Teams" className="footerlink">TEAMS</NavLink>
               </li>
               <li>
-                <NavLink to="/MUN">MUN</NavLink>
+                <NavLink to="/MUN" className="footerlink">MUN</NavLink>
               </li>
               <li>
-                <NavLink to="/Sponsors">SPONSORS</NavLink>
+                <NavLink to="/Sponsors" className="footerlink">SPONSORS</NavLink>
               </li>
               <li>
-                <NavLink to="/Contests">CONTESTS</NavLink>
+                <NavLink to="/Contests" className="footerlink">CONTESTS</NavLink>
               </li>
             </ul>
           </div>

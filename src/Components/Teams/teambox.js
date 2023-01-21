@@ -15,7 +15,7 @@ const bubbleBlank = new URL("./images/bubble-blank.png",
 const instagram = new URL("./images/instagram.png",
     import.meta.url);
 
-    const linkedinWhite = new URL("./images/linkedin-white.png",
+    const linkedinWhite = new URL("./images/facebook2.png",
         import.meta.url);
 const twitter = new URL("./images/twitter.png",
     import.meta.url);
@@ -31,7 +31,9 @@ const Teambox = (props) => {
     const rightInsta = props.rightInsta;
     const rightlink = props.rightlink;
     const righttwit = props.righttwit;
-
+    const title=props.title;
+    const bgcolor=props.bgcolor;
+ console.log(bgcolor)
     const [isMouseOver1,setIsMouseOver1] = useState(false);
     const [isdata1,setIsdata1] = useState("Click for contact info");
   const handleEnter1 = () => {
@@ -80,12 +82,13 @@ const Teambox = (props) => {
 
 
 
-      <div className="teams-section">
+      <div className="teams-section" style={{backgroundColor:bgcolor}}>
 
 
 
         <div className="temp">
             <img className="pic" src={piC1} alt=""/>
+            
 
 
 
@@ -187,11 +190,12 @@ const Teambox = (props) => {
                 </div>
             </div>
         </div>
-        <div className="teams-title">CREATIVES</div>
+        <div className="teams-title">{title}</div>
 
 
 
       <div className="temp-mob">
+        
         <img className="mobpic" src={mobpiC1}/>
         <div className="contact-info-container">
           <div className="contact-info-mob">
