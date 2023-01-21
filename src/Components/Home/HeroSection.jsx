@@ -501,7 +501,7 @@ function HeroSection() {
           <div className="bookticketbtn">
             <button type="button" id="bookbtn" className="bookbtn">
               <img src={BookTicketIcon} alt="" className="bookiconhero"/>
-              <div className="bookticketstext">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
+              <div className="bookticketstext">&nbsp; &nbsp; Register</div>
 
               {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
