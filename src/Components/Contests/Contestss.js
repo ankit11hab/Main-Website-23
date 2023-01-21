@@ -2,6 +2,11 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
 import Card from "./Images/tempcard.png";
+import ArmWrestling from './Images/Sports/armwrestling.png';
+import BasketBall from './Images/Sports/basketball.png';
+import FootBall from './Images/Sports/football.png';
+import GullyCricket from './Images/Sports/gullycricket.png';
+import VolleyBall from './Images/Sports/volleyball.png';
 import "./Contests.css";
 import Book from "./register";
 import ContestLogo from "./Images/ContestLogo.svg";
@@ -98,6 +103,36 @@ function Events() {
           <div className="contest_box">
             <div className="contest_content">
               <div className="contest_card">
+                <img src={ArmWrestling} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={BasketBall} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={FootBall} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={GullyCricket} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={VolleyBall} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              {/* <div className="contest_card">
                 <img src={Card} alt="" />
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
@@ -114,37 +149,7 @@ function Events() {
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
                 </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

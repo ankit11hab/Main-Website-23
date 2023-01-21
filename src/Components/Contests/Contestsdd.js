@@ -4,6 +4,10 @@ import Nav from "../NavBar/Nav";
 import Card from "./Images/tempcard.png";
 import "./Contests.css";
 import Book from "./register";
+import CustomBrush from './Images/DigitalDexterity/custombrush.png';
+import DivaHunk from './Images/DigitalDexterity/diva-hunk.png';
+import Doodlepad from './Images/DigitalDexterity/doodlepad.png';
+import Xpressions from './Images/DigitalDexterity/xpressions.png';
 import ContestLogo from "./Images/ContestLogo.svg";
 import { NavLink, Link } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
@@ -64,6 +68,30 @@ function Events() {
           <div className="contest_box">
             <div className="contest_content">
               <div className="contest_card">
+                <img src={CustomBrush} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={DivaHunk} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={Doodlepad} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={Xpressions} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              {/* <div className="contest_card">
                 <img src={Card} alt="" />
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
@@ -86,31 +114,7 @@ function Events() {
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
                 </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

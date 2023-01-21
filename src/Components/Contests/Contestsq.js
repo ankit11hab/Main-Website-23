@@ -2,6 +2,10 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Nav from "../NavBar/Nav";
 import Card from "./Images/tempcard.png";
+import ComicQuiz from './Images/Quiz/comicquiz.png';
+import GeneralQuiz from './Images/Quiz/generalquiz.png';
+import BusinessQuiz from './Images/Quiz/businessquiz.png';
+import SportsQuiz from './Images/Quiz/sportsquiz.png';
 import "./Contests.css";
 import Book from "./register";
 import ContestLogo from "./Images/ContestLogo.svg";
@@ -98,6 +102,30 @@ function Events() {
           <div className="contest_box">
             <div className="contest_content">
               <div className="contest_card">
+                <img src={ComicQuiz} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={GeneralQuiz} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={BusinessQuiz} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              <div className="contest_card">
+                <img src={SportsQuiz} alt="" />
+                <Link className="contest_button" to="/BookTickets">
+                  <Book />
+                </Link>
+              </div>
+              {/* <div className="contest_card">
                 <img src={Card} alt="" />
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
@@ -120,31 +148,7 @@ function Events() {
                 <Link className="contest_button" to="/BookTickets">
                   <Book />
                 </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
-              <div className="contest_card">
-                <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

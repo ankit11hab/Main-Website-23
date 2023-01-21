@@ -41,16 +41,16 @@ function Events1() {
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events/pt">
-              <div className="pronites1">PRONITES</div>
+              <div className="pronites1" id="eventsnavitem">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
-              <div className="CreatorsCamp1">CREATORS CAMP</div>
+              <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
             </NavLink>
-            <NavLink to="/Events/hf">
+            {/* <NavLink to="/Events/hf">
               <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/Events/ps">
-              <div className="PROSHOWS1">PROSHOWS</div>
+              <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
           </div>
         </div>
@@ -75,16 +75,16 @@ function Events1() {
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events/pt">
-              <div className="pronites1">PRONITES</div>
+              <div className="pronites1" id="eventsnavitem">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
-              <div className="CreatorsCamp1">CREATORS CAMP</div>
+              <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
             </NavLink>
-            <NavLink to="/Events/hf">
+            {/* <NavLink to="/Events/hf">
               <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/Events/ps">
-              <div className="PROSHOWS1">PROSHOWS</div>
+              <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
           </div>
         </div>
