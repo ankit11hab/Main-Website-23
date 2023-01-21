@@ -9,8 +9,20 @@ import BangerMob from "./Images/BangerMob.png";
 
 import "./Events.css";
 import { NavLink, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Events1() {
+  const [upnavColor, setupnavColor] = useState("transparent");
+  const listenScrollEvent = () => {
+    window.scrollY > 95 ? setupnavColor("linear-gradient(0deg, rgba(243, 92, 65, 0) -5%, #fffbf5 100%)") : setupnavColor("transparent");
+   
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
   return (
     <div>
       <div className="navbar">
@@ -46,7 +58,7 @@ function Events1() {
             </Link>
           </div>
         </div>
-        <div className="upnav">
+        <div className="upnav" style={{background:upnavColor}}>
           <div className="sidebar11">
             <NavLink to="/Events/pt">
               <div className="pronites1" id="eventsnavitem">PRONITES</div>
