@@ -28,7 +28,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -230,7 +230,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -331,7 +331,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -432,7 +432,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -533,7 +533,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -634,7 +634,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                 
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -735,7 +735,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -836,7 +836,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                  
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -937,7 +937,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+           
                   onClick={handleClick}
                 ></img>
               </NavLink>
@@ -1038,7 +1038,7 @@ const NavMobContest = () => {
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
                   alt=""
-                  style={{ cursor: "pointer" }}
+                  
                   onClick={handleClick}
                 ></img>
               </NavLink>
