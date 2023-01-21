@@ -54,9 +54,9 @@ function Nav({ icon, pic }) {
                 </NavLink>
               </li>
               <li className="Merch">
-                <NavLink to="/Merch">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4Mh1c6WQxDScxOD82A_rE2pNtdaKlzVru97X1Z8F7JdYVUQ/viewform" target="_blank">
                   <b>MERCH</b>
-                </NavLink>
+                </a>
               </li>
               <li className="Campaigns">
                 <NavLink to="/Campaigns">

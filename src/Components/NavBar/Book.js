@@ -7,7 +7,7 @@ function Book() {
     <div className="bookticketbtnnav">
       <button type="button" id="bookbtnnav" className="bookbtn">
         <img className="bookicon" src={BookTicketIcon} alt="" />
-        <div className="booktextnav">&nbsp; &nbsp; BOOK&nbsp;TICKETS</div>
+        <div className="booktextnav" style={{fontSize: '1.2vw'}}>&nbsp; &nbsp; Register</div>
       </button>
     </div>
   );

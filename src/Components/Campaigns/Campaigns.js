@@ -128,16 +128,16 @@ class Cards extends React.Component {
                   <img className={styled.imgcam} style={{width: '18vw'}} src={Safher1} alt="" />
                 </div>
                 <div className={styled.slide}>
-                  <img className={styled.imgcam} style={{width: '18vw'}} src={Safher2} alt="" />
+                  <img className={styled.imgcam} style={{width: '16vw'}} src={Safher2} alt="" />
                 </div>
                 <div className={styled.slide}>
-                  <img className={styled.imgcam} style={{width: '16vw'}} src={Safher4} alt="" />
+                  <img className={styled.imgcam} style={{width: '15vw'}} src={Safher4} alt="" />
                 </div>
                 <div className={styled.slide}>
                   <img className={styled.imgcam} style={{width: '18vw'}} src={Safher5} alt="" />
                 </div>
                 <div className={styled.slide}>
-                  <img className={styled.imgcam} src={Safher3} alt="" />
+                  <img className={styled.imgcam} style={{width: '20vw'}} src={Safher3} alt="" />
                 </div>
                 {/* <div className={styled.slide}>
                   <img className={styled.imgcam} src={img9} alt="" />

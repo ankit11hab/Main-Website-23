@@ -624,21 +624,24 @@
   font-family: 'Aileron';
 font-style: normal;
 font-weight: 300;
-font-size: 16px;
-line-height: 24px;
+font-size: 2vh;
 /* identical to box height */
 position: relative;
 color: rgb(100,100,100,30);
 width: fit-content;
 margin:auto;
+line-height: 3.8vh;
 }
 .underline{
+
   border-bottom: 2px solid currentColor;
   cursor: url('../../images/Group\ 288.png'), default!important;
+
 }
 
 .creatives-ddby{
-  width: 15rem;
+  width: 19rem;
+  font-size: 1vh;
   position: relative;
 }
 .creatives-ddby img{
@@ -651,11 +654,12 @@ margin:auto;
   left: 0;
   color: white;
   margin: 1rem 1rem;
-  font-size: 2rem;
+  font-size: 2vh;
 }
 
 .names-ddby{
   margin: 0px 0.7rem;
+  font-size: 2.1vh;
 }
 .dev-ddby{
   width: 42rem;

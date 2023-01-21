@@ -158,18 +158,16 @@ event.stopPropagation();
 
         </div>
         <div className="ddby">
-          Designed & Developed by Alcher&nbsp;
+          Designed & Developed by&nbsp;
           <span className="underline" onMouseEnter={handleEnterC} onMouseLeave={handleLeaveC}>
-             Creatives
+            Alcher Creatives
              {isMouseOverC?
                <>
             <div className="creatives-ddby-container">
               <div className="creatives-ddby">
                 <img src={desBY} className="designBY"/>
                 <div className="creatives-names">
-                  <span className="names-ddby">Arya Godhke</span>
-                  <br/>
-                  <span className="names-ddby">Dhwani</span>
+                  <span className="names-ddby">Aarya Ghodhke, Dhwani Doshi</span>
                 </div>
               </div>
             </div>
@@ -180,18 +178,14 @@ event.stopPropagation();
           </span>
            &nbsp;&&nbsp;
           <span className="underline" onMouseEnter={handleEnterDev} onMouseLeave={handleLeaveDev}>
-           Web-Ops
+           Alcher Web Operations
            {isMouseOverDev?
              <>
            <div className="devops-ddby-container">
           <div className="dev-ddby">
             <img src={devBY} className="designBY"/>
             <div className="creatives-names">
-              <span className="names-ddby">Akshat</span>
-              <span className="names-ddby">digvijay</span>
-              <span className="names-ddby">Geeta</span>
-              <br/>
-              <span className="names-ddby">Ankit Guha</span>
+              <span className="names-ddby">Abhi Agarwal, Digvijay Singh, Akshat, Rohit Chalak, Siddhant Srivastava, Ayush Mishra, Dev Jyoti, Kruthikesh M Kopparam, Geet Manik, Mohit Kumar Sharma, Soumyadip Mondal, Prakash, Siddhant Jethwani, Utkarsh Raja, Raunak Agarwal, Afshan Perween, Manaswi Yadamreddy, Himanshi Gautam, Sankooru Manideep, Posa Mokshith</span>
             </div>
           </div>
         </div>
