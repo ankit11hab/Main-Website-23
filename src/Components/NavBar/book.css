@@ -54,4 +54,5 @@
   box-shadow: none;
   transform: translate(5%, 10%);
   transition-duration: 0.3s;
+  cursor: url('../../images/Group\ 288.png'), default!important;
 }
