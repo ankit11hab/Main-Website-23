@@ -23,7 +23,7 @@ const NavMobContest = () => {
                 to="/Contests/vn"
                 style={{ textDecoration: "none", color: "#1A1A1A" }}
               >
-                VOUGUE NATION
+                VOUGUE&nbsp;NATION
                 <img
                   className="PointerCursor"
                   src={click ? dropimg : uparrow}
@@ -38,7 +38,7 @@ const NavMobContest = () => {
                 to="/Contests/ca"
                 style={{ textDecoration: "none", color: "#1A1A1A" }}
               >
-                CLASS APART
+                CLASS&nbsp;APART
               </NavLink>
             </li>
             <li className={click ? "inactive" : "active"}>
@@ -70,7 +70,7 @@ const NavMobContest = () => {
                 to="/Contests/at"
                 style={{ textDecoration: "none", color: "#1A1A1A" }}
               >
-                ART TALKIES
+                ART&nbsp;TALKIES
               </NavLink>
             </li>
             <li className={click ? "inactive" : "active"}>
@@ -78,7 +78,7 @@ const NavMobContest = () => {
                 to="/Contests/dd"
                 style={{ textDecoration: "none", color: "#1A1A1A" }}
               >
-                DIGITAL DEXTERITY
+                DIGITAL&nbsp;DEXTERITY
               </NavLink>
             </li>
             <li className={click ? "inactive" : "active"}>
@@ -86,7 +86,7 @@ const NavMobContest = () => {
                 to="/Contests/lca"
                 style={{ textDecoration: "none", color: "#1A1A1A" }}
               >
-                LIGHTS CAMERA ACTION
+                LIGHTS&nbsp;CAMERA&nbsp;ACTION
               </NavLink>
             </li>
             <li className={click ? "inactive" : "active"}>
