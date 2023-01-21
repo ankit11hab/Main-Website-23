@@ -6,7 +6,8 @@ body{
   background:url('../src/assets/texture_background.webp');
   background-size: 100%;
   /* filter: brightness(120%); */
-  cursor: url(https://cdn.custom-cursor.com/db/7118/32/starter-comic-cursor-cursor.png) , default!important;
+  cursor: url('images/arrow.png') , default!important;
+
 }
 
 .App-logo {
