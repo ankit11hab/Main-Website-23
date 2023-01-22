@@ -174,7 +174,7 @@ function Sponsors() {
               <div className="maincard">
                 <img className="cocard" src={AssamTribune} />
                 <p className="newpara">THE ASSAM TRIBUNE</p>
-                <p className="updatedpara">In AssociationWith</p>
+                <p className="updatedpara">In Association With</p>
 
 
               </div>
