@@ -68,7 +68,7 @@ const MerchPart = () => {
           <img src={PinkStar} alt="" className="pinkstar" />
           <img src={ZebraStrip} alt="" className="zebraStrip" />
           <h1 className="heading">
-          <img src={RockTheLook} alt="" className="rockthelook" />
+            <img src={RockTheLook} alt="" className="rockthelook" />
             {/* ROCK <br /> THE <br /> LOOK */}
           </h1>
           <br />
@@ -83,11 +83,13 @@ const MerchPart = () => {
             SHOP&nbsp;NOW
           </button> */}
           <button id='btnn1' type="button" className="shopNowbtn" >
-            <div className="book-btnn1">
-                <img src={ shoplogo } className='shopticket' alt="" />
-                <img src={ shop } className='shoptickets' alt="" />
-            </div>
-        </button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4Mh1c6WQxDScxOD82A_rE2pNtdaKlzVru97X1Z8F7JdYVUQ/viewform" target="_blank">
+              <div className="book-btnn1">
+                <img src={shoplogo} className='shopticket' alt="" />
+                <img src={shop} className='shoptickets' alt="" />
+              </div>
+            </a>
+          </button>
           <img src={PurpleCurve} alt="" className="purplecurve" />
           <img src={YellowCurve} alt="" className="yellowcurve" />
           <animated.img
