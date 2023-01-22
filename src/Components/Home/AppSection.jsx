@@ -18,7 +18,7 @@ function AppSection() {
       <img src={mobileApp} alt="" className="mobile_app_icon" />
       <img src={mobileAppstyle1} alt="" className="mobile_app_style" />
       <div className="playstore_icon_badge">
-        <img src={appstore} style={{ height: "3vw" }} alt="" />
+        <a href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022" target="_blank"><img src={appstore} style={{ height: "3vw" }} alt="" /></a>
         <div style={{ width: "25vw" }}>
           Download our app and get access to app exclusive features like Alcher
           cards, schedule, Campus maps, real-time updates and much more.
