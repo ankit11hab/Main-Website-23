@@ -205,7 +205,8 @@ padding: 2vh 0vw;
 .parent {
   /* width: 845px;
   height: 411px; */
-  width: 100vw;
+  width: 70vw;
+  gap: 4vw;
   margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -214,7 +215,7 @@ padding: 2vh 0vw;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 4vh;
+  row-gap: 5vh;
 }
 
 .newpara {
