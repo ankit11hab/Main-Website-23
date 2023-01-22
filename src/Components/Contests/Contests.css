@@ -77,10 +77,8 @@
 	height: fit-content;
 	width: 100%;
 } */
-.navbar{
-
-}
 .contest_main {
+	margin-bottom: 4vh;
 	display: flex;
 	/* justify-content: space-between; */
 	/* margin: auto; */
@@ -97,7 +95,6 @@
 }
 .contest_box{
 	display: flex;
-	justify-content: center;
 	width: calc(100vw - 20rem - 5%);
 }
 .contest_content{
@@ -106,7 +103,7 @@
 	grid-template-columns: repeat( auto-fill, minmax(265px, 280px) );
 	justify-content: center;
     /* flex-wrap: wrap; */
-	gap: 2.5vw;
+	gap: 5vh;
 }
 .contest_card{
 	height: fit-content;
@@ -330,7 +327,9 @@
 	font-weight: 500;
 	line-height: 1.2008374214172363rem;
 }
-
+.contest_button{
+	cursor: url('../../images/Group\ 288.png'), default!important;
+}
 .sidebar1 {
 	height: 27rem;
 	width: 20rem;
@@ -340,6 +339,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	
 	/* margin-top: 10rem; */
 }
 
@@ -366,10 +366,12 @@
 .sidebar1 ul  li{
 list-style-type: none;
 line-height: 2.0vw;
+
 }
 .sidebar1 a{
 	text-decoration: none;
 	color: rgba(26,26,26,1.00);
+	cursor: url(../../images/Group\ 288.png),default!important;
 }
 
 .sidebar1 .mlist .active {

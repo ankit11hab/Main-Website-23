@@ -15,9 +15,16 @@
   box-sizing: border-box;
   padding: 5vh 5vw 2vh 5vw;
 }
-.footer_main {
+.footer_main  {
   display: flex;
   justify-content: space-between;
+  
+  
+}
+.footer_main a {
+ 
+  cursor: url('../../images/Group\ 288.png'), default!important;
+  
 }
 .logo {
   margin-top: 10vh;
@@ -177,7 +184,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
 }
+
 
 .footer_desk a {
   font-weight:900;
@@ -414,6 +423,9 @@
 
     color: #fffffe;
   }
+  .footerlink a{
+    cursor: url('../../images/Group\ 288.png'), default!important;
+  }
   .abhi {
     display: flex;
     flex-direction: column;
@@ -438,6 +450,11 @@
   .socials a {
     width: 2.18vh;
     height: 2.18vh;
+  }
+}
+@media only screen and   (max-width:1000px){
+  .footer_desk li, .shareka, .abhi{
+    font-size: 2vw;
   }
 }
 
@@ -614,21 +631,24 @@
   font-family: 'Aileron';
 font-style: normal;
 font-weight: 300;
-font-size: 16px;
-line-height: 24px;
+font-size: 2vh;
 /* identical to box height */
 position: relative;
 color: rgb(100,100,100,30);
 width: fit-content;
 margin:auto;
+line-height: 3.8vh;
 }
 .underline{
+
   border-bottom: 2px solid currentColor;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
+
 }
 
 .creatives-ddby{
-  width: 15rem;
+  width: 19rem;
+  font-size: 1vh;
   position: relative;
 }
 .creatives-ddby img{
@@ -641,11 +661,12 @@ margin:auto;
   left: 0;
   color: white;
   margin: 1rem 1rem;
-  font-size: 2rem;
+  font-size: 2vh;
 }
 
 .names-ddby{
   margin: 0px 0.7rem;
+  font-size: 2.1vh;
 }
 .dev-ddby{
   width: 42rem;

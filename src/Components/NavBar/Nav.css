@@ -8,17 +8,19 @@
 body{
   background:url('./Images/texture_background.webp');
   background-size: 100%;
+  
 }
 b {
   font-weight: bolder;
 }
 .navHeader {
   margin-top: 0;
- 
+  
 }
 
 .navHeader a {
   text-decoration: none;
+  cursor: url(../../images/Group\ 288.png),default!important;
 }
 
 .mobileList li {
@@ -29,19 +31,19 @@ b {
   font-family: "My Custom Font";
   font-style: normal;
   font-weight: 400;
-
+  cursor: url(../../images/Group\ 288.png),default!important;
   text-transform: uppercase;
   -webkit-text-stroke: 0.7px #000000;
-  text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
-    -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0;
+  /* text-shadow: -0.11rem -0.11rem 0 #000, 0.11rem -0.11rem 0 #000,
+    -0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0 #000, 0.11rem 0.11rem 0; */
 
-  font-size: 1.3vw;
+  font-size: 1.6vw;
 
   display: flex;
   align-items: center;
   background-image: url(./Images/Back.png);
   background-position: center;
-  background-size: 13vh 12vh;
+  background-size: 22vh 22vh;
   height: 14vh;
 
   background-repeat: no-repeat;
@@ -177,10 +179,16 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.book-ticket{
+  cursor: url('../../images/Group\ 288.png'), default!important;
+}
 .bookbtnn {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url('../../images/Group\ 288.png'), default!important;
+
+  
 }
 .logoticket {
   width: 1.38vw;
@@ -194,15 +202,18 @@ nav {
   box-shadow: none;
   width: 7.6vw;
   display: flex;
+  cursor: url('../../images/Group\ 288.png'), default!important;
 }
 #btnn:hover {
   box-shadow: none;
   -webkit-transform: translateY(-1px);
   transform: translateY(1px);
+  cursor: url('../../images/Group\ 288.png'), default!important;
+  
 }
 @media screen and (max-width: 1025px) {
   .NavigationBar .active {
-    background-size: 7vw 7vw;
+    background-size: 12vw 12vw;
   }
 }
 
@@ -410,3 +421,25 @@ nav {
     -webkit-text-stroke: 0.5px #000000;
   }
 }
+@media (max-width: 900px){
+#bookbtn2 {
+    width: -moz-fit-content;
+    /* width: fit-content; */
+    display: flex;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 20vw;
+    padding: 4% 4% 4% 4%;
+    box-shadow: 4px 5px 0px #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #f35c41;
+    color: #ffffff;
+    font-family: "Aileron";
+    font-weight: 500;
+    text-align: right;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAwCAYAAABjezibAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPeSURBVHgB7Vk/TBNRGP/uSq1Rh5rUyARNYJBJEkYl1gk2jUxGE3TBgQFwkMRorIMmMAgOLDAIiW5qdYOJgnFUYNJETasTBBNL0hYKtOf7Xt97vDuu115773Dwl3y5e+/evffj+98DoA4YhhElkiDyxyhjhUg//Atg5DgxK17AUYOQSBnOGIajAjn8qsxkd/61kX8ybBTT3+TpFHgIHdwhym+KX1ah8HKKXNdgd+GN7Rov4JZg2G7S+L1uHhM/BY/glqDv+E+wUagiGGb5MgwNQhXBFSKYbjChLzYSNH6YOEYES2En1AG/fBBNnbBUIdRsrNqLSgjukcSdG7lOE7mEKJiTeIzIYrXSqIbg8gJJ3huUqDWJ22ACzU/kFpOY/LAJFMDIZ23nS5vrUJgZAy3SDKEbg6CdPMUfrZjeN4w0uVzWNC3tax5EjWLt3v+wAMXPH52WRqFs/rCvBCtplj7LZaH087s8FSUSFyZmSRW74tNsahZVDLUcnMtCI0DTbz+9S/01dHMQgj19/NEVnZEbgnJinSTyiAmmhIlaDjDyOfO4emAcWs/fwTZOQlTHyGHE7MrScE0kiem4FlEbblHa3BD3VjdAEw+Jh+SQ4tdVCLS0g3amWSaZIeZ+XOkA3DT/YACaui7A/idH53cNJChKUOHVFI0wTAMn7j+TScYJyS2njdBEe+bOmgI1GoiU9zHq0C76YMbusDw6rXlDNPUlcImd6XFKfGd6jFhn7eCMGgMLCQqvDHb3gExye/KhdaMYuATugyUPLSOjJAfSdtaRoPCtQEcnBM6dP9jk1w9qdhVAre4m5srXt3MV1+nE+ZPkmuQToTujoJ0QJYj+5biRCiAx1K5TAueVRGhRJw4tJUqxkSqS1UAJMi2+45PHrvWD3tpmWogk9yQ/knOXSsi1eASkiMZuw4oCiUTqN8vzvmlUEGR11xQwVlMjqN/MjLsuZ/XC1M0QkljyknyMptYiZ8FPaJFmeWjbD94Wi0k0Hx8YBT+hVyNYq6lVwRKcW7YNKyEZB6nCUFNLuVElAq3t8jDp1FGP8BskFxq4B6qB/m7xwdWKBFlufM7HTV0XTWVQBdCdJGCLl6z2myROJM0H1jLoNQIdJgVQF3MkSP4CTNwiqu3KoJdoMmvwPT2z2kvM1KJsBHv7lORGvaXtkP/R+Rrfx88TtAyiiTGqvYZujt4MU0xtBJmpRcAEu3s916LcLBMs8Rs3P9yxDIpmwkstolUsEZzgNzUTVKlFS/QilqAe4NcHh3+DeYVF+UxX32asWlSEWWgETIspQw1ShuV7tgZ1gm0UBW+Q4cKsJPAX5D3QOaPDLxsAAAAASUVORK5CYII=), default !important;
+}
+  }

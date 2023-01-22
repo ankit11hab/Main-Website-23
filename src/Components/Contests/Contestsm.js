@@ -27,41 +27,7 @@ function Events() {
         <div className="contest_main">
           <div className="sidebar1">
             <div className="head">MODULES</div>
-            {/* <ul className="mlist">
-              <li>
-                <NavLink to="/Contests/vn">VOUGUE NATION</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/ca">CLASS APART</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/d">DANCE</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/m">MUSIC</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/l">LITERARY</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/at">ART TALKIES</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/dd">DIGITAL DEXTERITY</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/lca">LIGHTS CAMERA ACTION</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/s">SPORTS</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/q">QUIZ</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Contests/dr">DRAMA</NavLink>
-              </li>
-            </ul> */}
+            
             <ul className="mlist">
               <li>
                 <NavLink to="/Contests/vn" className="sidebar1-item">VOUGUE NATION</NavLink>
@@ -99,7 +65,7 @@ function Events() {
             </ul>
           </div>
           <div className="contest_box">
-            <div className="contest_content">
+            <div className="contest_content" style={{marginLeft: "-2vw", gap: '13vw'}}>
               <div className="contest_card">
                 <img src={f1} alt="" />
                 <Link className="contest_button" to="/BookTickets">

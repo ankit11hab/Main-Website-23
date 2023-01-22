@@ -89,7 +89,7 @@ body {
 }
 
 .icons {
-  cursor: pointer;
+cursor: url('../../images/Group\ 288.png'), default!important;  
   height: 100%;
 }
 
@@ -131,14 +131,14 @@ body {
   position: absolute;
   right: 5%;
   top: 10%;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
 }
 
 .teams-section {
   margin: 10rem 0;
   height: 45vw;
   width: 100%;
-  background-color: #099fbc;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,7 +153,7 @@ body {
   bottom: 0px;
   margin-bottom: -3.5rem;
   font-family: "Star Guard Semi-Italic";
-  font-style: italic;
+  
   font-size: 8.2rem;
   color: white;
   letter-spacing: 0.02em;
@@ -165,6 +165,7 @@ body {
 text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
 }
 .teamheading {
+  margin-top:5vh;
   text-align: center;
   margin: auto;
   font-family: "Star Guard", sans-serif;
@@ -184,7 +185,7 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   position: absolute;
   top: 8%;
   right: 5%;
-  cursor: pointer;
+  cursor: url('../../images/Group\ 288.png'), default!important;
   opacity: 50%;
 }
 

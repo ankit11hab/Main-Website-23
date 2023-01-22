@@ -100,7 +100,7 @@ function Events() {
             </ul>
           </div>
           <div className="contest_box">
-            <div className="contest_content">
+            <div className="contest_content" style={{marginLeft: "1vw", gap: '5vw'}}>
               <div className="contest_card">
                 <img src={DirectorsCut} alt="" />
                 <Link className="contest_button" to="/BookTickets">
