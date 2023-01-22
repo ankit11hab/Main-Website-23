@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState,constructor } from "react";
+import React, { useLayoutEffect, useState, constructor } from "react";
 import gsap, { Circ, Power0, Power1 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine, SteppedEase } from "gsap/src/all";
@@ -305,7 +305,7 @@ const frameArrMob = [
 ];
 
 gsap.registerPlugin(ScrollTrigger);
-function HeroSection({setLoad}) {
+function HeroSection({ setLoad }) {
   // const [isPending, setisPending] = useState(true);
   // window.addEventListener("load", () => {
   //   setisPending(false);
@@ -335,7 +335,7 @@ function HeroSection({setLoad}) {
         img.src = currentFrame(i);
         images.push(img);
       }
-    setLoad(images.length)
+      setLoad(images.length)
       images[0].onload = render;
 
       function render() {
@@ -462,8 +462,6 @@ function HeroSection({setLoad}) {
             start: "top top",
             scrub: 1,
             pin: ".pano___",
-
-            onLeave: () => {},
           },
         });
       });
@@ -499,13 +497,15 @@ function HeroSection({setLoad}) {
           <span class="t_over"></span>
           <img className="logo_img" src={AlcherLogo} alt="" />
           <div className="bookticketbtn">
-            <button type="button" id="bookbtn" className="bookbtn">
-              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
-              <div className="bookticketstext">&nbsp; &nbsp; Register</div>
+              <button type="button" id="bookbtn" className="bookbtn">
+                <img src={BookTicketIcon} alt="" className="bookiconhero" />
+            <a href="https://card.alcheringa.in" style={{textDecoration:"none", color:"white"}}>
+                <div className="bookticketstext">&nbsp; &nbsp; Register</div>
+            </a>
 
-              {/* <img src={BookTicketIcon} alt="" />
+                {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
-            </button>
+              </button>
           </div>
         </div>
       </div>
