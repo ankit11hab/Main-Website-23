@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eec9d9a1.css",
-    "main.js": "/static/js/main.fe2ebe2d.js",
+    "main.css": "/static/css/main.c9d4c776.css",
+    "main.js": "/static/js/main.00ad08c1.js",
     "static/js/787.33996a2a.chunk.js": "/static/js/787.33996a2a.chunk.js",
     "static/media/NEExpo2.jpg": "/static/media/NEExpo2.8895f260fc47a2699a63.jpg",
     "static/media/NEExpo7.jpg": "/static/media/NEExpo7.0807a4f0c6a555c83190.jpg",
@@ -19,7 +19,7 @@
     "static/media/purpleCurve.svg": "/static/media/purpleCurve.00766534e8fd3822b0edc0e70bd8b004.svg",
     "static/media/text_animation.webm": "/static/media/text_animation.2a63e1f9d82695dadc6a.webm",
     "static/media/yellowCurve.svg": "/static/media/yellowCurve.21fc4f0f05d35a32367a1aa16a58d623.svg",
-    "static/media/pic1.png": "/static/media/pic1.ee211e44b1fac3d032c1.png",
+    "static/media/pic1.png": "/static/media/pic1.8dc0a187b0255bc72ba3.png",
     "static/media/texture_background.webp": "/static/media/texture_background.69377240672bb317ca90.webp",
     "static/media/YD logo.jpg": "/static/media/YD logo.a291011878adef38c743.jpg",
     "static/media/Banger.png": "/static/media/Banger.69361f35cf97e32d131f.png",
@@ -37,7 +37,6 @@
     "static/media/Web_0075.webp": "/static/media/Web_0075.743cef664de2a16d4868.webp",
     "static/media/home6.png": "/static/media/home6.f1969d2bc6ef161ba60d.png",
     "static/media/frameca1.png": "/static/media/frameca1.76878630ff36f0899903.png",
-    "static/media/frame1.png": "/static/media/frame1.839bb11e0da05bb83ce8.png",
     "static/media/home4.png": "/static/media/home4.61f8e8c843039d8d321b.png",
     "static/media/home3.png": "/static/media/home3.c65b481b6154a65ae192.png",
     "static/media/Prithvi2.png": "/static/media/Prithvi2.de964284035b152a6dc5.png",
@@ -56,6 +55,7 @@
     "static/media/frame6.png": "/static/media/frame6.6e4a67178bb4d7b8669f.png",
     "static/media/frameda1.png": "/static/media/frameda1.e9615f7e5f5c85988cd5.png",
     "static/media/volleyball.png": "/static/media/volleyball.8ea24979f086be3c2e30.png",
+    "static/media/frame1.png": "/static/media/frame1.839bb11e0da05bb83ce8.png",
     "static/media/xpressions.png": "/static/media/xpressions.0734015d01936241e464.png",
     "static/media/NEExpo1.jpg": "/static/media/NEExpo1.c45dbf3016b753962494.jpg",
     "static/media/frame2.png": "/static/media/frame2.c0b9c3fb013d2e72e676.png",
@@ -107,7 +107,6 @@
     "static/media/Web_0085.webp": "/static/media/Web_0085.271182d7ba7e9e854cb9.webp",
     "static/media/hailAlcher.png": "/static/media/hailAlcher.ed852ed06c020096b3ff.png",
     "static/media/Web_0084.webp": "/static/media/Web_0084.f3cf528dcedc05d97f64.webp",
-    "static/media/monster.png": "/static/media/monster.db5a66de97fae6c45010.png",
     "static/media/Web_0086.webp": "/static/media/Web_0086.fb82fd38cd9937768780.webp",
     "static/media/Web_0045.webp": "/static/media/Web_0045.37e6c12b49fa670cc046.webp",
     "static/media/Web_0054.webp": "/static/media/Web_0054.a384962bfcb5ad0838ef.webp",
@@ -196,6 +195,7 @@
     "static/media/Web_0027.webp": "/static/media/Web_0027.c14edfaab464863c1c0a.webp",
     "static/media/Web_0029.webp": "/static/media/Web_0029.78190e39f5523dde6b6a.webp",
     "static/media/Web_0066.webp": "/static/media/Web_0066.acb3cddd156f98fec351.webp",
+    "static/media/BlackPattern.png": "/static/media/BlackPattern.0242b350b4a7d183958b.png",
     "static/media/Web_0028.webp": "/static/media/Web_0028.18bd350a485c5efe72b0.webp",
     "static/media/Mobile_NoBG_0020.webp": "/static/media/Mobile_NoBG_0020.5928f96ea994eb088b1a.webp",
     "static/media/Safher1.jpeg": "/static/media/Safher1.a2bae6fb743e987f9cf7.jpeg",
@@ -206,6 +206,7 @@
     "static/media/Web_0065.webp": "/static/media/Web_0065.4db0d5fb788286877d35.webp",
     "static/media/Web_0096.webp": "/static/media/Web_0096.2d796d4c2b5792b2a042.webp",
     "static/media/Web_0097.webp": "/static/media/Web_0097.f80b37a188a6eeb486e7.webp",
+    "static/media/Mobilepic.png": "/static/media/Mobilepic.d19311f54346a203d644.png",
     "static/media/Mobile_NoBG_0021.webp": "/static/media/Mobile_NoBG_0021.10fddb6006a483d8163f.webp",
     "static/media/Mobile_NoBG_0013.webp": "/static/media/Mobile_NoBG_0013.37050208074b964f9f30.webp",
     "static/media/Aikyam6.jpeg": "/static/media/Aikyam6.8449edcd524ec18e8dc9.jpeg",
@@ -361,6 +362,7 @@
     "static/media/pic1mob.png": "/static/media/pic1mob.23224599aa80f22bbf3e.png",
     "static/media/0078.webp": "/static/media/0078.991f7a9a88d2c3a7d304.webp",
     "static/media/0077.webp": "/static/media/0077.117967b9034f943f24af.webp",
+    "static/media/monster.png": "/static/media/monster.d82f1bab17345ade5371.png",
     "static/media/0076.webp": "/static/media/0076.ad2c7a48619c4ab4ef6f.webp",
     "static/media/0075.webp": "/static/media/0075.df4e727e2a715ca3d6ba.webp",
     "static/media/EventsLogo.svg": "/static/media/EventsLogo.fc90c5d91ad539ab19f42317cc5f1a53.svg",
@@ -446,6 +448,7 @@
     "static/media/0025.webp": "/static/media/0025.1a6119f652bc9b1659b2.webp",
     "static/media/0023.webp": "/static/media/0023.74abf0ac18180106878b.webp",
     "static/media/Mobile_NoBG_0025.webp": "/static/media/Mobile_NoBG_0025.5671a1fe658d7bb9ca6e.webp",
+    "static/media/BlackCrown.png": "/static/media/BlackCrown.436f43486705c8666cd1.png",
     "static/media/0022.webp": "/static/media/0022.559facbfd1feb79ecd3b.webp",
     "static/media/0020.webp": "/static/media/0020.d89a0374eb2e36b14ddf.webp",
     "static/media/0021.webp": "/static/media/0021.fa559240e75a14779171.webp",
@@ -533,12 +536,12 @@
     "static/media/background.svg": "/static/media/background.73c746e88409ccb4b512.svg",
     "static/media/compass.svg": "/static/media/compass.0f193cd39061ea43cc46.svg",
     "static/media/Cross.svg": "/static/media/Cross.98b0aa78c02a08eafe610b723ac8e402.svg",
-    "main.eec9d9a1.css.map": "/static/css/main.eec9d9a1.css.map",
-    "main.fe2ebe2d.js.map": "/static/js/main.fe2ebe2d.js.map",
+    "main.c9d4c776.css.map": "/static/css/main.c9d4c776.css.map",
+    "main.00ad08c1.js.map": "/static/js/main.00ad08c1.js.map",
     "787.33996a2a.chunk.js.map": "/static/js/787.33996a2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eec9d9a1.css",
-    "static/js/main.fe2ebe2d.js"
+    "static/css/main.c9d4c776.css",
+    "static/js/main.00ad08c1.js"
   ]
 }
