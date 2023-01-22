@@ -20,7 +20,7 @@ function Home() {
   return (
     <div>
       <div className="navbar">
-        <Load load = {load}/>
+        {/* <Load load = {load}/> */}
         <Nav icon />
         {/* <Panorama/> */}
         <HeroSection setLoad = {setLoad}/>
