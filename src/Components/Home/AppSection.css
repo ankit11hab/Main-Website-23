@@ -77,13 +77,8 @@
     top: 10vw;
     z-index: 1;
 }
-.alcherlady_hover:hover{
-    left: 65vw;
-    top: 10vw;
-    z-index: 1;
-}
 
-.alcherlady:hover{
+.alcherlady_hover:hover{
     -webkit-animation: mover 0.5s infinite  alternate;
     animation: mover 0.7s infinite  alternate;
 
