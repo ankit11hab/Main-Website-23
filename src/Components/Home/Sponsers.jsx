@@ -2,6 +2,17 @@ import React, { useEffect } from "react";
 import "./Sponsers.css";
 import img from "../../images/hailAlcher.png";
 
+import ydlogo from "./images/YD logo.jpg";
+import upgrad from "./images/UPGRAD ASSAM LOGO.jpg";
+import unstop from "./images/unstop.png";
+import twani from "./images/twani logo.png";
+import safeexp from "./images/Safexpress Logo.jpg";
+import jamboree from "./images/jamboree.png";
+import bigrock from "./images/Bigrock.png";
+import bias from "./images/BIAS Logo.png";
+import berado from "./images/berado_logo.jpg";
+import asus from "./images/ASUS.png";
+import killer from "./images/killer.png"
 function Sponsers() {
   useEffect(() => {
     const root = document.documentElement;
@@ -30,25 +41,37 @@ function Sponsers() {
         <div className="marquee1">
           <ul className="marquee-content">
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={asus} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={ydlogo} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={upgrad} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={unstop} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={twani} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={safeexp} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={jamboree} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={bigrock} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={bias} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={berado} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={killer} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
           </ul>
         </div>
@@ -57,25 +80,22 @@ function Sponsers() {
         <div className="marquee1">
           <ul className="marquee-content2">
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
             <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
-            </li>
-            <li>
-              <img src={img} alt="pr-sample23" style={{ width: "150px" }} />
+              <></>
             </li>
           </ul>
         </div>

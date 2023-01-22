@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState,constructor } from "react";
 import gsap, { Circ, Power0, Power1 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sine, SteppedEase } from "gsap/src/all";
@@ -305,7 +305,7 @@ const frameArrMob = [
 ];
 
 gsap.registerPlugin(ScrollTrigger);
-function HeroSection() {
+function HeroSection({setLoad}) {
   // const [isPending, setisPending] = useState(true);
   // window.addEventListener("load", () => {
   //   setisPending(false);
@@ -335,6 +335,7 @@ function HeroSection() {
         img.src = currentFrame(i);
         images.push(img);
       }
+    setLoad(images.length)
       images[0].onload = render;
 
       function render() {
