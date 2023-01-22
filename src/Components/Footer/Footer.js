@@ -167,7 +167,7 @@ event.stopPropagation();
               <div className="creatives-ddby">
                 <img src={desBY} className="designBY"/>
                 <div className="creatives-names">
-                  <span className="names-ddby">Aarya Ghodhke, Dhwani Doshi</span>
+                  <span className="names-ddby">Aarya Ghodke, Dhwani Doshi</span>
                 </div>
               </div>
             </div>
