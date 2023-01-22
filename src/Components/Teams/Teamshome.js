@@ -1,7 +1,7 @@
 import "./teams.css";
 import { useState } from "react";
 import Teambox from "./teambox";
-// import TeamsLogo from './images/AalooLogo.svg';
+import TeamsLogo from './images/AalooLogo.svg';
 import tpic1 from "./images/pic1.png";
 import tpic2 from "./images/pic2.png";
 import tpic3 from "./images/pic3.png";
@@ -283,7 +283,7 @@ const Home = () => {
                 midphn={box.midphn}
                 midemail={box.midemail}
                 midphn2={box.midphn2}
-                midemail={box.midemail2}
+                midemail2={box.midemail2}
                 rightphn={box.rightphn}
                 rightemail={box.rightemail}
                 title={box.title}
