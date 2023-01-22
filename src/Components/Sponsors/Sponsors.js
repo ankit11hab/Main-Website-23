@@ -26,6 +26,7 @@ import Styledby from "./images/styled.png"
 import Trustedby from "./images/Trusted.png"
 import Manikchand from "./images/manikchand.png"
 import Sparx from "./images/sparx.png"
+import Gplus from "./images/GplusLogo.png"
 function Sponsors() {
   return (
     <div>
@@ -87,7 +88,7 @@ function Sponsors() {
             </div>
 
             <div className="box2">
-              <img className="ibox" src={Sbi} />
+              <img className="ibox" src={Gplus} />
               <p className="newpara"> Gplus</p>
             </div>
           </div>
