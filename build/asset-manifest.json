@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9d4c776.css",
-    "main.js": "/static/js/main.00ad08c1.js",
+    "main.css": "/static/css/main.d6d3a9d9.css",
+    "main.js": "/static/js/main.1e528b6b.js",
     "static/js/787.33996a2a.chunk.js": "/static/js/787.33996a2a.chunk.js",
     "static/media/NEExpo2.jpg": "/static/media/NEExpo2.8895f260fc47a2699a63.jpg",
     "static/media/NEExpo7.jpg": "/static/media/NEExpo7.0807a4f0c6a555c83190.jpg",
@@ -21,6 +21,7 @@
     "static/media/yellowCurve.svg": "/static/media/yellowCurve.21fc4f0f05d35a32367a1aa16a58d623.svg",
     "static/media/pic1.png": "/static/media/pic1.8dc0a187b0255bc72ba3.png",
     "static/media/texture_background.webp": "/static/media/texture_background.69377240672bb317ca90.webp",
+    "static/media/wings.png": "/static/media/wings.8b945d9abda4eec3f81f.png",
     "static/media/YD logo.jpg": "/static/media/YD logo.a291011878adef38c743.jpg",
     "static/media/Banger.png": "/static/media/Banger.69361f35cf97e32d131f.png",
     "static/media/Web_0058.webp": "/static/media/Web_0058.26fa446a5b4ab9dde4eb.webp",
@@ -93,6 +94,7 @@
     "static/media/creators camp.webp": "/static/media/creators camp.59ab60055becb61751c3.webp",
     "static/media/Web_0072.webp": "/static/media/Web_0072.785be6b2daf87bb2ba90.webp",
     "static/media/Web_0073.webp": "/static/media/Web_0073.785be6b2daf87bb2ba90.webp",
+    "static/media/appIcon.png": "/static/media/appIcon.aae27e665d2fa3621990.png",
     "static/media/proshows_mob.webp": "/static/media/proshows_mob.478be8fc174ec212eb3b.webp",
     "static/media/Prithvi5.png": "/static/media/Prithvi5.76849f23249863da3f56.png",
     "static/media/humor fest.webp": "/static/media/humor fest.e36f4b6ae7712d2c290c.webp",
@@ -128,6 +130,7 @@
     "static/media/proshows-humorfest_rev.webm": "/static/media/proshows-humorfest_rev.c9ccdde824b94dcd1f83.webm",
     "static/media/humor fest-proshows.webm": "/static/media/humor fest-proshows.c894666089770d16f31a.webm",
     "static/media/cover_mob.webp": "/static/media/cover_mob.02af5ac4f1a6afea307c.webp",
+    "static/media/appstyle1.png": "/static/media/appstyle1.f886ffcf6a3b9593b8ef.png",
     "static/media/Aikyam2.png": "/static/media/Aikyam2.742e7e4e97b8f621fca8.png",
     "static/media/Web_0035.webp": "/static/media/Web_0035.6293e5a6bc4016c05536.webp",
     "static/media/Web_0034.webp": "/static/media/Web_0034.a44c92b63895b750a370.webp",
@@ -180,6 +183,7 @@
     "static/media/cover1.webp": "/static/media/cover1.62c6c4fe82781d0cd1af.webp",
     "static/media/Web_0095.webp": "/static/media/Web_0095.cb5bde8d1ab69e9f3bf1.webp",
     "static/media/lotus 1.png": "/static/media/lotus 1.4630a90c62b82a4d3eac.png",
+    "static/media/Back.png": "/static/media/Back.44c83cfffc4ed2ca8161.png",
     "static/media/Web_0067.webp": "/static/media/Web_0067.e43bd7fdaf8617a32475.webp",
     "static/media/frameca4.png": "/static/media/frameca4.e6e431541b560cfbbb7d.png",
     "static/media/Web_0021.webp": "/static/media/Web_0021.be7ea42ce8e7cee7a743.webp",
@@ -195,7 +199,6 @@
     "static/media/Web_0027.webp": "/static/media/Web_0027.c14edfaab464863c1c0a.webp",
     "static/media/Web_0029.webp": "/static/media/Web_0029.78190e39f5523dde6b6a.webp",
     "static/media/Web_0066.webp": "/static/media/Web_0066.acb3cddd156f98fec351.webp",
-    "static/media/BlackPattern.png": "/static/media/BlackPattern.0242b350b4a7d183958b.png",
     "static/media/Web_0028.webp": "/static/media/Web_0028.18bd350a485c5efe72b0.webp",
     "static/media/Mobile_NoBG_0020.webp": "/static/media/Mobile_NoBG_0020.5928f96ea994eb088b1a.webp",
     "static/media/Safher1.jpeg": "/static/media/Safher1.a2bae6fb743e987f9cf7.jpeg",
@@ -206,7 +209,6 @@
     "static/media/Web_0065.webp": "/static/media/Web_0065.4db0d5fb788286877d35.webp",
     "static/media/Web_0096.webp": "/static/media/Web_0096.2d796d4c2b5792b2a042.webp",
     "static/media/Web_0097.webp": "/static/media/Web_0097.f80b37a188a6eeb486e7.webp",
-    "static/media/Mobilepic.png": "/static/media/Mobilepic.d19311f54346a203d644.png",
     "static/media/Mobile_NoBG_0021.webp": "/static/media/Mobile_NoBG_0021.10fddb6006a483d8163f.webp",
     "static/media/Mobile_NoBG_0013.webp": "/static/media/Mobile_NoBG_0013.37050208074b964f9f30.webp",
     "static/media/Aikyam6.jpeg": "/static/media/Aikyam6.8449edcd524ec18e8dc9.jpeg",
@@ -448,7 +450,6 @@
     "static/media/0025.webp": "/static/media/0025.1a6119f652bc9b1659b2.webp",
     "static/media/0023.webp": "/static/media/0023.74abf0ac18180106878b.webp",
     "static/media/Mobile_NoBG_0025.webp": "/static/media/Mobile_NoBG_0025.5671a1fe658d7bb9ca6e.webp",
-    "static/media/BlackCrown.png": "/static/media/BlackCrown.436f43486705c8666cd1.png",
     "static/media/0022.webp": "/static/media/0022.559facbfd1feb79ecd3b.webp",
     "static/media/0020.webp": "/static/media/0020.d89a0374eb2e36b14ddf.webp",
     "static/media/0021.webp": "/static/media/0021.fa559240e75a14779171.webp",
@@ -492,7 +493,6 @@
     "static/media/killer.png": "/static/media/killer.ca8c123d7488a46ad429.png",
     "static/media/Mobile_NoBG_0002.webp": "/static/media/Mobile_NoBG_0002.99c6bba88a11382d1462.webp",
     "static/media/Bigrock.png": "/static/media/Bigrock.29192abe8bf10977fdac.png",
-    "static/media/Back.png": "/static/media/Back.8bb4e2e511ce6ac7bfad.png",
     "static/media/Web_0105.webp": "/static/media/Web_0105.a9ad5587ec289a11e38b.webp",
     "static/media/Web_0109.webp": "/static/media/Web_0109.a9ad5587ec289a11e38b.webp",
     "static/media/Mobile_NoBG_0027.webp": "/static/media/Mobile_NoBG_0027.22e21cdc659c443beb1e.webp",
@@ -536,12 +536,12 @@
     "static/media/background.svg": "/static/media/background.73c746e88409ccb4b512.svg",
     "static/media/compass.svg": "/static/media/compass.0f193cd39061ea43cc46.svg",
     "static/media/Cross.svg": "/static/media/Cross.98b0aa78c02a08eafe610b723ac8e402.svg",
-    "main.c9d4c776.css.map": "/static/css/main.c9d4c776.css.map",
-    "main.00ad08c1.js.map": "/static/js/main.00ad08c1.js.map",
+    "main.d6d3a9d9.css.map": "/static/css/main.d6d3a9d9.css.map",
+    "main.1e528b6b.js.map": "/static/js/main.1e528b6b.js.map",
     "787.33996a2a.chunk.js.map": "/static/js/787.33996a2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9d4c776.css",
-    "static/js/main.00ad08c1.js"
+    "static/css/main.d6d3a9d9.css",
+    "static/js/main.1e528b6b.js"
   ]
 }
