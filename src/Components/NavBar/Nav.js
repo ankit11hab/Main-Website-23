@@ -6,6 +6,7 @@ import Book from "./Book";
 import Logo from "./Logo";
 import Cross from "./Cross";
 import Hamburger from "./Hamburger";
+import BookTicketIcon from "./Images/bookticketsicon.svg";
 
 function Nav({ icon, pic }) {
   const [active, setActive] = useState(false);
@@ -82,9 +83,9 @@ function Nav({ icon, pic }) {
             </ul>
           </nav>
           {!icon && (
-            <Link className="image" to="/BookTickets">
+            <a className="image" href="https://card.alcheringa.in/">
               <Book />
-            </Link>
+            </a>
           )}
         </header>
       </div>
@@ -114,6 +115,17 @@ function Nav({ icon, pic }) {
         {activeMob ? (
           <div className="extendednavmob" style={{ background: "#1a1a1a" }}>
             <ul className="mobileList">
+              <li style={{height:"40px"}}>
+              <a className="img" href="https://card.alcheringa.in/">
+              <button type="button" id="bookbtn2" className="bookbtn">
+              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
+              <div className="bookticketstext">&nbsp; &nbsp; Register</div>
+
+              {/* <img src={BookTicketIcon} alt="" />
+              <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
+            </button>
+              </a>
+              </li>
               <li className="Events">
                 <NavLink to="/Events" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob">

@@ -12,12 +12,12 @@ import Sponsers from "./Sponsers";
 import AppSection from "./AppSection";
 import HeroSection from "./HeroSection";
 import Carousel from "./Carousel";
+
 function Home() {
   return (
     <div>
       <div className="navbar">
         <Nav icon />
-        <NavMob />
         {/* <Panorama/> */}
         <HeroSection />
         <VRScene />
