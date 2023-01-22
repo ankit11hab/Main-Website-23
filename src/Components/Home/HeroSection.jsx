@@ -335,7 +335,7 @@ function HeroSection({ setLoad }) {
         img.src = currentFrame(i);
         images.push(img);
       }
-      setLoad(images.length)
+      setLoad(images.length);
       images[0].onload = render;
 
       function render() {
@@ -497,15 +497,18 @@ function HeroSection({ setLoad }) {
           <span class="t_over"></span>
           <img className="logo_img" src={AlcherLogo} alt="" />
           <div className="bookticketbtn">
-              <button type="button" id="bookbtn" className="bookbtn">
-                <img src={BookTicketIcon} alt="" className="bookiconhero" />
-            <a href="#" style={{textDecoration:"none", color:"white"}}>
+            <button type="button" id="bookbtn" className="bookbtn">
+              <img src={BookTicketIcon} alt="" className="bookiconhero" />
+              <a
+                href="/Events/pt"
+                style={{ textDecoration: "none", color: "white" }}
+              >
                 <div className="bookticketstext">&nbsp; &nbsp; Register</div>
-            </a>
+              </a>
 
-                {/* <img src={BookTicketIcon} alt="" />
+              {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
-              </button>
+            </button>
           </div>
         </div>
       </div>

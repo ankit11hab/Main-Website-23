@@ -55,7 +55,10 @@ function Nav({ icon, pic }) {
                 </NavLink>
               </li>
               <li className="Merch">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4Mh1c6WQxDScxOD82A_rE2pNtdaKlzVru97X1Z8F7JdYVUQ/viewform" target="_blank">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd4Mh1c6WQxDScxOD82A_rE2pNtdaKlzVru97X1Z8F7JdYVUQ/viewform"
+                  target="_blank"
+                >
                   <b>MERCH</b>
                 </a>
               </li>
@@ -83,7 +86,7 @@ function Nav({ icon, pic }) {
             </ul>
           </nav>
           {!icon && (
-            <a className="image" href="#">
+            <a className="image" href="/Events/pt">
               <Book />
             </a>
           )}
@@ -125,16 +128,18 @@ function Nav({ icon, pic }) {
         {activeMob ? (
           <div className="extendednavmob" style={{ background: "#1a1a1a" }}>
             <ul className="mobileList">
-              <li style={{height:"40px"}}>
-              <a className="img" href="#">
-              <button type="button" id="bookbtn2" className="bookbtn">
-              <img src={BookTicketIcon} alt="" className="bookiconhero"/>
-              <div className="bookticketstext">&nbsp; &nbsp; Register</div>
+              <li style={{ height: "40px" }}>
+                <a className="img" href="/Events/pt">
+                  <button type="button" id="bookbtn2" className="bookbtn">
+                    <img src={BookTicketIcon} alt="" className="bookiconhero" />
+                    <div className="bookticketstext">
+                      &nbsp; &nbsp; Register
+                    </div>
 
-              {/* <img src={BookTicketIcon} alt="" />
+                    {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
-            </button>
-              </a>
+                  </button>
+                </a>
               </li>
               <li className="Events">
                 <NavLink to="/Events" style={{ textDecoration: "#0B0B0B" }}>
