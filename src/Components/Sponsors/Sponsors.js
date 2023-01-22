@@ -27,6 +27,9 @@ import Trustedby from "./images/Trusted.png"
 import Manikchand from "./images/manikchand.png"
 import Sparx from "./images/sparx.png"
 import Gplus from "./images/GplusLogo.png"
+import Dubeat from "./images/Dubeat.jpg"
+import Mirchi from "./images/Mirchi.png"
+import AssamTribune from "./images/AssamTribune.jpg"
 function Sponsors() {
   return (
     <div>
@@ -110,6 +113,7 @@ function Sponsors() {
                 <p className="newpara">YELLOW  DIAMOND  </p>
                 <p className="updatedpara">Snacks Partner</p>
               </div>
+              
               <div className="maincard">
                 <img className="cocard" src={asus} />
                 <p className="newpara">ASUS</p>
@@ -150,6 +154,27 @@ function Sponsors() {
                 <img className="cocard" src={berado} />
                 <p className="newpara">BEARDO</p>
                 <p className="updatedpara">Grooming Partner</p>
+
+
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={Mirchi} />
+                <p className="newpara">MIRCHI PLUS</p>
+                <p className="updatedpara">Tuned By</p>
+
+
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={Dubeat} />
+                <p className="newpara">DU BEAT</p>
+                <p className="updatedpara">Digital Media Partner</p>
+
+
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={AssamTribune} />
+                <p className="newpara">THE ASSAM TRIBUNE</p>
+                <p className="updatedpara">In AssociationWith</p>
 
 
               </div>

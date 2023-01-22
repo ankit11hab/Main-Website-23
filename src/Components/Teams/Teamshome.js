@@ -1,11 +1,7 @@
 import "./teams.css";
 import { useState } from "react";
 import Teambox from "./teambox";
-<<<<<<< Updated upstream
-import TeamsLogo from "./images/AalooLogo.svg";
-=======
-import TeamsLogo from './images/AalooLogo.svg';
->>>>>>> Stashed changes
+// import TeamsLogo from './images/AalooLogo.svg';
 import tpic1 from "./images/pic1.png";
 import tpic2 from "./images/pic2.png";
 import tpic3 from "./images/pic3.png";
