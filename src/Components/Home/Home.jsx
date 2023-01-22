@@ -22,7 +22,6 @@ function Home() {
       <div className="navbar">
         <Load load = {load}/>
         <Nav icon />
-        <NavMob />
         {/* <Panorama/> */}
         <HeroSection setLoad = {setLoad}/>
         <VRScene />
