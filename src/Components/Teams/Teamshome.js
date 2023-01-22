@@ -283,7 +283,7 @@ const Home = () => {
                 midphn={box.midphn}
                 midemail={box.midemail}
                 midphn2={box.midphn2}
-                midemail={box.midemail2}
+                midemail2={box.midemail2}
                 rightphn={box.rightphn}
                 rightemail={box.rightemail}
                 title={box.title}
