@@ -19,13 +19,13 @@
   display: flex;
   justify-content: space-between;
   
-  
 }
 .footer_main a {
  
   cursor: url('../../images/Group\ 288.png'), default!important;
   
 }
+
 .logo {
   margin-top: 10vh;
   display: flex;
@@ -258,6 +258,12 @@
     justify-content: space-between;
     align-items: center;
 }
+@media only screen and   (max-width:1000px){
+  .footer_desk li, .shareka, .abhi{
+    font-size: 2vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logo {
     display: none;
@@ -318,7 +324,7 @@
     font-family: "Aileron";
     font-style: normal;
     font-weight: 300;
-    font-size: 3vw;
+    font-size: 2vh;
     line-height: 24px;
     color: #ffffff;
   }
@@ -370,14 +376,16 @@
         height: 28vh;
         margin-left: 2.93vw;
     } */
+  
+
   .footer_desk li {
     font-family: "Aileron";
     font-style: normal;
     font-weight: 600;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     line-height: 1.86vh;
     /* identical to box height */
-
+    padding-bottom: 1vh;
     text-align: left;
     text-transform: uppercase;
 
@@ -417,10 +425,10 @@
     justify-content: space-between;
     font-family: "Aileron";
     font-style: normal;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     line-height: 1.86vh;
     text-align: right;
-
+    line-height: 2.5vh;
     color: #fffffe;
   }
   .footerlink a{
@@ -432,10 +440,10 @@
     justify-content: space-between;
     font-family: "Aileron";
     font-style: normal;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     line-height: 1.86vh;
     text-align: right;
-
+    line-height: 2.5vh;
     color: #fffffe;
   }
   .socials {
@@ -450,11 +458,6 @@
   .socials a {
     width: 2.18vh;
     height: 2.18vh;
-  }
-}
-@media only screen and   (max-width:1000px){
-  .footer_desk li, .shareka, .abhi{
-    font-size: 2vw;
   }
 }
 

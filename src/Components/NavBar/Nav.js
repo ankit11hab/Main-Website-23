@@ -64,7 +64,7 @@ function Nav({ icon, pic }) {
               </li>
               <li className="Campaigns">
                 <NavLink to="/Campaigns">
-                  <b>CAMPAIGNS</b>
+                  <b>KARTAVYA</b>
                 </NavLink>
               </li>
               <li className="Teams">
@@ -158,7 +158,7 @@ function Nav({ icon, pic }) {
               <li className="Campaigns">
                 <NavLink to="/Campaigns" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob campaigns">
-                    <b className="listtext listtext3">CAMPAIGNS</b>
+                    <b className="listtext listtext3">KARTAVYA</b>
                   </div>
                 </NavLink>
               </li>

@@ -45,25 +45,25 @@ event.stopPropagation();
         <div className="footer_main">
           <div className="options">
             <ul type="none">
-              <li>
+              <li className="listitm">
                 <NavLink to="/Events" className="footerlink">EVENTS</NavLink>
               </li>
-              <li>
+              <li className="listitm">
                 <NavLink to="/Merch" className="footerlink">MERCH</NavLink>
               </li>
-              <li>
-                <NavLink to="/Campaigns" className="footerlink">CAMPAIGNS</NavLink>
+              <li className="listitm">
+                <NavLink to="/Campaigns" className="footerlink">KARTAVYA</NavLink>
               </li>
-              <li>
+              <li className="listitm">
                 <NavLink to="/Teams" className="footerlink">TEAMS</NavLink>
               </li>
-              <li>
+              <li className="listitm">
                 <NavLink to="/MUN" className="footerlink">MUN</NavLink>
               </li>
-              <li>
+              <li className="listitm">
                 <NavLink to="/Sponsors" className="footerlink">SPONSORS</NavLink>
               </li>
-              <li>
+              <li className="listitm">
                 <NavLink to="/Contests" className="footerlink">CONTESTS</NavLink>
               </li>
             </ul>
@@ -74,7 +74,7 @@ event.stopPropagation();
           <div className="details_main">
             <div className="details">
               <div className="contact">
-                <div className="shareka">
+                <div className="shareka" >
                   <b>Siddhant Singh</b>
                   PR Head<br></br>
                   +91 9310859978
@@ -152,7 +152,7 @@ event.stopPropagation();
             </div>
             <div className="inqueries">
               For Business Enqueries:{" "}
-              <span style={{ fontWeight: 900 }}>alcheringa@iitg.ac.in</span>
+              <a href="mailto: publicrelations23@alcheringa.in"><span style={{ fontWeight: 900 }}>publicrelations23@alcheringa.in</span></a>
             </div>
           </div>
 
