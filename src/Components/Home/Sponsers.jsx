@@ -12,7 +12,10 @@ import bigrock from "./images/Bigrock.png";
 import bias from "./images/BIAS Logo.png";
 import berado from "./images/berado_logo.jpg";
 import asus from "./images/ASUS.png";
-import killer from "./images/killer.png"
+import killer from "./images/killer.png";
+import Gplus from "./images/GplusLogo.png";
+import Mirchi from "./images/Mirchi.png";
+import AssamTribune from "./images/AssamTribune.jpg";
 function Sponsers() {
   useEffect(() => {
     const root = document.documentElement;
@@ -44,6 +47,16 @@ function Sponsers() {
               <img src={asus} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
+              <img
+                src={AssamTribune}
+                alt="pr-sample23"
+                style={{ width: "150px" }}
+              />
+            </li>
+            <li>
+              <img src={Gplus} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
               <img src={ydlogo} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
@@ -59,7 +72,11 @@ function Sponsers() {
               <img src={safeexp} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={jamboree} alt="pr-sample23" style={{ width: "150px" }} />
+              <img
+                src={jamboree}
+                alt="pr-sample23"
+                style={{ width: "150px" }}
+              />
             </li>
             <li>
               <img src={bigrock} alt="pr-sample23" style={{ width: "150px" }} />
@@ -72,6 +89,10 @@ function Sponsers() {
             </li>
             <li>
               <img src={killer} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+
+            <li>
+              <img src={Mirchi} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
           </ul>
         </div>

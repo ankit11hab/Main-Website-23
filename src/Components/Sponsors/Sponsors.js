@@ -40,13 +40,13 @@ function Sponsors() {
       <div className="container">
         <div className="rect">
           <div className="bg">
-           <img src={wework} alt="" />
+            <img src={wework} alt="" />
           </div>
         </div>
         <div className="layout">
           <div className="box1">
             <div className="frame">
-             <img src={title} alt="" />
+              <img src={title} alt="" />
             </div>
 
             <div className="box2">
@@ -57,7 +57,7 @@ function Sponsors() {
 
           <div className="box1">
             <div className="frame">
-             <img src={Poweredby} alt="" />
+              <img src={Poweredby} alt="" />
             </div>
 
             <div className="box2">
@@ -67,7 +67,7 @@ function Sponsors() {
           </div>
           <div className="box1">
             <div className="frame">
-             <img src={Trustedby} alt="" />
+              <img src={Trustedby} alt="" />
             </div>
 
             <div className="box2">
@@ -77,7 +77,7 @@ function Sponsors() {
           </div>
           <div className="box1">
             <div className="frame">
-             <img src={Styledby} alt="" />
+              <img src={Styledby} alt="" />
             </div>
 
             <div className="box2">
@@ -87,7 +87,7 @@ function Sponsors() {
           </div>
           <div className="box1">
             <div className="frame">
-             <img src={Connectedby} alt="" />
+              <img src={Connectedby} alt="" />
             </div>
 
             <div className="box2">
@@ -97,7 +97,7 @@ function Sponsors() {
           </div>
           <div className="box1">
             <div className="frame">
-             <img src={Inassociation} alt="" />
+              <img src={Inassociation} alt="" />
             </div>
 
             <div className="box2">
@@ -106,14 +106,20 @@ function Sponsors() {
             </div>
           </div>
           <div className="othersponsor">
-        
+
             <div className="parent">
+              <div className="maincard">
+                <img className="cocard" src={AssamTribune} />
+                <p className="newpara">THE ASSAM TRIBUNE</p>
+                <p className="updatedpara">In Association With</p>
+
+              </div>
               <div className="maincard">
                 <img className="cocard" src={ydlogo} />
                 <p className="newpara">YELLOW  DIAMOND  </p>
                 <p className="updatedpara">Snacks Partner</p>
               </div>
-              
+
               <div className="maincard">
                 <img className="cocard" src={asus} />
                 <p className="newpara">ASUS</p>
@@ -149,7 +155,7 @@ function Sponsors() {
                 <p className="newpara">BIGROCK</p>
                 <p className="updatedpara">Web Hosting Partner</p>
               </div>
-             
+
               <div className="maincard">
                 <img className="cocard" src={berado} />
                 <p className="newpara">BEARDO</p>
@@ -171,13 +177,7 @@ function Sponsors() {
 
 
               </div>
-              <div className="maincard">
-                <img className="cocard" src={AssamTribune} />
-                <p className="newpara">THE ASSAM TRIBUNE</p>
-                <p className="updatedpara">In Association With</p>
 
-
-              </div>
             </div>
           </div>
         </div>
