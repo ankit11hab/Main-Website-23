@@ -6,6 +6,8 @@ import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
 import Banger from "./Images/Banger.png";
 import BangerMob from "./Images/BangerMob.png";
+import monster from '../Merch-coming/monster.png'
+import comingsoon from '../Merch-coming/comingsoon.png'
 
 import "./Events.css";
 import { NavLink, Link } from "react-router-dom";
@@ -113,7 +115,16 @@ function Events1() {
           </div>
         </div>
       </div> */}
+<div className="Coming-soon">
 
+<div className="coming-soon-text">
+    <img src={comingsoon} alt="t"/>
+</div>
+<div className="coming-soon-monster">
+<img src={monster} alt="t"/> 
+
+</div>
+</div>
       <Footer />
     </div>
   );

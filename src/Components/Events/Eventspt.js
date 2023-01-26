@@ -4,6 +4,16 @@ import Nav from "../NavBar/Nav";
 import EventsBook from "./EventsBook";
 import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
+import Pronites4 from './Images/Pronites/Pronites4th.png'
+import Pronites3 from './Images/Pronites/Pronites3rd.png'
+import Pronites5 from './Images/Pronites/Pronites5th.png'
+import Pronites2 from './Images/Pronites/Pronites2nd.png'
+import Pronites4mob from './Images/Pronites/Pronites4thmob.png'
+import Pronites3mob from './Images/Pronites/Pronites3rdmob.png'
+import Pronites5mob from './Images/Pronites/Pronites5thmob.png'
+import Pronites2mob from './Images/Pronites/Pronites2ndmob.png'
+
+
 import Banger from "./Images/Banger.png";
 import BangerMob from "./Images/BangerMob.png";
 import '../Merch-coming/Merch.css'
@@ -32,33 +42,33 @@ function Events1() {
         <Nav />
       </div>
 
-      {/* <NavMob /> */}
+      <NavMob />
 
-      {/* <div className="main_event">
+       <div className="main_event">
         <div className="content_event">
-          <div className="event_card">
-            <img src={Banger} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div className="event_card"  style={{paddingTop:'8px'}}>
+            <img src={Pronites4} alt=""  />
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
-            </Link>
+            </Link> */}
           </div>
-          <div className="event_card">
-            <img src={Banger} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div className="event_card" >
+            <img src={Pronites3} alt="" style={{marginTop:"-3vw"}} />
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
-            </Link>
+            </Link> */}
           </div>
-          <div className="event_card">
-            <img src={Banger} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div className="event_card"  style={{paddingTop:'8px'}}>
+            <img src={Pronites5} alt="" style={{marginTop:0}}/>
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
-            </Link>
+            </Link> */}
           </div>
-          <div className="event_card">
-            <img src={Banger} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div className="event_card"  style={{paddingTop:'15px'}}>
+            <img src={Pronites2} alt="" style={{marginTop:0}}/>
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="upnav" style={{background:upnavColor}}>
@@ -69,34 +79,34 @@ function Events1() {
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
             </NavLink>
-            <NavLink to="/Events/hf">
-              <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink> 
             <NavLink to="/Events/ps">
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
+            <NavLink to="/Events/hf">
+              <div className="HumourFest1">OTHERS</div>
+            </NavLink> 
           </div>
         </div>
       </div>
       <div className="main_event_mob">
         <div className="content_event">
-          <div className="event_card">
-            <img src={BangerMob} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div style={{marginBottom:"3vh"}}>
+            <img src={Pronites4mob} alt="" />
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook /> 
-            </Link>
+            </Link> */}
           </div>
-          <div className="event_card">
-            <img src={BangerMob} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+          <div style={{marginBottom:"3vh"}}>
+            <img src={Pronites3mob} alt="" />
+            {/* <Link className="event_button image" to="/BookTickets">
             <EventsBook /> 
-            </Link>
+            </Link> */}
           </div>
-          <div className="event_card">
-            <img src={BangerMob} alt="" />
+          <div style={{marginBottom:"3vh"}}>
+            <img src={Pronites5mob} alt="" />
           </div>
-          <div className="event_card">
-            <img src={BangerMob} alt="" />
+          <div style={{marginBottom:"3vh"}}>
+            <img src={Pronites2mob} alt="" />
           </div>
         </div>
         <div className="upnav">
@@ -113,17 +123,17 @@ function Events1() {
             </NavLink>
           </div>
         </div>
-      </div> */}
-  <div className="Coming-soon">
+      </div> 
+  {/* <div className="Coming-soon">
 
 <div className="coming-soon-text">
     <img src={comingsoon} alt="t"/>
 </div>
 <div className="coming-soon-monster">
-<img src={monster} alt="t"/>
+<img src={monster} alt="t"/> 
 
 </div>
-</div>
+</div>*/}
       <Footer />
     </div>
   );
