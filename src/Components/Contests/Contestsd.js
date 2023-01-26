@@ -9,10 +9,10 @@ import { NavLink, Link } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 import NavMobContest from "../NavContestMobile/NavContestMob";
 import f1 from "./Images/Dance/frameda1.png"
-import f2 from "./Images/Dance/frameda2.png"
-import f3 from "./Images/Dance/frameda3.png"
-import f4 from "./Images/Dance/frameda4.png"
-import f5 from "./Images/Dance/frameda5.png"
+import f2 from "./Images/Dance/frameda2.jpg"
+import f3 from "./Images/Dance/frameda3.jpg"
+import f4 from "./Images/Dance/frameda4.jpg"
+import f5 from "./Images/Dance/frameda5.jpg"
 function Events() {
   // const location = useLocation();
   // const { pathname } = location;

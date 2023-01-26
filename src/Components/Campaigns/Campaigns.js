@@ -11,36 +11,36 @@ import img6 from "./images/home6.png";
 import img7 from "./images/camp1.png";
 import img8 from "./images/camp2.png";
 import img9 from "./images/camp3.png";
-import Aikyam1 from "./images/Aikyam/Aikyam1.png";
-import Aikyam2 from "./images/Aikyam/Aikyam2.png";
+import Aikyam1 from "./images/Aikyam/Aikyam1.jpg";
+import Aikyam2 from "./images/Aikyam/Aikyam2.jpg";
 import Aikyam3 from "./images/Aikyam/Aikyam3.jpg";
 import Aikyam4 from "./images/Aikyam/Aikyam4.jpg";
-import Aikyam5 from "./images/Aikyam/Aikyam5.jpeg";
-import Aikyam6 from "./images/Aikyam/Aikyam6.jpeg";
-import Manshakti1 from "./images/Manshakti/Manshakti2.jpeg";
+import Aikyam5 from "./images/Aikyam/Aikyam5.jpg";
+import Aikyam6 from "./images/Aikyam/Aikyam6.jpg";
 import Manshakti2 from "./images/Manshakti/Manshakti1.jpeg";
-import Manshakti3 from "./images/Manshakti/Manshakti3.jpeg";
-import Manshakti4 from "./images/Manshakti/Manshakti4.jpeg";
-import Manshakti5 from "./images/Manshakti/Manshakti5.jpeg";
+import Manshakti1 from "./images/Manshakti/Manshakti2.jpg";
+import Manshakti3 from "./images/Manshakti/Manshakti3.jpg";
+import Manshakti4 from "./images/Manshakti/Manshakti4.jpg";
+import Manshakti5 from "./images/Manshakti/Manshakti5.jpg";
 import NEExpo1 from "./images/North East Expo/NEExpo1.jpg";
 import NEExpo2 from "./images/North East Expo/NEExpo2.jpg";
 import NEExpo3 from "./images/North East Expo/NEExpo3.jpg";
-import NEExpo4 from "./images/North East Expo/NEExpo4.png";
-import NEExpo5 from "./images/North East Expo/NEExpo5.png";
-import NEExpo6 from "./images/North East Expo/NEExpo6.png";
+import NEExpo4 from "./images/North East Expo/NEExpo4.jpg";
+import NEExpo5 from "./images/North East Expo/NEExpo5.jpg";
+import NEExpo6 from "./images/North East Expo/NEExpo6.jpg";
 import NEExpo7 from "./images/North East Expo/NEExpo7.jpg";
-import NEExpo8 from "./images/North East Expo/NEExpo8.png";
+import NEExpo8 from "./images/North East Expo/NEExpo8.jpg";
 import NEExpo9 from "./images/North East Expo/NEExpo9.jpg";
-import Prithvi1 from "./images/Prithvi/Prithvi1.png";
-import Prithvi2 from "./images/Prithvi/Prithvi2.png";
-import Prithvi3 from "./images/Prithvi/Prithvi3.png";
-import Prithvi4 from "./images/Prithvi/Prithvi4.png";
-import Prithvi5 from "./images/Prithvi/Prithvi5.png";
-import Safher1 from "./images/Safher/Safher1.jpeg";
-import Safher2 from "./images/Safher/Safher2.png";
-import Safher3 from "./images/Safher/Safher3.jpeg";
-import Safher4 from "./images/Safher/Safher4.jpeg";
-import Safher5 from "./images/Safher/Safher5.png";
+import Prithvi1 from "./images/Prithvi/Prithvi1.jpg";
+import Prithvi2 from "./images/Prithvi/Prithvi2.jpg";
+import Prithvi3 from "./images/Prithvi/Prithvi3.jpg";
+import Prithvi4 from "./images/Prithvi/Prithvi4.jpg";
+import Prithvi5 from "./images/Prithvi/Prithvi5.jpg";
+import Safher1 from "./images/Safher/Safher1.jpg";
+import Safher2 from "./images/Safher/Safher2.jpg";
+import Safher3 from "./images/Safher/Safher3.jpg";
+import Safher4 from "./images/Safher/Safher4.jpg";
+import Safher5 from "./images/Safher/Safher5.jpg";
 import left from "./images/left.svg";
 import right from "./images/right.svg";
 import CampaignLogo from "./images/AalooLogo.svg";
@@ -78,6 +78,24 @@ class Cards extends React.Component {
             <div className={styled.slideri}>
               <div className={styled.slideTrack}>
                 <hr />
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam1} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam2} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam3} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam4} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam5} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Aikyam6} alt="" />
+                </div>
                 <div className={styled.slide}>
                   <img className={styled.imgcam} src={Aikyam1} alt="" />
                 </div>
@@ -137,6 +155,21 @@ class Cards extends React.Component {
                 <div className={styled.slide}>
                   <img className={styled.imgcam} style={{width: '20vw'}} src={Safher3} alt="" />
                 </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '18vw'}} src={Safher1} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '16vw'}} src={Safher2} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '15vw'}} src={Safher4} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '18vw'}} src={Safher5} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '20vw'}} src={Safher3} alt="" />
+                </div>
                 {/* <div className={styled.slide}>
                   <img className={styled.imgcam} src={img9} alt="" />
                 </div>
@@ -166,6 +199,21 @@ class Cards extends React.Component {
             <div className={styled.slideri}>
               <div className={styled.slideTrack}>
                 <hr />
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Manshakti1} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Manshakti2} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '18vw'}} src={Manshakti3} alt="" />
+                </div>
+                <div className={styled.slide} id="cropped">
+                  <img className={styled.imgcam} src={Manshakti4} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={Manshakti5} alt="" />
+                </div>
                 <div className={styled.slide}>
                   <img className={styled.imgcam} src={Manshakti1} alt="" />
                 </div>
@@ -240,6 +288,33 @@ class Cards extends React.Component {
                 <div className={styled.slide}>
                   <img className={styled.imgcam} src={NEExpo9} alt="" />
                 </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo1} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo2} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo3} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo4} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '17vw'}} src={NEExpo5} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo6} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo7} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo8} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} src={NEExpo9} alt="" />
+                </div>
                 <hr />
               </div>
             </div>
@@ -265,6 +340,21 @@ class Cards extends React.Component {
             <div className={styled.slideri}>
               <div className={styled.slideTrack}>
                 <hr />
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '18vw'}} src={Prithvi1} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '17vw'}} src={Prithvi2} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '17vw'}} src={Prithvi3} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '17vw'}} src={Prithvi4} alt="" />
+                </div>
+                <div className={styled.slide}>
+                  <img className={styled.imgcam} style={{width: '18vw'}} src={Prithvi5} alt="" />
+                </div>
                 <div className={styled.slide}>
                   <img className={styled.imgcam} style={{width: '18vw'}} src={Prithvi1} alt="" />
                 </div>
