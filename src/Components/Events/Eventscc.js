@@ -6,6 +6,21 @@ import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
 import Banger from "./Images/Banger.png";
 import BangerMob from "./Images/BangerMob.png";
+import cc1 from "./Images/cc1.webp"
+import cc2 from "./Images/cc2.webp"
+import cc3 from "./Images/cc3.webp"
+import cc4 from "./Images/cc4.webp"
+import cc5 from "./Images/cc5.webp"
+import cc6 from "./Images/cc6.webp"
+import cc7 from "./Images/cc7.webp"
+
+import mcc1 from "./Images/mcc1.webp"
+import mcc2 from "./Images/mcc2.webp"
+import mcc3 from "./Images/mcc3.webp"
+import mcc4 from "./Images/mcc4.webp"
+import mcc5 from "./Images/mcc5.webp"
+import mcc6 from "./Images/mcc6.webp"
+import mcc7 from "./Images/mcc7.webp"
 import monster from '../Merch-coming/monster.png'
 import comingsoon from '../Merch-coming/comingsoon.png'
 
@@ -33,23 +48,40 @@ function Events1() {
 
       <NavMob />
 
+    
+
       <div className="main_event">
-        {/* <div className="content_event">
+        <div className="content_event">
           <div className="event_card">
-            <img src={Banger} alt="" />
+            <img src={cc1} alt="" style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={Banger} alt="" />
+            <img src={cc2} alt="" style={{"marginTop":"-3.5vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={cc3} alt=""style={{"marginTop":"-3vw"}} />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={Banger} alt=""/>
+            <img src={cc4} alt=""style={{"marginTop":"-3vw"}} />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
-        </div> */}
+          <div className="event_card">
+            <img src={cc5} alt=""style={{"marginTop":"-3vw"}} />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+          <div className="event_card">
+            <img src={cc6} alt=""style={{"marginTop":"-3vw"}} />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+          <div className="event_card">
+            <img src={cc7} alt=""style={{"marginTop":"-3vw"}} />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+         
+        </div>
         <div className="upnav" style={{background:upnavColor}}>
           <div className="sidebar11">
             <NavLink to="/Events/pt">
@@ -68,22 +100,37 @@ function Events1() {
         </div>
       </div>
       <div className="main_event_mob">
-        {/* <div className="content_event">
+        <div className="content_event">
           <div className="event_card">
-            <img src={BangerMob} alt="" />
+            <img src={mcc1} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt="" />
+            <img src={mcc2} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={mcc3} alt="" />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={BangerMob} alt=""/>
+            <img src={mcc4} alt="" />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
-        </div> */}
+          <div className="event_card">
+            <img src={mcc5} alt="" />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+          <div className="event_card">
+            <img src={mcc6} alt="" />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+          <div className="event_card">
+            <img src={mcc7} alt="" />
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
+          </div>
+         
+        </div>
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events/pt">
@@ -101,16 +148,8 @@ function Events1() {
           </div>
         </div>
       </div>
-  <div className="Coming-soon">
 
-    <div className="coming-soon-text">
-        <img src={comingsoon} alt="t"/>
-    </div>
-    <div className="coming-soon-monster">
-    <img src={monster} alt="t"/> 
 
-    </div>
-</div>
 
       <Footer />
     </div>
