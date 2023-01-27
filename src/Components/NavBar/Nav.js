@@ -62,6 +62,11 @@ function Nav({ icon, pic }) {
                   <b>MERCH</b>
                 </a>
               </li>
+              <li className="Contests">
+                <NavLink to="/Contests">
+                  <b>CONTESTS</b>
+                </NavLink>
+              </li>
               <li className="Campaigns">
                 <NavLink to="/Campaigns">
                   <b>KARTAVYA</b>
@@ -78,11 +83,7 @@ function Nav({ icon, pic }) {
                   <b>SPONSORS</b>
                 </NavLink>
               </li>
-              <li className="Contests">
-                <NavLink to="/Contests">
-                  <b>CONTESTS</b>
-                </NavLink>
-              </li>
+              
             </ul>
           </nav>
           {!icon && (
@@ -155,6 +156,13 @@ function Nav({ icon, pic }) {
                   </div>
                 </NavLink>
               </li>
+              <li className="Contests">
+                <NavLink to="/Contests" style={{ textDecoration: "#0B0B0B" }}>
+                  <div className="hoverdivmob contests">
+                    <b className="listtext listtext5">CONTESTS</b>
+                  </div>
+                </NavLink>
+              </li>
               <li className="Campaigns">
                 <NavLink to="/Campaigns" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob campaigns">
@@ -178,13 +186,7 @@ function Nav({ icon, pic }) {
               {/* <NavLink to="/Sponsors">
                   <b>SPONSORS</b>
                 </NavLink> */}
-              <li className="Contests">
-                <NavLink to="/Contests" style={{ textDecoration: "#0B0B0B" }}>
-                  <div className="hoverdivmob contests">
-                    <b className="listtext listtext5">CONTESTS</b>
-                  </div>
-                </NavLink>
-              </li>
+            
               <li className="Sponsors">
                 <NavLink to="/Sponsors" style={{ textDecoration: "#0B0B0B" }}>
                   <div className="hoverdivmob sponsors">
