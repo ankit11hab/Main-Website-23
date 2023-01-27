@@ -3,6 +3,7 @@
     position: relative;
     height: 50vw;
     overflow: hidden;
+    margin-top: -10%;
 }
 .bg2{
     position: absolute;

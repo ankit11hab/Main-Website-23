@@ -111,6 +111,8 @@ function App() {
     }
     function showNext1(e) {
         openBook.current.style.display = "none";
+        openBook.current.style.opacity='0';
+        openBook.current.style.zIndex='-1';
         index = index + 1;
         videoBg.current.style.display = "block";
         prevBtn.current.style.display = "none";

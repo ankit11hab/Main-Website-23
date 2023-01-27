@@ -6,8 +6,8 @@ import "./Contests.css";
 import f1 from "./Images/Class Apart/frameca1.png"
 import f2 from "./Images/Class Apart/frameca2.png"
 import f3 from "./Images/Class Apart/frameca3.png"
-import f4 from "./Images/Class Apart/frameca4.png"
-import f5 from "./Images/Class Apart/frameca5.png"
+import f4 from "./Images/Class Apart/frameca4.jpg"
+import f5 from "./Images/Class Apart/frameca5.jpg"
 import Book from "./register";
 import ContestLogo from "./Images/ContestLogo.svg";
 import { NavLink, Link } from "react-router-dom";

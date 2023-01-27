@@ -33,8 +33,8 @@ function Events1() {
 
       <NavMob />
 
-      {/* <div className="main_event">
-        <div className="content_event">
+      <div className="main_event">
+        {/* <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
             <Link className="event_button image" to="/BookTickets">
@@ -59,7 +59,7 @@ function Events1() {
               <EventsBook />
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="upnav" style={{background:upnavColor}}>
           <div className="sidebar11">
             <NavLink to="/Events/pt">
@@ -67,18 +67,18 @@ function Events1() {
             </NavLink>
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
-            </NavLink> */}
-            {/* <NavLink to="/Events/hf">
-              <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink> */}
-            {/* <NavLink to="/Events/ps">
+            </NavLink>
+            <NavLink to="/Events/ps">
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
+            </NavLink>
+            <NavLink to="/Events/hf">
+              <div className="HumourFest1">OTHERS</div>
             </NavLink>
           </div>
         </div>
       </div>
       <div className="main_event_mob">
-        <div className="content_event">
+        {/* <div className="content_event">
           <div className="event_card">
             <img src={BangerMob} alt="" />
             <Link className="event_button image" to="/BookTickets">
@@ -97,7 +97,7 @@ function Events1() {
           <div className="event_card">
             <img src={BangerMob} alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events">
@@ -106,15 +106,15 @@ function Events1() {
             <NavLink to="/Events/cc">
               <div className="CreatorsCamp1">CREATORS CAMP</div>
             </NavLink>
-           <NavLink to="/Events/hf">
-              <div className="HumourFest1">HUMOUR FEST</div>
-            </NavLink>
             <NavLink to="/Events/ps">
               <div className="PROSHOWS1">PROSHOWS</div>
             </NavLink>
+           <NavLink to="/Events/hf">
+              <div className="HumourFest1">OTHERS</div>
+            </NavLink>
           </div>
         </div>
-      </div> */}
+      </div>
 <div className="Coming-soon">
 
 <div className="coming-soon-text">
