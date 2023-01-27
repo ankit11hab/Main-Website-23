@@ -11,14 +11,17 @@ import our from "./images/OUR.png";
 import app from "./images/APP.png";
 import alcherlady from "./images/alcher lady.png";
 import wing from "./images/wings.png";
+import mob_app_section from './images/our_app_mob.png';
 
 function AppSection() {
   return (
     <div className="app_section_container">
+      <div className="desktop_app_section">
       <img src={mobileApp} alt="" className="mobile_app_icon" />
       <img src={mobileAppstyle1} alt="" className="mobile_app_style" />
       <div className="playstore_icon_badge">
-        <a href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022" target="_blank"><img src={appstore} style={{ height: "3vw" }} alt="" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022" target="_blank">
+          <img src={appstore} style={{ height: "3vw" }} alt="" /></a>
         <div style={{ width: "25vw" }}>
           Download our app and get access to app exclusive features like Alcher
           cards, schedule, Campus maps, real-time updates and much more.
@@ -37,6 +40,12 @@ function AppSection() {
         <img className="download" src={download} alt=""></img>
         <img className="our" src={our} alt=""></img>
         <img className="app" src={app} alt=""></img>
+      </div>
+      </div>
+      <div className="mobile_app_section">
+      <a href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022" target="_blank">
+        <img className="img_app_section__" src={mob_app_section} alt=''></img>
+        </a>
       </div>
     </div>
   );

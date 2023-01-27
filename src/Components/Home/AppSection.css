@@ -147,3 +147,18 @@
     top: -2vw;
     left: 71vw;
 }
+.mobile_app_section{
+    display: none;
+}
+
+@media  (max-width : 768px) {
+    .desktop_app_section{
+        display: none;
+    }
+    .app_section_container{
+        height: 100vh;
+    }
+    .mobile_app_section{
+        display: block;
+    }
+}
