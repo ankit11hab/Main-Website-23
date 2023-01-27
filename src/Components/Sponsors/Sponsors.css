@@ -180,16 +180,7 @@ padding: 2vh 0vw;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
 }
-.updatedpara {
-  padding-top: 0.5vh;
-  font-family: "Aileron";
-  font-style: normal;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 3vh;
-  top: 370px;
-  text-align: center;
-}
+
 .cocard1 {
   width: 248px;
   height: 348px;
@@ -199,14 +190,7 @@ padding: 2vh 0vw;
   margin-bottom: 90px;
 }
 
-.cocard {
-  width: 20vw;
-  height: 20vw;
 
-  background: #d9d9d9;
-  background-image: url(./images/sponsor.png);
-  /* margin-bottom: 90px; */
-}
 
 .cocard2 {
   width: 248px;
@@ -216,9 +200,7 @@ padding: 2vh 0vw;
   background-image: url(./images/sponsor.png);
   margin-bottom: 90px;
 }
-.maincard {
-  margin: 0% 1.5% 2% 1.5%;
-}
+
 .parent {
   /* width: 845px;
   height: 411px; */
@@ -234,6 +216,27 @@ padding: 2vh 0vw;
   flex-wrap: wrap;
   row-gap: 5vh;
 }
+.othersponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin-top: 25vh;
+}
+.maincard {
+  margin: 0% 1.5% 2% 1.5%;
+}
+.cocard {
+  width: 20vw;
+  height: 20vw;
+
+  background: #d9d9d9;
+  background-image: url(./images/sponsor.png);
+  /* margin-bottom: 90px; */
+}
 
 .newpara {
   font-family: "Aileron";
@@ -241,6 +244,16 @@ padding: 2vh 0vw;
   text-transform: uppercase;
   font-weight: 900;
   padding-top: 4vh;
+  font-size: 3vh;
+  top: 370px;
+  text-align: center;
+}
+.updatedpara {
+  padding-top: 0.5vh;
+  font-family: "Aileron";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
   font-size: 3vh;
   top: 370px;
   text-align: center;
@@ -268,16 +281,7 @@ padding: 2vh 0vw;
   flex-wrap: wrap;
 }
 
-.othersponsor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vw;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin-top: 25vh;
-}
+
 
 /* ************************************************** */
 /* css for responsive */
@@ -316,6 +320,72 @@ padding: 2vh 0vw;
 }
 
 @media screen and (max-width: 480px) {
+  .parent {
+  /* width: 845px;
+  height: 411px; */
+  width: 70vw;
+  gap: 4vw;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2.5vh;
+}
+.maincard {
+  margin: 0%;
+  width: 75px;
+  
+}
+.othersponsor{
+  margin-top: 30px;
+}
+.cocard {
+  width: 20vw;
+  height: 20vw;
+
+  background: #d9d9d9;
+  background-image: url(./images/sponsor.png);
+  
+  /* margin-bottom: 90px; */
+}
+
+.img{
+  text-align: center;
+  width: fit-content;
+}
+.box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36vw;
+  height: fit-content;
+  justify-content: space-between;
+
+  /* gap: 137px;
+
+  width: 707px;
+  height: 348px; */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.newpara {
+  font-family: "Aileron";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 4vh;
+  font-size: 3vh;
+  top: 370px;
+  text-align: center;
+  
+}
 
 
 

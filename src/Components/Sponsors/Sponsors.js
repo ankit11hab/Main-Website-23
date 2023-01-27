@@ -29,7 +29,7 @@ import Sparx from "./images/sparx.png"
 import Gplus from "./images/GplusLogo.png"
 import Dubeat from "./images/Dubeat.jpg"
 import Mirchi from "./images/Mirchi.png"
-import AssamTribune from "./images/AssamTribune.jpg"
+import AssamTribune from "./images/AssamTribune.png"
 function Sponsors() {
   return (
     <div>
