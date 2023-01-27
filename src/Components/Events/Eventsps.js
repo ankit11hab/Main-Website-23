@@ -39,11 +39,11 @@ function Events1() {
         {/* <div className="content_event">
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt="" />
-            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={Banger} alt=""/>
@@ -73,11 +73,11 @@ function Events1() {
         {/* <div className="content_event">
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className='event_button image' to="/BookTickets"><EventsBook /></Link>
+            <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
             <img src={BangerMob} alt=""/>

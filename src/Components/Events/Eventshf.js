@@ -41,7 +41,7 @@ function Events1() {
             <a href="https://techobytes.com/" target={'_blank'} style={{'cursor':'default'}}>
           <div className="event_card">
             <img src={technobyte} alt="" />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
@@ -69,14 +69,14 @@ function Events1() {
         <a href="https://techobytes.com/" target={'_blank'} style={{'cursor':'default'}}>
           <div className="event_card">
             <img src={technobyte_mob} alt="" />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
           </a>
           {/* <div className="event_card">
             <img src={BangerMob} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+            <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link>
           </div> */}

@@ -48,25 +48,25 @@ function Events1() {
         <div className="content_event">
           <div className="event_card"  style={{paddingTop:'8px'}}>
             <img src={Pronites4} alt=""  />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
           <div className="event_card" >
             <img src={Pronites3} alt="" style={{marginTop:"-5vw"}} />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
           <div className="event_card"  style={{paddingTop:'8px'}}>
             <img src={Pronites5} alt="" style={{marginTop:0}}/>
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
           <div className="event_card"  style={{paddingTop:'15px'}}>
             <img src={Pronites2} alt="" style={{marginTop:0}}/>
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
           </div>
@@ -92,13 +92,13 @@ function Events1() {
         <div className="content_event">
           <div style={{marginBottom:"3vh"}}>
             <img src={Pronites4mob} alt="" />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook /> 
             </Link> */}
           </div>
           <div style={{marginBottom:"3vh"}}>
             <img src={Pronites3mob} alt="" />
-            {/* <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
             <EventsBook /> 
             </Link> */}
           </div>
