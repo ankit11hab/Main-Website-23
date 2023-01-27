@@ -121,6 +121,9 @@ function Events1() {
             <NavLink to="/Events/ps">
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
+            <NavLink to="/Events/hf">
+              <div className="PROSHOWS1" id="eventsnavitem">OTHERS</div>
+            </NavLink>
           </div>
         </div>
       </div> 

@@ -6,6 +6,7 @@ import NavMob from "../NavEventsMobile/NavMob";
 import EventsLogo from "./Images/EventsLogo.svg";
 import Banger from "./Images/Banger.png";
 import technobyte from "./Images/technobytes.png";
+import technobyte_mob from "./Images/technobytes_mob.png";
 import BangerMob from "./Images/BangerMob.png";
 import monster from "../Merch-coming/monster.png";
 import comingsoon from "../Merch-coming/comingsoon.png";
@@ -64,9 +65,9 @@ function Events1() {
         </div>
       </div>
       <div className="main_event_mob">
-        {/* <div className="content_event">
+        <div className="content_event">
           <div className="event_card">
-            <img src={BangerMob} alt="" />
+            <img src={technobyte_mob} alt="" />
             <Link className="event_button image" to="/BookTickets">
               <EventsBook />
             </Link>
@@ -83,20 +84,21 @@ function Events1() {
           <div className="event_card">
             <img src={BangerMob} alt="" />
           </div>
-        </div> */}
+        </div>
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events/pt">
-              <div className="pronites1">PRONITES</div>
+              <div className="pronites1" id="eventsnavitem">PRONITES</div>
             </NavLink>
             <NavLink to="/Events/cc">
-              <div className="CreatorsCamp1">CREATORS CAMP</div>
+              <div className="CreatorsCamp1" id="eventsnavitem">CREATORS CAMP</div>
             </NavLink>
+
             <NavLink to="/Events/ps">
-              <div className="PROSHOWS1">PROSHOWS</div>
+              <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
             <NavLink to="/Events/hf">
-              <div className="HumourFest1">OTHERS</div>
+              <div className="PROSHOWS1" id="eventsnavitem">OTHERS</div>
             </NavLink>
           </div>
         </div>
