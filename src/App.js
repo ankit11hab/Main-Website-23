@@ -24,6 +24,7 @@ import Contestsdr from "./Components/Contests/Contestsdr";
 import ErrorPage from "./Components/ErrorPage";
 import BookTickets from "./Components/BookTickets";
 import HeroSection from "./Components/Home/HeroSection";
+import Contestscd from './Components/Contests/Contestscd'
 function App() {
   return (
     <BrowserRouter>
@@ -49,6 +50,7 @@ function App() {
         <Route path="Contests/s" element={<Contestss />} />
         <Route path="Contests/q" element={<Contestsq />} />
         <Route path="Contests/dr" element={<Contestsdr />} />
+        <Route path="Contests/cd" element={<Contestscd />} />
         <Route path="Contests" element={<Navigate to="/Contests/vn" />} />
         <Route path="MUN" element={<MUN />} />
         <Route path="Sponsors" element={<Sponsors />} />

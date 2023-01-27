@@ -135,6 +135,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -256,6 +266,16 @@ const NavMobContest = () => {
 
               >
                 DRAMA
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
               </NavLink>
             </li>
           </ul>
@@ -381,6 +401,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -502,6 +532,16 @@ const NavMobContest = () => {
 
               >
                 DRAMA
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
               </NavLink>
             </li>
           </ul>
@@ -627,6 +667,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -748,6 +798,16 @@ const NavMobContest = () => {
 
               >
                 DRAMA
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
               </NavLink>
             </li>
           </ul>
@@ -873,6 +933,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -994,6 +1064,16 @@ const NavMobContest = () => {
 
               >
                 DRAMA
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
               </NavLink>
             </li>
           </ul>
@@ -1119,6 +1199,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -1242,6 +1332,16 @@ const NavMobContest = () => {
                 DRAMA
               </NavLink>
             </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
           </ul>
         ) : (
           <></>
@@ -1363,6 +1463,148 @@ const NavMobContest = () => {
 
               >
                 QUIZ
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CRITICAL DAMAGE
+              </NavLink>
+            </li>
+          </ul>
+        ) : (
+          <></>
+        )}
+        {pathname === "/Contests/cd" ? (
+          <ul className="Navmoblist" style={{ listStyle: "none" }}>
+            <li>
+              <NavLink
+                to="/Contests/cd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+              >
+                CRITICAL DAMAGE
+                <img
+                  className="PointerCursor"
+                  src={click ? dropimg : uparrow}
+                  alt=""
+                  
+                  onClick={handleClick}
+                ></img>
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                VOUGUE NATION
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/ca"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                CLASS APART
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/d"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                DANCE
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/m"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                MUSIC
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/l"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                LITERARY
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/at"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                ART TALKIES
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/dd"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                DIGITAL DEXTERITY
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/lca"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                LIGHTS CAMERA ACTION
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/s"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                SPORTS
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/q"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                QUIZ
+              </NavLink>
+            </li>
+            <li className={click ? "inactive" : "active"}>
+              <NavLink
+                to="/Contests/dr"
+                style={{ textDecoration: "none", color:"#1A1A1A" }}    
+                  onClick={handleClick}
+
+              >
+                DRAMA
               </NavLink>
             </li>
           </ul>

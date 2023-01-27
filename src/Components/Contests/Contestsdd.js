@@ -63,6 +63,9 @@ function Events() {
               <li>
                 <NavLink to="/Contests/dr"  className="sidebar1-item">DRAMA</NavLink>
               </li>
+              <li>
+                <NavLink to="/Contests/cd"  className="sidebar1-item">CRITICAL DAMAGE</NavLink>
+              </li>
             </ul>
           </div>
           <div className="contest_box">
