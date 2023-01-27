@@ -86,7 +86,7 @@ function Nav({ icon, pic }) {
             </ul>
           </nav>
           {!icon && (
-            <a className="image" href="/Events/pt">
+            <a className="image" href="https://card.alcheringa.in">
               <Book />
             </a>
           )}
@@ -129,7 +129,7 @@ function Nav({ icon, pic }) {
           <div className="extendednavmob" style={{ background: "#1a1a1a" }}>
             <ul className="mobileList">
               <li style={{ height: "40px" }}>
-                <a className="img" href="/Events/pt">
+                <a className="img" href="https://card.alcheringa.in">
                   <button type="button" id="bookbtn2" className="bookbtn">
                     <img src={BookTicketIcon} alt="" className="bookiconhero" />
                     <div className="bookticketstext">

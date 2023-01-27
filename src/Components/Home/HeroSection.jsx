@@ -500,7 +500,7 @@ function HeroSection({ setLoad }) {
             <button type="button" id="bookbtn" className="bookbtn">
               <img src={BookTicketIcon} alt="" className="bookiconhero" />
               <a
-                href="/Events/pt"
+                href="https://card.alcheringa.in"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 <div className="bookticketstext">&nbsp; &nbsp; Register</div>
