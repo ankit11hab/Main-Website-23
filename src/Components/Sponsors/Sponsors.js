@@ -30,6 +30,7 @@ import Gplus from "./images/GplusLogo.png"
 import Dubeat from "./images/Dubeat.jpg"
 import Mirchi from "./images/Mirchi.png"
 import AssamTribune from "./images/AssamTribune.png"
+import CILOGO from "./images/CI Logo.PNG"
 function Sponsors() {
   return (
     <div>
@@ -173,6 +174,12 @@ function Sponsors() {
                 <p className="newpara">DU BEAT</p>
                 <p className="updatedpara">Digital Media Partner</p>
 
+
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={CILOGO} />
+                <p className="newpara">Creatives Imprints</p>
+               
 
               </div>
 
