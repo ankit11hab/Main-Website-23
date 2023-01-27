@@ -53,31 +53,31 @@ function Events1() {
       <div className="main_event">
         <div className="content_event">
           <div className="event_card">
-            <img src={cc1} alt="" />
+            <img src={cc1} alt="" style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc2} alt="" />
+            <img src={cc2} alt="" style={{"marginTop":"-3.5vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc3} alt="" />
+            <img src={cc3} alt=""style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc4} alt="" />
+            <img src={cc4} alt=""style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc5} alt="" />
+            <img src={cc5} alt=""style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc6} alt="" />
+            <img src={cc6} alt=""style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
           <div className="event_card">
-            <img src={cc7} alt="" />
+            <img src={cc7} alt=""style={{"marginTop":"-3vw"}} />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
          
