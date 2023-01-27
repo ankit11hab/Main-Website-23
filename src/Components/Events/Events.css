@@ -80,7 +80,7 @@
 .event_card {
   position: relative;
   border: 2px solid black;
-  padding: 0vw 15px 15px 15px;
+  padding: 2vw 15px 15px 15px;
   background-color: #fef8f1;
   box-shadow: 3px 3px 0px #1a1a1a;
   margin-bottom: 4vh;
@@ -96,8 +96,8 @@
   width: fit-content;
   bottom: 12.7%;
   right: 4%;
+  cursor: pointer;
   display: flex;
-  width: 60vw;
   justify-content: flex-end;
   margin-top: -4%;
   margin-left: -1%;
