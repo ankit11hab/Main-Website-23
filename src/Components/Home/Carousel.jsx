@@ -175,8 +175,8 @@ function App() {
     return (
         <div className="main__cont">
             <div className="video_mobile">
-                <div className="leftbutton_mob">
-                    <img  ref={prevBtnMob} src={leftbutton} style={{'marginLeft':'2vw'}} className='mob__buttons' onClick={()=>{showPreviousMob()}}  alt=''></img>
+                <div className="leftbutton_mob" onClick={()=>{showPreviousMob()}}>
+                    <img  ref={prevBtnMob} src={leftbutton} style={{'marginLeft':'2vw'}} className='mob__buttons'   alt=''></img>
                 </div>
                 <div>
                     <div className="mob_bg_img">
@@ -186,8 +186,8 @@ function App() {
                         <video ref={videoSrcMob} className='video____' src={mob_videos[index]} autoPlay muted></video>
                     </div>
                 </div>
-                <div className="rightbutton_mob">
-                <img className='mob__buttons' src={rightbutton} style={{'marginRight':'2vw'}} onClick={()=>{showNextMob()}} ref={nextBtnMob} alt=''></img>
+                <div className="rightbutton_mob" onClick={()=>{showNextMob()}}>
+                <img className='mob__buttons' src={rightbutton} style={{'marginRight':'2vw'}}  ref={nextBtnMob} alt=''></img>
                 </div>
             </div>
             <div className="video_desktop">
