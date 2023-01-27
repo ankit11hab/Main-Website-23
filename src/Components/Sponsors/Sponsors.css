@@ -83,6 +83,23 @@ padding: 2vh 0vw;
   order: 1;
   flex-grow: 0;
 }
+.box3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 36vw;
+  height: 50vh;
+  justify-content: space-between;
+
+  /* gap: 137px;
+
+  width: 707px;
+  height: 348px; */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 
 .ibox {
   width: 20vw;

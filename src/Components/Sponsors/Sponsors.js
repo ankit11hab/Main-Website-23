@@ -104,16 +104,14 @@ function Sponsors() {
               <img className="ibox" src={Sparx} />
               <p className="newpara"> Sparx</p>
             </div>
-          </div>
-          <div className="othersponsor">
-
-            <div className="parent">
-              <div className="maincard">
+            <div className="box3">
                 <img className="cocard" src={AssamTribune} />
                 <p className="newpara">THE ASSAM TRIBUNE</p>
-                <p className="updatedpara">In Association With</p>
-
               </div>
+          </div>
+          <div className="othersponsor">
+            <div className="parent">
+              
               <div className="maincard">
                 <img className="cocard" src={ydlogo} />
                 <p className="newpara">YELLOW  DIAMOND  </p>
