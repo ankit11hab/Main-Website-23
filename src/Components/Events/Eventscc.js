@@ -112,19 +112,25 @@ function Events1() {
           <div className="event_card">
             <img src={mcc3} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
-          </div><div className="event_card">
+          </div>
+          <div className="event_card">
             <img src={mcc4} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
-          </div><div className="event_card">
+          </div>
+          <div className="event_card">
             <img src={mcc5} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
-          </div><div className="event_card">
+          </div>
+          <div className="event_card">
             <img src={mcc6} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
-          </div><div className="event_card">
+          </div>
+          <div className="event_card">
             <img src={mcc7} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link>
           </div>
+         
+        </div>
         <div className="upnav">
           <div className="sidebar11">
             <NavLink to="/Events/pt">
@@ -142,16 +148,8 @@ function Events1() {
           </div>
         </div>
       </div>
-  <div className="Coming-soon">
 
-    <div className="coming-soon-text">
-        <img src={comingsoon} alt="t"/>
-    </div>
-    <div className="coming-soon-monster">
-    <img src={monster} alt="t"/> 
 
-    </div>
-</div>
 
       <Footer />
     </div>
