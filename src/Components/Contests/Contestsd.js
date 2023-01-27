@@ -104,33 +104,23 @@ function Events() {
             <div className="contest_content">
               <div className="contest_card">
                 <img src={f1} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={f2} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={f3} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={f4} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={f5} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
              
             </div>

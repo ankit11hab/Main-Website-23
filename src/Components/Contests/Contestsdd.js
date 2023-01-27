@@ -69,51 +69,35 @@ function Events() {
             <div className="contest_content">
               <div className="contest_card">
                 <img src={CustomBrush} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={DivaHunk} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={Doodlepad} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={Xpressions} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               {/* <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div>
               <div className="contest_card">
                 <img src={Card} alt="" />
-                <Link className="contest_button" to="/BookTickets">
-                  <Book />
-                </Link>
+<a className='contest_button'  href="https://registrations.alcheringa.in/" target='_blank'><Book /></a>
               </div> */}
             </div>
           </div>
