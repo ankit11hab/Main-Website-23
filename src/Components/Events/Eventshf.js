@@ -41,9 +41,9 @@ function Events1() {
             <a href="https://techobytes.com/" target={'_blank'} style={{'cursor':'default'}}>
           <div className="event_card">
             <img src={technobyte} alt="" />
-            <Link className="event_button image" to="/BookTickets">
+            {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
-            </Link>
+            </Link> */}
           </div>
             </a>
         </div>
@@ -66,24 +66,26 @@ function Events1() {
       </div>
       <div className="main_event_mob">
         <div className="content_event">
+        <a href="https://techobytes.com/" target={'_blank'} style={{'cursor':'default'}}>
           <div className="event_card">
             <img src={technobyte_mob} alt="" />
+            {/* <Link className="event_button image" to="/BookTickets">
+              <EventsBook />
+            </Link> */}
+          </div>
+          </a>
+          {/* <div className="event_card">
+            <img src={BangerMob} alt="" />
             <Link className="event_button image" to="/BookTickets">
               <EventsBook />
             </Link>
-          </div>
-          <div className="event_card">
-            <img src={BangerMob} alt="" />
-            <Link className="event_button image" to="/BookTickets">
-              <EventsBook />
-            </Link>
-          </div>
-          <div className="event_card">
+          </div> */}
+          {/* <div className="event_card">
             <img src={BangerMob} alt="" />
           </div>
           <div className="event_card">
             <img src={BangerMob} alt="" />
-          </div>
+          </div> */}
         </div>
         <div className="upnav">
           <div className="sidebar11">
