@@ -53,7 +53,7 @@ function Events1() {
             </Link> */}
           </div>
           <div className="event_card" >
-            <img src={Pronites3} alt="" style={{marginTop:"-3vw"}} />
+            <img src={Pronites3} alt="" style={{marginTop:"-5vw"}} />
             {/* <Link className="event_button image" to="/BookTickets">
               <EventsBook />
             </Link> */}
