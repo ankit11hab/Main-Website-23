@@ -122,7 +122,7 @@ function Events1() {
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
             <NavLink to="/Events/hf">
-              <div className="PROSHOWS1" id="eventsnavitem">OTHERS</div>
+              <div className="PROSHOWS1">OTHERS</div>
             </NavLink>
           </div>
         </div>
