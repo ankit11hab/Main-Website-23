@@ -12,30 +12,31 @@ import { ReactComponent as Insta2 } from "./Images/insta2.svg";
 import { ReactComponent as Facebook2 } from "./Images/facebook2.svg";
 import { ReactComponent as Youtube2 } from "./Images/utube2.svg";
 import { ReactComponent as Twitter2 } from "./Images/twitter2.svg";
+import { ReactComponent as LinkedIn } from "./Images/link3.svg";
 import desBY from "./Images/designBY.png";
 import devBY from "./Images/developedBY.png";
 
 function Footer() {
-  const [isMouseOverC,setIsMouseOverC] = useState(false)
+  const [isMouseOverC, setIsMouseOverC] = useState(false)
 
-const handleEnterC = () => {
-  setIsMouseOverC(true)
-}
+  const handleEnterC = () => {
+    setIsMouseOverC(true)
+  }
 
-const handleLeaveC = (event) => {
-  setIsMouseOverC(false);
-  event.stopPropagation();
-}
-const [isMouseOverDev,setIsMouseOverDev] = useState(false)
+  const handleLeaveC = (event) => {
+    setIsMouseOverC(false);
+    event.stopPropagation();
+  }
+  const [isMouseOverDev, setIsMouseOverDev] = useState(false)
 
-const handleEnterDev = () => {
-setIsMouseOverDev(true)
-}
+  const handleEnterDev = () => {
+    setIsMouseOverDev(true)
+  }
 
-const handleLeaveDev = (event) => {
-setIsMouseOverDev(false);
-event.stopPropagation();
-}
+  const handleLeaveDev = (event) => {
+    setIsMouseOverDev(false);
+    event.stopPropagation();
+  }
   return (
     <div className="footer_desk">
       <div className="logo_mob">
@@ -125,12 +126,20 @@ event.stopPropagation();
           </div>
           <div className="socialIcon">
             <div className="socials_desk">
+
               <a
                 className="insta"
                 href="https://www.instagram.com/alcheringaiitg/"
                 target="_blank"
               >
                 <Insta />
+              </a>
+              <a
+                className="insta"
+                href="https://www.linkedin.com/company/alcheringaiitguwahati/mycompany/"
+                target="_blank"
+              >
+                <LinkedIn />
               </a>
               <a
                 className="face"
@@ -142,6 +151,7 @@ event.stopPropagation();
               <a className="tweet" href="https://twitter.com/alcheringaiitg" target="_blank">
                 <Twitter />
               </a>
+
               <a
                 className="youtube"
                 href="https://www.youtube.com/@alcheringaIITG"
@@ -149,6 +159,7 @@ event.stopPropagation();
               >
                 <Youtube />
               </a>
+
             </div>
             <div className="inqueries">
               For Business Enqueries:{" "}
@@ -161,38 +172,38 @@ event.stopPropagation();
           Designed & Developed by&nbsp;
           <span className="underline" onMouseEnter={handleEnterC} onMouseLeave={handleLeaveC}>
             Alcher Creatives
-             {isMouseOverC?
-               <>
-            <div className="creatives-ddby-container">
-              <div className="creatives-ddby">
-                <img src={desBY} className="designBY"/>
-                <div className="creatives-names">
-                  <span className="names-ddby">Aarya Ghodke, Dhwani Doshi</span>
+            {isMouseOverC ?
+              <>
+                <div className="creatives-ddby-container">
+                  <div className="creatives-ddby">
+                    <img src={desBY} className="designBY" />
+                    <div className="creatives-names">
+                      <span className="names-ddby">Aarya Ghodke, Dhwani Doshi</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            </>:
-            null
+              </> :
+              null
 
             }
           </span>
-           &nbsp;&&nbsp;
+          &nbsp;&&nbsp;
           <span className="underline" onMouseEnter={handleEnterDev} onMouseLeave={handleLeaveDev}>
-           Alcher Web Operations
-           {isMouseOverDev?
-             <>
-           <div className="devops-ddby-container">
-          <div className="dev-ddby">
-            <img src={devBY} className="designBY"/>
-            <div className="creatives-names">
-              <span className="names-ddby">Abhi Agarwal, Digvijay Singh, Akshat, Rohit Chalak, Siddhant Srivastava, Ayush Mishra, Dev Jyoti, Kruthikesh M Kopparam, Geet Manik, Mohit Kumar Sharma, Soumyadip Mondal, Prakash, Siddhant Jethwani, Utkarsh Raja, Raunak Agarwal, Afshan Perween, Manaswi Yadamreddy, Himanshi Gautam, Sankooru Manideep, Posa Mokshith</span>
-            </div>
-          </div>
-        </div>
-        </>:
-        null
+            Alcher Web Operations
+            {isMouseOverDev ?
+              <>
+                <div className="devops-ddby-container">
+                  <div className="dev-ddby">
+                    <img src={devBY} className="designBY" />
+                    <div className="creatives-names">
+                      <span className="names-ddby">Abhi Agarwal, Digvijay Singh, Akshat, Rohit Chalak, Siddhant Srivastava, Ayush Mishra, Dev Jyoti, Kruthikesh M Kopparam, Geet Manik, Mohit Kumar Sharma, Soumyadip Mondal, Prakash, Siddhant Jethwani, Utkarsh Raja, Raunak Agarwal, Afshan Perween, Manaswi Yadamreddy, Himanshi Gautam, Sankooru Manideep, Posa Mokshith, Anoop Singh</span>
+                    </div>
+                  </div>
+                </div>
+              </> :
+              null
 
-        }
+            }
           </span>
         </div>
       </div>

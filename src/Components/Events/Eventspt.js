@@ -28,7 +28,7 @@ function Events1() {
   const [upnavColor, setupnavColor] = useState("transparent");
   const listenScrollEvent = () => {
     window.scrollY > 95 ? setupnavColor("linear-gradient(0deg, rgba(243, 92, 65, 0) -5%, #fffbf5 100%)") : setupnavColor("transparent");
-   
+
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -44,34 +44,45 @@ function Events1() {
 
       <NavMob />
 
-       <div className="main_event">
+      <div className="main_event">
         <div className="content_event">
-          <div className="event_card"  style={{paddingTop:'8px'}}>
-            <img src={Pronites4} alt=""  />
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card" style={{ paddingTop: '8px' }} onClick="windows.location.href='https://card.alcheringa.in/'">
+
+              <img src={Pronites4} alt="" />
+
+
+              {/* <Link className="event_button image" to="https://card.alcheringa.in/">
+              
+            </Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card" >
+              <img src={Pronites3} alt="" style={{ marginTop: "-5vw" }} />
+              {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
-          </div>
-          <div className="event_card" >
-            <img src={Pronites3} alt="" style={{marginTop:"-5vw"}} />
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card" style={{ paddingTop: '8px' }}>
+              <img src={Pronites5} alt="" style={{ marginTop: 0 }} />
+              {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
-          </div>
-          <div className="event_card"  style={{paddingTop:'8px'}}>
-            <img src={Pronites5} alt="" style={{marginTop:0}}/>
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card" style={{ paddingTop: '15px' }}>
+              <img src={Pronites2} alt="" style={{ marginTop: 0 }} />
+              {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook />
             </Link> */}
-          </div>
-          <div className="event_card"  style={{paddingTop:'15px'}}>
-            <img src={Pronites2} alt="" style={{marginTop:0}}/>
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
-              <EventsBook />
-            </Link> */}
-          </div>
+            </div>
+          </a>
         </div>
-        <div className="upnav" style={{background:upnavColor}}>
+        <div className="upnav" style={{ background: upnavColor }}>
           <div className="sidebar11">
             <NavLink to="/Events/pt">
               <div className="pronites1" id="eventsnavitem">PRONITES</div>
@@ -84,30 +95,34 @@ function Events1() {
             </NavLink>
             <NavLink to="/Events/hf">
               <div className="HumourFest1">OTHERS</div>
-            </NavLink> 
+            </NavLink>
           </div>
         </div>
       </div>
       <div className="main_event_mob">
         <div className="content_event">
-          <div style={{marginBottom:"3vh"}}>
-            <img src={Pronites4mob} alt="" />
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
+          <a href="https://card.alcheringa.in/">
+            <div style={{ marginBottom: "3vh" }}>
+              <img src={Pronites4mob} alt="" />
+              {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
               <EventsBook /> 
             </Link> */}
-          </div>
-          <div style={{marginBottom:"3vh"}}>
-            <img src={Pronites3mob} alt="" />
-            {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
+            </div></a>
+          <a href="https://card.alcheringa.in/">
+            <div style={{ marginBottom: "3vh" }}>
+              <img src={Pronites3mob} alt="" />
+              {/* <Link className="event_button image" to="https://registrations.alcheringa.in/">
             <EventsBook /> 
             </Link> */}
-          </div>
-          <div style={{marginBottom:"3vh"}}>
-            <img src={Pronites5mob} alt="" />
-          </div>
-          <div style={{marginBottom:"3vh"}}>
-            <img src={Pronites2mob} alt="" />
-          </div>
+            </div></a>
+          <a href="https://card.alcheringa.in/">
+            <div style={{ marginBottom: "3vh" }}>
+              <img src={Pronites5mob} alt="" />
+            </div></a>
+          <a href="https://card.alcheringa.in/">
+            <div style={{ marginBottom: "3vh" }}>
+              <img src={Pronites2mob} alt="" />
+            </div></a>
         </div>
         <div className="upnav">
           <div className="sidebar11">
@@ -126,8 +141,8 @@ function Events1() {
             </NavLink>
           </div>
         </div>
-      </div> 
-  {/* <div className="Coming-soon">
+      </div>
+      {/* <div className="Coming-soon">
 
 <div className="coming-soon-text">
     <img src={comingsoon} alt="t"/>

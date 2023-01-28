@@ -75,7 +75,6 @@
   }
 }
 .navbar {
- 
 }
 .event_card {
   position: relative;
@@ -119,9 +118,8 @@
   /* overflow: auto; */
   /* background-color: #FFFBF5; */
   /* background: rgba(255,251,245,1.00); */
-  
+
   row-gap: 2rem;
-  padding-bottom: 10rem;
 }
 
 .upnav {
@@ -154,7 +152,7 @@
 }
 
 #eventsnavitem:hover {
-  color: #F35C41;
+  color: #f35c41;
 }
 
 .sidebar11 a {
@@ -282,7 +280,7 @@
     /* overflow: auto; */
     /* background-color: #FFFBF5; */
     /* background: rgba(255,251,245,1.00); */
-   
+
     row-gap: 2rem;
     padding-bottom: 10rem;
   }

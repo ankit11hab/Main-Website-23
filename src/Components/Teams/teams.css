@@ -7,7 +7,6 @@ body {
   margin: 0;
 }
 .home {
-
 }
 .wemade-img {
   display: none;
@@ -46,18 +45,16 @@ body {
   position: relative;
 }
 
-
-
 .hovershow:hover .bubble-container {
   display: block;
 }
 
 .bubble-container {
-  height: 40%;
-  width: 27rem;
+  height: auto;
+  width: 30rem;
   position: relative;
-  left: 70%;
-  margin-top: 30%;
+  left: 50%;
+  /* margin-top: 30%; */
   z-index: 9;
 }
 
@@ -66,7 +63,7 @@ body {
   position: relative;
   left: -0%;
   top: 50%;
-  padding:-50%;
+  padding: -50%;
 }
 .bubble1 {
   width: 100%;
@@ -89,7 +86,7 @@ body {
 }
 
 .icons {
-cursor: url('../../images/Group\ 288.png'), default!important;
+  cursor: url("../../images/Group\ 288.png"), default !important;
   height: 100%;
 }
 
@@ -131,7 +128,7 @@ cursor: url('../../images/Group\ 288.png'), default!important;
   position: absolute;
   right: 5%;
   top: 10%;
-  cursor: url('../../images/Group\ 288.png'), default!important;
+  cursor: url("../../images/Group\ 288.png"), default !important;
 }
 
 .teams-section {
@@ -159,13 +156,12 @@ cursor: url('../../images/Group\ 288.png'), default!important;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 
-
-
--webkit-text-stroke: 2px #099FBC;
-text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
+  -webkit-text-stroke: 2px #099fbc;
+  text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000,
+    -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
 }
 .teamheading {
-  margin-top:5vh;
+  margin-top: 5vh;
   text-align: center;
   margin: auto;
   font-family: "Star Guard", sans-serif;
@@ -174,22 +170,23 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
 
   width: fit-content;
   -webkit-text-stroke: 1px #ff598a;
-text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
+  text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000,
+    -0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0 #000, 0.5rem 0.4rem 0;
 }
 .temp-mob {
   display: none;
 }
 
-.close-button{
+.close-button {
   width: 8%;
   position: absolute;
   top: 8%;
   right: 5%;
-  cursor: url('../../images/Group\ 288.png'), default!important;
+  cursor: url("../../images/Group\ 288.png"), default !important;
   opacity: 50%;
 }
 
-.close-button:hover{
+.close-button:hover {
   opacity: 100%;
 }
 
@@ -259,7 +256,8 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
     font-family: "Star Guard", sans-serif;
     font-size: 3rem;
     color: white;
-    text-shadow: -0.3rem -0.2rem 0 #000, 0.3rem -0.2rem 0 #000, -0.3rem 0.2rem 0 #000, 0.3rem 0.2rem 0 #000, 0.3rem 0.2rem 0;
+    text-shadow: -0.3rem -0.2rem 0 #000, 0.3rem -0.2rem 0 #000,
+      -0.3rem 0.2rem 0 #000, 0.3rem 0.2rem 0 #000, 0.3rem 0.2rem 0;
     margin-bottom: -4.2rem;
   }
   .contact-mob {
@@ -309,28 +307,30 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   width: -moz-max-content;
   border-radius: 6px;
   font-size: 14px;
-  background-color: rgba(0,0,0);
-  background-image: linear-gradient(30deg,
+  background-color: rgba(0, 0, 0);
+  background-image: linear-gradient(
+    30deg,
     rgba(59, 72, 80, 0.44),
     rgba(59, 68, 75, 0.44),
-    rgba(60, 82, 88, 0.44));
+    rgba(60, 82, 88, 0.44)
+  );
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
   color: #fff;
   text-align: center;
   white-space: pre-wrap;
-  transform: translate(-50%,  calc(0px - var(--arrow-size))) scale(0.5);
+  transform: translate(-50%, calc(0px - var(--arrow-size))) scale(0.5);
 }
 
 /* Tooltip arrow */
 [data-tooltip]:after {
-  content: '';
+  content: "";
   border-style: solid;
   border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size); /* CSS triangle */
   border-color: black transparent transparent transparent;
   transition-duration: 0s; /* If the mouse leaves the element,
                               the transition effects for the
                               tooltip arrow are "turned off" */
-  transform-origin: top;   /* Orientation setting for the
+  transform-origin: top; /* Orientation setting for the
                               slide-down effect */
   transform: translateX(-50%) scaleY(0);
 }
@@ -389,8 +389,6 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   transform: translateY(50%) scaleX(1);
 }
 
-
-
 /* RIGHT */
 [data-tooltip-location="right"]:before,
 [data-tooltip-location="right"]:after {
@@ -415,8 +413,6 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   transform: translateY(50%) scaleX(1);
 }
 
-
-
 /* BOTTOM */
 [data-tooltip-location="bottom"]:before,
 [data-tooltip-location="bottom"]:after {
@@ -436,17 +432,6 @@ text-shadow: -0.5rem -0.4rem 0 #000, 0.5rem -0.4rem 0 #000, -0.5rem 0.4rem 0 #00
   border-color: transparent transparent black transparent;
   transform-origin: bottom;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-device-width: 280px) and (orientation: portrait) {
   .temp-mob {

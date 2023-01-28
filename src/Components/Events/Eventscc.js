@@ -32,7 +32,7 @@ function Events1() {
   const [upnavColor, setupnavColor] = useState("transparent");
   const listenScrollEvent = () => {
     window.scrollY > 95 ? setupnavColor("linear-gradient(0deg, rgba(243, 92, 65, 0) -5%, #fffbf5 100%)") : setupnavColor("transparent");
-   
+
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -48,41 +48,55 @@ function Events1() {
 
       <NavMob />
 
-    
+
 
       <div className="main_event">
         <div className="content_event">
-          <div className="event_card">
-            <img src={cc1} alt="" style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc2} alt="" style={{"marginTop":"-3.5vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc3} alt=""style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc4} alt=""style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc5} alt=""style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc6} alt=""style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={cc7} alt=""style={{"marginTop":"-3vw"}} />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-         
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc1} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc2} alt="" style={{ "marginTop": "-3.5vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc3} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc4} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc5} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc6} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={cc7} alt="" style={{ "marginTop": "-3vw" }} />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+
         </div>
-        <div className="upnav" style={{background:upnavColor}}>
+        <div className="upnav" style={{ background: upnavColor }}>
           <div className="sidebar11">
             <NavLink to="/Events/pt">
               <div className="pronites1" id="eventsnavitem">PRONITES</div>
@@ -93,7 +107,7 @@ function Events1() {
             <NavLink to="/Events/ps">
               <div className="PROSHOWS1" id="eventsnavitem">PROSHOWS</div>
             </NavLink>
-         <NavLink to="/Events/hf">
+            <NavLink to="/Events/hf">
               <div className="HumourFest1">OTHERS</div>
             </NavLink>
           </div>
@@ -101,35 +115,49 @@ function Events1() {
       </div>
       <div className="main_event_mob">
         <div className="content_event">
-          <div className="event_card">
-            <img src={mcc1} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={mcc2} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={mcc3} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={mcc4} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            {/* <img src={mcc5} alt="" />
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc1} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc2} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc3} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc4} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              {/* <img src={mcc5} alt="" />
             <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={mcc6} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-          <div className="event_card">
-            <img src={mcc7} alt="" />
-            {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
-          </div>
-         
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc6} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+          <a href="https://card.alcheringa.in/">
+            <div className="event_card">
+              <img src={mcc7} alt="" />
+              {/* <Link className='event_button image' to="https://registrations.alcheringa.in/"><EventsBook /></Link> */}
+            </div>
+          </a>
+
         </div>
         <div className="upnav">
           <div className="sidebar11">
