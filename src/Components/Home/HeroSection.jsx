@@ -498,18 +498,20 @@ function HeroSection({ setLoad }) {
           <img className="logo_img" src={AlcherLogo} alt="" />
       
           <div className="bookticketbtn">
-            <button type="button" id="bookbtn" className="bookbtn" style={{"zIndex":"10"}}>
-              <img src={BookTicketIcon} alt="" className="bookiconhero" />
-              <a
+          <a
                 href="https://card.alcheringa.in"
                 style={{ textDecoration: "none", color: "white" }}
               >
-                <div className="bookticketstext">&nbsp; &nbsp; Register</div>
-              </a>
+            <button type="button" id="bookbtn" className="bookbtn" style={{"zIndex":"10"}}>
+              <img src={BookTicketIcon} alt="" className="bookiconhero" />
+
+                <div className="bookticketstext" style={{marginLeft:"10px"}}> Register</div>
 
               {/* <img src={BookTicketIcon} alt="" />
               <div>&nbsp; &nbsp; BOOK TICKETS</div> */}
-            </button>
+              </button>
+              </a>
+              
           </div>
         </div>
       </div>
