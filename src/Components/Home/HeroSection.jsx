@@ -496,8 +496,9 @@ function HeroSection({ setLoad }) {
           <span class="t_over"></span>
           <span class="t_over"></span>
           <img className="logo_img" src={AlcherLogo} alt="" />
+      
           <div className="bookticketbtn">
-            <button type="button" id="bookbtn" className="bookbtn">
+            <button type="button" id="bookbtn" className="bookbtn" style={{"zIndex":"10"}}>
               <img src={BookTicketIcon} alt="" className="bookiconhero" />
               <a
                 href="https://card.alcheringa.in"
