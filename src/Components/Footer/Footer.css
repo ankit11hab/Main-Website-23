@@ -15,15 +15,12 @@
   box-sizing: border-box;
   padding: 5vh 5vw 2vh 5vw;
 }
-.footer_main  {
+.footer_main {
   display: flex;
   justify-content: space-between;
-  
 }
 .footer_main a {
- 
-  cursor: url('../../images/Group\ 288.png'), default!important;
-  
+  cursor: url("../../images/Group\ 288.png"), default !important;
 }
 
 .logo {
@@ -39,7 +36,7 @@
         height: 14vw; */
   /* left: calc(50% - 17vw/2 - 1vw);
         top: calc(50% - 12vw/2 - 1vw); */
-  font-family: "Star Guard Italic";;
+  font-family: "Star Guard Italic";
   font-style: normal;
   font-weight: 400;
   font-size: 6vw;
@@ -59,7 +56,7 @@
   font-family: "Aileron";
   font-style: normal;
   font-weight: 300;
-  font-size: 1.0vw;
+  font-size: 1vw;
   line-height: 24px;
   color: #ffffff;
   padding-top: 3.06vh;
@@ -178,18 +175,16 @@
   line-height: 3.2vh;
   padding-top: 3.73vh;
   /* identical to box height */
-  margin-top:-1vh ;
+  margin-top: -1vh;
 
   text-align: left;
   text-transform: uppercase;
 
   color: #ffffff;
-
 }
 
-
 .footer_desk a {
-  font-weight:900;
+  font-weight: 900;
   color: white;
   text-decoration: none;
 }
@@ -252,14 +247,16 @@
 .logo_mob {
   display: none;
 }
-.footer_bottom{
+.footer_bottom {
   margin-top: 8vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media only screen and   (max-width:1000px){
-  .footer_desk li, .shareka, .abhi{
+@media only screen and (max-width: 1000px) {
+  .footer_desk li,
+  .shareka,
+  .abhi {
     font-size: 2vw;
   }
 }
@@ -269,7 +266,7 @@
     display: none;
   }
   .logo_mob {
-    padding: 15vw 12vw ;
+    padding: 15vw 12vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,13 +301,11 @@
     left: 37vw;
   }
   .violet {
-
     width: 29vw;
     height: 39vw;
     position: relative;
     top: 18vw;
     left: -20vw;
-
   }
 
   .green {
@@ -328,7 +323,7 @@
     line-height: 24px;
     color: #ffffff;
   }
-  .ddby{
+  .ddby {
     display: none;
   }
 
@@ -358,15 +353,14 @@
     /* display: flex;
         flex-direction: row; */
   }
-  .footer_bottom{
-
-    margin: 4vh ;
+  .footer_bottom {
+    margin: 4vh;
     display: flex;
     justify-content: space-between;
     gap: 2vh;
     flex-direction: column;
     align-items: center;
-}
+  }
 
   /* .footer_desk ul{
         display: flex;
@@ -376,7 +370,6 @@
         height: 28vh;
         margin-left: 2.93vw;
     } */
-  
 
   .footer_desk li {
     font-family: "Aileron";
@@ -399,25 +392,24 @@
         top:4vw;
         right: 4vw;
     } */
-  .socials_mob{
-        display:flex;
+  .socials_mob {
+    display: flex;
 
-        flex-direction: row;
-        justify-content: flex-end;
-
-    }
-  .socials_desk{
-        display: none;
-    }
-.details_main{
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .socials_desk {
+    display: none;
+  }
+  .details_main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+  }
 
-  .socials_mob a{
+  .socials_mob a {
     padding: 4px 0px 0px 16px;
-    }
+  }
 
   .shareka {
     display: flex;
@@ -430,8 +422,8 @@
     line-height: 2.5vh;
     color: #fffffe;
   }
-  .footerlink a{
-    cursor: url('../../images/Group\ 288.png'), default!important;
+  .footerlink a {
+    cursor: url("../../images/Group\ 288.png"), default !important;
   }
   .abhi {
     display: flex;
@@ -466,229 +458,435 @@
   --deg:10deg;
 } */
 @-o-keyframes movery {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(15px,-15px) rotate(-15deg); }
-  50% { transform: translate(15px,-15px) rotate(15deg); }
-  75% { transform: translate(15px,-15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
-}@-ms-keyframes movery {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(15px,-15px) rotate(-15deg); }
-  50% { transform: translate(15px,-15px) rotate(15deg); }
-  75% { transform: translate(15px,-15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
-}@-moz-keyframes movery {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(15px,-15px) rotate(-15deg); }
-  50% { transform: translate(15px,-15px) rotate(15deg); }
-  75% { transform: translate(15px,-15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  75% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
+}
+@-ms-keyframes movery {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  75% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
+}
+@-moz-keyframes movery {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  75% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
 }
 @-webkit-keyframes movery {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(15px,-15px) rotate(-15deg); }
-  50% { transform: translate(15px,-15px) rotate(15deg); }
-  75% { transform: translate(15px,-15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  75% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
 }
 @keyframes movery {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(15px,-15px) rotate(-15deg); }
-  50% { transform: translate(15px,-15px) rotate(15deg); }
-  75% { transform: translate(15px,-15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  75% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
 }
 
 /* body:has(.hail:hover) */
- .yellow{
+.yellow {
   -webkit-animation: movery 20s infinite alternate;
   animation: movery 20s infinite alternate;
 }
 
 @-o-keyframes moverr {
-  0% { transform: translate(0px,0px);}
-  19% { transform: translate(-15px,-15px) rotate(-15deg); }
-  45% { transform: translate(15px,15px) rotate(15deg); }
-  79% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
-}@-ms-keyframes moverr {
-  0% { transform: translate(0px,0px);}
-  19% { transform: translate(-15px,-15px) rotate(-15deg); }
-  45% { transform: translate(15px,15px) rotate(15deg); }
-  79% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
-}@-moz-keyframes moverr {
-  0% { transform: translate(0px,0px);}
-  19% { transform: translate(-15px,-15px) rotate(-15deg); }
-  45% { transform: translate(15px,15px) rotate(15deg); }
-  79% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  19% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  45% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  79% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+}
+@-ms-keyframes moverr {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  19% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  45% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  79% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+}
+@-moz-keyframes moverr {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  19% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  45% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  79% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-webkit-keyframes moverr {
-  0% { transform: translate(0px,0px);}
-  19% { transform: translate(-15px,-15px) rotate(-15deg); }
-  45% { transform: translate(15px,15px) rotate(15deg); }
-  79% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  19% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  45% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  79% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @keyframes moverr {
-  0% { transform: translate(0px,0px);}
-  19% { transform: translate(-15px,-15px) rotate(-15deg); }
-  45% { transform: translate(15px,15px) rotate(15deg); }
-  79% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  19% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  45% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  79% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 
 /* body:has(.hail:hover) */
- .red{
+.red {
   -webkit-animation: moverr 20s infinite alternate;
-  animation: moverr 20s infinite alternate ;
+  animation: moverr 20s infinite alternate;
 }
 @-ms-keyframes moverv {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,25px) rotate(15deg); }
-  75% { transform: translate(-15px,-15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 25px) rotate(15deg);
+  }
+  75% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-moz-keyframes moverv {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,25px) rotate(15deg); }
-  75% { transform: translate(-15px,-15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 25px) rotate(15deg);
+  }
+  75% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-o-keyframes moverv {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,25px) rotate(15deg); }
-  75% { transform: translate(-15px,-15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 25px) rotate(15deg);
+  }
+  75% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-webkit-keyframes moverv {
-  0% { transform: translate(0px,0px);}
-  25% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,25px) rotate(15deg); }
-  75% { transform: translate(-15px,-15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 25px) rotate(15deg);
+  }
+  75% {
+    transform: translate(-15px, -15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @keyframes moverv {
-  0% { transform: translate(0px,0px);}
-  35% { transform: translate(15px,15px) rotate(-15deg); }
-  50% { transform: translate(-15px,15px) rotate(15deg); }
-  78% { transform: translate(15px,25px) rotate(-15deg); }
-  100% { transform: translate(25px,25px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  35% {
+    transform: translate(15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(-15px, 15px) rotate(15deg);
+  }
+  78% {
+    transform: translate(15px, 25px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(25px, 25px) rotate(15deg);
+  }
 }
 
- /* body:has(.hail:hover) */
- .violet{
+/* body:has(.hail:hover) */
+.violet {
   -webkit-animation: moverv 20s infinite alternate;
-  animation: moverv 20s infinite alternate ;
+  animation: moverv 20s infinite alternate;
 }
 @-ms-keyframes moverg {
-  0% { transform: translate(0px,0px);}
-  21% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,15px) rotate(15deg); }
-  74% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  21% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  74% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-o-keyframes moverg {
-  0% { transform: translate(0px,0px);}
-  21% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,15px) rotate(15deg); }
-  74% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  21% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  74% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @-moz-keyframes moverg {
-  0% { transform: translate(0px,0px);}
-  21% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,15px) rotate(15deg); }
-  74% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  21% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  74% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 
 @-webkit-keyframes moverg {
-  0% { transform: translate(0px,0px);}
-  21% { transform: translate(-15px,15px) rotate(-15deg); }
-  50% { transform: translate(15px,15px) rotate(15deg); }
-  74% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  21% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotate(15deg);
+  }
+  74% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
 }
 @keyframes moverg {
-  0% { transform: translate(0px,0px);}
-  22% { transform: translate(15px,-15px) rotate(-15deg); }
-  59% { transform: translate(15px,-15px) rotate(15deg); }
-  76% { transform: translate(-15px,15px) rotate(-15deg); }
-  100% { transform: translate(-15px,-15px) rotate(15deg); }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  22% {
+    transform: translate(15px, -15px) rotate(-15deg);
+  }
+  59% {
+    transform: translate(15px, -15px) rotate(15deg);
+  }
+  76% {
+    transform: translate(-15px, 15px) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-15px, -15px) rotate(15deg);
+  }
 }
 
 /* body:has(.hail:hover) */
- .green{
+.green {
   -webkit-animation: moverg 20s infinite alternate;
-  animation: moverg 20s infinite alternate ;
+  animation: moverg 20s infinite alternate;
 }
 
-.ddby{
-  font-family: 'Aileron';
-font-style: normal;
-font-weight: 300;
-font-size: 2vh;
-/* identical to box height */
-position: relative;
-color: rgb(100,100,100,30);
-width: fit-content;
-margin:auto;
-line-height: 3.8vh;
+.ddby {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5vh;
+  /* identical to box height */
+  position: relative;
+  color: rgb(100, 100, 100, 30);
+  width: fit-content;
+  margin: 2vh auto;
+  line-height: 3.8vh;
 }
-.underline{
-
-  border-bottom: 2px solid currentColor;
-  cursor: url('../../images/Group\ 288.png'), default!important;
-
+.underline {
+  border-bottom: 1px solid currentColor;
+  cursor: url("../../images/Group\ 288.png"), default !important;
 }
 
-.creatives-ddby{
+.creatives-ddby {
   width: 19rem;
   font-size: 1vh;
   position: relative;
 }
-.creatives-ddby img{
-  width:100%;
-}
-.creatives-names{
+.creatives-ddby img {
   width: 100%;
+}
+.creatives-names {
+  width: auto;
   position: absolute;
   top: 0;
   left: 0;
   color: white;
-  margin: 1rem 1rem;
-  font-size: 2vh;
+  margin: 1.5rem 2rem;
+  font-size: 2.1vh;
+  /* padding: 1rem; */
 }
 
-.names-ddby{
-  margin: 0px 0.7rem;
-  font-size: 2.1vh;
+.names-ddby {
+  font-size: 2.1v;
 }
-.dev-ddby{
+.dev-ddby {
   width: 42rem;
   position: absolute;
 }
-.dev-ddby img{
+.dev-ddby img {
   width: 100%;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.creatives-ddby-container{
+.creatives-ddby-container {
   position: absolute;
-  top:-9rem;
+  top: -9rem;
   margin-left: -6rem;
   display: inline-block;
   z-index: 12;
   animation: fadeIn 0.6s;
 }
-.devops-ddby-container{
+.devops-ddby-container {
   position: absolute;
   z-index: 12;
   display: inline-block;
