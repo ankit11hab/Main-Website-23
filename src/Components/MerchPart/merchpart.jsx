@@ -159,7 +159,9 @@ const MerchPart = () => {
           <img src={RedStar} alt="" className="redstar" />
           <img src={GreenStar} alt="" className="greenstar" />
           <h1 className="heading">
-            ROCK <br /> THE <br /> LOOK
+            {/* ROCK <br /> THE <br /> LOOK */}
+            <img src={RockTheLook} alt="" className="rockthelook" style={{width: '47vw', maxWidth:"210px",
+    left: '-2vw'}} />
           </h1>
           <br />
           <img src={PinkStar} alt="" className="pinkstar" />
