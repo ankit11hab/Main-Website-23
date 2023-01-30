@@ -12,10 +12,26 @@ import bigrock from "./images/Bigrock.png";
 import bias from "./images/BIAS Logo.png";
 import berado from "./images/berado_logo.jpg";
 import asus from "./images/ASUS.png";
+import Manikchand from "./images/manikchand.png";
+import Dubeat from "./images/Dubeat.jpg";
 import killer from "./images/killer.png";
 import Gplus from "./images/GplusLogo.png";
 import Mirchi from "./images/Mirchi.png";
 import AssamTribune from "./images/AssamTribune.jpg";
+import apdcl from "./images/APDCL.JPG";
+import asacs from "./images/ASACS.jpg";
+import fineedge from "./images/finedge.png";
+import fujifilm from "./images/Fujifilm.png";
+import medifio from "./images/medifio.jpg";
+import nhai from "./images/NHAI.png";
+import nhm from "./images/NHM.png";
+import ntpc from "./images/ntpc.png";
+import ocean from "./images/ocean.png";
+import suzuki from "./images/suzuki.jpg";
+import techo from "./images/Techobyte.jpg";
+import Sbi from "./images/SBI.png";
+import Sparx from "./images/sparx.png";
+
 function Sponsers() {
   useEffect(() => {
     const root = document.documentElement;
@@ -44,7 +60,26 @@ function Sponsers() {
         <div className="marquee1">
           <ul className="marquee-content">
             <li>
-              <img src={asus} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={bias} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={Sbi} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img
+                src={Manikchand}
+                alt="pr-sample23"
+                style={{ width: "150px" }}
+              />
+            </li>
+            <li>
+              <img src={killer} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={Gplus} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={Sparx} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
               <img
@@ -54,8 +89,12 @@ function Sponsers() {
               />
             </li>
             <li>
-              <img src={Gplus} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={nhai} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
+            <li>
+              <img src={ntpc} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+
             <li>
               <img src={ydlogo} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
@@ -63,13 +102,45 @@ function Sponsers() {
               <img src={upgrad} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={unstop} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={asus} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={twani} alt="pr-sample23" style={{ width: "150px" }} />
+              <img
+                src={fineedge}
+                alt="pr-sample23"
+                style={{ width: "150px" }}
+              />
             </li>
             <li>
-              <img src={safeexp} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={techo} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={nhm} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img
+                src={fujifilm}
+                alt="pr-sample23"
+                style={{ width: "150px" }}
+              />
+            </li>
+            <li>
+              <img src={asacs} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={apdcl} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={medifio} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={ocean} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={suzuki} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={bigrock} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
               <img
@@ -79,20 +150,23 @@ function Sponsers() {
               />
             </li>
             <li>
-              <img src={bigrock} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={safeexp} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={bias} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={unstop} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
               <img src={berado} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
             <li>
-              <img src={killer} alt="pr-sample23" style={{ width: "150px" }} />
+              <img src={twani} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
 
             <li>
               <img src={Mirchi} alt="pr-sample23" style={{ width: "150px" }} />
+            </li>
+            <li>
+              <img src={Dubeat} alt="pr-sample23" style={{ width: "150px" }} />
             </li>
           </ul>
         </div>

@@ -31,6 +31,18 @@ import Dubeat from "./images/Dubeat.jpg"
 import Mirchi from "./images/Mirchi.png"
 import AssamTribune from "./images/AssamTribune.png"
 import CILOGO from "./images/CI Logo.PNG"
+import apdcl from "./images/APDCL.JPG"
+import asacs from "./images/ASACS.jpg"
+import fineedge from "./images/finedge.png"
+import fujifilm from "./images/Fujifilm.png"
+import medifio from "./images/medifio.jpg"
+import nhai from "./images/NHAI.png"
+import nhm from "./images/NHM.png"
+import ntpc from "./images/ntpc.png"
+import ocean from "./images/ocean.png"
+import suzuki from "./images/suzuki.jpg"
+import techo from "./images/Techobyte.jpg"
+
 function Sponsors() {
   return (
     <div>
@@ -106,23 +118,30 @@ function Sponsors() {
               <p className="newpara"> Sparx</p>
             </div>
             <div className="box3">
-                <img className="cocard" src={AssamTribune} />
-                <p className="newpara">THE ASSAM TRIBUNE</p>
-              </div>
+              <img className="cocard" src={AssamTribune} />
+              <p className="newpara">THE ASSAM TRIBUNE</p>
+            </div>
+            {/* <div className="box3">
+              <img className="cocard" src={AssamTribune} />
+              <p className="newpara">Prag News</p>
+            </div> */}
           </div>
           <div className="othersponsor">
             <div className="parent">
-              
+              <div className="maincard">
+                <img className="cocard" src={nhai} />
+                <p className="newpara">NHAI  </p>
+                <p className="updatedpara">Platinum Sponsor</p>
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={ntpc} />
+                <p className="newpara">NTPC</p>
+                <p className="updatedpara">Golden Sponsor</p>
+              </div>
               <div className="maincard">
                 <img className="cocard" src={ydlogo} />
                 <p className="newpara">YELLOW  DIAMOND  </p>
                 <p className="updatedpara">Snacks Partner</p>
-              </div>
-
-              <div className="maincard">
-                <img className="cocard" src={asus} />
-                <p className="newpara">ASUS</p>
-                <p className="updatedpara"> Innovation Partner </p>
               </div>
               <div className="maincard">
                 <img className="cocard" src={upgrad} />
@@ -130,25 +149,64 @@ function Sponsors() {
                 <p className="updatedpara"> Upskilling Partner </p>
               </div>
               <div className="maincard">
-                <img className="cocard" src={unstop} />
-                <p className="newpara">UNSTOP</p>
-                <p className="updatedpara">Online Hosting Partner</p>
+                <img className="cocard" src={asus} />
+                <p className="newpara">ASUS</p>
+                <p className="updatedpara"> Innovation Partner </p>
               </div>
               <div className="maincard">
-                <img className="cocard" src={twani} />
-                <p className="newpara">TWANI</p>
-                <p className="updatedpara">Beauty Partner</p>
+                <img className="cocard" src={fineedge} />
+                <p className="newpara">FINEDGE SERVICE</p>
+                <p className="updatedpara"> Finance Partner </p>
               </div>
+
               <div className="maincard">
-                <img className="cocard" src={safeexp} />
-                <p className="newpara">SAFEXPRESS</p>
-                <p className="updatedpara">Supply Chain Partner </p>
+                <img className="cocard" src={techo} />
+                <p className="newpara">Techobytes</p>
+                <p className="updatedpara"> Workshop Partner </p>
               </div>
+
               <div className="maincard">
-                <img className="cocard" src={jamboree} />
-                <p className="newpara">JAMBOREE</p>
-                <p className="updatedpara"> Career Partner </p>
+                <img className="cocard" src={nhm} />
+                <p className="newpara">NHM</p>
+                <p className="updatedpara"> Health Partner </p>
               </div>
+
+              <div className="maincard">
+                <img className="cocard" src={fujifilm} />
+                <p className="newpara">FUJIFILM</p>
+                <p className="updatedpara"> Photography Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={asacs} />
+                <p className="newpara">ASACS</p>
+                <p className="updatedpara"> Awareness Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={apdcl} />
+                <p className="newpara">APDCL</p>
+                <p className="updatedpara"> Energy Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={medifio} />
+                <p className="newpara">MEDICO</p>
+                <p className="updatedpara"> Healthcare Service Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={ocean} />
+                <p className="newpara">OCEAN BEVERAGES</p>
+                <p className="updatedpara"> Refreshing Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={suzuki} />
+                <p className="newpara">SUZUKI</p>
+                <p className="updatedpara"> Bike Partner </p>
+              </div>
+
               <div className="maincard">
                 <img className="cocard" src={bigrock} />
                 <p className="newpara">BIGROCK</p>
@@ -156,12 +214,39 @@ function Sponsors() {
               </div>
 
               <div className="maincard">
+                <img className="cocard" src={jamboree} />
+                <p className="newpara">JAMBOREE</p>
+                <p className="updatedpara"> Career Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={safeexp} />
+                <p className="newpara">SAFEXPRESS</p>
+                <p className="updatedpara">Supply Chain Partner </p>
+              </div>
+
+              <div className="maincard">
+                <img className="cocard" src={unstop} />
+                <p className="newpara">UNSTOP</p>
+                <p className="updatedpara">Online Hosting Partner</p>
+              </div>
+
+              <div className="maincard">
                 <img className="cocard" src={berado} />
                 <p className="newpara">BEARDO</p>
                 <p className="updatedpara">Grooming Partner</p>
-
-
               </div>
+
+              <div className="maincard">
+                <img className="cocard" src={twani} />
+                <p className="newpara">TWANI NATURALS</p>
+                <p className="updatedpara">Beauty Partner</p>
+              </div>
+
+
+
+
+
               <div className="maincard">
                 <img className="cocard" src={Mirchi} />
                 <p className="newpara">MIRCHI PLUS</p>
@@ -174,14 +259,11 @@ function Sponsors() {
                 <p className="newpara">DU BEAT</p>
                 <p className="updatedpara">Digital Media Partner</p>
 
-
               </div>
-              <div className="maincard">
+              {/* <div className="maincard">
                 <img className="cocard" src={CILOGO} />
                 <p className="newpara">Creatives Imprints</p>
-               
-
-              </div>
+              </div> */}
 
             </div>
           </div>
