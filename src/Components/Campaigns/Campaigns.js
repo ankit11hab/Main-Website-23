@@ -389,11 +389,11 @@ class Cards extends React.Component {
             </div>
             <div className={styled.cambox1i6}></div>
             <div className={styled.desc}>
-              <div className={styled.camtext2i}>
-                Campus residents get app-exclusive E-Pass access for offline
-                events! Download the Alcheringa app today and explore our
-                impressive event line-up and merchandise as we begin our Voyage
-                to Neoterra.
+              <div className={styled.camtext2i_}>
+              <p>
+                Have you been looking for any Volunteering opportunity where you can contribute and learn? If YES then why wait, kindly fill in the below form and start working for ensuring happier and healthier childhood for India’s children with CRY-Child Rights and You.
+              CRY - Child Rights and You, India's most trusted NGO, has been working towards creating happier and healthier childhoods for the last 43 years.  We are working in 19 states in India with grassroots partners and communities and impacting the lives of over 3 million children. To Know more : <a style={{'textDecoration':'none'}} href='https://www.cry.org' target={'_blank'}>www.cry.org </a>
+              Anyone can be a volunteer. You can apply here and embark on your volunteering journey with us : <a href='https://forms.gle/k47PzbXPgWdmMCLz5' style={{'textDecoration':'none'}} target={'_blank'} >https://forms.gle/k47PzbXPgWdmMCLz5</a></p>
               </div>
             </div>
             <div className={styled.slideri}>

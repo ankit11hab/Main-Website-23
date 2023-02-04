@@ -543,7 +543,7 @@ border: 0px solid #ffffff;
 
 .camtext2i
 {box-sizing: border-box;
-  padding: 1% 20% 1% 20%;
+  padding: 4% 20% 1% 20%;
   /* position: relative; */
   display: flex;
   justify-content: center;
@@ -555,6 +555,24 @@ font-style: normal;
 font-weight: 400;
 font-size: 1.1vw;
 line-height: 2vw;
+text-align: center;
+color: #000000;
+background:url('./images/texture_background.webp');
+}
+.camtext2i_
+{box-sizing: border-box;
+  padding: 5% 20% 6% 20%;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100vw;
+height: 10vw;
+font-family: 'Aileron';
+font-style: normal;
+font-weight: 400;
+font-size: 1.1vw;
+line-height: 1.6vw;
 text-align: center;
 color: #000000;
 background:url('./images/texture_background.webp');
@@ -1314,6 +1332,14 @@ display: flex;
 align-items: center;
    
   }
+  .camtext2i_{
+    font-size: 2.5vh;
+line-height: 2.5vh;
+height: 45vw;
+display: flex;
+align-items: center;
+   
+  }
 
 
 .cambox1{
@@ -1505,8 +1531,17 @@ border-color: #000000;
     .camtext2i{
       font-size: 2vh;
     }
+    .camtext2i_{
+      font-size: 2vh;
+    }
   }
-@media(max-width:480px){
+@media(max-width:420px){
+    .camtext2i_{
+      font-size: 2vh;
+      height: 53vh;
+    }
+  }
+@media(max-width:480px) and (min-width: 420px){
   body{
     overflow-x: hidden;
     
@@ -1538,6 +1573,15 @@ border-color: #000000;
   width: 80%;
 }
 .camtext2i{
+  font-size: 12px;
+  padding: 3% 5% 3% 5%;
+  font-weight: 500;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+
+}
+.camtext2i_{
   font-size: 12px;
   padding: 3% 5% 3% 5%;
   font-weight: 500;

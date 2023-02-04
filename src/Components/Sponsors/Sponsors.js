@@ -42,6 +42,7 @@ import ntpc from "./images/ntpc.png"
 import ocean from "./images/ocean.png"
 import suzuki from "./images/suzuki.jpg"
 import techo from "./images/Techobyte.jpg"
+import cry from "./images/logo.gif"
 
 function Sponsors() {
   return (
@@ -258,6 +259,12 @@ function Sponsors() {
                 <img className="cocard" src={Dubeat} />
                 <p className="newpara">DU BEAT</p>
                 <p className="updatedpara">Digital Media Partner</p>
+
+              </div>
+              <div className="maincard">
+                <img className="cocard" src={cry} />
+                <p className="newpara">CRY</p>
+                <p className="updatedpara"> Volunteering Partner</p>
 
               </div>
               {/* <div className="maincard">
