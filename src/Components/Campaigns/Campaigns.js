@@ -248,7 +248,7 @@ class Cards extends React.Component {
             </div>
             <div className={styled.cambox1i4}></div>
             <div className={styled.desc}>
-              <div className={styled.camtext2i}>
+              <div className={styled.camtext2i_}>
                 North East India is a microcosm of India with its own diversity
                 in terms of languages, culture, arts and religion. There is a
                 need to promote and unveil the true potential of this part of
