@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4af213ee.css",
-    "main.js": "/static/js/main.4d38b45e.js",
+    "main.css": "/static/css/main.893907d9.css",
+    "main.js": "/static/js/main.adaad8d5.js",
     "static/js/787.33996a2a.chunk.js": "/static/js/787.33996a2a.chunk.js",
     "static/media/cover-pronites animation.webm": "/static/media/cover-pronites animation.c7d1e10e1435af617c34.webm",
     "static/media/background.png": "/static/media/background.749e8e28e1a00c788020.png",
@@ -163,6 +163,7 @@
     "static/media/Web_0043.webp": "/static/media/Web_0043.465180c2d236dafcaf00.webp",
     "static/media/Web_0039.webp": "/static/media/Web_0039.6d6d834ed74408903ffd.webp",
     "static/media/Web_0036.webp": "/static/media/Web_0036.3fdd2232b715fe6360ab.webp",
+    "static/media/NERIM.jpg": "/static/media/NERIM.73c2ec4cd301b55d87eb.jpg",
     "static/media/technobytes_mob.png": "/static/media/technobytes_mob.e048a0d7d957dd99a9be.png",
     "static/media/Web_0026.webp": "/static/media/Web_0026.857122e53312945e3bff.webp",
     "static/media/frameca2.png": "/static/media/frameca2.b8afef62a4cd404a54b6.png",
@@ -598,12 +599,12 @@
     "static/media/background.svg": "/static/media/background.73c746e88409ccb4b512.svg",
     "static/media/compass.svg": "/static/media/compass.0f193cd39061ea43cc46.svg",
     "static/media/Cross.svg": "/static/media/Cross.98b0aa78c02a08eafe610b723ac8e402.svg",
-    "main.4af213ee.css.map": "/static/css/main.4af213ee.css.map",
-    "main.4d38b45e.js.map": "/static/js/main.4d38b45e.js.map",
+    "main.893907d9.css.map": "/static/css/main.893907d9.css.map",
+    "main.adaad8d5.js.map": "/static/js/main.adaad8d5.js.map",
     "787.33996a2a.chunk.js.map": "/static/js/787.33996a2a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af213ee.css",
-    "static/js/main.4d38b45e.js"
+    "static/css/main.893907d9.css",
+    "static/js/main.adaad8d5.js"
   ]
 }
