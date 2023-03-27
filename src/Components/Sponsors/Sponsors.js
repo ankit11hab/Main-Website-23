@@ -43,6 +43,7 @@ import ocean from "./images/ocean.png"
 import suzuki from "./images/suzuki.jpg"
 import techo from "./images/Techobyte.jpg"
 import cry from "./images/logo.gif"
+import nerim from "./images/NERIM.jpg"
 
 function Sponsors() {
   return (
@@ -267,10 +268,11 @@ function Sponsors() {
                 <p className="updatedpara"> Volunteering Partner</p>
 
               </div>
-              {/* <div className="maincard">
-                <img className="cocard" src={CILOGO} />
-                <p className="newpara">Creatives Imprints</p>
-              </div> */}
+              <div className="maincard">
+                <img className="cocard" src={nerim} />
+                <p className="newpara">NERIM</p>
+                <p className="newpara">CSR Partner</p>
+              </div>
 
             </div>
           </div>
